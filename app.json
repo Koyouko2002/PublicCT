@@ -26,14 +26,14 @@
     "list": [{
     "pagePath": "pages/index/index",
     "text": "消息",
-    "iconPath":"/assets/消息.png",
-    "selectedIconPath":"/assets/消息 (1).png"
+    "iconPath":"/assets/首页.png",
+    "selectedIconPath":"/assets/首页 (1).png"
   },
   {
     "pagePath": "pages/list/list",
     "text": "首页",
-    "iconPath":"/assets/首页.png",
-    "selectedIconPath":"/assets/首页 (1).png"
+    "iconPath":"/assets/消息.png",
+    "selectedIconPath":"/assets/消息 (1).png"
   },
   {
     "pagePath": "pages/cate/cate",
