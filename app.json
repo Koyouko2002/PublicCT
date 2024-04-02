@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/list/index"
+    "pages/list/list",
+    "pages/cate/cate",
+    "pages/inter/inter"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -19,5 +21,31 @@
   },
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {  
+    "list": [{
+    "pagePath": "pages/index/index",
+    "text": "消息",
+    "iconPath":"/assets/消息.png",
+    "selectedIconPath":"/assets/消息 (1).png"
+  },
+  {
+    "pagePath": "pages/list/list",
+    "text": "首页",
+    "iconPath":"/assets/首页.png",
+    "selectedIconPath":"/assets/首页 (1).png"
+  },
+  {
+    "pagePath": "pages/cate/cate",
+    "text": "财富",
+    "iconPath":"/assets/投资管理.png",
+    "selectedIconPath":"/assets/投资管理 (1).png"
+  },
+  {
+    "pagePath": "pages/inter/inter",
+    "text": "财富",
+    "iconPath":"/assets/物联.png",
+    "selectedIconPath":"/assets/物联 (1).png"
+  }
+]}
 }
