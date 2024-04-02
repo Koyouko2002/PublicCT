@@ -7,4 +7,24 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+.imga{
+  
+  display: flex; 
+  border-radius: 20rpx;
+  margin-top: -150rpx;
+}
+.Tall{
+  color: white;
+  z-index: 3; 
+  position: relative; top: -270rpx; padding: 10px;
+}
+.Tall_1{
+  padding-bottom: 10rpx;
+  font-size: 618px;
+}
+.M-TB{
+
+
+
+}

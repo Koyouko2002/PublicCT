@@ -1,9 +1,56 @@
 <!--index.wxml-->
-<navigation-bar title="小程序" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="#w" style="width: 750rpx; height: 197rpx; display: block; box-sizing: border-box"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
+<view>  
 
-消息
+
+    <image style="width: 666rpx; height: 289rpx;  " src="/imgs/1.png" class="imga"/> 
+
+    <view style=" color: white;z-index: 3; position: relative; top: -270rpx; padding: 10px;" class="Tall" > 
     
+    <text style="padding-bottom: 10rpx; font-size: 18px;"> 智慧校园门户</text> 
+    <text style="display: block;font-size: 30rpx;padding-top: 18rpx;"> 学习概况 办事指南等功能  <br/>
+    方便快捷办事实时查看消息 </text>
+    
+    <view style="border: rgb(255, 255, 255) 2rpx solid; border-radius: 20px;width: 50px;height: 23px;font-size:25rpx;text-align: center; margin-top: 10px;"> <text style="position: relative; top: 4px;"> 去了解   </text>   </view>
+    </view>
+
+
+    </view>
+
+<view class="M-TB">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/学校.png" mode=""/>
+<text class="M-TB-Text"  >学习概况</text> </view>
+
+<view class="M-TB-1" style="background: #8f6aff;">   
+  <image src="/imgs/试卷.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1" style="background: #ec1e71;">   
+  <image src="/imgs/书包.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1"style="background: #03e391;" >   
+  <image src="/imgs/工具箱.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1"style="background: #1e9dff;" >   
+  <image src="/imgs/基因.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+</view>
+
+<view class="M-TB2">
+<view class="M-TB2-L">
+<image src="" mode=""/>
+</view>
+<view class="M-TB2-R"></view>
+
+</view>
+
   </view>
 </scroll-view>

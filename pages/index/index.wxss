@@ -3,8 +3,75 @@ page {
   height: 100vh;
   display: flex;
   flex-direction: column;
+
+
 }
 .scrollarea {
   flex: 1;
   overflow-y: hidden;
+}
+.a1{
+  width: 200px;
+}
+.M-TB{
+
+  margin-top: -110px;
+  display: flex;
+  justify-content: center;
+}
+.M-TB image{
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  top:8px;
+    left: 8px;
+
+}
+
+.M-TB-1{
+  margin: 12px;
+  width: 36px; 
+  height: 36px;
+  border-radius: 30px; 
+  background-color: #f6b059;
+  margin: 14px;
+}
+
+.M-TB-Text{
+  display: block;
+  width: 44px;
+  position: relative;
+  top: 16px; 
+  font-size: 22rpx;
+}
+.M-TB2{
+  display: flex;
+  paddin-t0px;
+}
+.M-TB2-L{
+  left: 22px;
+  top: 259px;
+  width: 158px;
+  height: 85px;
+  line-height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(117.31deg, rgba(254,178,122,1) 11.25%,rgba(255,122,92,1) 95.53%);
+  color: rgba(16,16,16,1);
+  font-size: 14px;
+  text-align: center;
+  font-family: Roboto;
+  margin-right: 25px;
+}
+.M-TB2-R{
+  left: 211px;
+top: 259px;
+width: 158px;
+height: 85px;
+line-height: 20px;
+border-radius: 10px;
+background: linear-gradient(109.09deg, rgba(149,249,218,1) 8.35%,rgba(83,189,232,1) 122.08%);
+color: rgba(16,16,16,1);
+font-size: 14px;
+text-align: center;
+font-family: Roboto;
 }
