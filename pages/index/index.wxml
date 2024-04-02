@@ -3,7 +3,11 @@
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
 
+<<<<<<< HEAD
     miemieshuaisbsbssb1
+=======
+    张德帅
+>>>>>>> af74737efcb5f537f8e79d859fcc6dbc29192af1
     
   </view>
 </scroll-view>
