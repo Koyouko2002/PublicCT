@@ -15,7 +15,7 @@ page {
 }
 .M-TB{
 
-  margin-top: -110px;
+  margin-top: -150px;
   display: flex;
   justify-content: center;
 }
@@ -46,9 +46,11 @@ page {
 }
 .M-TB2{
   display: flex;
-  paddin-t0px;
+  margin-bottom: 60px;
+  margin-right: 75px;
 }
 .M-TB2-L{
+  
   left: 22px;
   top: 259px;
   width: 158px;
@@ -63,7 +65,7 @@ page {
   margin-right: 25px;
 }
 .M-TB2-R{
-  left: 211px;
+left: 211px;
 top: 259px;
 width: 158px;
 height: 85px;
@@ -75,3 +77,42 @@ font-size: 14px;
 text-align: center;
 font-family: Roboto;
 }
+.M-TB2_image1{
+
+  left: 22px;
+  top: 262px;
+  width: 112px;
+  height: 86px;
+margin-left: -45px;
+}
+.M-TB2_image2{
+
+  left: 22px;
+  top: 262px;
+  width: 112px;
+  height: 86px;
+margin-left: 52px;
+}
+.M-TB2_Text1{
+left: 105px;
+top: 286px;
+width: 60px;
+height: 42px;
+line-height: 12px;
+color: rgb(255, 255, 255);
+font-size: 10px;
+text-align: left;
+margin: -60px 0 0 85px  ;
+}
+
+.M-TB2_Text2{
+  left: 105px;
+  top: 286px;
+  width: 60px;
+  height: 42px;
+  line-height: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  text-align: left;
+  margin: 30px 0 0 -140px  ;
+  }
