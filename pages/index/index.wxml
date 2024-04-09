@@ -89,8 +89,8 @@
   <text class="TB4-T2">新增办事指南和消息栏目我的无法1</text>
   </view>
 
-  <view class="M-TB4">
-
+<scroll-view class="scrollview" scroll-x >
+    <view class="M-TB4"> 
 
 <view class="M-TB4-BG">  
 
@@ -98,20 +98,74 @@
 
   <image src="/imgs/学校.png" mode=""/>
 <text class="M-TB4-Text"  >学习概况</text> 
-<text class="M-TB4-Text" >查询当前历史</text> 
+<text class="M-TB4-Text2" >查询当前历史</text> 
+  <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
+  <view class="eyeboder">200+
+  </view>
+  <image src="/imgs/add.svg" mode=""/>
+</view>
+
+
+</view>
+
+<view class="M-TB4-BG">  
+
+<view class="M-TB4-1" >   
+
+  <image src="/imgs/学校.png" mode=""/>
+<text class="M-TB4-Text"  >学习概况</text> 
+<text class="M-TB4-Text2" >查询当前历史</text> 
+  <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
+  <view class="eyeboder">200+
+  </view>
+  <image src="/imgs/add.svg" mode=""/>
+</view>
+
+
+</view>
+
+<view class="M-TB4-BG">  
+
+<view class="M-TB4-1" >   
+
+  <image src="/imgs/学校.png" mode=""/>
+<text class="M-TB4-Text"  >学习概况</text> 
+<text class="M-TB4-Text2" >查询当前历史</text> 
+  <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
+  <view class="eyeboder">200+
+  </view>
+  <image src="/imgs/add.svg" mode=""/>
+</view>
+
+
+</view>
+
+<view class="M-TB4-BG">  
+
+<view class="M-TB4-1" >   
+
+  <image src="/imgs/学校.png" mode=""/>
+<text class="M-TB4-Text"  >学习概况</text> 
+<text class="M-TB4-Text2" >查询当前历史</text> 
+  <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
+  <view class="eyeboder">200+
+  </view>
+  <image src="/imgs/add.svg" mode=""/>
+</view>
+
 
 </view>
 
 </view>
+</scroll-view>
 
 
+<view class="TB5"> 
+<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;">通知公告</Text>
+<Text>通知公告</Text>
+<Text>综合信息</Text>
+<Text>学术动态</Text>
 </view>
-
-
-
-
-
-
 
   </view>
 </scroll-view>
