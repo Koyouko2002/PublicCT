@@ -1,2 +1,12 @@
-<!--pages/inter/inter.wxml-->
-<text>pages/inter/inter.wxml</text>
+<!--index.wxml-->
+<navigation-bar title="小程序" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+
+财富
+    
+  </view>
+</scroll-view>
+<view class="progress-box">
+  <progress percent="40" show-info stroke-width="10"/>
+</view>

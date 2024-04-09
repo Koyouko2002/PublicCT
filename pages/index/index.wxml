@@ -1,6 +1,7 @@
 <!--index.wxml-->
 
-<navigation-bar title="智慧校园" back="{{false}}" color="black" background="#w" style="width: 750rpx; height: 197rpx; display: block; box-sizing: border-box"></navigation-bar>
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+</navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
 <view>  
@@ -61,25 +62,50 @@
 </view>
 
 <view class="M-TB3">
-<!--跳转-->
-<!-- navigate 不会销毁当前页只能跳到非tabbar页面-->
-<!-- <navigator ur1="/pages/ profile/ profile" >跳转</navigator> -->
-<!-- reidirect 销毁当前页只能跳转到非tabbar页面
--- >
- <navigator url= " /pages/ profile/ profile" open-type="redirect" >跳转< /navigator>
-<navigator url=" /pages/list/list" open-type=" redirect" >跳转</navigator> -->
-<!-- switchTab只能跳转到tabbar页面-->
-<!-- <navigator ur1=" /pages/ list/list" open-type=" switchTab" >跳转< /navigator> 
-<navigator url=" /pages/ profile/ profile" open-type=" switchTab" >跳转</ navigator> -->
-<!-- reLaunch 可以跳转到tabbar以及非tabbar页面 不会保留当前页
--->
+<view class="MT-TB3-A1">
+<image src="/imgs/工具箱.png" mode=""/>
+</view>
+<text class="MT-TB3-A1-text"> 关于系统上线的运行时间捏</text>
+
+
+</view>
+<view class="M-TB3-BG" >
+
+
+  <image src="/imgs/newfeel.png" mode=""/>
+  <view class="TB3-T">
+  <text class="TB3-T1">办事新指南</text>
+  <text class="TB3-T2">新增办事指南和消息栏目我的无法1</text>
+  </view>
+<view style="height: 1000px; ">
 
 
 </view>
 
+</view>
+
+<view class="TB4-T">
+  <text class="TB4-T1">推荐应用</text>
+  <text class="TB4-T2">新增办事指南和消息栏目我的无法1</text>
+  </view>
+
+  <view class="M-TB4">
 
 
+<view class="M-TB4-BG">  
 
+<view class="M-TB4-1" >   
+
+  <image src="/imgs/学校.png" mode=""/>
+<text class="M-TB4-Text"  >学习概况</text> 
+<text class="M-TB4-Text" >查询当前历史</text> 
+
+</view>
+
+</view>
+
+
+</view>
 
 
 
