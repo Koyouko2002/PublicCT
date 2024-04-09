@@ -340,4 +340,57 @@ margin-top: 2px;
   font-family: PingFangSC-medium;
       border-bottom:rgb(0, 185, 108) solid 3px;
     }
-    
+  .TBT-T-T{
+    left: 22px;
+top: 857px;
+width: 239px;
+height: 38px;
+line-height: 19px;
+color: rgb(16,16,16);
+font-size: 14px;
+text-align: left;
+font-family: PingFangSC-regular;
+  }
+  .TBT-T-T2{
+display: block;
+    width: 50px;
+    height: 14px;
+    line-height: 14px;
+    color: rgb(131, 131, 131);
+    font-size: 10px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: -0px;
+  }
+
+.TBTBG{
+  width: 56px;
+height: 56px;
+line-height: 20px;
+border-radius: 6px;
+background: linear-gradient(154.08deg, rgba(180,253,255,1) -0.04%,rgba(180,253,255,0.2) 83.65%);
+color: rgba(16,16,16,1);
+font-size: 14px;
+text-align: center;
+font-family: Roboto;
+position: relative;
+left: 270px;
+top: -70px;
+}
+.TBTBG image{
+  width: 45px;
+  height: 45px;
+  margin-top: 5px;
+}
+.TB5-Table{
+  margin-top: 15px;
+  margin-left: -90px;
+}
+.TB5-Table2{
+  margin-top: 15px;
+  margin-left: -90px;
+}
+.TB5-Table2{
+  margin-top: -20px;
+  margin-left: -90px;
+}

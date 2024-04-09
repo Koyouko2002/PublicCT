@@ -77,7 +77,7 @@
   <text class="TB3-T1">办事新指南</text>
   <text class="TB3-T2">新增办事指南和消息栏目我的无法1</text>
   </view>
-<view style="height: 1000px; ">
+<view style="height: 500px; ">
 
 
 </view>
@@ -167,5 +167,34 @@
 <Text>学术动态</Text>
 </view>
 
+
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
+的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
+
+<view class="TB5-Table2">    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
+的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
+<view class="TB5-Table2">    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
+的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
   </view>
 </scroll-view>
