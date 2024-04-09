@@ -61,7 +61,18 @@
 </view>
 
 <view class="M-TB3">
-
+<!--跳转-->
+<!-- navigate 不会销毁当前页只能跳到非tabbar页面-->
+<!-- <navigator ur1="/pages/ profile/ profile" >跳转</navigator> -->
+<!-- reidirect 销毁当前页只能跳转到非tabbar页面
+-- >
+ <navigator url= " /pages/ profile/ profile" open-type="redirect" >跳转< /navigator>
+<navigator url=" /pages/list/list" open-type=" redirect" >跳转</navigator> -->
+<!-- switchTab只能跳转到tabbar页面-->
+<!-- <navigator ur1=" /pages/ list/list" open-type=" switchTab" >跳转< /navigator> 
+<navigator url=" /pages/ profile/ profile" open-type=" switchTab" >跳转</ navigator> -->
+<!-- reLaunch 可以跳转到tabbar以及非tabbar页面 不会保留当前页
+-->
 
 
 </view>
