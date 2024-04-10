@@ -2,6 +2,10 @@
 
 <navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
 </navigation-bar>
+
+
+
+
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
 <view>  

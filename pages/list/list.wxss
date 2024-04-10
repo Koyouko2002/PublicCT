@@ -6,6 +6,55 @@ page {
 
 
 }
+.SLL{
+  width: 390px;
+height: 44px;
+line-height: 20px;
+background-color: rgba(255,255,255,1);
+color: rgba(16,16,16,1);
+font-size: 14px;
+text-align: center;
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+font-family: Roboto;
+}
+.SSL_text{
+
+  line-height:40px;
+  color: rgb(16,16,16);
+  font-size: 17px;
+  text-align: left;
+  font-family: PingFangSC-medium;
+  margin-left: -300px;
+  margin-top: 10px;
+
+}
+.SSL-image{
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-top: -18px;
+  margin-left: 80px;
+}
+.SSL-image1{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -18px;
+  margin-left: 300px;
+}
+.SSL_input{
+  width: 201px;
+  height: 25px;
+  line-height: 20px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,1);
+  color: rgba(16,16,16,1);
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.07);
+  margin-top: -32px;
+  margin-left: 75px;
+}
 .scrollarea {
   flex: 1;
   overflow-y: hidden;
@@ -13,40 +62,10 @@ page {
 .a1{
   width: 200px;
 }
-.M-TB{
 
-  margin-top: -120px;
-  display: flex;
-  justify-content: center;
-}
-.M-TB image{
-  position: relative;
-  width: 40rpx;
-  height: 40rpx;
-  top:8px;
-    left: 8px;
-
-}
-
-.M-TB-1{
-  margin: 12px;
-  width: 36px; 
-  height: 36px;
-  border-radius: 30px; 
-  background-color: #f6b059;
-  margin: 14px;
-}
-
-.M-TB-Text{
-  display: block;
-  width: 44px;
-  position: relative;
-  top: 16px; 
-  font-size: 22rpx;
-}
 .M-TB2{
   display: flex;
-  margin-top: 20PX;
+  margin-top: -80PX;
   margin-right: 75px;
 }
 .M-TB2-L{
@@ -79,11 +98,11 @@ font-family: Roboto;
 }
 .M-TB2_image1{
 
-  left: 22px;
-  top: 262px;
-  width: 112px;
-  height: 86px;
-  margin-left: -45px;
+
+  width: 93px;
+  height: 75px;
+  margin-left:-60px;
+  margin-top: 10px;
 }
 .M-TB2_image2{
 
@@ -91,7 +110,7 @@ font-family: Roboto;
   top: 262px;
   width: 112px;
   height: 86px;
-  margin-left: 52px;
+  margin-left: 60px;
 }
 .M-TB2_Text1{
 left: 105px;
@@ -102,7 +121,7 @@ line-height: 12px;
 color: rgb(255, 255, 255);
 font-size: 10px;
 text-align: left;
-margin: -60px 0 0 85px  ;
+margin: -60px 0 0 95px  ;
 }
 
 .M-TB2_Text2{
@@ -114,7 +133,7 @@ margin: -60px 0 0 85px  ;
   color: rgb(255, 255, 255);
   font-size: 10px;
   text-align: left;
-  margin: 30px 0 0 -140px  ;
+  margin: 30px 0 0 -150px  ;
   }
 .M-TB3{
 margin-top: 20PX;
@@ -340,57 +359,35 @@ margin-top: 2px;
   font-family: PingFangSC-medium;
       border-bottom:rgb(0, 185, 108) solid 3px;
     }
-  .TBT-T-T{
-    left: 22px;
-top: 857px;
-width: 239px;
-height: 38px;
-line-height: 19px;
-color: rgb(16,16,16);
-font-size: 14px;
-text-align: left;
-font-family: PingFangSC-regular;
-  }
-  .TBT-T-T2{
-display: block;
-    width: 50px;
-    height: 14px;
-    line-height: 14px;
-    color: rgb(131, 131, 131);
-    font-size: 10px;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: -0px;
-  }
 
-.TBTBG{
-  width: 56px;
-height: 56px;
-line-height: 20px;
-border-radius: 6px;
-background: linear-gradient(154.08deg, rgba(180,253,255,1) -0.04%,rgba(180,253,255,0.2) 83.65%);
-color: rgba(16,16,16,1);
-font-size: 14px;
-text-align: center;
-font-family: Roboto;
-position: relative;
-left: 270px;
-top: -70px;
-}
-.TBTBG image{
-  width: 45px;
-  height: 45px;
-  margin-top: 5px;
-}
-.TB5-Table{
-  margin-top: 15px;
-  margin-left: -90px;
-}
-.TB5-Table2{
-  margin-top: 15px;
-  margin-left: -90px;
-}
-.TB5-Table2{
-  margin-top: -20px;
-  margin-left: -90px;
-}
+    .M-TB{
+
+      margin-top: 20px;
+      margin-left:50px;
+      display: flex;
+      justify-content: center;
+    }
+    .M-TB image{
+      position: relative;
+      width: 40rpx;
+      height: 40rpx;
+      top:8px;
+        left: 8px;
+    
+    }
+    
+    .M-TB-1{
+      width: 36px; 
+      height: 36px;
+      border-radius: 30px; 
+      background-color: #f6b059;
+      margin-right: 50px;
+    }
+    
+    .M-TB-Text{
+      display: block;
+      width: 44px;
+      position: relative;
+      top: 16px; 
+      font-size: 22rpx;
+    }

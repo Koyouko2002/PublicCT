@@ -1,12 +1,55 @@
 <!--index.wxml-->
-<navigation-bar title="小程序" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+
+</navigation-bar>
+
+<view class="SLL">
+<text class="SSL_text">应用</text>
+
+<input type="text" class="SSL_input" placeholder="搜索应用 消息 新闻"/>
+<image src="/imgs/search.png" mode="" class="SSL-image"/>
+<image src="/imgs/scode.png" mode="" class="SSL-image1"/>
+<image src="/imgs/mess.png" mode="" class="SSL-image1" style="margin-left: 340px; margin-top: -20px;"/>
+</view>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
 
-财富
-    
+
+<view class="M-TB">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/学校.png" mode=""/>
+<text class="M-TB-Text"  >代办</text> </view>
+
+<view class="M-TB-1" style="background: #8f6aff;">   
+  <image src="/imgs/试卷.png" mode=""/>
+<text class="M-TB-Text" >待阅</text> </view>
+
+<view class="M-TB-1" style="background: #ec1e71;">   
+  <image src="/imgs/书包.png" mode=""/>
+<text class="M-TB-Text" >已办</text> </view>
+
+<view class="M-TB-1"style="background: #03e391;" >   
+  <image src="/imgs/工具箱.png" mode=""/>
+<text class="M-TB-Text" >已越</text> </view>
+
+<view class="M-TB-1"style="background: #209bfd;" >   
+  <image src="/imgs/基因.png" mode=""/>
+<text class="M-TB-Text" >系统</text> </view>
+
+
+
+</view>
+
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 教职工请假申请</text>
+<text class="TBT-T-T2">工作部门：申请人 www</text>
+<text class="TBT-T-T3">今天</text>
+<view class="TBTBG">  
+<image src="/imgs/messageimgs/7.png" mode=""/>
+ </view>
+</view>
+
   </view>
 </scroll-view>
-<view class="progress-box">
-  <progress percent="40" show-info stroke-width="10"/>
-</view>
