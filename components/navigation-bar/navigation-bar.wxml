@@ -55,7 +55,7 @@
         <slot name="center"></slot>
       </block>
     </view>
-
+    
     <!-- 右侧留空 -->
     <view class='weui-navigation-bar__right'>
       <slot name="right"></slot>

@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/login1/login1",
     "pages/index/index",
     "pages/list/list",
     "pages/cate/cate",
     "pages/inter/inter",
     "pages/me/me",
-    "pages/login1/login1",
     "pages/login2/login2",
-    "pages/login3/login3"
+    "pages/login3/login3",
+    "pages/st/st"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -49,4 +50,6 @@
     "selectedIconPath":"/assets/值班人员 (1).png"
   }
 ]}
+
+
 }
