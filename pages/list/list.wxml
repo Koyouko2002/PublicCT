@@ -1,6 +1,6 @@
 <!--index.wxml-->
 
-<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+<navigation-bar title="" back="{{false}}" color="black" background="" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
 
 </navigation-bar>
 
@@ -20,15 +20,15 @@
 <view class="M-TB2-L">
 <image src="/imgs/appgirl.png" class="M-TB2_image1"/>
 <view class="M-TB2_Text1">   
-<text style="font-size: 14px;;">待办事项  </text>  
-<text style="font-size: 10px;"> 我的代办事项</text> 
+<text style="font-size: 12px;font-weight: bold;;">待办事项  </text>  
+<text style="font-size: 9px;"> 我的代办事项</text> 
 </view>
 </view>
 <view class="M-TB2-R">
   <image src="/imgs/appboy.png" class="M-TB2_image2"/></view>
   <view class="M-TB2_Text2">   
-<text style="font-size: 14px;">待办事项  </text>  
-<text style="font-size: 10px;"> 我的代办事项</text> 
+<text style="font-size: 12px;font-weight: bold;">待办事项  </text>  
+<text style="font-size: 9px;"> 我的代办事项</text> 
 </view>
 </view>
 

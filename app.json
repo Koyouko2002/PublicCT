@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/list/list",
     "pages/cate/cate",
-    "pages/inter/inter"
+    "pages/inter/inter",
+    "pages/me/me",
+    "pages/login1/login1",
+    "pages/login2/login2",
+    "pages/login3/login3"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -20,22 +24,29 @@
   },
   {
     "pagePath": "pages/list/list",
+    "text": "应用",
+    "iconPath":"/assets/投资管理.png",
+    "selectedIconPath":"/assets/投资管理 (1).png"
+
+  },
+  {
+    "pagePath": "pages/cate/cate",
     "text": "消息",
     "iconPath":"/assets/消息.png",
     "selectedIconPath":"/assets/消息 (1).png"
 
   },
   {
-    "pagePath": "pages/cate/cate",
-    "text": "财富",
-    "iconPath":"/assets/投资管理.png",
-    "selectedIconPath":"/assets/投资管理 (1).png"
-  },
-  {
     "pagePath": "pages/inter/inter",
-    "text": "财富",
+    "text": "发现",
     "iconPath":"/assets/物联.png",
     "selectedIconPath":"/assets/物联 (1).png"
+  },
+  {
+    "pagePath": "pages/me/me",
+    "text": "我的",
+    "iconPath":"/assets/值班人员.png",
+    "selectedIconPath":"/assets/值班人员 (1).png"
   }
 ]}
 }

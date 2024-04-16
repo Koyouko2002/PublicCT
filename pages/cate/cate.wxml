@@ -42,6 +42,28 @@
 
 </view>
 
+<view class="TB5-Table3">    
+<text class="TBT-T-T"> 辞职申请</text>
+<text class="TBT-T-T2">工作部门：申请人 www</text>
+<text class="TBT-T-T3">明天</text>
+<view class="TBTBG">  
+<image src="/imgs/messageimgs/9.png" mode=""/>
+ </view>
+
+</view>
+
+
+<view class="TB5-Table2">    
+<text class="TBT-T-T"> 放假申请</text>
+<text class="TBT-T-T2">工作部门：申请人 www</text>
+<text class="TBT-T-T3">明天</text>
+<view class="TBTBG">  
+<image src="/imgs/messageimgs/8.png" mode=""/>
+ </view>
+
+</view>
+
+
 <view class="TB5-Table">    
 <text class="TBT-T-T"> 教职工请假申请</text>
 <text class="TBT-T-T2">工作部门：申请人 www</text>
@@ -49,7 +71,11 @@
 <view class="TBTBG">  
 <image src="/imgs/messageimgs/7.png" mode=""/>
  </view>
+
 </view>
+
+
+
 
   </view>
 </scroll-view>

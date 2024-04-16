@@ -1,12 +1,68 @@
 <!--index.wxml-->
-<navigation-bar title="小程序" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+</navigation-bar>
+
+<view class="SLL">
+<text class="SSL_text">应用</text>
+
+<input type="text" class="SSL_input" placeholder="搜索应用 消息 新闻"/>
+<image src="/imgs/search.png" mode="" class="SSL-image"/>
+<image src="/imgs/scode.png" mode="" class="SSL-image1"/>
+<image src="/imgs/mess.png" mode="" class="SSL-image1" style="margin-left: 340px; margin-top: -20px;"/>
+</view>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
 
-财富
-    
+<view class="First"> 
+    <image style="width: 666rpx; height: 289rpx;  " src="/imgs/messageimgs/图片 eMlMPIy.png" class="imga"/> 
+  <text class="First-T1">发现新鲜事</text>
+
+
+  <text class="First-T2">校内各院系各部门重要新闻汇报
+</text>
+  </view>
+
+  <view class="TB5"> 
+<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;">通知公告</Text>
+<Text>通知公告</Text>
+<Text>综合信息</Text>
+<Text>学术动态</Text>
+</view>
+
+<view class="TB5-Table" >    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
+
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
+
+
+
+
+
+
+
+
+
   </view>
 </scroll-view>
-<view class="progress-box">
-  <progress percent="40" show-info stroke-width="10"/>
-</view>

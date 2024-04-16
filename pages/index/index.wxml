@@ -11,16 +11,16 @@
 <view>  
 
 
-    <image style="width: 666rpx; height: 289rpx;  " src="/imgs/1.png" class="imga"/> 
+  <image style="width: 666rpx; height: 289rpx;  " src="/imgs/1.png" class="imga"/> 
 
-    <view style=" color: white;z-index: 3; position: relative; top: -270rpx; padding: 10px;" class="Tall" > 
-    
-    <text style="padding-bottom: 10rpx; font-size: 18px;"> 智慧校园门户</text> 
-    <text style="display: block;font-size: 30rpx;padding-top: 18rpx;"> 学习概况 办事指南等功能  <br/>
-    方便快捷办事实时查看消息 </text>
-    
-    <view style="border: rgb(255, 255, 255) 2rpx solid; border-radius: 20px;width: 50px;height: 23px;font-size:25rpx;text-align: center; margin-top: 10px;"> <text style="position: relative; top: 4px;"> 去了解   </text>   </view>
-    </view>
+<view style=" color: white;z-index: 3; position: relative; top: -270rpx; padding: 10px;" class="Tall" > 
+
+<text style="padding-bottom: 10rpx; font-size: 15px;font-weight: bold;"> 智慧校园门户</text> 
+<text style="display: block;font-size: 10px;padding-top: 18rpx;"> 学习概况 办事指南等功能  <br/>
+方便快捷办事实时查看消息 </text>
+
+<view style="border: rgb(255, 255, 255) 2rpx solid; border-radius: 20px;width: 50px;height: 23px;font-size:25rpx;text-align: center; margin-top: 10px;"> <text style="position: relative; top: 4px;"> 去了解   </text>   </view>
+</view>
 
 
     </view>
