@@ -1,6 +1,6 @@
 <!--index.wxml-->
 
-<navigation-bar title="" back="{{false}}" color="black" background="" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+<navigation-bar title="" back="{{false}}" color="black" background="" style="width: 750rpx; height: 110rpx; display: block; box-sizing: border-box;">
 
 </navigation-bar>
 
