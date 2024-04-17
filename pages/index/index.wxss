@@ -270,7 +270,7 @@ margin-left: 10px;
       width: 36px; 
       height: 36px;
       border-radius: 30px; 
-      background-color: #f6b059;
+      background: linear-gradient(142.96deg, rgba(252,195,49,1) 7.26%,rgba(255,138,14,1) 87.5%);
   
     }
     

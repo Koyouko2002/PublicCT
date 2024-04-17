@@ -114,8 +114,8 @@
 
 <view class="M-TB4-1" >   
 
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB4-Text"  >学习概况</text> 
+  <image src="/imgs/书包.png" mode=""/>
+<text class="M-TB4-Text"  >文具商场</text> 
 <text class="M-TB4-Text2" >查询当前历史</text> 
   <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
   <view class="eyeboder">200+
@@ -129,8 +129,8 @@
 
 <view class="M-TB4-1" >   
 
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB4-Text"  >学习概况</text> 
+  <image src="/imgs/基因.png" mode=""/>
+<text class="M-TB4-Text"  >学习小组</text> 
 <text class="M-TB4-Text2" >查询当前历史</text> 
   <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
   <view class="eyeboder">200+
@@ -144,8 +144,8 @@
 
 <view class="M-TB4-1" >   
 
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB4-Text"  >学习概况</text> 
+  <image src="/imgs/工具箱.png" mode=""/>
+<text class="M-TB4-Text"  >网络申请</text> 
 <text class="M-TB4-Text2" >查询当前历史</text> 
   <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
   <view class="eyeboder">200+
@@ -179,18 +179,16 @@
 </view>
 
 <view class="TB5-Table2">    
-<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
-的诵知</text>
-<text class="TBT-T-T2">校园新闻网</text>
+<text class="TBT-T-T"> 通报批评XXX在上课时间玩手机</text>
+<text class="TBT-T-T2">教务处</text>
 <view class="TBTBG">  
-<image src="/imgs/item1.png" mode=""/>
+<image src="/imgs/item2.png" mode=""/>
  </view>
 
 </view>
 <view class="TB5-Table2">    
-<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
-的诵知</text>
-<text class="TBT-T-T2">校园新闻网</text>
+<text class="TBT-T-T"> 进行5-1学习画展活动！</text>
+<text class="TBT-T-T2">艺术团</text>
 <view class="TBTBG">  
 <image src="/imgs/item1.png" mode=""/>
  </view>
@@ -242,7 +240,7 @@
 <view class="TB5-Table">    
 <text class="TBT-T-T"> 市委书记莅临本校考察</text>
 <text class="TBT-T-T2">计科专业部</text>
-<view class="TBTBG">  
+<view class="TBTBG" >  
 <image src="/imgs/item1.png" mode=""/>
  </view>
 

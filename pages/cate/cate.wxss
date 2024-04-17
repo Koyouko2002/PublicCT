@@ -436,19 +436,27 @@ margin-top: 2px;
     margin-left: -50px;
     margin-top: 70px;
   }
+  .TBALL{
+    width: 370PX;
+    height: 400PX;
+  
+    position: absolute;
+  }
+  .del{
+    width: 59px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(254,58,47,1);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 302px;
+  }
   .TB5-Table{
-    position: relative;
-    top: -250px;
-    margin-left: 40px;
-  }
-  .TB5-Table2{
-    position: absolute;
-    top: 210px;
-    margin-left: 40px;
-  }
 
-  .TB5-Table3{
-    position: absolute;
-    top: 310px;
-    margin-left: 40px;
+    margin-left: 70px;
   }
+.sc{
+  margin-top: 20px;
+}

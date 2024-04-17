@@ -5,9 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    is1:"block",
+    is2:"block",
+    is3:"block",
   },
-
+del1(){
+    this.setData({
+      is1:"none"
+    })
+},
+del2(){
+  this.setData({
+    is2:"none"
+  })
+},
+del3(){
+  this.setData({
+    is3:"none"
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */

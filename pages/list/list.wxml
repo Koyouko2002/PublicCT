@@ -60,8 +60,8 @@
 
 <view class="M-TB4-1" >   
 
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB4-Text"  >学习概况</text> 
+  <image src="/imgs/书包.png" mode=""/>
+<text class="M-TB4-Text"  >文具列表</text> 
 <text class="M-TB4-Text2" >查询当前历史</text> 
   <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
   <view class="eyeboder">200+
@@ -76,8 +76,8 @@
 
 <view class="M-TB4-1" >   
 
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB4-Text"  >学习概况</text> 
+  <image src="/imgs/工具箱.png" mode=""/>
+<text class="M-TB4-Text"  >申请审批</text> 
 <text class="M-TB4-Text2" >查询当前历史</text> 
   <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
   <view class="eyeboder">200+
@@ -92,8 +92,8 @@
 
 <view class="M-TB4-1" >   
 
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB4-Text"  >学习概况</text> 
+  <image src="/imgs/试卷.png" mode=""/>
+<text class="M-TB4-Text"  >考试信息</text> 
 <text class="M-TB4-Text2" >查询当前历史</text> 
   <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
   <view class="eyeboder">200+
@@ -109,87 +109,213 @@
 
 
 <view class="TB5"> 
-<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;">通知公告</Text>
-<Text>通知公告</Text>
-<Text>综合信息</Text>
-<Text>学术动态</Text>
+<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;">{{a}}</Text>
+<Text bind:tap="tabt1">电子商务</Text>
+<Text bind:tap="tabt2" >教学服务</Text>
+<Text bind:tap="tabt3"  >科研动态</Text>
 </view>
 
-<text class="TB5 " style="margin-top: 20px; margin-right: -20px;">最新上线</text>
-
+<view class="V1"style="display:{{is1}}" >  
+<text class="TB5 " style="margin-top: 20px; margin-right: -20px;">商务信息</text>
 <view class="M-TB">
 
 <view class="M-TB-1" >   
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB-Text"  >学习概况</text> </view>
+  <image src="/imgs/appimgs/email.png" mode=""/>
+<text class="M-TB-Text"  >最新情报</text> </view>
 
-<view class="M-TB-1" style="background: #8f6aff;">   
-  <image src="/imgs/试卷.png" mode=""/>
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
 <text class="M-TB-Text" >学习概况</text> </view>
 
-<view class="M-TB-1" style="background: #ec1e71;">   
-  <image src="/imgs/书包.png" mode=""/>
-<text class="M-TB-Text" >学习概况</text> </view>
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/map.png" mode=""/>
+<text class="M-TB-Text" >校园地图</text> </view>
 
-<view class="M-TB-1"style="background: #03e391;" >   
-  <image src="/imgs/工具箱.png" mode=""/>
-<text class="M-TB-Text" >学习概况</text> </view>
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
+<text class="M-TB-Text" >我的消费</text> </view>
 
 
 
 </view>
-
 <view class="M-TB "style="margin-top:35px">
 
 <view class="M-TB-1 " >   
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB-Text"  >学习概况</text> </view>
+  <image src="/imgs/appimgs/red.png" mode=""/>
+<text class="M-TB-Text"  >共青团建</text> </view>
 
-<view class="M-TB-1" style="background: #8f6aff;">   
-  <image src="/imgs/试卷.png" mode=""/>
-<text class="M-TB-Text" >学习概况</text> </view>
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/school.png" mode=""/>
+<text class="M-TB-Text" >学校概况</text> </view>
 
-<view class="M-TB-1" style="background: #ec1e71;">   
-  <image src="/imgs/书包.png" mode=""/>
-<text class="M-TB-Text" >学习概况</text> </view>
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/shenpi.png" mode=""/>
+<text class="M-TB-Text" >网络审批</text> </view>
 
-<view class="M-TB-1"style="background: #03e391;" >   
-  <image src="/imgs/工具箱.png" mode=""/>
+<view class="M-TB-1">   
+  <image src="/imgs/appimgs/email.png" mode=""/>
 <text class="M-TB-Text" >学习概况</text> </view>
 
 
 
 </view>
-
-
-
-
-<text class="TB5 " style="margin-top: 40px; margin-right: -20px;">电子魅魔</text>
-
-
+<text class="TB5 " style="margin-top: 40px; margin-right: -20px;">更新</text>
 <view class="M-TB">
 
 <view class="M-TB-1" >   
-  <image src="/imgs/学校.png" mode=""/>
+  <image src="/imgs/appimgs/jiangbei.png" mode=""/>
 <text class="M-TB-Text"  >学习概况</text> </view>
 
-<view class="M-TB-1" style="background: #8f6aff;">   
-  <image src="/imgs/试卷.png" mode=""/>
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/libray.png" mode=""/>
 <text class="M-TB-Text" >学习概况</text> </view>
 
-<view class="M-TB-1" style="background: #ec1e71;">   
-  <image src="/imgs/书包.png" mode=""/>
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/map.png" mode=""/>
 <text class="M-TB-Text" >学习概况</text> </view>
 
-<view class="M-TB-1"style="background: #03e391;" >   
-  <image src="/imgs/工具箱.png" mode=""/>
+<view class="M-TB-1"  >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
 <text class="M-TB-Text" >学习概况</text> </view>
 
 
 
 </view>
+</view>
+<view class="V2"style="display:{{is2}}" >  
+<text class="TB5 " style="margin-top: 20px; margin-right: -20px;">教学消息</text>
+<view class="M-TB">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/email.png" mode=""/>
+<text class="M-TB-Text"  >最新情报</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/jiangbei.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/map.png" mode=""/>
+<text class="M-TB-Text" >校园地图</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
+<text class="M-TB-Text" >我的消费</text> </view>
 
 
+
+</view>
+<view class="M-TB "style="margin-top:35px">
+
+<view class="M-TB-1 " >   
+  <image src="/imgs/appimgs/red.png" mode=""/>
+<text class="M-TB-Text"  >共青团建</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/school.png" mode=""/>
+<text class="M-TB-Text" >学校概况</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/shenpi.png" mode=""/>
+<text class="M-TB-Text" >网络审批</text> </view>
+
+<view class="M-TB-1">   
+  <image src="/imgs/appimgs/email.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+
+
+</view>
+<text class="TB5 " style="margin-top: 40px; margin-right: -20px;">更新</text>
+<view class="M-TB">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/jiangbei.png" mode=""/>
+<text class="M-TB-Text"  >学习概况</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/libray.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/map.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1"  >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+
+
+</view>
+</view>
+<view class="V3"style="display:{{is3}}" >  
+<text class="TB5 " style="margin-top: 20px; margin-right: -20px;">科研数据</text>
+<view class="M-TB">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/red.png" mode=""/>
+<text class="M-TB-Text"  >科学情报</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/school.png" mode=""/>
+<text class="M-TB-Text" >科研学习</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/map.png" mode=""/>
+<text class="M-TB-Text" >校园地图</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
+<text class="M-TB-Text" >我的消费</text> </view>
+
+
+
+</view>
+<view class="M-TB "style="margin-top:35px">
+
+<view class="M-TB-1 " >   
+  <image src="/imgs/appimgs/red.png" mode=""/>
+<text class="M-TB-Text"  >共青团建</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/school.png" mode=""/>
+<text class="M-TB-Text" >学校概况</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/shenpi.png" mode=""/>
+<text class="M-TB-Text" >网络审批</text> </view>
+
+<view class="M-TB-1">   
+  <image src="/imgs/appimgs/email.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+
+
+</view>
+<text class="TB5 " style="margin-top: 40px; margin-right: -20px;">更新</text>
+<view class="M-TB">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/jiangbei.png" mode=""/>
+<text class="M-TB-Text"  >学习概况</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/libray.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/map.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+<view class="M-TB-1"  >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
+<text class="M-TB-Text" >学习概况</text> </view>
+
+
+
+</view>
+</view>
 
 
 
