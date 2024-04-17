@@ -31,8 +31,8 @@
     },{
       "pagePath": "pages/mine/mine",
       "text": "我的",
-      "iconPath": "/assets/taber/点单1.png",
-      "selectedIconPath": "/assets/taber/点单.png"
+      "iconPath": "/assets/taber/我的1.png",
+      "selectedIconPath": "/assets/taber/我的.png"
     }
   ]
     
