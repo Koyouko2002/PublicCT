@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/buy/buy",
+    "pages/order/order",
+    "pages/mine/mine"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -8,5 +11,31 @@
     "navigationBarBackgroundColor": "#ffffff"
   },
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "/assets/taber/主页1.png",
+      "selectedIconPath": "/assets/taber/主页.png"
+    },{
+      "pagePath": "pages/buy/buy",
+      "text": "点单",
+      "iconPath": "/assets/taber/点单1.png",
+      "selectedIconPath": "/assets/taber/点单.png"
+    },{
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "/assets/taber/订单1.png",
+      "selectedIconPath": "/assets/taber/订单.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/assets/taber/点单1.png",
+      "selectedIconPath": "/assets/taber/点单.png"
+    }
+  ]
+    
+  }
+  
 }
