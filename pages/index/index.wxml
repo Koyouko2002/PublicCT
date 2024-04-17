@@ -1,7 +1,49 @@
 <!--index.wxml-->
 <!-- <navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar> -->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
+<view class="uncolor">
+  <scroll-view class="scrollarea" scroll-y type="list">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="Carouselmap">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+      <image mode="widthFix" src="{{item}}"/>
+    </swiper-item>
+  </swiper>
+  </scroll-view>
+
+  <view class="w90">
+  <!-- 欢迎新朋友 -->
+  <view class="welbox">
+    <view class="welboxtxt">Hi~欢迎新朋友</view>
+    <view class="welboxlog">注册/登录</view>
+  </view>
+  <!-- 到店自取&外卖配送 -->
+  <view class="orderbox">
+  <view class="orderboxson"><image src="/assets/到店自取.png" mode=""/></view>
+  <view class="orderboxson"><image src="/assets/外卖配送.png" mode=""/></view>
+  <view class="Line"></view>
+  </view>
+  <!-- 功能选项 -->
+  <view class="bigbox">
+    <view class="bobubox">
+      <view class="bobuboxson"  wx:for="{{items}}" wx:key="index">
+        <image src="{{item.mode}}" />
+        <text class="bobuboxsontxt">{{item.text}}</text>
+      </view>
+    </view>
+
+    <view class="tab1"><image src="/assets/开卡减五元.png" mode=""/></view>
+    <view class="tab2"><image src="/assets/女生专属.png" mode=""/></view>
+  </view>
 
   </view>
-</scroll-view>
+
+  <view class="flexfather">
+  <view class="qwe"><image src="/assets/首页Bot1.jpg" mode=""/></view>
+
+  <view class="sdf">
+    <image src="/assets/首页Bot2.jpg" mode=""/>
+    <image src="/assets/首页Bot3.jpg" mode=""/>
+  </view>
+
+  </view>
+</view>
+

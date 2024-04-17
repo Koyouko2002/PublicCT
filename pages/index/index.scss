@@ -1,10 +1,176 @@
 /**index.wxss**/
-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+// page {
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
+// .scrollarea {
+//   flex: 1;
+//   overflow-y: hidden;
+// }
+
+.uncolor{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240,241,245);
 }
-.scrollarea {
-  flex: 1;
-  overflow-y: hidden;
+
+
+.Carouselmap{
+  height: 500rpx;
+}
+.w90{
+  width: 90%;
+  height: 500rpx;
+  margin: auto;
+  margin-top: 30rpx;
+  background-color: white;
+  border-radius: 15rpx;
+
+  
+}
+
+.welbox{
+  width: 100%;
+  height: 80rpx;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  background-color: rgb(246,249,252);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welboxtxt{
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: slategray;
+}
+.welboxlog{
+  margin-right: 20rpx;
+  height: 50rpx;
+  width: 160rpx;
+  border-radius: 25rpx;
+  // background-color: white;
+  line-height: 50rpx;
+  text-align: center;
+  border: 1rpx solid rgb(10,76,222);
+  color: rgb(10,76,222);
+  background-color: white;
+  font-size: 26rpx;
+}
+
+
+
+
+.orderbox {
+  width: 100%;
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.orderboxson{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orderboxson image{
+  height: 170rpx;
+  width: 45%;
+}
+.orderbox .Line{
+  height: 80rpx;
+  position: absolute;
+  border-right: 1px solid gray;
+  left: 50%;
+}
+
+
+.bigbox{
+  width: 100%;
+  margin-top: 60rpx;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.bobubox{
+  width: 80%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bobuboxson{
+  width: 100rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.bobuboxson image{
+  width:  70rpx;
+  height: 70rpx;
+}
+.bobuboxsontxt{
+  position: absolute;
+  bottom: -30rpx;
+  font-size: 20rpx;
+  color: gray;
+}
+
+.tab1{
+  position: absolute;
+  left: 220rpx;
+  top: -20rpx;
+}
+.tab1 image{
+  width: 90rpx;
+  height: 36rpx;
+}
+.tab2{
+  position: absolute;
+  right: 70rpx;
+  top: -20rpx;
+}
+.tab2 image{
+  width: 90rpx;
+  height: 36rpx;
+}
+
+
+.flexfather{
+  width: 90%;
+  height: 350rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.qwe{
+  width: 45%;
+  height: 100%;
+}
+
+.qwe image{
+  width: 100%;
+  height: 350rpx;
+  border-radius: 15rpx;
+}
+.sdf{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* 设置主轴为垂直方向 */
+  justify-content: space-between; /* 在y轴方向上分散对齐 */
+}
+.sdf image{
+  width: 100%;
+  height: 45%;
+  border-radius: 15rpx;
 }
