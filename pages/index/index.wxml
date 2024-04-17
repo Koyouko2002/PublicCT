@@ -160,12 +160,12 @@
 
 
 <view class="TB5"> 
-<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;">通知公告</Text>
-<Text>通知公告</Text>
-<Text>综合信息</Text>
-<Text>学术动态</Text>
+<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;margin-right: 10px;">{{a}}</Text>
+<Text bind:tap="tabt1">通知公告</Text>
+<Text bind:tap="tabt2" >综合信息</Text>
+<Text bind:tap="tabt3"  >学术动态</Text>
 </view>
-
+<view>  
 
 <view class="TB5-Table">    
 <text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
@@ -196,4 +196,6 @@
 
 </view>
   </view>
+ </view>
+
 </scroll-view>

@@ -317,7 +317,7 @@ margin-left: 10px;
       width: 600px;
       display: flex;
       justify-content: left;
-      margin-left: 230px;
+      margin-left: 250px;
       margin-top: 15px;
     }
     .TB5 text{
