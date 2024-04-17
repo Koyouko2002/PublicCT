@@ -18,6 +18,10 @@ Page({
       {text: '会员任务', mode:'/assets/首页会员任务.png' },
       {text: '悦己计划', mode:'/assets/悦己计划.png' }
     ],
-
+  },
+  tabbuy: function () {
+    wx.navigateTo({
+      url: '/pages/buy/buy',
+    });
   }
 })
