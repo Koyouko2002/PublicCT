@@ -1,66 +1,47 @@
-// pages/inter/inter.js
+// index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+  a:"通知公告",
+  is1:"block",
+  is2:"none",
+  is3:"none",
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  aa(){
+  
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  tabt1(){
+    this.setData({
+      a:"通知公告",
+      is1:"block",
+      is2:"none",
+      is3:"none"
+  
+    })
+  
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  tabt2(){
+    this.setData({
+      a:"综合信息",
+      is1:"none",
+      is2:"block",
+      is3:"none",
+  
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  tabt3(){
+    this.setData({
+      a:"学术动态",
+      is1:"none",
+      is2:"none",
+      is3:"block"
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  onLoad(options){
+    
   }
-})
+  
+  
+  
+  
+  })
+  

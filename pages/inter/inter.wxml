@@ -24,12 +24,13 @@
   </view>
 
   <view class="TB5"> 
-<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;">通知公告</Text>
-<Text>通知公告</Text>
-<Text>综合信息</Text>
-<Text>学术动态</Text>
+<Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;">{{a}}</Text>
+<Text bind:tap="tabt1">通知公告</Text>
+<Text bind:tap="tabt2" >综合信息</Text>
+<Text bind:tap="tabt3"  >学术动态</Text>
 </view>
 
+<view class="V1" style="display:{{is1}}">   
 <view class="TB5-Table" >    
 <text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范的诵知</text>
 <text class="TBT-T-T2">校园新闻网</text>
@@ -55,10 +56,63 @@
  </view>
 
 </view>
+ </view>
 
+ <view class="V2" style="display:{{is2}}">   
+<view class="TB5-Table" >    
+<text class="TBT-T-T"> 关于新生入学考试的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
 
+</view>
 
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 国庆节放假通知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
 
+</view>
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 苏维埃社会主义共和国于1991年12月解体</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
+ </view>
+
+ <view class="V3" style="display:{{is3}}">   
+<view class="TB5-Table" >    
+<text class="TBT-T-T"> 进入千禧年！2000万岁！</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
+
+</view>
+
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 1939年德意志第三共和国闪击波兰</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
+
+</view>
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 苏德互不侵犯条约签订！和平将得到巩固</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
+
+</view>
+ </view>
 
 
 
