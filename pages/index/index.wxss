@@ -3,8 +3,6 @@ page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-
-
 }
 .scrollarea {
   flex: 1;
@@ -335,6 +333,9 @@ font-size: 14px;
 text-align: left;
 font-family: PingFangSC-regular;
 margin-top: 2px;
+    }
+    .TB5 text:hover{
+        color: rgb(0, 185, 108);
     }
     .TB5T{
       text-align: center;

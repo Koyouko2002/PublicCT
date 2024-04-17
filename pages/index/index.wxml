@@ -159,13 +159,14 @@
 </scroll-view>
 
 
-<view class="TB5"> 
+<view class="TB5" > 
 <Text class="TB5T" style="font-size: 18px;width: 78px;margin-top: -2px;margin-right: 10px;">{{a}}</Text>
 <Text bind:tap="tabt1">通知公告</Text>
 <Text bind:tap="tabt2" >综合信息</Text>
 <Text bind:tap="tabt3"  >学术动态</Text>
 </view>
-<view>  
+
+<view class="V1"style="display:{{is1}};margin-top:20px" >  
 
 <view class="TB5-Table">    
 <text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
@@ -195,7 +196,87 @@
  </view>
 
 </view>
+ 
+ 
+ 
+ 
   </view>
+
+  <view class="V2"style="display:{{is2}};margin-top:20px">  
+
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 计算机竞赛我校XXX荣获全国一奖,XXX获
+得全国二等奖，特此表扬</text>
+<text class="TBT-T-T2">计科专业部</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
  </view>
+
+</view>
+
+<view class="TB5-Table2">    
+<text class="TBT-T-T"> 校园宣讲大会,招生大获成功</text>
+<text class="TBT-T-T2">校园招生办</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
+
+</view>
+<view class="TB5-Table2">    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
+的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
+
+</view>
+ 
+ 
+ 
+ 
+  </view>
+
+  <view class="V3"style="display:{{is3}};margin-top:20px">  
+
+<view class="TB5-Table">    
+<text class="TBT-T-T"> 市委书记莅临本校考察</text>
+<text class="TBT-T-T2">计科专业部</text>
+<view class="TBTBG">  
+<image src="/imgs/item1.png" mode=""/>
+ </view>
+
+</view>
+
+<view class="TB5-Table2">    
+<text class="TBT-T-T"> 校园宣讲大会,招生大获成功</text>
+<text class="TBT-T-T2">校园招生办</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
+
+</view>
+<view class="TB5-Table2">    
+<text class="TBT-T-T"> 关于加强新生入学后校园安全管理规范
+的诵知</text>
+<text class="TBT-T-T2">校园新闻网</text>
+<view class="TBTBG">  
+<image src="/imgs/item2.png" mode=""/>
+ </view>
+
+</view>
+ 
+ 
+ 
+ 
+  </view>
+
+
+
+
+
+ </view>
+
+
 
 </scroll-view>
