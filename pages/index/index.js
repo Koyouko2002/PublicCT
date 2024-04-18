@@ -20,10 +20,10 @@ Page({
     ],
     duration2: 1200,         //动画时长
     items: [
-      {text: '熊猫币商城', mode:'/assets/熊猫币商城.png', id:1 },
-      {text: '学子卡', mode:'/assets/学子卡.png', id:2 },
-      {text: '会员任务', mode:'/assets/首页会员任务.png', id:3 },
-      {text: '悦己计划', mode:'/assets/悦己计划.png', id:4 }
+      {text: '熊猫币商城', mode:'/assets/熊猫币商城.png' },
+      {text: '学子卡', mode:'/assets/学子卡.png' },
+      {text: '会员任务', mode:'/assets/首页会员任务.png' },
+      {text: '悦己计划', mode:'/assets/悦己计划.png' }
     ],
   },
   tabbuy: function () {

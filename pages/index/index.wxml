@@ -34,7 +34,7 @@
   <!-- 功能选项 -->
     <view class="bigbox">
       <view class="bobubox">
-        <view class="bobuboxson"  wx:for="{{items}}" wx:key="id" bindtap="friTap" data-index="{{index}}">
+        <view class="bobuboxson"  wx:for="{{items}}" wx:key="index" bindtap="friTap" data-index="{{index}}">
           <image src="{{item.mode}}"/>
           <text class="bobuboxsontxt">{{item.text}}</text>
         </view>
