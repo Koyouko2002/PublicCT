@@ -1,0 +1,105 @@
+/* pages/buy/buy.wxss *//**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.top{
+  width: 390px;
+  height: 114px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+  font-family: Roboto;
+}
+.top-1{
+  width: 200rpx;
+  height: 50rpx;
+  border-radius: 50rpx;;
+  background-color: #efefef;
+  margin-left: 20px;
+}
+.top-1-1{
+  width: 98rpx;
+  height: 50rpx;
+  border-radius: 50rpx;;
+  background-color: #0a4cde;
+  color: white;
+  text-align: center;
+  line-height: 50rpx;
+  font-size:27rpx;
+}
+
+.top-1-t{
+  display: block;
+  font-size:27rpx;
+  position: relative;
+  top: -45rpx;
+  left: 32rpx;
+  color: rgb(253, 253, 253); 
+  font-weight: bold;
+}
+.top-1-t2{
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size:27rpx;
+  position: relative;
+  top: -78rpx;
+  left: 125rpx;
+  font-weight: bold;
+}
+.top-search{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+  border: 1px #efefef solid;
+  margin-top: -50rpx;
+  margin-left: 480rpx;
+}
+.top-search image{
+  width: 25rpx;
+  height: 25rpx;
+  margin:12rpx;
+}
+.top-2{
+  width: 720rpx;
+  height: 70rpx;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+
+}
+.top-2-t{
+  display: block;
+    font-size: 28rpx;
+}
+.top-2-t2{
+  display: block;
+    margin-top: -40rpx;
+    font-size: 20rpx;
+    color: #6d6d6d;
+}
+.top-2-image1{
+position: relative;
+top: -38rpx;
+left: 257rpx;
+  height: 28rpx;
+  width: 28rpx;
+}
+.top-2-adv{
+
+  margin-top: -90rpx;
+  margin-left: 620rpx;
+
+}
+.top-2-image2{
+    height: 65rpx;
+    width: 75rpx;
+  }
+  .top-2-adv text{
+    display: block;
+      font-size: 20rpx;
+  }

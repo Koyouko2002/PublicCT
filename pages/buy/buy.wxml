@@ -1,2 +1,42 @@
-<!--pages/buy/buy.wxml-->
-<text>pages/buy/buy.wxml</text>
+<!--index.wxml-->
+
+<navigation-bar title="" back="{{false}}" color="black" background="red" >
+
+</navigation-bar>
+<!-- 顶部区域 -->
+<view class="top">
+<!-- 自取外卖 选择框  编号 top-1 -->
+<view class="top-1">
+
+  <view class="top-1-1" bind:tap="Top1move" style="display: {{move1}};margin-left: 96rpx;"></view>
+  <view class="top-1-1" bind:tap="Top1move2" style="display: {{move2}};margin-left: 6rpx;color: black;">
+    </view>
+
+<text  class="top-1-t" bind:tap="Top1move2" style="color: {{T1C}};"> 自取 </text>
+<text class="top-1-t2" bind:tap="Top1move" style="color: {{T2C}};"> 外卖</text>
+</view>
+<!-- 搜索选择框  编号 top-search    [页面跳转预留]-->
+<view class="top-search">
+  <image src="/assets/search.png" mode=""/>
+</view>
+<!-- 位置导航框+广告 编号 top-2   [页面跳转预留]-->
+<view class="top-2 ">
+<!-- [导航框]文字1  右图片   文字2-->
+<text class="top-2-t">绵阳城市学院安州店  </text>
+   <image src="/assets/右右.png" class="top-2-image1"/> 
+<text class="top-2-t2">  距您500m   </text>
+<!-- [广告]-->
+<view class="top-2-adv">
+  <image src="/assets/一起喝.png" class="top-2-image2"/>
+  <text>一起喝！</text>
+</view>
+ </view>
+ 
+
+</view>
+
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+
+  </view>
+</scroll-view>
