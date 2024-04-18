@@ -1,2 +1,9 @@
 <!--pages/mine/mine.wxml-->
 
+<!-- 顶部背景 -->
+<view class="top">
+  <image src="/assets/我的背景图.jpg" mode=""/>
+  <view class="myInfo">
+    
+  </view>
+</view>
