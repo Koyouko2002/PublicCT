@@ -45,7 +45,7 @@ Page({
         wx.showToast({title: '敬请期待',icon: 'none',duration: 1000});
         break;
       case 1:
-        wx.navigateTo({ url: '/pages/indexson/friend/friend' });
+        wx.navigateTo({ url: '/pages/indexson/stucard/stucard' });
         break;
       case 2:
         wx.showToast({title: '请先登录',icon: 'none',duration: 1000});
