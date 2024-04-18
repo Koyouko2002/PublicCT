@@ -18,7 +18,6 @@ Page({
       '/assets/首页Top44.jpg',
       '/assets/首页Top55.jpg',
     ],
-    interval2: 3000,         //切换间隔
     duration2: 1200,         //动画时长
     items: [
       {text: '熊猫币商城', mode:'/assets/熊猫币商城.png' },
@@ -31,5 +30,5 @@ Page({
     wx.switchTab({
       url: '/pages/buy/buy',
     });
-  }
+  },
 })

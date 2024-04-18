@@ -10,7 +10,7 @@
     </swiper>
   </scroll-view>
   <scroll-view scroll-y type="list" style="position: absolute; z-index: 1;">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval2}}" duration="{{duration2}}" class="Carouselmap">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration2}}" class="Carouselmap">
       <swiper-item wx:for="{{imgUrls2}}" wx:key="index" >
         <image mode="widthFix" src="{{item}}" style="width: 100%;"/>
       </swiper-item>
