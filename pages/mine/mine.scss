@@ -1,21 +1,41 @@
 /* pages/mine/mine.wxss */
 
-//顶部背景图
 
-.top{
+//顶部背景图父类
+.top {
   position: relative;
   display: flex;
-  image{
-    z-index: -1;
+  justify-content: center;
+
+  // 顶部背景图
+  image {
+    z-index: -10;
     position: absolute;
     width: 100%;
     height: 600rpx;
   }
 
-  .myInfo{
+  // 用户信息父级
+  .userInfo {
     z-index: 2;
     width: 80%;
-    height: 300rpx;
-    
+    height: 400rpx;
+    background-color: skyblue;
+    margin-top: 200rpx;
+
+
+    // 第一个盒子 用户头像，名称，优惠卷 
+    .userInfoTop {
+      display: flex;
+      margin-top: 20rpx;
+      margin-left: 20rpx;
+      // 头像
+      .avatar {
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 100%;
+      }
+    }
+
   }
 }

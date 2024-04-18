@@ -2,8 +2,28 @@
 
 <!-- 顶部背景 -->
 <view class="top">
-  <image src="/assets/我的背景图.jpg" mode=""/>
-  <view class="myInfo">
-    
+  <image src="/assets/我的背景图.jpg" mode="" />
+  
+  <view class="userInfo">
+    <!-- 第一个盒子 用户头像，名称，优惠卷 -->
+    <view class="userInfoTop">
+      <!-- 左边头像部分 -->
+      <image class="avatar" src="/assets/mine/touxiang.png" mode="" />
+
+      <!-- 右边用户信息部分 -->
+      <view class="left">
+        <view class="title">
+          <text>可口的手打芋圆</text>
+        </view>
+        <view class="decs">
+          <view class="dec">熊猫币 50</view>
+          <view class="dec">优惠卷 20</view>
+          <view class="dec">礼卡 90</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 第二个盒子 注册时间 进度条 -->
+
   </view>
 </view>
