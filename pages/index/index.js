@@ -41,8 +41,14 @@ Page({
   friTap: function(e) {
     const index = e.currentTarget.dataset.index;
     switch (index) {
+      case 0:
+        wx.showToast({title: '敬请期待',icon: 'none',duration: 1000});
+        break;
       case 1:
         wx.navigateTo({ url: '/pages/indexson/friend/friend' });
+        break;
+      case 2:
+        wx.showToast({title: '火热开发中',icon: 'none',duration: 1000});
         break;
       case 3:
         wx.navigateTo({ url: '/pages/indexson/friend/friend' });
