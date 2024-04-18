@@ -43,14 +43,16 @@
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
   <!-- 轮播图 -->
-      <swiper>
+      <swiper class="{{swiperIs}}">
         <swiper-item>
-          <image src="/assets/订单页轮播图.jpg" mode=""/>
+          <image src="/assets/订单页轮播图.jpg" />
         </swiper-item>
         <swiper-item>
-          <image src="/assets/订单页轮播图1.jpg" mode=""/>
+          <image src="/assets/订单页轮播图1.jpg" />
         </swiper-item>
       </swiper>
+    
+    <view class="{{move}}">    
      <!-- 左侧导航栏 编号 M-L  -->
           <view class="M-L">
 
@@ -74,11 +76,67 @@
           <view class="M-L-1" style="background:{{isw5}}"bind:tap="button5">
           <text> 招牌奶茶</text>
           </view>
+          <view class="M-L-1" style="background:{{isw6}}"bind:tap="button6">
+          <text> 真鲜奶茶</text>
           </view>
-        <!-- 右侧物品栏  编号 M-R -->
-          <view class="M-R"> 
+          <view class="M-L-1" style="background:{{isw7}}"bind:tap="button7">
+          <text> 加料小区</text>
+          </view>
+          <view class="M-L-1" style="background:{{isw8}}"bind:tap="button8">
+          <text> 保温袋</text>
+          </view>
+          </view>
           
-          </view>
+        <!-- 右侧物品栏  编号 M-R -->
+        <scroll-view class="scrollarea2" scroll-y type="list"
+        upper-threshold="10"
+        bindscroll="scrolling"  
+        bindscrolltoupper="scrolled"
+        >
 
+          <view class="M-R"> 
+            <text class="M-R-taitle"> 冰椰雪糕系列 </text>
+
+            <view class="M-R-index">
+            <image src="/assets/Order/O1.png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> 红茶冰椰雪糕 </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> 椰子乳I  <text style="color: #3c71e4;">椰子雪糕</text>I 黑糖珍珠</text>
+                <text class="M-R-index-t3">甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。</text>    
+                <text class="M-R-index-t4">¥ 14 起</text>
+                <view class="abotton">  选规格</view>
+             </view>
+
+           
+            </view>  
+
+
+            <view class="M-R-index" 
+            wx:for="{{Order}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O1.png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <view class="abotton">  选规格</view>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+        </scroll-view>
+
+
+      </view>
   </view>
 </scroll-view>

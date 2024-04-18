@@ -1,4 +1,5 @@
 // pages/buy/buy.js
+var is=0;
 Page({
 
   /**
@@ -13,26 +14,74 @@ Page({
     //   id:1,
     //   name:"紫气葡萄"
     // },
-    arrOder:[{
-      name:"紫气葡萄"
+    array: [{
+      message: 'foo',
+    }, {
+      message: 'bar'
+    }],
+    Order:[{
+      name:"抹茶冰椰雪糕",
+      t1:"椰子雪糕I ",
+      t1prime:"抹茶",
+      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",
+      price:"17"
     },
     {
-      name:"牧场嘻嘻乐"
+      name:"抹茶冰椰雪糕",
+      t1:"椰子雪糕I ",
+      t1prime:"抹茶",
+      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",      price:"17"
     },
     {
-      name:"找真果茶"
+      name:"西瓜冰椰雪糕",
+      t1:"椰子雪糕I ",
+      t1prime:"西瓜",
+      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",      price:17
     },
     { 
-      name:"招牌奶茶"
+      name:"抹茶冰椰雪糕",
+      t1:"椰子雪糕I ",
+      t1prime:"抹茶",
+      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",      price:"17"
     },
   ],
   isw1:"#ffffff",
   isw2:"none",
-  isw2:"none",
   isw3:"none",
   isw4:"none",
+  isw5:"none",
+  isw6:"none",
+  isw7:"none",
+  isw8:"none",
+  swiperIs:"",
+  Rtop:"",
+  move:"Mid",
+  is:0,
   },
+scrolling(){
+if(is==0){
+    console.log("在滚了");
+      this.setData({
+        swiperIs:"swiper_dis",
+        Rtop:0,
+        move:"MidUp",
+        is:1
+      })
+      is=1;
+}
 
+  },
+  scrolled(){
+    console.log("回滚");
+    this.setData({
+      swiperIs:"swiper_app",
+      Rtop:0,
+      move:"MidDown",
+      is:0
+    })
+    setTimeout(() =>  is=0, 1000)
+   
+  },
   Top1move(){
    this.setData({
     move1:"block",
@@ -56,6 +105,9 @@ Page({
         isw3:"none",
         isw4:"none",
         isw5:"none",
+        isw6:"none",
+        isw7:"none",
+        isw8:"none",
       })
   },
   button2(){
@@ -65,6 +117,9 @@ Page({
       isw3:"none",
       isw4:"none",
       isw5:"none",
+      isw6:"none",
+      isw7:"none",
+      isw8:"none",
     })
 },
 button3(){
@@ -74,6 +129,9 @@ button3(){
     isw3:"#ffffff",
     isw4:"none",
     isw5:"none",
+    isw6:"none",
+    isw7:"none",
+    isw8:"none",
   })
 },
 button4(){
@@ -83,6 +141,9 @@ button4(){
     isw3:"none",
     isw4:"#ffffff",
     isw5:"none",
+    isw6:"none",
+    isw7:"none",
+    isw8:"none",
   })
 },
 button5(){
@@ -92,6 +153,45 @@ button5(){
     isw3:"none",
     isw4:"none",
     isw5:"#ffffff",
+    isw6:"none",
+    isw7:"none",
+    isw8:"none",
+  })
+},
+button6(){
+  this.setData({
+    isw1:"none",
+    isw2:"none",
+    isw3:"none",
+    isw4:"none",
+    isw5:"none",
+    isw6:"#ffffff",
+    isw7:"none",
+    isw8:"none",
+  })
+},
+button7(){
+  this.setData({
+    isw1:"none",
+    isw2:"none",
+    isw3:"none",
+    isw4:"none",
+    isw5:"none",
+    isw6:"none",
+    isw7:"#ffffff",
+    isw8:"none",
+  })
+},
+button8(){
+  this.setData({
+    isw1:"none",
+    isw2:"none",
+    isw3:"none",
+    isw4:"none",
+    isw5:"none",
+    isw6:"none",
+    isw7:"none",
+    isw8:"#ffffff",
   })
 },
   /**
