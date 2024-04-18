@@ -31,4 +31,11 @@ Page({
       url: '/pages/buy/buy',
     });
   },
+  onImage1Tap: function () {
+    wx.showToast({
+      title: '敬请期待',
+      icon: 'none',
+      duration: 1000
+    });
+  },
 })
