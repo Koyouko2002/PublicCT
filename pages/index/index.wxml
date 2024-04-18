@@ -4,14 +4,14 @@
 <view style="height: 650rpx;">
   <scroll-view scroll-y type="list" style="position: absolute; z-index: 2;">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="Carouselmap">
-      <swiper-item wx:for="{{imgUrls}}" wx:key="index" >
+      <swiper-item wx:for="{{imgUrls}}"  wx:key="index">
         <image mode="widthFix" src="{{item}}" style="width: 100%;"/>
       </swiper-item>
     </swiper>
   </scroll-view>
   <scroll-view scroll-y type="list" style="position: absolute; z-index: 1;">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration2}}" class="Carouselmap">
-      <swiper-item wx:for="{{imgUrls2}}" wx:key="index" >
+    <swiper indicator-dots="indicatorDots" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration2}}" class="Carouselmap">
+      <swiper-item wx:for="{{imgUrls2}}" wx:key="index">
         <image mode="widthFix" src="{{item}}" style="width: 100%;"/>
       </swiper-item>
     </swiper>
@@ -34,8 +34,8 @@
   <!-- 功能选项 -->
     <view class="bigbox">
       <view class="bobubox">
-        <view class="bobuboxson"  wx:for="{{items}}" wx:key="index">
-          <image src="{{item.mode}}" />
+        <view class="bobuboxson"  wx:for="{{items}}" wx:key="id" bindtap="friTap" data-index="{{index}}">
+          <image src="{{item.mode}}"/>
           <text class="bobuboxsontxt">{{item.text}}</text>
         </view>
       </view>
