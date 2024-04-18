@@ -4,6 +4,8 @@
     "pages/buy/buy",
     "pages/order/order",
     "pages/mine/mine",
+    "pages/indexson/stucard/stucard",
+    "pages/indexson/sturule/sturule",
     "pages/indexson/friend/friend"
   ],
   "window": {
