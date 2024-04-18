@@ -103,3 +103,85 @@ left: 257rpx;
     display: block;
       font-size: 20rpx;
   }
+  .top-3{
+    margin-top: 30rpx;
+    width: 750rpx;
+    height: 50rpx;
+    background: #f5f6f7
+  }
+  .top-3 text{
+    display: block;
+    font-size: 24rpx;
+    color: #0a4cde;
+    margin-top:-30rpx;
+    margin-left: 50rpx;
+    font-weight: 400;
+  }
+  .top-3img1{
+    position: relative;
+    top: 10rpx;
+    left: 14rpx;
+    height: 30rpx;
+    width: 30rpx;
+  }
+  .top-3img2{
+    position: relative;
+    top: -42rpx;
+    left: 700rpx;
+    height: 16rpx;
+    width: 30rpx;
+  }
+  swiper{
+    margin-top: -180rpx;
+    width: 720rpx;
+    height: 400rpx;
+
+  }
+  swiper image{
+    width: 720rpx;
+    border-radius:15rpx;
+    height: 280rpx;
+  }
+  .M-L{
+    display: flex;
+    width: 180rpx;
+    height: 600rpx;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 300rpx;
+    left: 2rpx;
+    display: flex;
+
+    flex-direction: column;
+  }
+  .ahalf{
+    width: 120rpx;
+    height: 25rpx;
+    line-height: 20rpx;
+    font-size: 18rpx;
+    background-color: #72b22f;
+    color: white;
+
+    text-align: center;
+    margin: auto;
+    border-radius: 8rpx;
+  }
+  .M-L-1{
+        display: block;
+     width: 180rpx;
+     height: 110rpx;    
+
+  }
+
+  .M-L-1 text{
+    margin-top: 15rpx;
+    display: flex;
+    height: 60rpx;
+    width: 140rpx;
+    font-size: 24rpx;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15rpx;
+
+  }

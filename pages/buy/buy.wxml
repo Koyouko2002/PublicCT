@@ -31,12 +31,54 @@
   <text>一起喝！</text>
 </view>
  </view>
- 
+ <!-- 顶部下边广告栏   编号 top-3[页面跳转预留]  -->
+ <view class="top-3">
+ <image src="/assets/消息.png" class="top-3img1"/>
+<text> 任意消费3元就送1份"椰子雪糕"小料!   ❥(^_-)</text>
+<image src="/assets/下.png" class="top-3img2"/>
+ </view>
 
 </view>
-
+<!-- 主体内容 编号 M-XXX -->
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
+  <!-- 轮播图 -->
+      <swiper>
+        <swiper-item>
+          <image src="/assets/订单页轮播图.jpg" mode=""/>
+        </swiper-item>
+        <swiper-item>
+          <image src="/assets/订单页轮播图1.jpg" mode=""/>
+        </swiper-item>
+      </swiper>
+     <!-- 左侧导航栏 编号 M-L  -->
+          <view class="M-L">
+
+          <view class="M-L-1"
+           style="background-color:{{isw1}}; " bind:tap="button1">
+          <view class="ahalf"> 第二杯半价！</view>
+          <text> 冰椰雪糕系列</text>
+          </view>
+           <!-- <view class="M-L-1" wx:for="{{arrOder}}" >
+          <text> {{item.name}} </text>
+          </view> -->
+          <view class="M-L-1" style="background:{{isw2}}"bind:tap="button2">
+          <text> 紫气葡萄</text>
+          </view>
+          <view class="M-L-1" style="background:{{isw3}}"bind:tap="button3">
+          <text> 牧场大乐透</text>
+          </view>
+          <view class="M-L-1" style="background:{{isw4}}"bind:tap="button4">
+          <text> 找鲜果茶</text>
+          </view>
+          <view class="M-L-1" style="background:{{isw5}}"bind:tap="button5">
+          <text> 招牌奶茶</text>
+          </view>
+          </view>
+        <!-- 右侧物品栏  编号 M-R -->
+          <view class="M-R"> 
+          
+          </view>
 
   </view>
 </scroll-view>
