@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/buy/buy",
     "pages/order/order",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/indexson/friend/friend"
   ],
   "window": {
     "navigationBarTextStyle": "black",
