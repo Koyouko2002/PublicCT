@@ -17,8 +17,8 @@
     </view>
   <!-- 到店自取&外卖配送 -->
     <view class="orderbox">
-      <view class="orderboxson" ><image src="/assets/到店自取.png" mode="" bindtap="tabbuy"/></view>
-      <view class="orderboxson" ><image src="/assets/外卖配送.png" mode="" bindtap="tabbuy"/></view>
+      <view class="orderboxson" ><image src="/assets/到店自取.png" bindtap="tabbuy"/></view>
+      <view class="orderboxson" ><image src="/assets/外卖配送.png" bindtap="tabbuy"/></view>
       <view class="Line"></view>
     </view>
   <!-- 功能选项 -->

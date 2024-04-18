@@ -20,7 +20,7 @@ Page({
     ],
   },
   tabbuy: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/buy/buy',
     });
   }
