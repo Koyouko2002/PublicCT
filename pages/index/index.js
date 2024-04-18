@@ -9,9 +9,17 @@ Page({
     ],
     indicatorDots: true,    //是否显示指示点
     autoplay: true,         //是否自动播放
-    interval: 3000,         //播放间隔时间
-    duration: 1000,         //动画时长
-    
+    interval: 2800,         //切换间隔
+    duration: 1200,         //动画时长
+
+    imgUrls2: [
+      '/assets/首页Top22.jpg',
+      '/assets/首页Top33.jpg',
+      '/assets/首页Top44.jpg',
+      '/assets/首页Top55.jpg',
+    ],
+    interval2: 3000,         //切换间隔
+    duration2: 1000,         //动画时长
     items: [
       {text: '熊猫币商城', mode:'/assets/熊猫币商城.png' },
       {text: '学子卡', mode:'/assets/学子卡.png' },
