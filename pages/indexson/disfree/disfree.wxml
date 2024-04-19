@@ -13,6 +13,17 @@
     <view class="txtbox"><view>分享生成海报</view><view style="background-color: #48a045; color: white;">立即邀请好友</view></view>
 </view>
 
+<view class="box1" style="top: 1150rpx; height: 350rpx;">
+  <view class="box1txt">邀请有礼 多邀多得</view>
+  <view class="scroll" >
+    <scroll-view scroll-x="true" style="white-space: nowrap;">
+      <view class="scrollitem" wx:for="{{items2}}" wx:key="index">
+        <image src="{{item}}" mode="" style="height: 100%; width: 100%;"/>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
 
 
 
