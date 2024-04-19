@@ -3,6 +3,9 @@
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
+    "pages/buy/buyson/buying/buying",
+    "pages/buy/buyson/search/search",
+    "pages/buy/buyson/explan/explan",
     "pages/order/order",
     "pages/mine/mine",
     "pages/indexson/stucard/stucard",
