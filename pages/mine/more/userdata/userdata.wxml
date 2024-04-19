@@ -17,10 +17,16 @@
       <!-- 性别 -->
       <view class="box1-S">
         <text>性别</text> 
+        <radio-group  bindchange="">
+        <radio value="" color="blue" />男
+        <radio value="" color="blue"/>女
+          
+        </radio-group>
      </view>
       <!-- 生日 -->
-    <view class="box1-S">
+    <view style="margin-top:28rpx;">
       <text>生日</text>
+      <view class="birth">修改生日</view>
     </view>
 
 </view>

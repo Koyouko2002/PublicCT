@@ -22,7 +22,7 @@ image{
 }
 
 
-
+/* 大盒子文字 */
 .box1 text{
   font-size: small;
   position: relative;
@@ -32,14 +32,58 @@ image{
 
 /* 大盒子中的小盒子 */
 .box1-S{
-  margin-top: 60rpx;
+  margin-top: 62rpx;
 
 }
 
+/* 中间文字 */
 .text-M{
-  margin-left:120rpx ;
+  margin-left:140rpx ;
 }
  
+/* 勾选框 */
+radio-group{
+  position: relative;
+  left: 120rpx;
+  top: -9rpx;
+  font-size: small;
+
+}
+
+radio{
+  margin-left: 110rpx;
+}
+
+
+/* 勾选框未选择时 */
+radio .wx-radio-input{
+  width: 25rpx;
+  height: 25rpx;
+  
+  
+}
+/* 勾选框选择时 */
+radio .wx-radio-input.wx-radio-input-checked::before {
+
+  width: 25rpx;
+  height: 25rpx;
+  font-size: 25rpx;
+}
+
+/* 生日选择框 */
+.birth{
+  width: 100rpx;
+  height: 35rpx;
+  border: 1px solid rgb(189, 188, 188);
+  color: rgb(126, 123, 123);
+  border-radius: 10%;
+  font-size: 22rpx;
+  position: relative;
+  text-align: center;
+  left: 550rpx;
+  top: -10rpx;
+
+}
 
 /* 小盒子 */
 .box2{
