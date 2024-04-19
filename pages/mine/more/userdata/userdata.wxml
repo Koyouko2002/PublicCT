@@ -2,21 +2,26 @@
 
 <view class="box1">
 
-<image src="/assets/mine/more/logo.png" mode=""/>
-<!-- 昵称 -->
+      <image src="/assets/mine/more/logo.png" mode=""/>
+      <!-- 昵称 -->
 
-<view>
-<text> 昵称</text><text>香甜的生椰西瓜</text>
-</view>
-<!-- 手机 -->
-<view>
-<text>手机</text> <text>186****8621</text>
-</view>
-<!-- 性别 -->
-<view>
-<text>性别</text> 
-</view>
-<!-- 生日 -->
-<text>生日</text>
+      <view>
+        <text> 昵称</text><text>香甜的生椰西瓜</text>
+      </view>
+      <!-- 手机 -->
+      <view>
+        <text>手机</text> <text>186****8621</text>
+      </view>
+      <!-- 性别 -->
+      <view>
+        <text>性别</text> 
+      </view>
+      <!-- 生日 -->
+      <text>生日</text>
 
+</view>
+
+<view class="box2">
+<text>切换账号</text>
+<image src="/assets/mine/more/右箭头.png" mode=""/>
 </view>
