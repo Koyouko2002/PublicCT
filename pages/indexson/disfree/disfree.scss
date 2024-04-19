@@ -126,3 +126,41 @@ background-color: #48a045;
 .peopleson view:nth-child(2) {
   font-size: 22rpx;
 }
+
+
+.rol{
+  background-color: rgba(128, 128, 128, 0.9);
+  position: fixed;
+  right: 0;
+  top: 240rpx;
+  width: 100rpx;
+height: 50rpx;
+border-radius: 25rpx 0 0 25rpx;
+text-align: center;
+color: white;
+font-size: 26rpx;
+line-height: 50rpx;
+}
+.scrollybox{
+  height: 600rpx;
+  margin-top: 200rpx;
+}
+.topimg{
+  width: 90%; 
+  position: absolute; 
+  top: 0; 
+  left: 5%;
+}
+.toptlt{
+  color: red; 
+  width: 90%; 
+  text-align: center; 
+  font-size: 36rpx; 
+  position: absolute; 
+  top: 200rpx;
+}
+scroll-view view{
+  font-size: 26rpx;
+  color: black;
+  line-height: 46rpx;
+}
