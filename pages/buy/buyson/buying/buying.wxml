@@ -9,6 +9,7 @@
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
     <image src="{{BackgroundUrl}}" class="BGTotal"/>
+
     <view class="index">
 
     <text class="title"> {{title}}</text>
@@ -22,8 +23,11 @@
                 <view class="xts">  
                   <text class="M-R-index-t4">[饮茶小贴士]</text>  
                   <text class="M-R-index-t4">“1.椰子雪糕默认不分装，边搅边喝,风味更佳。</text>  
-                  <text class="M-R-index-t4">“2.本饮品含有乳蛋白成分，乳蛋白过敏者慎食。
-。</text>  
+                  <text class="M-R-index-t4">“2.本饮品含有乳蛋白成分，乳蛋白过敏者慎食。。</text>  
+                  <text class="M-R-index-t4" >“3.杯型容量数及图片仅供参考，饮品量及包装请以实际出品为准</text>  
+
+                  <view class="viptip"> ☆  [会员专享] 第二杯半价!
+                   </view>
                 </view>
     </view>
 
