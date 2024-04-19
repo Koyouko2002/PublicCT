@@ -13,6 +13,13 @@
     "pages/mine/more/more",
     "pages/mine/more/userdata/userdata"
 
+<<<<<<< HEAD
+=======
+    
+    
+
+
+>>>>>>> main
   ],
   "window": {
     "navigationBarTextStyle": "black",
