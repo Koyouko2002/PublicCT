@@ -15,3 +15,41 @@
   color: white;
   font-size: 24rpx;
 }
+
+.son2{
+  width: 60%;
+  height: 80rpx;
+  position: absolute;
+  bottom: 280rpx;
+  left: 150rpx;
+  background-color:#b1d800;
+  color: white;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 36rpx;
+}
+
+.scrollybox{
+  height: 600rpx;
+  margin-top: 200rpx;
+}
+.topimg{
+  width: 90%; 
+  position: absolute; 
+  top: 0; 
+  left: 5%;
+}
+.toptlt{
+  color: red; 
+  width: 90%; 
+  text-align: center; 
+  font-size: 36rpx; 
+  position: absolute; 
+  top: 200rpx;
+}
+scroll-view view{
+  font-size: 26rpx;
+  color: black;
+  line-height: 46rpx;
+}

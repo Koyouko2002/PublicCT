@@ -1,7 +1,6 @@
 // pages/buy/buy.js
 var is=0;
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -45,18 +44,24 @@ Page({
       t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",      price:"17"
     },
   ],
-  isw1:"#ffffff",
-  isw2:"none",
-  isw3:"none",
-  isw4:"none",
-  isw5:"none",
-  isw6:"none",
-  isw7:"none",
-  isw8:"none",
-  swiperIs:"",
-  Rtop:"",
-  move:"Mid",
-  is:0,
+    Order2:[{
+    name:"紫气葡萄冻",
+    t1:"香水柠檬I ",
+    t1prime:"葡萄",
+    t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",
+    price:"17",
+    img:"O2.jpg"
+  },
+  { 
+    name:"紫气葡萄芝士",
+    t1:"奶香芝士I ",
+    t1prime:"葡萄",
+    t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"17",
+    img:"O2.jpg"
+  },
+],
+  isw1:"#ffffff",isw2:"none",isw3:"none",
+  isw4:"none",isw5:"none",isw6:"none",isw7:"none",isw8:"none",swiperIs:"", Rtop:"",move:"Mid",is:0,page1:"block",page2:"none",page3:"none",
   },
 scrolling(){
 if(is==0){
@@ -100,14 +105,9 @@ if(is==0){
   },
   button1(){
       this.setData({
-        isw1:"#ffffff",
-        isw2:"none",
-        isw3:"none",
-        isw4:"none",
-        isw5:"none",
-        isw6:"none",
-        isw7:"none",
-        isw8:"none",
+        isw1:"#ffffff",isw2:"none",
+        isw3:"none",isw4:"none",isw5:"none",isw6:"none",isw7:"none",isw8:"none",
+        page1:"block",page2:"none",page3:"none",
       })
   },
   button2(){
@@ -120,6 +120,7 @@ if(is==0){
       isw6:"none",
       isw7:"none",
       isw8:"none",
+      page1:"none",page2:"block",page3:"none",
     })
 },
 button3(){
@@ -132,6 +133,7 @@ button3(){
     isw6:"none",
     isw7:"none",
     isw8:"none",
+    page1:"none",page2:"none",page3:"block",
   })
 },
 button4(){

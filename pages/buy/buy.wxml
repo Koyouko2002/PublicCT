@@ -39,11 +39,9 @@
  </view>
 
 </view>
-<!-- 主体内容 编号 M-XXX -->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
+
   <!-- 轮播图 -->
-      <swiper class="{{swiperIs}}">
+  <swiper class="{{swiperIs}}" bind:tap="scrolling">
         <swiper-item>
           <image src="/assets/订单页轮播图.jpg" />
         </swiper-item>
@@ -52,7 +50,11 @@
         </swiper-item>
       </swiper>
     
-    <view class="{{move}}">    
+<!-- 主体内容 编号 M-XXX -->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+
+      <view class="{{move}}" style=" height: 900rpx; ">    
      <!-- 左侧导航栏 编号 M-L  -->
           <view class="M-L">
 
@@ -92,9 +94,9 @@
         upper-threshold="10"
         bindscroll="scrolling"  
         bindscrolltoupper="scrolled"
+        clip
         >
-
-          <view class="M-R"> 
+          <view class="M-R" style="display:{{page1}}"> 
             <text class="M-R-taitle"> 冰椰雪糕系列 </text>
 
             <view class="M-R-index">
@@ -117,6 +119,31 @@
             wx:for-item="Cup"
             >
             <image src="/assets/Order/O1.png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <view class="abotton">  选规格</view>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+
+          <view class="M-R" style="display:{{page2}}"> 
+            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <view class="M-R-index" 
+            wx:for="{{Order2}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O2.jpg" class="M-R-index-image"/>
              <view class="M-R-index-view">
                  <text class="M-R-index-t1"> {{Cup.name}} </text>
                <image src="/assets/Order/icon.png" class="mricon" />  

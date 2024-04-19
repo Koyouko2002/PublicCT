@@ -31,6 +31,11 @@ Page({
       url: '/pages/buy/buy',
     });
   },
+  tabfree: function () {
+    wx.navigateTo({
+      url: '/pages/indexson/disfree/disfree',
+    });
+  },
   onImage1Tap: function () {
     wx.showToast({
       title: '敬请期待',
