@@ -1,2 +1,20 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<!-- <text>pages/order/order.wxml</text> -->
+
+
+<!-- 顶部内容 -->
+<view class="top">
+  <!-- 页面最顶部标题 -->
+  <view class="topTitle">我的订单</view>
+  <!-- 菜单选项 -->
+  <view class="menu">
+    <!-- 茶饮订单 -->
+    <view class="teaOrders">
+      <text class="tea">茶饮订单</text>
+    </view>
+    <!-- 卡卷订单 -->
+    <view class="cardOrders">
+      <text class="card">卡卷订单</text>
+    </view>
+  </view>
+</view>

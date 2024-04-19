@@ -6,36 +6,157 @@
   position: relative;
   display: flex;
   justify-content: center;
+  // overflow: hidden;
+  height: fit-content;
 
   // 顶部背景图
-  image {
-    z-index: -10;
+  .bac {
+    z-index: -1;
     position: absolute;
     width: 100%;
     height: 600rpx;
   }
 
-  // 用户信息父级
+
+  // 用户信息父级 
   .userInfo {
-    z-index: 2;
-    width: 80%;
-    height: 400rpx;
-    background-color: skyblue;
-    margin-top: 200rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 11;
+    width: 90%;
+    height: 350rpx;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 248rpx;
+    border-top-left-radius: 35rpx;
+    border-top-right-radius: 35rpx;
+    border: 2rpx solid white;
+    // border-bottom: 0px;
+    // letter-spacing: 0.5em;
+    backdrop-filter: blur(15px);
 
-
-    // 第一个盒子 用户头像，名称，优惠卷 
+    // 第二层盒子 用户头像，名称，优惠卷 
     .userInfoTop {
       display: flex;
-      margin-top: 20rpx;
-      margin-left: 20rpx;
+      margin-top: 26rpx;
+      margin-left: 26rpx;
+
       // 头像
       .avatar {
-        width: 100rpx;
-        height: 100rpx;
+        width: 80rpx;
+        height: 80rpx;
         border-radius: 100%;
+      }
+
+      // 右边用户信息部分
+      .left {
+        width: 100%;
+        margin-left: 30rpx;
+
+        .title {
+          font-weight: 700;
+        }
+
+        .decs {
+          display: flex;
+          width: 100%;
+          margin-top: 5rpx;
+          justify-content: space-between;
+
+          .dec {
+            width: 30%;
+            font-size: 26rpx;
+
+            text {
+              font-size: 32rpx;
+              font-weight: 700;
+            }
+          }
+        }
       }
     }
 
+    //第三层盒子
+    .card {
+      width: 94%;
+      height: 45%;
+      // padding: 30rpx;
+      padding: 3%;
+      color: white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      background: linear-gradient(-85.57deg, rgb(198, 233, 248) -0.82%, rgb(99, 202, 243) 122.14%);
+      // z-index: 1;
+
+      // 注册时间
+      .timeTips {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24rpx;
+        line-height: 36rpx;
+      }
+
+      // 成就称号
+      .achievement {
+        font-size: 34rpx;
+        line-height: 60rpx;
+        font-weight: 700;
+      }
+
+      // 进度条
+      .progressBar {
+        height: 35rpx;
+        width: 75%;
+      }
+
+      // 进度条提示
+      .progressBarTips {
+        font-size: 22rpx;
+      }
+    }
   }
 }
+
+// 会员服务
+.vipServe {
+  padding: 40rpx;
+  box-shadow: 0px -10px 20px -10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  // 分类文字
+  .title {
+    font-weight: 700;
+  }
+
+  // 应用父级
+  .apps {
+    width: 92%;
+    // background-color: rebeccapurple;
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30rpx;
+    padding: 30rpx;
+
+    .app {
+      // width: fit-content;
+      // height: fit-content;
+      // margin-top: 20rpx;
+      // line-height: 140rpx;
+      height: 170rpx;
+      flex: 0 0 calc(100%/4);
+      text-align: center;
+
+      .img {
+        width: 56rpx;
+        height: 56rpx;
+      }
+
+      .appDes {
+        // height: fit-content;
+        font-size: 24rpx;
+        color: rgb(110, 110, 110);
+      }
+    }
+  }
+}
+
