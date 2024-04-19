@@ -70,7 +70,7 @@ radio .wx-radio-input.wx-radio-input-checked::before {
   font-size: 25rpx;
 }
 
-/* 生日选择框 */
+/* 生日修改触发框 */
 .birth{
   width: 100rpx;
   height: 35rpx;
@@ -80,10 +80,18 @@ radio .wx-radio-input.wx-radio-input-checked::before {
   font-size: 22rpx;
   position: relative;
   text-align: center;
-  left: 550rpx;
-  top: -10rpx;
+  left: 560rpx;
+  top: -35rpx;
 
 }
+
+/* 生日修改框 */
+.birthdate{
+  font-size: small;
+  margin-left: 220rpx;
+  margin-top: -10rpx;
+}
+
 
 /* 小盒子 */
 .box2{
