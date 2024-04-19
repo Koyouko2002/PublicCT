@@ -5,7 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // 商品订单
+    orderList:[
+      {
+        position:"千道茶坊绵阳城市学院安州店",
+        status:"已完成",
+        buyTime:"2024-04-09 18:22:54",
+        img:"/assets/Order/O1.png",
+        amount:14,
+        count:1
+      },
+      {
+        position:"千道茶坊绵阳城市学院安州店",
+        status:"已完成",
+        buyTime:"2024-04-09 18:22:54",
+        img:"/assets/Order/O1.png",
+        amount:14,
+        count:1
+      },
+    ]
   },
 
   /**
