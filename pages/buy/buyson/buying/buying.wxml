@@ -1,13 +1,10 @@
-<!-- Buying -->
-
-<navigation-bar title="111" back="{{false}}" color="black" background="red" >
-
-</navigation-bar>
 
 
 
+<!-- 主体内容 编号 M-XXX -->
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
+    <view class="main">
     <image src="{{BackgroundUrl}}" class="BGTotal"/>
 
     <view class="index">
@@ -42,15 +39,46 @@
 
     <view class="buttons-2">
     <text>甜度</text>
-    <button class="{{is1}}" bind:tap="mcup"
-     style="background:{{color}}"> 中杯 </button>
-     <button class="{{is2}}" bind:tap="lcup"
-     style="background:{{color2}}"> 大杯 </button>
+    <button class="{{is3}}" bind:tap="allt"
+     style="background:{{color3}}"> 全糖 </button>
+     <button class="{{is4}}" bind:tap="halft"
+     style="background:{{color4}}"> 五分糖 </button>
+     <button class="{{is5}}" bind:tap="not"
+     style="background:{{color5}};width: 270rpx;margin-left: 75rpx;margin-top: 10rpx;"> 不额外加糖(口感淡) </button>
+      <view class="tj">推荐</view>
     </view>
     
+    <view class="buttons-3">
+    <text>温度</text>
+    <button class="in" bind:tap="allt"
+     style="background:#094bdd;width: 240rpx;"> 正常冰</button>
+
+      <view class="tj" style="margin-top: 70rpx;width: 150rpx;">温度不可调控</view>
+
+      <view class="buttons-4">
+    <text>可换</text>
+    <button class="{{is6}}" bind:tap="chage"
+     style="background:{{color6}}"> 常规糖 </button>
+    </view>
+
+    <view class="buttons-5">
+    <text>甜度</text>
+    <button class="{{is7}}" bind:tap="onecup"
+     style="background:{{color7}};width: 220rpx;" > 单杯保温杯 ¥ 1 </button>
+     <button class="{{is8}}" bind:tap="twocup"
+     style="background:{{color8}};width: 220rpx;"> 双杯保温杯 ¥ 2 </button>
+
+    </view>
+
+    </view>
     </view>
 
 
-
+    <view class="bottom"> </view>
+    <view class="b-subit">
+    <text class="price">¥{{price}}</text>
+    
+     </view>
+  </view>
   </view>
 </scroll-view>
