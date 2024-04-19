@@ -29,3 +29,27 @@
   border-radius: 40rpx;
   font-size: 36rpx;
 }
+
+.scrollybox{
+  height: 600rpx;
+  margin-top: 200rpx;
+}
+.topimg{
+  width: 90%; 
+  position: absolute; 
+  top: 0; 
+  left: 5%;
+}
+.toptlt{
+  color: red; 
+  width: 90%; 
+  text-align: center; 
+  font-size: 36rpx; 
+  position: absolute; 
+  top: 200rpx;
+}
+scroll-view view{
+  font-size: 26rpx;
+  color: black;
+  line-height: 46rpx;
+}
