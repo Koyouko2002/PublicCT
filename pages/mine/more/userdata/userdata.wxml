@@ -1,0 +1,10 @@
+<!--pages/mine/more/userdata.wxml-->
+<view>
+<image src="" mode=""/>
+<!-- 昵称 -->
+<text> 昵称</text> <text></text>
+<!-- 手机 -->
+<text></text> <text></text>
+<!-- 性别 -->
+<text></text> 
+</view>

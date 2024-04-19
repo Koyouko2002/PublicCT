@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/mine/more/more",
+  "entryPagePath":  "pages/mine/more/userdata/userdata",
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
@@ -10,7 +10,11 @@
     "pages/indexson/friend/friend",
     "pages/indexson/disfree/disfree",
     "pages/mine/pandaShopping/pandaShopping",
-    "pages/mine/more/more"
+    "pages/mine/more/more",
+    "pages/mine/more/userdata/userdata"
+
+    
+    
 
 
   ],
