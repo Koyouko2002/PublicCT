@@ -12,19 +12,7 @@ Page({
     borderRadius:'100',//圆角
     strokeWidth:'9rpx',//进度条粗细
 
-    // 用户信息
-    userInfo:{
-      username:"",
-      password:"",
-      nike:"",
-      avatar:"",
-      pandacoin:"",
-      level:0,
-      phone:"",
-      sex:"",
-      birthday:"",
-    },
-
+    
     // 应用数据
     apps:[
       {
@@ -46,8 +34,7 @@ Page({
       },
       {
         img:"/assets/mine/zz.png",
-        appDes:"悦己计划",
-        url:"/pages/indexson/friend/friend"
+        appDes:"悦己计划"
       },
       {
         img:"/assets/mine/会员任务.png",
@@ -75,7 +62,8 @@ Page({
       },
       {
         img:"/assets/mine/更多.png",
-        appDes:"更多"
+        appDes:"更多",
+        url:"/pages/mine/more/more"
       },
     ]
   },

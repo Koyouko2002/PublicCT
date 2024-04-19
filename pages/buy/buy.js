@@ -60,111 +60,8 @@ Page({
     img:"O2.jpg"
   },
 ],
-    Order3:[{
-  name:"芒果昔昔乐",
-  t1:"香水柠檬I ",
-  t1prime:"芒果",
-  t2:"使用清甜芒果(新鲜芒果、芒果浆)加酸奶风味发酵乳。",
-  price:"17",
-  img:"O2.jpg"
-},
-{ 
-  name:"芒果芝士",
-  t1:"奶香芝士I ",
-  t1prime:"芒果",
-  t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"17",
-  img:"O2.jpg"
-},
-],
-    Order4:[{
-  name:"乌漆嘛黑",
-  t1:"香水柠檬I ",
-  t1prime:"芒果",
-  t2:"使用清甜芒果(新鲜芒果、芒果浆)加酸奶风味发酵乳。",
-  price:"17",
-  img:"O2.jpg"
-},
-{ 
-  name:"是真的黑",
-  t1:"奶香芝士I ",
-  t1prime:"芒果",
-  t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"17",
-  img:"O2.jpg"
-},
-],
-   Order5:[{
-  name:"芒果昔昔乐",
-  t1:"香水柠檬I ",
-  t1prime:"芒果",
-  t2:"使用清甜芒果(新鲜芒果、芒果浆)加酸奶风味发酵乳。",
-  price:"17",
-  img:"O2.jpg"
-},
-{ 
-  name:"芒果芝士",
-  t1:"奶香芝士I ",
-  t1prime:"芒果",
-  t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"17",
-  img:"O2.jpg"
-},
-],
-   Order6:[{
-  name:"芒果昔昔乐",
-  t1:"香水柠檬I ",
-  t1prime:"芒果",
-  t2:"使用清甜芒果(新鲜芒果、芒果浆)加酸奶风味发酵乳。",
-  price:"17",
-  img:"O2.jpg"
-},
-{ 
-  name:"芒果芝士",
-  t1:"奶香芝士I ",
-  t1prime:"芒果",
-  t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"17",
-  img:"O2.jpg"
-},
-],
-    Order7:[{
-  name:"芒果昔昔乐",
-  t1:"香水柠檬I ",
-  t1prime:"芒果",
-  t2:"使用清甜芒果(新鲜芒果、芒果浆)加酸奶风味发酵乳。",
-  price:"17",
-  img:"O2.jpg"
-},
-{ 
-  name:"芒果芝士",
-  t1:"奶香芝士I ",
-  t1prime:"芒果",
-  t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"17",
-  img:"O2.jpg"
-},
-],
-   Order8:[{
-  name:"芒果昔昔乐",
-  t1:"香水柠檬I ",
-  t1prime:"芒果",
-  t2:"使用清甜芒果(新鲜芒果、芒果浆)加酸奶风味发酵乳。",
-  price:"17",
-  img:"O2.jpg"
-},
-{ 
-  name:"芒果芝士",
-  t1:"奶香芝士I ",
-  t1prime:"芒果",
-  t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"17",
-  img:"O2.jpg"
-},
-],
   isw1:"#ffffff",isw2:"none",isw3:"none",
   isw4:"none",isw5:"none",isw6:"none",isw7:"none",isw8:"none",swiperIs:"", Rtop:"",move:"Mid",is:0,page1:"block",page2:"none",page3:"none",
-  page4:"none",page5:"none",page6:"none",
-  page7:"none",page8:"none",
-  },
-  buying(){
-    console.log("111")
-
-    
   },
 scrolling(){
 if(is==0){
@@ -179,12 +76,6 @@ if(is==0){
 }
 
   },
-  // ss(){
-  //   wx.setStorageSync('key', data)
-  // },
-  // ss(){
-  //   wx.getStorageSync('key') 
-  // },
   scrolled(){
     console.log("回滚");
     this.setData({
@@ -217,8 +108,6 @@ if(is==0){
         isw1:"#ffffff",isw2:"none",
         isw3:"none",isw4:"none",isw5:"none",isw6:"none",isw7:"none",isw8:"none",
         page1:"block",page2:"none",page3:"none",
-        page4:"none",page5:"none",page6:"none",
-        page7:"none",page8:"none",
       })
   },
   button2(){
@@ -232,8 +121,6 @@ if(is==0){
       isw7:"none",
       isw8:"none",
       page1:"none",page2:"block",page3:"none",
-      page4:"none",page5:"none",page6:"none",
-      page7:"none",page8:"none",
     })
 },
 button3(){
@@ -247,8 +134,6 @@ button3(){
     isw7:"none",
     isw8:"none",
     page1:"none",page2:"none",page3:"block",
-    page4:"none",page5:"none",page6:"none",
-    page7:"none",page8:"none",
   })
 },
 button4(){
@@ -261,9 +146,6 @@ button4(){
     isw6:"none",
     isw7:"none",
     isw8:"none",
-    page1:"none",page2:"none",page3:"none",
-    page4:"block",page5:"none",page6:"none",
-    page7:"none",page8:"none",
   })
 },
 button5(){
@@ -276,9 +158,6 @@ button5(){
     isw6:"none",
     isw7:"none",
     isw8:"none",
-    page1:"none",page2:"none",page3:"none",
-    page4:"none",page5:"block",page6:"none",
-    page7:"none",page8:"none",
   })
 },
 button6(){
@@ -291,9 +170,6 @@ button6(){
     isw6:"#ffffff",
     isw7:"none",
     isw8:"none",
-    page1:"none",page2:"none",page3:"none",
-    page4:"none",page5:"none",page6:"block",
-    page7:"none",page8:"none",
   })
 },
 button7(){
@@ -306,9 +182,6 @@ button7(){
     isw6:"none",
     isw7:"#ffffff",
     isw8:"none",
-    page1:"none",page2:"none",page3:"none",
-    page4:"none",page5:"none",page6:"none",
-    page7:"block",page8:"none",
   })
 },
 button8(){
@@ -321,9 +194,6 @@ button8(){
     isw6:"none",
     isw7:"none",
     isw8:"#ffffff",
-    page1:"none",page2:"none",page3:"none",
-    page4:"none",page5:"none",page6:"none",
-    page7:"none",page8:"block",
   })
 },
   /**

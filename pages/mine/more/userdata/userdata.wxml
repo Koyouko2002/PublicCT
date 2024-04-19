@@ -1,0 +1,43 @@
+<!--pages/mine/more/userdata.wxml-->
+
+<view class="box1">
+
+      <image src="/assets/mine/more/logo.png" mode=""/>
+      <!-- 昵称 -->
+
+     <view>
+        <text> 昵称</text>
+        <text class="text-M">香甜生椰西瓜</text>
+    </view>
+      <!-- 手机 -->
+    <view class="box1-S">
+        <text>手机</text>
+        <text class="text-M">186****8621</text>
+     </view>
+      <!-- 性别 -->
+      <view class="box1-S">
+        <text>性别</text> 
+        <radio-group  bindchange="">
+        <radio value="" color="blue" />男
+        <radio value="" color="blue"/>女
+          
+        </radio-group>
+     </view>
+      <!-- 生日修改 -->
+    <view style="margin-top:28rpx;">
+      <text>生日</text>
+
+      <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      
+        <view class="birthdate">{{date}}</view>
+        <view class="birth">修改生日</view>
+      </picker>
+
+    </view>
+
+</view>
+
+<view class="box2">
+<text>切换账号</text>
+<image src="/assets/mine/more/右箭头.png" mode=""/>
+</view>

@@ -1,4 +1,5 @@
 <!--pages/mine/mine.wxml-->
+
 <!-- 顶部背景 -->
 <view class="top">
   <image class="bac" src="/assets/我的背景图.jpg" mode="" />
@@ -50,7 +51,9 @@
   <view class="title">会员服务</view>
   <!-- 应用 -->
   <view class="apps">
-    <navigator class="app" url="{{item.url}}" wx:for="{{apps}}" wx:key="index">
+    <navigator class="app" 
+    url="{{item.url}}"
+    wx:for="{{apps}}" >
       <image class="img" src="{{item.img}}" />
       <view class="appDes">{{item.appDes}}</view>
     </navigator>
