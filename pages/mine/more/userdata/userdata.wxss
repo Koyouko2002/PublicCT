@@ -3,11 +3,15 @@ page{
   background-color: rgb(243, 243, 243);
 }
 
+/* logo */
 image{
   width: 250rpx;
   height: 210rpx;
+  position: relative;
+  left: 230rpx;
 }
 
+/* 大盒子 */
 .box1{
   width: 700rpx;
   height: 644rpx;
@@ -15,10 +19,29 @@ image{
   box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.1);
   border-radius: 5%;
   margin-left:26rpx;
-
- 
 }
 
+
+
+.box1 text{
+  font-size: small;
+  position: relative;
+  left: 30rpx;
+  top: 26rpx;
+}
+
+/* 大盒子中的小盒子 */
+.box1-S{
+  margin-top: 60rpx;
+
+}
+
+.text-M{
+  margin-left:120rpx ;
+}
+ 
+
+/* 小盒子 */
 .box2{
   width: 700rpx;
   height: 90rpx;
@@ -28,7 +51,7 @@ image{
   margin-top: 25rpx;
   margin-left:26rpx;
 }
-
+/* 小盒子文字 */
 .box2 text{
   font-size: small;
   position: relative;
@@ -36,6 +59,7 @@ image{
   top: 25rpx;
 }
 
+/* 箭头 */
 .box2 image{
   width: 25rpx;
   height: 25rpx;

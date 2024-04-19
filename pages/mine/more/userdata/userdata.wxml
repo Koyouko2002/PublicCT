@@ -5,19 +5,23 @@
       <image src="/assets/mine/more/logo.png" mode=""/>
       <!-- 昵称 -->
 
-      <view>
-        <text> 昵称</text><text>香甜的生椰西瓜</text>
-      </view>
+     <view>
+        <text> 昵称</text>
+        <text class="text-M">香甜的生椰西瓜</text>
+    </view>
       <!-- 手机 -->
-      <view>
-        <text>手机</text> <text>186****8621</text>
-      </view>
+    <view class="box1-S">
+        <text>手机</text>
+        <text class="text-M">186****8621</text>
+     </view>
       <!-- 性别 -->
-      <view>
+      <view class="box1-S">
         <text>性别</text> 
-      </view>
+     </view>
       <!-- 生日 -->
+    <view class="box1-S">
       <text>生日</text>
+    </view>
 
 </view>
 
