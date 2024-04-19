@@ -9,14 +9,14 @@
       <image class="avatar" src="{{userInfo.avatar}}" mode="" />
 
       <!-- 右边用户信息部分 -->
-      <view class="left">
+      <view class="left">     
         <view class="title">
           <text>{{userInfo.nike}}</text>
         </view>
 
         <view class="decs">
           <view class="dec">熊猫币 <text>{{userInfo.pandacoin}}</text> </view>
-          <view class="dec">优惠卷 <text>{{userInfo.coupon}}</text> </view>
+          <view class="dec">优惠券 <text>{{userInfo.coupon}}</text> </view>
           <view class="dec">礼卡 <text>0</text> </view>
         </view>
       </view>
@@ -38,7 +38,7 @@
       <!-- 进度条提示 -->
       <view class="progressBarTips">
         当前熊猫值{{userInfo.expValue}}，距离下一个等级
-        （等级名称）还差
+        {{levelName[userInfo.level+1]}} 还差
         {{levelExp[userInfo.level]-userInfo.expValue}}
       </view>
     </view>
