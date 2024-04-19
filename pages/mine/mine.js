@@ -12,7 +12,19 @@ Page({
     borderRadius:'100',//圆角
     strokeWidth:'9rpx',//进度条粗细
 
-    
+    // 用户信息
+    userInfo:{
+      username:"",
+      password:"",
+      nike:"",
+      avatar:"",
+      pandacoin:"",
+      level:0,
+      phone:"",
+      sex:"",
+      birthday:"",
+    },
+
     // 应用数据
     apps:[
       {

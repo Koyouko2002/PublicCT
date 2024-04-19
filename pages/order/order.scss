@@ -22,7 +22,7 @@ page {
     height: 75rpx;
     font-size: 38rpx;
     color: #8c95b5;
-    margin-bottom: 20rpx;
+    // margin-bottom: 20rpx;
     // background-color: skyblue;
     box-shadow: -50px 0 5px -5px rgba(0, 0, 0, 0.5);
 
@@ -52,7 +52,7 @@ page {
     width: 85%;
     border-radius: 20rpx;
     box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
-    
+
 
     // 第一行样式
     .row1 {
@@ -96,10 +96,11 @@ page {
       padding-bottom: 20rpx;
       border-bottom: 3rpx dotted #eaeaea;
 
-      .imgs{
+      .imgs {
         display: flex;
         width: 490rpx;
         overflow: hidden;
+
         .img {
           width: 160rpx;
           height: 160rpx;
@@ -107,7 +108,7 @@ page {
           object-fit: none;
         }
       }
-      
+
 
       .des {
         display: flex;
@@ -130,6 +131,7 @@ page {
     .row4 {
       display: flex;
       justify-content: flex-end;
+
       // height: 110rpx;
       // line-height: 110rpx;
       .again {
@@ -144,12 +146,20 @@ page {
       }
     }
   }
+
+
+  .noMore {
+    margin: 80rpx 0 80rpx 0;
+    width: 100%;
+    height: 200rpx;
+    text-align: center;
+    color: #c9c9c9;
+  }
 }
 
-.noMore{
-  margin: 80rpx 0 80rpx 0;
-  width: 100%;
-  height: 200rpx;
-  text-align:center;
-  color: #c9c9c9;
+// 滚动条
+.scrollY{
+  padding-top: 20rpx;
+  height:996rpx;
+
 }
