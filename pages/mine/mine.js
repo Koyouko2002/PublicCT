@@ -63,7 +63,7 @@ Page({
       {
         img:"/assets/mine/更多.png",
         appDes:"更多",
-        url:"pages/mine/more/more"
+        url:"/pages/mine/more/more"
       },
     ]
   },
