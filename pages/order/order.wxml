@@ -10,11 +10,11 @@
   <view class="menu">
     <!-- 茶饮订单 -->
     <view class="teaOrders">
-      <text class="tea active">茶饮订单</text>
+      <text class="tea {{activeId==0?'active':''}}" bind:tap="changeTab" data-activeId="0">茶饮订单</text>
     </view>
     <!-- 卡卷订单 -->
     <view class="cardOrders">
-      <text class="card">卡卷订单</text>
+      <text class="card {{activeId==1?'active':''}}" bind:tap="changeTab" data-activeId="1">卡卷订单</text>
     </view>
   </view>
 </view>
@@ -22,21 +22,37 @@
 <!-- 订单列表 -->
 <view class="orderList">
   <!-- 单个列表 -->
-  <view class="list">
+  <view class="list" wx:for="{{changeList}}" wx:key="index">
     <!-- 第一行（地理位置，订单完成状态） -->
     <view class="row1">
       <!-- 地理位置 -->
-      <view class="position">千道茶坊绵阳城市学院安州店</view>
+      <view class="position">{{item.position}}</view>
       <!-- 完成状态 -->
       <view class="status">
-       <text class="status_msg">已完成</text>  <image src="/assets/右右.png"/>
+        <text class="status_msg">{{item.status}}</text>
+        <image src="/assets/右右.png" />
       </view>
     </view>
     <!-- 第二行（下单时间） -->
-    <view class="row2"></view>
+    <view class="row2">{{item.buyTime}}</view>
     <!-- 第三行（图片，金额，下单数量） -->
-    <view class="row3"></view>
+    <view class="row3">
+      <view class="imgs">
+        <image class="img" src="{{item.img}}" />
+      </view>
+      <view class="des">
+        <view class="amount">￥{{item.amount}}</view>
+        <view class="count">共 {{item.count}} 件</view>
+      </view>
+    </view>
     <!-- 第四行（按钮，再来一单，上有分割线） -->
-    <view class="row4"></view>
+    <view class="row4">
+      <button class="again">再来一单</button>
+    </view>
   </view>
+</view>
+
+<!-- 没有更多数据了 -->
+<view class="noMore">
+  没有更多数据了
 </view>

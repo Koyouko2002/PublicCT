@@ -46,7 +46,7 @@
   </view>
 
   <view class="flexfather">
-    <view class="leftimg"><image src="/assets/首页Bot1.jpg" /></view>
+    <view class="leftimg"><image src="/assets/首页Bot1.jpg" bindtap="tabjoin"/></view>
     <view class="rigthimg"><image src="/assets/首页Bot2.jpg" bindtap="tabbuy"/><image src="/assets/首页Bot3.jpg" bindtap="tabfree"/></view>
   </view>
 
