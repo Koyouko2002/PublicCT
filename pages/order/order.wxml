@@ -10,11 +10,11 @@
   <view class="menu">
     <!-- 茶饮订单 -->
     <view class="teaOrders">
-      <text class="tea active">茶饮订单</text>
+      <text class="tea {{activeId==0?'active':''}}" bind:tap="changeTab" data-activeId="0">茶饮订单</text>
     </view>
     <!-- 卡卷订单 -->
     <view class="cardOrders">
-      <text class="card">卡卷订单</text>
+      <text class="card {{activeId==1?'active':''}}" bind:tap="changeTab" data-activeId="1">卡卷订单</text>
     </view>
   </view>
 </view>
@@ -22,7 +22,7 @@
 <!-- 订单列表 -->
 <view class="orderList">
   <!-- 单个列表 -->
-  <view class="list" wx:for="{{orderList}}" wx:key="index">
+  <view class="list" wx:for="{{changeList}}" wx:key="index">
     <!-- 第一行（地理位置，订单完成状态） -->
     <view class="row1">
       <!-- 地理位置 -->
