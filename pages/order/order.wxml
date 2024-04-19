@@ -29,7 +29,7 @@
       <view class="position">千道茶坊绵阳城市学院安州店</view>
       <!-- 完成状态 -->
       <view class="status">
-        已完成 <image src="/assets/右右.png"/>
+       <text class="status_msg">已完成</text>  <image src="/assets/右右.png"/>
       </view>
     </view>
     <!-- 第二行（下单时间） -->

@@ -47,22 +47,35 @@ page {
   .list {
     background-color: white;
     padding: 30rpx;
-    width: 80%;
-
+    width: 85%;
+    // 第一行样式
     .row1 {
       display: flex;
       justify-content: space-between;
+      height: 100%;
+      // 状态相信
       .status {
-        font-size: 28rpx;
-        // line-height: 32rpx;
-        // height: 32rpx;
-        align-self: center;
+        display: flex;
+        align-items: center;
+        // 状态信息描述
+        .status_msg {
+          display: block;
+          font-size: 28rpx;
+          align-self: center;
+        }
+        // 方向向右的小图标
+        image {
+          width: 36rpx;
+          height: 36rpx;
+        }
       }
 
-      image {
-        width: 28rpx;
-        height: 28rpx;
-      }
+
+    }
+
+    // 第二行
+    .row2{
+      
     }
   }
 }
