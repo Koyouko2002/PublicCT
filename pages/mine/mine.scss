@@ -27,10 +27,11 @@
     width: 90%;
     height: 350rpx;
     background-color: rgba(255, 255, 255, 0.1);
-    margin-top: 247rpx;
+    margin-top: 248rpx;
     border-top-left-radius: 35rpx;
     border-top-right-radius: 35rpx;
     border: 2rpx solid white;
+    // border-bottom: 0px;
     // letter-spacing: 0.5em;
     backdrop-filter: blur(15px);
 
@@ -78,14 +79,14 @@
     //第三层盒子
     .card {
       width: 94%;
-      height: 44%;
+      height: 45%;
       // padding: 30rpx;
       padding: 3%;
       color: white;
-      border-top-left-radius: 35rpx;
-      border-top-right-radius: 35rpx;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
       background: linear-gradient(-85.57deg, rgb(198, 233, 248) -0.82%, rgb(99, 202, 243) 122.14%);
-
+      // z-index: 1;
 
       // 注册时间
       .timeTips {
@@ -114,18 +115,13 @@
       }
     }
   }
-
-
-
 }
-
 
 // 会员服务
 .vipServe {
   padding: 40rpx;
-
-  // width: 100%;
-  // height: 100%;
+  box-shadow: 0px -10px 20px -10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
   // 分类文字
   .title {
     font-weight: 700;
@@ -163,3 +159,4 @@
     }
   }
 }
+
