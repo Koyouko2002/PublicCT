@@ -161,6 +161,11 @@ Page({
   page4:"none",page5:"none",page6:"none",
   page7:"none",page8:"none",
   },
+  buying(){
+    console.log("111")
+
+    
+  },
 scrolling(){
 if(is==0){
     console.log("在滚了");
