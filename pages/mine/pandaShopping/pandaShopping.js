@@ -5,6 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
+    /*规则、订单、明细 */
+    rule:[
+      {
+        img:"/assets/coinMall/明细.png",
+        txt:"熊猫币明细",
+    },
+    {
+      img:"/assets/coinMall/订单.png",
+      txt:"熊猫币订单",
+  },
+  {
+    img:"/assets/coinMall/规则.png",
+    txt:"熊猫币规则",
+},
+  ]
 
   },
 

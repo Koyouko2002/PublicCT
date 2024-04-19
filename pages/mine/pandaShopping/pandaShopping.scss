@@ -1,1 +1,32 @@
 /* pages/mine/pandaShopping/pandaShopping.wxss */
+/*头部*/
+
+
+/* 熊猫币商城*/
+.top{
+  /*background: linear-gradient(to right, gold, transparent);*/
+  height: 250rpx;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background: linear-gradient(#fced7b,white);
+}
+.coin{
+  font-size: 28rpx;
+  text-align: center;
+  position: relative;
+  left: 10%;
+  top: 30%;
+}
+.coin .number{
+  font-size:50rpx ;
+  margin-top: 10rpx;
+}
+.top image{
+  height: 150rpx;
+  width: 150rpx;
+  position: relative;
+  left: 60%;
+  top: 15%;
+}
+/*明细、规则、订单 */
