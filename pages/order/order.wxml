@@ -10,11 +10,33 @@
   <view class="menu">
     <!-- 茶饮订单 -->
     <view class="teaOrders">
-      <text class="tea">茶饮订单</text>
+      <text class="tea active">茶饮订单</text>
     </view>
     <!-- 卡卷订单 -->
     <view class="cardOrders">
       <text class="card">卡卷订单</text>
     </view>
+  </view>
+</view>
+
+<!-- 订单列表 -->
+<view class="orderList">
+  <!-- 单个列表 -->
+  <view class="list">
+    <!-- 第一行（地理位置，订单完成状态） -->
+    <view class="row1">
+      <!-- 地理位置 -->
+      <view class="position">千道茶坊绵阳城市学院安州店</view>
+      <!-- 完成状态 -->
+      <view class="status">
+        已完成 <image src="/assets/右右.png"/>
+      </view>
+    </view>
+    <!-- 第二行（下单时间） -->
+    <view class="row2"></view>
+    <!-- 第三行（图片，金额，下单数量） -->
+    <view class="row3"></view>
+    <!-- 第四行（按钮，再来一单，上有分割线） -->
+    <view class="row4"></view>
   </view>
 </view>
