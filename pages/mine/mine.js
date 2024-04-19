@@ -62,9 +62,9 @@ Page({
         appDes: "信息"
       },
       {
-        img:"/assets/mine/zz.png",
-        appDes:"悦己计划",
-        url:"/pages/indexson/friend/friend"
+        img: "/assets/mine/zz.png",
+        appDes: "悦己计划",
+        url: "/pages/indexson/friend/friend"
       },
       {
         img: "/assets/mine/会员任务.png",

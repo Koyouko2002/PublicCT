@@ -39,13 +39,13 @@ Page({
   changeTab(e) {
     // 获取传入id
     let id = e.currentTarget.dataset.activeid;
-    let changeList=[
+    let changeList = [
       this.data.orderList,
       this.data.cardList
     ]
     this.setData({
       activeId: id,
-      changeList:changeList[id]
+      changeList: changeList[id]
     })
     console.log(e.currentTarget.dataset.activeid);
   },

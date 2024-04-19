@@ -20,7 +20,7 @@
 </view>
 
 
-<scroll-view class="scrollY" scroll-y >
+<scroll-view class="scrollY" scroll-y>
   <!-- 订单列表 -->
   <view class="orderList">
     <!-- 单个列表 -->
