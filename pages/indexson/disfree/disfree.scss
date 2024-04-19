@@ -1,1 +1,166 @@
 /* pages/indexson/disfree/disfree.wxss */
+.pagebox{
+  margin: auto;
+  height: 2410rpx;
+  position: relative;
+}
+.pagebox .bgi{
+  width: 100%;
+  position: absolute; 
+  z-index: -1;
+}
+
+.box1{
+  width: 90%;
+  margin: auto;
+  height: 300rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; 
+  top: 800rpx;
+  left: 5%;
+  border-radius: 25rpx;
+  border: 1rpx solid #48a045;
+}
+.box1 .box1txt{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20rpx;
+margin-bottom: 20rpx;
+}
+.box1 .numberbox{
+  width: 80%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 .numberbox .bor{
+width: 35%;
+height: 5rpx;
+background-color: #48a045;
+}
+.box1 .numberbox .num{
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 31rpx;
+  background-color: #48a045;
+  color: white;
+  font-size: 28rpx;
+}
+.box1 .numberbox .num .txt{
+  white-space: nowrap;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+.txtbox{
+  width: 90%;
+  height: 80rpx;
+  margin-top: 60rpx;
+  /* background-color:cadetblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.txtbox view{
+  width: 45%;
+  height: 90%;
+  border: 1rpx solid #48a045;
+  text-align: center;
+  line-height: 70rpx;
+  background-color: white;
+  border-radius: 70rpx;
+  color: #48a045;
+}
+
+.scroll{
+  width: 90%;
+  height: 200rpx;
+  margin-top: 25rpx;
+}
+.scrollitem{
+  height: 200rpx;
+  width: 31%;
+  margin-right: 30rpx;
+  display: inline-block;
+}
+.scroll .scrollitem:nth-child(4) {
+  margin-right: 0rpx;
+}
+
+
+.txt2{
+  width: 90%;
+  margin-top: 20rpx;
+}
+.people{
+  width: 90%;
+  height: 150rpx;
+  margin-top: 30rpx;
+  border-radius: 25rpx;
+  background-color: #d2ffcf;
+  display: flex;
+}
+.peopleson{
+  width: 50%;
+  height: 100%;
+  background-color: #d2ffcf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25rpx;
+  color: #69a045;
+}
+.peopleson view:nth-child(1) {
+  font-size: 50rpx;
+}
+.peopleson view:nth-child(2) {
+  font-size: 22rpx;
+}
+
+
+.rol{
+  background-color: rgba(128, 128, 128, 0.9);
+  position: fixed;
+  right: 0;
+  top: 240rpx;
+  width: 100rpx;
+height: 50rpx;
+border-radius: 25rpx 0 0 25rpx;
+text-align: center;
+color: white;
+font-size: 26rpx;
+line-height: 50rpx;
+}
+.scrollybox{
+  height: 600rpx;
+  margin-top: 200rpx;
+}
+.topimg{
+  width: 90%; 
+  position: absolute; 
+  top: 0; 
+  left: 5%;
+}
+.toptlt{
+  color: red; 
+  width: 90%; 
+  text-align: center; 
+  font-size: 36rpx; 
+  position: absolute; 
+  top: 200rpx;
+}
+scroll-view view{
+  font-size: 26rpx;
+  color: black;
+  line-height: 46rpx;
+}
