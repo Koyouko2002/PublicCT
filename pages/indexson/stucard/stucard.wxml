@@ -11,4 +11,6 @@
       <view class="messimg"><image src="{{item.image}}" mode="widthFix"/></view>
     </view>
   </view>
+
+  <view class="rol" bindtap="fristurule">规则</view>
 </view>

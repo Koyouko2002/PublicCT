@@ -10,5 +10,10 @@ Page({
       { amount: 10, limit: 2, image: "/assets/全场85折.jpg" },
       { amount: 15, limit: 3, image: "/assets/第二杯5折.jpg" }
     ]
-  }
+  },
+  fristurule: function () {
+    wx.navigateTo({
+      url: '/pages/indexson/sturule/sturule',
+    });
+  },
 })
