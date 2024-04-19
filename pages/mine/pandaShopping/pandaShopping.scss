@@ -54,14 +54,14 @@
 /*满减券导航条*/
 .main{
  background-color: #ffffff;
- height: 600rpx;
+ height: 100%;
  width: 100%;
  border-radius: 35rpx;
  margin-top:-85rpx;
  position: absolute;
 }
 .discount{
-  height: 80rpx;
+  height: 10s0rpx;
   display:flex;
  position: relative;
  top: 20rpx;
@@ -78,17 +78,60 @@
   border-bottom: 1px solid #426dac;
   color:#426dac;
 }
-.bottom{
-  position: relative;
-  top: 450rpx;
-}
+
 /*券*/
 .ticket{
-  height: 600rpx;
+  display:flex;
+  background-color:#fafbfd;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  top: 30rpx;
+  height: 100%;
+  
+}
+.tic_main{
+font-size: 20rpx;
+ text-align: center;
+  background-color:#fbfcec;
+  width: 280rpx;
+  height:350rpx;
+  border-radius: 25rpx;
+  margin: 40rpx 70rpx 0 20rpx;
 
-  background-color: red;
+}
+.ticket image{
+  height: 300rpx;
+  width: 300rpx;
+}
+.tic_bottom{
+  background-color: white;
+  border-end-end-radius:25rpx ;
+  border-end-start-radius:25rpx ;
+  height: 40%;
+}
+.tip{
+  line-height: 80rpx;
+  border-bottom: 1px solid ;
+  text-align: left;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  color: #98c981;
 }
 
+.txt1{
+  font-size: 25rpx;
+  float: left;
+  line-height: 60rpx;
+  color: #234c91;
+  margin-left: 10rpx;
+}
+.txt2{
+  font-size: 20rpx;
+  float: right;
+  line-height: 60rpx;
+  color: #8d8d8d;
+}
 
 
 

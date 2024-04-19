@@ -27,18 +27,18 @@
       <view class="coupon">专属兑换</view>
     </view>
     <!--券-->
-   <view  class="ticket">
-    <view wx:for="{{tickets}}" >
-      <image src="{{item.pic}}"></image>
-      <view>{{item.tip}}</view>
-      <view>
-      <text>{{item.text1}}</text> 
-      <text>{{item.text2}}</text>
+    <view  class="ticket">
+      <view wx:for="{{tickets}}"  class="tic_main">
+        <image src="{{item.pic}}"></image>
+        <view class="tic_bottom">
+          <view class="tip">{{item.tip}}</view>
+          <text class="txt1">{{item.text1}}</text> 
+          <text class="txt2">{{item.text2}}</text>
+        </view>
+
       </view>
 
     </view>
-
-   </view>
 
 
 
