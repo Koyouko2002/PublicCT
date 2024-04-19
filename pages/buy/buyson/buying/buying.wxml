@@ -62,7 +62,7 @@
     </view>
 
     <view class="buttons-5">
-    <text>甜度</text>
+    <text>包装</text>
     <button class="{{is7}}" bind:tap="onecup"
      style="background:{{color7}};width: 220rpx;" > 单杯保温杯 ¥ 1 </button>
      <button class="{{is8}}" bind:tap="twocup"
@@ -75,9 +75,10 @@
     <view class="bottom"> </view>
 
     <view class="b-subit">
-    <text class="price" >¥{{price*amount}}</text>
+    <text class="price" >¥{{price*amount+fjvalue}}</text>
     <view class="adddis"> 
         <view 
+        style="background: {{subbg}};color: {{subcolor}};"
         bind:tap="sub"
         > -</view>   
     <text> {{amount}}</text>   
@@ -85,6 +86,23 @@
        bind:tap="add"
        style="background: #184ce1;color: #ffffff;"> +</view>
      </view>
+
+     <view class="listms">
+     <view style="display:{{Key1}}">大杯、</view>
+     <view style="display:{{Key2}}">中杯、</view>
+     <view style="display:{{Key3}}">全塘、</view>
+     <view style="display:{{Key4}}">5分糖、</view>
+     <view style="display:{{Key5}}">无糖、</view>
+     <view style="display:{{Key6}}">正常冰、</view>
+     <view style="display:{{Key7}}">单保温袋、</view>
+     <view style="display:{{Key8}}">双保温袋、</view>
+
+     
+     </view>
+     
+     <navigator url="">   
+     <button class="sumbit">提交订单</button>
+     </navigator>
      </view>
 
 

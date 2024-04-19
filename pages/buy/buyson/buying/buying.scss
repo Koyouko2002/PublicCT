@@ -125,8 +125,8 @@ top: 5rpx;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 200rpx;
-  background-color:rgb(168, 168, 168);
+  height: 240rpx;
+  background-color:white;
 
 }
 .price{
@@ -156,4 +156,23 @@ top: 5rpx;
     margin-left: 15rpx;
 
 }
-
+.listms{
+  margin-top: -70rpx;
+  display: flex;
+  width: 900rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+  // background-color: rgb(177, 177, 177);
+}
+.listms view{
+  margin-left: 0rpx;
+  font-size: 24rpx;
+color: #c1c1c1;
+}
+.sumbit{
+  background-color: #094bdd;
+  color: white;
+  height: 90rpx;
+  margin-top: -2rpx;
+  border-radius: 50rpx;
+}

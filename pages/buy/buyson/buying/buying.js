@@ -1,7 +1,7 @@
 // pages/buy/buyson/buying/buying.js\
 var is6key=0,is7key=0,is8key=0;
 var amount = 0;
-
+var fjvalue=0;
 Page({
 
   /**
@@ -19,7 +19,11 @@ Page({
     color6:"",
     is:"",is8:"",
     color7:"",color7:"",
-    amount:1,
+    amount:1,subbg:"",subcolor:"",
+    Key1:"none",Key2:"",
+    Key3:"",Key4:"none",Key5:"none",
+    Key6:"",Key7:"none",Key8:"none",
+    fjvalue:0,
   },
   add(){
        amount +=1;
@@ -27,6 +31,8 @@ Page({
      console.log(amount);
     this.setData({
        amount:amount,
+       subbg:"#184ce1",
+       subcolor:"#ffffff"
     })
   },
   sub(){
@@ -38,35 +44,48 @@ Page({
        amount:amount,
     })
     }
+    if(amount==1){
+        this.setData({
+          subbg:"",
+          subcolor:""
+        })
+    }
   
   },
   mcup(){
   this.setData({
-    is1:"in",is2:"",color:"#094bdd",color2:"",
+    is1:"in",is2:"",color:"#094bdd",color2:"",Key1:"none",Key2:"block"
   })
   },
   lcup(){
     this.setData({
       is1:"",color:"",
       is2:"in",color2:"#094bdd",
+      Key1:"block",Key2:"none"
     })
   },
   allt(){
     this.setData({
       is3:"in",is4:"",is5:"",
       color3:"#094bdd",color4:"",color5:"",
+      Key3:"block",Key4:"none",
+      Key5:"none"
     })
   },
   halft(){
     this.setData({
       is3:"",is4:"in",is5:"",
       color3:"",color4:"#094bdd",color5:"",
+      Key3:"none",Key4:"block",
+      Key5:"none"
     })
   },
   not(){
     this.setData({
       is3:"",is4:"",is5:"in",
       color3:"",color4:"",color5:"#094bdd",
+      Key3:"none",Key4:"none",
+      Key5:"block"
     })
   },
   chage(){
@@ -74,12 +93,14 @@ Page({
       this.setData({
         is6:"in",
         color6:"#094bdd",
+        Key5:"block"
       })
       is6key=1;
     }else{
       this.setData({
         is6:"",
         color6:"",
+        Key5:"none"
       })
       is6key=0;
     }
@@ -87,15 +108,23 @@ Page({
   },
   onecup(){
     if(is7key==0){
+      fjvalue+=1;
+      this.data.fjvalue=fjvalue;
       this.setData({
+        fjvalue:fjvalue,
         is7:"in",
         color7:"#094bdd",
+        Key7:"block"
       })
       is7key=1;
-    }else{
+    }else{     
+      fjvalue-=1;    
+       this.data.fjvalue=fjvalue;
       this.setData({
+        fjvalue:fjvalue,
         is7:"",
         color7:"",
+        Key7:"none"
       })
       is7key=0;
     }
@@ -103,15 +132,23 @@ Page({
   },
   twocup(){
     if(is8key==0){
+      fjvalue+=2;
+      this.data.fjvalue=fjvalue;
       this.setData({
+        fjvalue:fjvalue,
         is8:"in",
         color8:"#094bdd",
+        Key8:"block"
       })
       is8key=1;
     }else{
+      fjvalue-=2;
+      this.data.fjvalue=fjvalue;
       this.setData({
+        fjvalue:fjvalue,
         is8:"",
         color8:"",
+        Key8:"none"
       })
       is8key=0;
     }
