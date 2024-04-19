@@ -8,15 +8,15 @@ Page({
     /*规则、订单、明细 */
     rule:[
       {
-        img:"/assets/coinMall/明细.png",
+        pic:"/assets/coinMall/mingxi.png",
         txt:"熊猫币明细",
     },
     {
-      img:"/assets/coinMall/订单.png",
+      pic:"/assets/coinMall/dingdan.png",
       txt:"熊猫币订单",
   },
   {
-    img:"/assets/coinMall/规则.png",
+    pic:"/assets/coinMall/guize.png",
     txt:"熊猫币规则",
 },
   ]

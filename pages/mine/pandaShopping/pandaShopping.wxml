@@ -11,8 +11,13 @@
   </view>
 
   <!--明细、规则、订单-->
-
- 
+  
+  <view class="rule"  >
+    <view  wx:for="{{rule}}">
+      <image src="{{item.pic}}"></image>
+      <view>{{item.txt}}</view>
+   </view>
+  
   
   
   
