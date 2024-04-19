@@ -1,1 +1,80 @@
 /* pages/buy/buyson/buying/buying.wxss */
+.BGTotal{
+width: 100%;
+height: 500rpx;
+margin-top: -200rpx;
+}
+.title{
+  display: block;
+  font-size: 35rpx;
+  margin-top: 50rpx;
+  font-weight: bolder;
+
+}
+
+.mricon{
+  width: 22rpx;
+  height: 22rpx;
+position: relative;
+top: 5rpx;
+}
+.M-R-index-t2{
+  font-size: 24rpx;
+}
+.M-R-index-t3{
+  display: block;
+  color: #000000;
+  font-size: 22rpx;
+  line-height: 22rpx;
+  margin-top: 20rpx;;
+}
+.M-R-index-t4{
+  display: block;
+  color: #9c9c9c;
+  font-size: 22rpx;
+  line-height: 22rpx;
+  margin-top: 20rpx;;
+}
+.xts{
+  height: 200rpx;
+  margin-top: 50rpx;
+}
+.viptip{
+  margin-top: 30rpx;
+  margin-left: 15rpx;
+  font-size: 24rpx;
+  height: 38rpx;
+  width: 300rpx;
+  color: #bd7525;
+  background: #f8ebdd;
+  text-align: center;
+}
+.botviw{
+  margin-top: 70rpx;
+  width: 85%;
+  height: 500rpx;
+  // background: rgb(243, 243, 243);
+}
+.botviw text{
+  font-size: 28rpx;
+}
+.in{
+  background: #0a4cde;
+  color: white;
+}
+.botviw button{
+  position: relative;
+  left: -50rpx;
+  top: 90rpx;
+  display: inline-block;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  background: #ecf1f7;
+  width: 145rpx;
+  height: 55rpx;
+  border-radius: 60rpx;;
+  margin-left: 20rpx;
+}
+.buttons-2{
+  margin-top: 100rpx;
+}
