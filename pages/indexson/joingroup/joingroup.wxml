@@ -1,7 +1,7 @@
 <!--pages/indexson/joingroup/joingroup.wxml-->
 <!-- <text>pages/indexson/joingroup/joingroup.wxml</text> -->
-<view class="joingroupimg">
-<view><image src="/assets/点击入群bgi.jpg" mode="widthFix" style="width: 100%;"/></view>
-<view class="joingroupimg2"><image src="/assets/点击入群bgi2.png" mode="widthFix"/></view>
-<view class="joingrouptxt"><text>绵阳市</text><view><image src="/assets/下.png" mode="widthFix"/></view><view>千道茶坊绵阳城市学院店</view><view style="margin-left: 60rpx; font-size: 46rpx; color: lightslategray;">×</view></view>
+<view class="joingroupimg" wx:if="true">
+<view><image src="{{url1}}" mode="widthFix" style="width: 100%;"/></view>
+<view class="joingroupimg2"><image src="{{url2}}" mode="widthFix"/></view>
+<view class="joingrouptxt"><text>{{text}}</text><view><image src="{{url3}}" mode="widthFix"/></view><view>{{text2}}</view><view style="margin-left: 60rpx; font-size: 46rpx; color: lightslategray;">×</view></view>
 </view>
