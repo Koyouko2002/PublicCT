@@ -4,9 +4,13 @@
 <view class="stucartop">
   <view><image src="/assets/学子卡Top.jpg" mode="widthFix" style="width: 100%;"/></view>
   <view class="messbox">
-    <view class="messtxt">
-      开卡立减5元 <text> 每人仅限领取1次</text>
+    <view wx:for="{{discounts}}" wx:key="index">
+      <view class="messtxt">
+        开卡立减{{item.amount}}元 <text> 每人仅限领取{{item.limit}}次</text>
+      </view>
+      <view class="messimg"><image src="{{item.image}}" mode="widthFix"/></view>
     </view>
-    <view class="messimg"><image src="/assets/全场立减5元.jpg" mode="widthFix"/></view>
   </view>
+
+  <view class="rol" bindtap="fristurule">规则</view>
 </view>
