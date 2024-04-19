@@ -1,8 +1,11 @@
 {
-  "entryPagePath": "pages/mine/mine",
+  "entryPagePath":  "pages/buy/buy",
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
+    "pages/buy/buyson/buying/buying",
+    "pages/buy/buyson/search/search",
+    "pages/buy/buyson/explan/explan",
     "pages/order/order",
     "pages/mine/mine",
     "pages/indexson/stucard/stucard",
@@ -21,6 +24,7 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "tabBar": {
+    "selectedColor": "#1772f6",
     "list": [{
       "pagePath": "pages/index/index",
       "text": "主页",
