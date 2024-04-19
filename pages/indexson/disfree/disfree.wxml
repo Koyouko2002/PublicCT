@@ -1,2 +1,20 @@
 <!--pages/indexson/disfree/disfree.wxml-->
-<text>pages/indexson/disfree/disfree.wxml</text>
+<!-- <text>pages/indexson/disfree/disfree.wxml</text> -->
+
+
+<view class="pagebox">
+<view> <image src="/assets/首页Bot3bgi.jpg" class="bgi" mode="widthFix"/></view>
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
