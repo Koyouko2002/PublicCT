@@ -31,6 +31,11 @@ Page({
       url: '/pages/buy/buy',
     });
   },
+  tabjoin: function () {
+    wx.navigateTo({
+      url: '/pages/indexson/joingroup/joingroup',
+    });
+  },
   tabfree: function () {
     wx.navigateTo({
       url: '/pages/indexson/disfree/disfree',
