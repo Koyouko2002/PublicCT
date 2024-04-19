@@ -12,14 +12,17 @@ Page({
       {
         pic:"/assets/coinMall/mingxi.png",
         txt:"熊猫币明细",
+        url:"/#"
     },
     {
       pic:"/assets/coinMall/dingdan.png",
       txt:"熊猫币订单",
+      url:"/#"
   },
   {
     pic:"/assets/coinMall/guize.png",
     txt:"熊猫币规则",
+    url:"/pages/mine/pandaShopping/rule/rule"
 },
   ]
 ,
