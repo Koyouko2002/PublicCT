@@ -1,34 +1,35 @@
 <!--pages/mine/pandaShopping/pandaShopping.wxml-->
 
-<view>
+<view class="all">
   <!--熊猫币商城-->
   <view class="top">
     <view class="coin">
       <view>熊猫币</view>
       <view class="number">65</view>
-  </view>
+    </view>
     <image src="/assets/coinMall/coins.png"></image>
   </view>
 
   <!--明细、规则、订单-->  
   <view class="rule"  >
-    <view  wx:for="{{rule}}">
+    <navigator  wx:for="{{rule}}" url="/pages/mine/pandaShopping/rule/rule" open-type="navigate">
       <image src="{{item.pic}}"></image>
       <view class="text">{{item.txt}}</view>
-   </view>
+   </navigator>
   </view>
 
 
    <!--满减券导航条-->
    <view class="main">
+
     <view class="discount">
-      <view class="coupon">人气卡券</view>
-      <view class="coupon">饮品推荐</view>
-      <view class="coupon">专属兑换</view>
+      <view class="{{CoinActive == 0?'.coupon_active':'.coupon'}}" bind:tap="changeTab" data-id="0">人气卡券</view>
+      <view class="{{CoinActive == 1?'.coupon_active':'.coupon'}}" bind:tap="changeTab" data-id="1">饮品推荐</view>
+      <view class="{{CoinActive == 2 ?'.coupon_active':'.coupon'}}" bind:tap="changeTab" data-id="2">专属兑换</view>
     </view>
     <!--券-->
     <view  class="ticket">
-      <view wx:for="{{tickets}}"  class="tic_main">
+      <view wx:for="{{list}}"  class="tic_main">
         <image src="{{item.pic}}"></image>
         <view class="tic_bottom">
           <view class="tip">{{item.tip}}</view>
@@ -37,30 +38,10 @@
         </view>
 
       </view>
-
+      <view class="bottom">看看其他分类呢~</view>
     </view>
-
-
-
-
-  <!--<view class="bottom">看看其他分类呢~</view>-->  
+    
    </view>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

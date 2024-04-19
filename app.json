@@ -13,7 +13,8 @@
     "pages/indexson/friend/friend",
     "pages/indexson/joingroup/joingroup",
     "pages/indexson/disfree/disfree",
-    "pages/mine/pandaShopping/pandaShopping"
+    "pages/mine/pandaShopping/pandaShopping",
+    "pages/mine/pandaShopping/rule/rule"
   ],
   "window": {
     "navigationBarTextStyle": "black",

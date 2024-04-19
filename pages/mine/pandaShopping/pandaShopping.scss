@@ -1,4 +1,8 @@
 /* pages/mine/pandaShopping/pandaShopping.wxss */
+.all{
+  height: 100%;
+  width: 100%;
+}
 /*头部*/
 
 
@@ -46,27 +50,27 @@
   padding: 7rpx;
   margin: 20rpx 0  10rpx 0;
 }
-.rule view{
+.rule navigator{
   font-size: 20rpx;
   text-align: center;
   color:#e3c8bb;
 }
 /*满减券导航条*/
 .main{
- background-color: #ffffff;
- height: 100%;
+ background-color: #f1f1f1;
  width: 100%;
  border-radius: 35rpx;
  margin-top:-85rpx;
  position: absolute;
+ 
 }
 .discount{
-  height: 10s0rpx;
-  display:flex;
+ height: 65rpx;
+ display:flex;
  position: relative;
  top: 20rpx;
  left: 20rpx;
- font-size: 35rpx;
+ font-size: 30rpx;
 }
 .coupon{
   margin: 20rpx;
@@ -74,9 +78,11 @@
   line-height: 20rpx;
  
 }
-.coupon :active{
-  border-bottom: 1px solid #426dac;
+.coupon_active{
   color:#426dac;
+  margin: 20rpx;
+  font-size: large;
+  line-height: 20rpx;
 }
 
 /*券*/
@@ -87,7 +93,8 @@
   flex-wrap: wrap;
   position: relative;
   top: 30rpx;
-  height: 100%;
+  height: fit-content;
+  
   
 }
 .tic_main{
@@ -97,21 +104,23 @@ font-size: 20rpx;
   width: 280rpx;
   height:350rpx;
   border-radius: 25rpx;
-  margin: 40rpx 70rpx 0 20rpx;
+  margin: 50rpx 0rpx 0rpx 8%;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.1);
 
 }
 .ticket image{
-  height: 300rpx;
-  width: 300rpx;
+  height: 250rpx;
+  width: 250rpx;
 }
 .tic_bottom{
   background-color: white;
   border-end-end-radius:25rpx ;
   border-end-start-radius:25rpx ;
-  height: 40%;
+  height: 90rpx;
+  
 }
 .tip{
-  line-height: 80rpx;
+  line-height: 40rpx;
   border-bottom: 1px solid ;
   text-align: left;
   margin-left: 10rpx;
@@ -131,8 +140,19 @@ font-size: 20rpx;
   float: right;
   line-height: 60rpx;
   color: #8d8d8d;
+  margin-right: 10rpx;
 }
 
+.bottom{
+ margin-left: 35%;
+  color: gray;
+  font-size:28rpx;
+  line-height:200rpx;
+
+  
+ 
+
+}
 
 
 
