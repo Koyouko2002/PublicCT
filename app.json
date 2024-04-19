@@ -1,0 +1,51 @@
+{
+  "entryPagePath": "pages/order/order",
+  "pages": [
+    "pages/index/index",
+    "pages/buy/buy",
+    "pages/order/order",
+    "pages/mine/mine",
+    "pages/indexson/stucard/stucard",
+    "pages/indexson/sturule/sturule",
+    "pages/indexson/friend/friend",
+    "pages/indexson/disfree/disfree",
+    "pages/mine/pandaShopping/pandaShopping",
+    "pages/mine/more/more"
+
+
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "千道茶坊",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "selectedColor": "#1772f6",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "/assets/taber/主页1.png",
+      "selectedIconPath": "/assets/taber/主页.png"
+    },{
+      "pagePath": "pages/buy/buy",
+      "text": "点单",
+      "iconPath": "/assets/taber/点单1.png",
+      "selectedIconPath": "/assets/taber/点单.png"
+    },{
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "/assets/taber/订单1.png",
+      "selectedIconPath": "/assets/taber/订单.png"
+    },{
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/assets/taber/我的1.png",
+      "selectedIconPath": "/assets/taber/我的.png"
+    }
+  ]
+    
+  }
+  
+}
