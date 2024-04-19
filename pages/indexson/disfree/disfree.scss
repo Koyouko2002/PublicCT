@@ -9,3 +9,74 @@
   position: absolute; 
   z-index: -1;
 }
+
+.box1{
+  width: 90%;
+  margin: auto;
+  height: 300rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; 
+  top: 800rpx;
+  left: 5%;
+  border-radius: 25rpx;
+  border: 1rpx solid #48a045;
+}
+.box1 .box1txt{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20rpx;
+margin-bottom: 20rpx;
+}
+.box1 .numberbox{
+  width: 80%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 .numberbox .bor{
+width: 35%;
+height: 5rpx;
+background-color: #48a045;
+}
+.box1 .numberbox .num{
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 31rpx;
+  background-color: #48a045;
+  color: white;
+  font-size: 28rpx;
+}
+.box1 .numberbox .num .txt{
+  white-space: nowrap;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+.txtbox{
+  width: 90%;
+  height: 80rpx;
+  margin-top: 60rpx;
+  /* background-color:cadetblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.txtbox view{
+  width: 45%;
+  height: 90%;
+  border: 1rpx solid #48a045;
+  text-align: center;
+  line-height: 70rpx;
+  background-color: white;
+  border-radius: 70rpx;
+  color: #48a045;
+}
