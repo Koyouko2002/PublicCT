@@ -1,0 +1,29 @@
+<!--pages/mine/more/more.wxml-->
+
+<!-- 个人资料 -->
+<view class="box">
+<image src="/assets/mine/more/用户.png" mode=""/>
+<text>个人资料</text>
+<image class="pointer"  src="/assets/mine/more/右箭头.png" mode=""/>
+</view>
+
+<!-- 用户须知 -->
+<view class="box">
+<image src="/assets/mine/more/用户须知.png" mode=""/>
+<text>用户须知</text>
+<image  class="pointer" src="/assets/mine/more/右箭头.png" mode=""/>
+</view>
+
+<!-- 隐私政策 -->
+<view class="box">
+<image  src="/assets/mine/more/隐私.png" mode=""/>
+<text>隐私政策</text>
+<image class="pointer" src="/assets/mine/more/右箭头.png" mode=""/>
+</view>
+
+<!-- 用户自律公约 -->
+<view class="box">
+<image src="/assets/mine/more/公约.png" mode=""/>
+<text>用户自律公约</text>
+<image class="lastpointer" src="/assets/mine/more/右箭头.png" mode=""/>
+</view>

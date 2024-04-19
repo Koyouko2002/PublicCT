@@ -1,0 +1,37 @@
+/* pages/mine/more/more.wxss */
+image{
+  width: 40rpx;
+  height:40rpx;
+}
+/* 外层盒子 */
+.box{
+  display: flex;
+  border-bottom:1px solid rgb(245, 243, 243) ;
+  margin-top: 50rpx;
+  font-size: small;
+}
+
+.box image{
+  position: relative;
+  top: -30rpx;
+}
+
+.box text{
+  position: relative;
+  top: -26rpx;
+  left: 10rpx;
+}
+
+
+/* 右侧箭头 */
+.pointer{
+  margin-left: 550rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
+/* 最后一排右侧箭头单独设置 */
+ .lastpointer{
+  margin-left: 499rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
