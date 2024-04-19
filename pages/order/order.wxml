@@ -19,40 +19,43 @@
   </view>
 </view>
 
-<!-- 订单列表 -->
-<view class="orderList">
-  <!-- 单个列表 -->
-  <view class="list" wx:for="{{changeList}}" wx:key="index">
-    <!-- 第一行（地理位置，订单完成状态） -->
-    <view class="row1">
-      <!-- 地理位置 -->
-      <view class="position">{{item.position}}</view>
-      <!-- 完成状态 -->
-      <view class="status">
-        <text class="status_msg">{{item.status}}</text>
-        <image src="/assets/右右.png" />
+
+<scroll-view class="scrollY" scroll-y >
+  <!-- 订单列表 -->
+  <view class="orderList">
+    <!-- 单个列表 -->
+    <view class="list" wx:for="{{changeList}}" wx:key="index">
+      <!-- 第一行（地理位置，订单完成状态） -->
+      <view class="row1">
+        <!-- 地理位置 -->
+        <view class="position">{{item.position}}</view>
+        <!-- 完成状态 -->
+        <view class="status">
+          <text class="status_msg">{{item.status}}</text>
+          <image src="/assets/右右.png" />
+        </view>
+      </view>
+      <!-- 第二行（下单时间） -->
+      <view class="row2">{{item.buyTime}}</view>
+      <!-- 第三行（图片，金额，下单数量） -->
+      <view class="row3">
+        <view class="imgs">
+          <image class="img" src="{{item.img}}" />
+        </view>
+        <view class="des">
+          <view class="amount">￥{{item.amount}}</view>
+          <view class="count">共 {{item.count}} 件</view>
+        </view>
+      </view>
+      <!-- 第四行（按钮，再来一单，上有分割线） -->
+      <view class="row4">
+        <button class="again">再来一单</button>
       </view>
     </view>
-    <!-- 第二行（下单时间） -->
-    <view class="row2">{{item.buyTime}}</view>
-    <!-- 第三行（图片，金额，下单数量） -->
-    <view class="row3">
-      <view class="imgs">
-        <image class="img" src="{{item.img}}" />
-      </view>
-      <view class="des">
-        <view class="amount">￥{{item.amount}}</view>
-        <view class="count">共 {{item.count}} 件</view>
-      </view>
-    </view>
-    <!-- 第四行（按钮，再来一单，上有分割线） -->
-    <view class="row4">
-      <button class="again">再来一单</button>
+
+    <!-- 没有更多数据了 -->
+    <view class="noMore">
+      没有更多数据了
     </view>
   </view>
-</view>
-
-<!-- 没有更多数据了 -->
-<view class="noMore">
-  没有更多数据了
-</view>
+</scroll-view>

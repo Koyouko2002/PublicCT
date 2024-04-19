@@ -1,6 +1,6 @@
 <!-- Buying -->
 
-<navigation-bar title="" back="{{false}}" color="black" background="red" >
+<navigation-bar title="111" back="{{false}}" color="black" background="red" >
 
 </navigation-bar>
 
@@ -30,7 +30,25 @@
                    </view>
                 </view>
     </view>
+    
+    <view class="botviw">
+    <view class="buttons-1">
+    <text>规格</text>
+    <button class="{{is1}}" bind:tap="mcup"
+     style="background:{{color}}"> 中杯 </button>
+     <button class="{{is2}}" bind:tap="lcup"
+     style="background:{{color2}}"> 大杯 </button>
+    </view>
 
+    <view class="buttons-2">
+    <text>甜度</text>
+    <button class="{{is1}}" bind:tap="mcup"
+     style="background:{{color}}"> 中杯 </button>
+     <button class="{{is2}}" bind:tap="lcup"
+     style="background:{{color2}}"> 大杯 </button>
+    </view>
+    
+    </view>
 
 
 
