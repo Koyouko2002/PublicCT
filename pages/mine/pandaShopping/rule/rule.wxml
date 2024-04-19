@@ -1,0 +1,13 @@
+<!--pages/mine/pandaShopping/rule/rule.wxml-->
+<view class="main">
+  <view class="one">【熊猫币规则】</view>
+  <view class="two">茶百道积分升级啦，请叫我“熊猫币”~</view>
+  <view class="two">熊猫币获取:</view>
+  <view class="three">在茶百道小程序点单或门店点单(需出示会员码)消费，订单完成且无异常，即可获取相应的熊猫币，实付1元可获得1熊猫币，若实付金额不为整数，则获得的熊猫币向上取整;</view>
+  <view class="two">熊猫币有效期:</view>
+  <view class="three">熊猫币自获取之日起的365日内有效，过期后系统将自动收回;</view>
+  <view class="two">熊猫币用途:</view>
+  <view class="three">熊猫币可用于会员活动或在熊猫币商城兑换礼品</view>
+  <view class="two">*熊猫币兑换数值比例以实际活动和商城礼品为准</view>
+
+</view>
