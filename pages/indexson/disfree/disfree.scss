@@ -95,3 +95,34 @@ background-color: #48a045;
 .scroll .scrollitem:nth-child(4) {
   margin-right: 0rpx;
 }
+
+
+.txt2{
+  width: 90%;
+  margin-top: 20rpx;
+}
+.people{
+  width: 90%;
+  height: 150rpx;
+  margin-top: 30rpx;
+  border-radius: 25rpx;
+  background-color: #d2ffcf;
+  display: flex;
+}
+.peopleson{
+  width: 50%;
+  height: 100%;
+  background-color: #d2ffcf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25rpx;
+  color: #69a045;
+}
+.peopleson view:nth-child(1) {
+  font-size: 50rpx;
+}
+.peopleson view:nth-child(2) {
+  font-size: 22rpx;
+}

@@ -24,6 +24,22 @@
   </view>
 </view>
 
+<view class="box1" style="top: 1550rpx; height: 450rpx;">
+  <view class="txt2">活动进度</view>
+  <view class="people">
+    <view class="peopleson">
+      <view>0</view>
+      <view>邀请好友(人)</view>
+    </view>
+    <view class="peopleson">
+      <view>0</view>
+      <view>以获得奖励</view>
+    </view>
+  </view>
+  <view class="txt2">邀请记录</view>
+  <view style="margin-top: 70rpx;">暂无记录哦~</view>
+</view>
+
 
 
 
