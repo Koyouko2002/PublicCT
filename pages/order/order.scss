@@ -1,1 +1,16 @@
 /* pages/order/order.wxss */
+
+.top {
+  background-color: white;
+
+  .topTitle {
+    margin-top: 70rpx;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

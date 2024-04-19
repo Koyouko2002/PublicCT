@@ -51,7 +51,9 @@
   <view class="title">会员服务</view>
   <!-- 应用 -->
   <view class="apps">
-    <navigator class="app" wx:for="{{apps}}" url="/#">
+    <navigator class="app" 
+    url="{{item.url}}"
+    wx:for="{{apps}}" >
       <image class="img" src="{{item.img}}" />
       <view class="appDes">{{item.appDes}}</view>
     </navigator>

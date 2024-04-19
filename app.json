@@ -8,7 +8,9 @@
     "pages/indexson/stucard/stucard",
     "pages/indexson/sturule/sturule",
     "pages/indexson/friend/friend",
-    "pages/indexson/disfree/disfree"
+    "pages/indexson/disfree/disfree",
+    "pages/mine/pandaShopping/pandaShopping"
+
   ],
   "window": {
     "navigationBarTextStyle": "black",

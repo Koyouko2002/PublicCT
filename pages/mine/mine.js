@@ -12,11 +12,13 @@ Page({
     borderRadius:'100',//圆角
     strokeWidth:'9rpx',//进度条粗细
 
+    
     // 应用数据
     apps:[
       {
         img:"/assets/mine/商城.png",
-        appDes:"熊猫币商城"
+        appDes:"熊猫币商城",
+        url:"/pages/mine/pandaShopping/pandaShopping"
       },
       {
         img:"/assets/mine/礼品卡.png",
