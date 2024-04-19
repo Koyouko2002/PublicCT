@@ -1,6 +1,10 @@
 // index.js
 Page({
   data: {
+    //小童，我加一点数据进去
+    userInfo:[],
+
+
     imgUrls: [
       '/assets/首页Top2.png',
       '/assets/首页Top3.png',
@@ -26,6 +30,20 @@ Page({
       {text: '悦己计划', mode:'/assets/悦己计划.png' }
     ],
   },
+
+  // 小童我加个函数
+  /* 页面加载监听 */
+onLoad(option){
+  // 得到缓存的用户登陆数据
+  let thisUserInfo = wx.getStorageSync('userInfo');
+  // console.log(thisUserInfo);
+  // 刷新渲染
+  this.setData({
+    userInfo:thisUserInfo
+  })
+},
+
+
   tabbuy: function () {
     wx.switchTab({
       url: '/pages/buy/buy',

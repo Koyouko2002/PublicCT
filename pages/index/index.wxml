@@ -1,56 +1,75 @@
 <!--index.wxml-->
 <!-- <navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar> -->
 <view class="uncolor">
-<view style="height: 650rpx;">
-  <scroll-view scroll-y type="list" style="position: absolute; z-index: 2;">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="Carouselmap">
-      <swiper-item wx:for="{{imgUrls}}"  wx:key="index">
-        <image mode="widthFix" src="{{item}}" style="width: 100%;"/>
-      </swiper-item>
-    </swiper>
-  </scroll-view>
-  <scroll-view scroll-y type="list" style="position: absolute; z-index: 1;">
-    <swiper indicator-dots="indicatorDots" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration2}}" class="Carouselmap">
-      <swiper-item wx:for="{{imgUrls2}}" wx:key="index">
-        <image mode="widthFix" src="{{item}}" style="width: 100%;"/>
-      </swiper-item>
-    </swiper>
-  </scroll-view>
-</view>
+  <view style="height: 650rpx;">
+    <scroll-view scroll-y type="list" style="position: absolute; z-index: 2;">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="Carouselmap">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+          <image mode="widthFix" src="{{item}}" style="width: 100%;" />
+        </swiper-item>
+      </swiper>
+    </scroll-view>
+    <scroll-view scroll-y type="list" style="position: absolute; z-index: 1;">
+      <swiper indicator-dots="indicatorDots" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration2}}" class="Carouselmap">
+        <swiper-item wx:for="{{imgUrls2}}" wx:key="index">
+          <image mode="widthFix" src="{{item}}" style="width: 100%;" />
+        </swiper-item>
+      </swiper>
+    </scroll-view>
+  </view>
 
 
   <view class="w90">
-  <!-- 欢迎新朋友 -->
+    <!-- 欢迎新朋友 -->
     <view class="welbox">
-      <view class="welboxtxt">Hi~欢迎新朋友</view>
-      <view class="welboxlog">注册/登录</view>
+      <!-- 未登陆状态 -->
+      <view class="welboxtxt" wx:if="{{userInfo==[]}}">Hi~欢迎新朋友</view>
+      <!-- 登陆状态 -->
+      <view class="welboxtxt" wx:else>Hi~欢迎您，{{userInfo.nike}}</view>
+      <!-- 若未登录 -->
+      <view class="welboxlog" wx:if="{{userInfo==[]}}">注册/登录</view>
+      <!-- 若已登陆 -->
+      <view class="" wx:else>熊猫币：{{userInfo.pandacoin}}</view>
+
     </view>
-  <!-- 到店自取&外卖配送 -->
+    <!-- 到店自取&外卖配送 -->
     <view class="orderbox">
-      <view class="orderboxson" ><image src="/assets/到店自取.png" bindtap="tabbuy"/></view>
-      <view class="orderboxson" ><image src="/assets/外卖配送.png" bindtap="onImage1Tap"/></view>
+      <view class="orderboxson">
+        <image src="/assets/到店自取.png" bindtap="tabbuy" />
+      </view>
+      <view class="orderboxson">
+        <image src="/assets/外卖配送.png" bindtap="onImage1Tap" />
+      </view>
       <view class="Line"></view>
     </view>
-  <!-- 功能选项 -->
+    <!-- 功能选项 -->
     <view class="bigbox">
       <view class="bobubox">
-        <view class="bobuboxson"  wx:for="{{items}}" wx:key="index" bindtap="friTap" data-index="{{index}}">
-          <image src="{{item.mode}}"/>
+        <view class="bobuboxson" wx:for="{{items}}" wx:key="index" bindtap="friTap" data-index="{{index}}">
+          <image src="{{item.mode}}" />
           <text class="bobuboxsontxt">{{item.text}}</text>
         </view>
       </view>
 
-      <view class="tab1"><image src="/assets/开卡减五元.png" mode=""/></view>
-      <view class="tab2"><image src="/assets/女生专属.png" mode=""/></view>
+      <view class="tab1">
+        <image src="/assets/开卡减五元.png" mode="" />
+      </view>
+      <view class="tab2">
+        <image src="/assets/女生专属.png" mode="" />
+      </view>
     </view>
   </view>
 
   <view class="flexfather">
-    <view class="leftimg"><image src="/assets/首页Bot1.jpg" bindtap="tabjoin"/></view>
-    <view class="rigthimg"><image src="/assets/首页Bot2.jpg" bindtap="tabbuy"/><image src="/assets/首页Bot3.jpg" bindtap="tabfree"/></view>
+    <view class="leftimg">
+      <image src="/assets/首页Bot1.jpg" bindtap="tabjoin" />
+    </view>
+    <view class="rigthimg">
+      <image src="/assets/首页Bot2.jpg" bindtap="tabbuy" />
+      <image src="/assets/首页Bot3.jpg" bindtap="tabfree" />
+    </view>
   </view>
 
 
-  
-</view>
 
+</view>

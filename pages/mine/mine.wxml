@@ -6,18 +6,18 @@
     <!-- 第二层盒子 用户头像，名称，优惠卷 -->
     <view class="userInfoTop">
       <!-- 左边头像部分 -->
-      <image class="avatar" src="/assets/mine/touxiang.png" mode="" />
+      <image class="avatar" src="{{userInfo.avatar}}" mode="" />
 
       <!-- 右边用户信息部分 -->
       <view class="left">
         <view class="title">
-          <text>可口的手打芋圆</text>
+          <text>{{userInfo.nike}}</text>
         </view>
 
         <view class="decs">
-          <view class="dec">熊猫币 <text>50</text> </view>
-          <view class="dec">优惠卷 <text>20</text> </view>
-          <view class="dec">礼卡 <text>90</text> </view>
+          <view class="dec">熊猫币 <text>{{userInfo.pandacoin}}</text> </view>
+          <view class="dec">优惠卷 <text>{{userInfo.coupon}}</text> </view>
+          <view class="dec">礼卡 <text>0</text> </view>
         </view>
       </view>
     </view>
@@ -26,18 +26,20 @@
     <view class="card">
       <!-- 注册时间 -->
       <view class="timeTips">
-        <view class="tips">您与千道茶坊已经相伴180天</view>
+        <view class="tips">您与千道茶坊已经相伴{{day}}天</view>
         <navigator url="/#">已解锁3项 ></navigator>
       </view>
       <!-- 成就称号 -->
       <view class="achievement">
-        好奇panda
+        {{levelName[userInfo.level]}}
       </view>
       <!-- 进度条 -->
       <progress class="progressBar" percent="{{progress}}" active color="{{color}}" activeColor="{{activeColor}}" border-radius="{{borderRadius}}" stroke-width="{{strokeWidth}}"></progress>
       <!-- 进度条提示 -->
       <view class="progressBarTips">
-        当前熊猫值51，距离下一个等级（等级名称）还差59
+        当前熊猫值{{userInfo.expValue}}，距离下一个等级
+        （等级名称）还差
+        {{levelExp[userInfo.level]-userInfo.expValue}}
       </view>
     </view>
   </view>

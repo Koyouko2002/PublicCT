@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/buy/buyson/buying/buying",
+  "entryPagePath": "pages/order/order",
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
