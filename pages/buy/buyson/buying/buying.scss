@@ -49,3 +49,32 @@ top: 5rpx;
   background: #f8ebdd;
   text-align: center;
 }
+.botviw{
+  margin-top: 70rpx;
+  width: 85%;
+  height: 500rpx;
+  // background: rgb(243, 243, 243);
+}
+.botviw text{
+  font-size: 28rpx;
+}
+.in{
+  background: #0a4cde;
+  color: white;
+}
+.botviw button{
+  position: relative;
+  left: -50rpx;
+  top: 90rpx;
+  display: inline-block;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  background: #ecf1f7;
+  width: 145rpx;
+  height: 55rpx;
+  border-radius: 60rpx;;
+  margin-left: 20rpx;
+}
+.buttons-2{
+  margin-top: 100rpx;
+}
