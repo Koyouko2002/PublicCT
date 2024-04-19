@@ -10,7 +10,7 @@ page {
 }
 @keyframes swiperdis{
   from{
-    height: 400rpx;
+    height: 290rpx;
       display:block
 }
   to{
@@ -25,7 +25,7 @@ page {
    
 }
   to{
-    height: 400rpx;
+    height: 290rpx;
     display:block
   }
 }
@@ -39,27 +39,27 @@ page {
 }
 @keyframes Rdown{
   from{
-    top: 0;
+    top: 10px;
 }
   to{
-    top: 150px;
+    top: 10px;
   }
 }
 .MidUp{
   animation: Rup 1s;animation-fill-mode:forwards;
   position: absolute;
-  top: 0px;
+  top: 10px;
 }
 .MidDown{
   animation: Rdown 1s;animation-fill-mode:forwards;
-  position: absolute;
-  top: 0px;
+  margin-top: -195rpx;
 }
 .swiper_app{
   animation: swiperapper 0.5s ;
   animation-fill-mode:forwards
 }
 .swiper_dis{
+
   animation: swiperdis 0.5s ;
   animation-fill-mode:forwards
 }
@@ -186,21 +186,23 @@ left: 257rpx;
     width: 30rpx;
   }
   swiper{
-    margin-top: -180rpx;
+    margin-top: 20rpx;
+    margin-left: 10rpx;
     width: 720rpx;
-    height: 400rpx;
-
+    height: 240rpx;
+    background: rgba(255, 0, 0, 0);
   }
   swiper image{
     width: 720rpx;
     border-radius:15rpx;
-    height: 280rpx;
+    height: 290rpx;
   }
   .M-L{
     display: flex;
     width: 180rpx;
-    height: 1400rpx;
+    height: 900rpx;
     background-color: #f0f0f0;
+
     // position: absolute;
     // top: 300rpx;
     // left: 2rpx;
@@ -239,14 +241,17 @@ left: 257rpx;
   .scrollarea2 {
     top: 0rpx;
     width: 755rpx;
-    height: 870rpx;
+    height: 880rpx;
     position: relative;
-    top: -700px;
+    top: -450px;
     left: 90px;
+    
+
   }
 .Mid{
 position: absolute;
-top: 150px;
+top: 10px;
+
 }
 .M-R{
 width: 545rpx;

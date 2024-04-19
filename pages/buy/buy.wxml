@@ -39,11 +39,9 @@
  </view>
 
 </view>
-<!-- 主体内容 编号 M-XXX -->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
+
   <!-- 轮播图 -->
-      <swiper class="{{swiperIs}}">
+  <swiper class="{{swiperIs}}">
         <swiper-item>
           <image src="/assets/订单页轮播图.jpg" />
         </swiper-item>
@@ -52,7 +50,11 @@
         </swiper-item>
       </swiper>
     
-    <view class="{{move}}">    
+<!-- 主体内容 编号 M-XXX -->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+
+      <view class="{{move}}" style="width: 755rpx; height: 903rpx; display: block; box-sizing: border-box; left: -2rpx; top: 0rpx">    
      <!-- 左侧导航栏 编号 M-L  -->
           <view class="M-L">
 
@@ -92,6 +94,7 @@
         upper-threshold="10"
         bindscroll="scrolling"  
         bindscrolltoupper="scrolled"
+        clip
         >
 
           <view class="M-R"> 
