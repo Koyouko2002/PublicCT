@@ -72,13 +72,27 @@
 
     </view>
     </view>
-
-
     <view class="bottom"> </view>
+
     <view class="b-subit">
-    <text class="price">¥{{price}}</text>
-    
+    <text class="price" >¥{{price*amount}}</text>
+    <view class="adddis"> 
+        <view 
+        bind:tap="sub"
+        > -</view>   
+    <text> {{amount}}</text>   
+       <view 
+       bind:tap="add"
+       style="background: #184ce1;color: #ffffff;"> +</view>
      </view>
+     </view>
+
+
+
+
+
+
+
   </view>
   </view>
 </scroll-view>

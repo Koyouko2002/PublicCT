@@ -1,5 +1,6 @@
 // pages/buy/buyson/buying/buying.js\
 var is6key=0,is7key=0,is8key=0;
+var amount = 0;
 
 Page({
 
@@ -18,6 +19,26 @@ Page({
     color6:"",
     is:"",is8:"",
     color7:"",color7:"",
+    amount:1,
+  },
+  add(){
+       amount +=1;
+    this.data.amount=amount;
+     console.log(amount);
+    this.setData({
+       amount:amount,
+    })
+  },
+  sub(){
+    if(amount>1){ 
+        amount -=1;
+    this.data.amount=amount;
+    console.log(amount);
+    this.setData({
+       amount:amount,
+    })
+    }
+  
   },
   mcup(){
   this.setData({

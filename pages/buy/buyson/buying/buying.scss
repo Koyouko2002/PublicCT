@@ -126,6 +126,34 @@ top: 5rpx;
   bottom: 0;
   width: 100%;
   height: 200rpx;
-  background-color:white;
+  background-color:rgb(168, 168, 168);
+
+}
+.price{
+  position: relative;
+   left: 32rpx; 
+   top: 20rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.adddis{
+  position: relative;
+  top: -30rpx;
+  left: 600rpx;
+  width: 200rpx;
+  height: 100rpx;
+
+}
+.adddis view{ 
+  display: inline-block;
+    width: 30rpx;
+    height: 30rpx;
+    line-height: 29rpx;
+    background: white;
+    border-radius: 50rpx;
+    text-align: center;
+    border: 1px solid #c1c1c1;
+    margin-left: 15rpx;
+
 }
 
