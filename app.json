@@ -1,13 +1,17 @@
 {
-  "entryPagePath": "pages/order/order",
+  "entryPagePath":  "pages/buy/buy",
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
+    "pages/buy/buyson/buying/buying",
+    "pages/buy/buyson/search/search",
+    "pages/buy/buyson/explan/explan",
     "pages/order/order",
     "pages/mine/mine",
     "pages/indexson/stucard/stucard",
     "pages/indexson/sturule/sturule",
     "pages/indexson/friend/friend",
+    "pages/indexson/joingroup/joingroup",
     "pages/indexson/disfree/disfree",
     "pages/mine/pandaShopping/pandaShopping"
 
