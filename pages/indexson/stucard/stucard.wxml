@@ -1,2 +1,16 @@
 <!--pages/indexson/stucard/stucard.wxml-->
-<text>pages/indexson/stucard/stucard.wxml</text>
+<!-- <text>pages/indexson/stucard/stucard.wxml</text> -->
+
+<view class="stucartop">
+  <view><image src="/assets/学子卡Top.jpg" mode="widthFix" style="width: 100%;"/></view>
+  <view class="messbox">
+    <view wx:for="{{discounts}}" wx:key="index">
+      <view class="messtxt">
+        开卡立减{{item.amount}}元 <text> 每人仅限领取{{item.limit}}次</text>
+      </view>
+      <view class="messimg"><image src="{{item.image}}" mode="widthFix"/></view>
+    </view>
+  </view>
+
+  <view class="rol" bindtap="fristurule">规则</view>
+</view>

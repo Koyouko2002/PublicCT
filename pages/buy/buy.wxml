@@ -16,7 +16,7 @@
 <text class="top-1-t2" bind:tap="Top1move" style="color: {{T2C}};"> 外卖</text>
 </view>
 <!-- 搜索选择框  编号 top-search    [页面跳转预留]-->
-<view class="top-search">
+<view class="top-search" bind:tap="buying">
   <image src="/assets/search.png" mode=""/>
 </view>
 <!-- 位置导航框+广告 编号 top-2   [页面跳转预留]-->
@@ -107,7 +107,11 @@
                 <text class="M-R-index-t2"> 椰子乳I  <text style="color: #3c71e4;">椰子雪糕</text>I 黑糖珍珠</text>
                 <text class="M-R-index-t3">甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。</text>    
                 <text class="M-R-index-t4">¥ 14 起</text>
-                <view class="abotton">  选规格</view>
+
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
+
              </view>
 
            
@@ -125,7 +129,10 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <view class="abotton">  选规格</view>
+
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
              </view>
 
            
@@ -150,7 +157,9 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <view class="abotton">  选规格</view>
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
              </view>
 
            
@@ -161,6 +170,171 @@
 
 
           </view>
+
+          <view class="M-R" style="display:{{page3}}"> 
+            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <view class="M-R-index" 
+            wx:for="{{Order3}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O3.Png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+
+          <view class="M-R" style="display:{{page4}}"> 
+            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <view class="M-R-index" 
+            wx:for="{{Order4}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O4.png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+
+          <view class="M-R" style="display:{{page5}}"> 
+            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <view class="M-R-index" 
+            wx:for="{{Order5}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O5.Png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+
+          <view class="M-R" style="display:{{page6}}"> 
+            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <view class="M-R-index" 
+            wx:for="{{Order6}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O6.Png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+
+          <view class="M-R" style="display:{{page7}}"> 
+            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <view class="M-R-index" 
+            wx:for="{{Order7}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O7.Png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+
+          <view class="M-R" style="display:{{page8}}"> 
+            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <view class="M-R-index" 
+            wx:for="{{Order8}}"
+            wx:for-item="Cup"
+            >
+            <image src="/assets/Order/O8.Png" class="M-R-index-image"/>
+             <view class="M-R-index-view">
+                 <text class="M-R-index-t1"> {{Cup.name}} </text>
+               <image src="/assets/Order/icon.png" class="mricon" />  
+                <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
+                <text class="M-R-index-t3">{{Cup.t2}}。</text>    
+                <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
+                <navigator url="/pages/buy/buyson/buying/buying">
+                <view class="abotton"  bind:tap="buying">选规格</view>
+                </navigator>
+             </view>
+
+           
+            </view>  
+
+
+
+
+
+          </view>
+
+
+
         </scroll-view>
 
 

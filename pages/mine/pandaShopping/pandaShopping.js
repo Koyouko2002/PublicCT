@@ -5,7 +5,60 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    /*规则、订单、明细 */
+    rule:[
+      {
+        pic:"/assets/coinMall/mingxi.png",
+        txt:"熊猫币明细",
+    },
+    {
+      pic:"/assets/coinMall/dingdan.png",
+      txt:"熊猫币订单",
+  },
+  {
+    pic:"/assets/coinMall/guize.png",
+    txt:"熊猫币规则",
+},
+  ]
+,
+  tickets:[
+    {
+      pic:"/assets/元2无门槛.png"  ,
+      tip:"2元无门槛优惠券",
+      text1:"100熊猫币",
+      text2:"剩余78452",
+    },
+    {
+      pic:"/assets/元4无门槛.png"  ,
+      tip:"4元无门槛优惠券",
+      text1:"150熊猫币",
+      text2:"剩余78452",
+    },
+    {
+      pic:"/assets/元6无门槛.png"  ,
+      tip:"6元无门槛优惠券",
+      text1:"200熊猫币",
+      text2:"剩余78452",
+    },
+    {
+      pic:"/assets/元8无门槛.png"  ,
+      tip:"8元无门槛优惠券",
+      text1:"400熊猫币",
+      text2:"剩余78452",
+    },
+    {
+      pic:"/assets/元2无门槛.png"  ,
+      tip:"2元无门槛优惠券",
+      text1:"100熊猫币",
+      text2:"剩余78452",
+    },
+    {
+      pic:"/assets/元2无门槛.png"  ,
+      tip:"2元无门槛优惠券",
+      text1:"100熊猫币",
+      text2:"剩余78452",
+    },
+  ]
   },
 
   /**
