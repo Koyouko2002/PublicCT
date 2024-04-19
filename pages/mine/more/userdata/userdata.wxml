@@ -1,10 +1,22 @@
 <!--pages/mine/more/userdata.wxml-->
-<view>
-<image src="" mode=""/>
+
+<view class="box1">
+
+<image src="/assets/mine/more/logo.png" mode=""/>
 <!-- 昵称 -->
-<text> 昵称</text> <text></text>
+
+<view>
+<text> 昵称</text><text>香甜的生椰西瓜</text>
+</view>
 <!-- 手机 -->
-<text></text> <text></text>
+<view>
+<text>手机</text> <text>186****8621</text>
+</view>
 <!-- 性别 -->
-<text></text> 
+<view>
+<text>性别</text> 
+</view>
+<!-- 生日 -->
+<text>生日</text>
+
 </view>
