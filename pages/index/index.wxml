@@ -61,4 +61,4 @@
     </view>
   </view>
 <!-- 这个盒子是为了增加底部的厚度 -->
-<view style="height: 20rpx;"></view>
+<view style="height: 25rpx;"></view>
