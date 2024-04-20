@@ -7,6 +7,12 @@ Page({
     modalHidden: true,
     actionSheetHidden: true,
   },
+  fritit: function () {
+    wx.showToast({
+      title: '活动过于火爆请稍后重试', icon: 'none', duration: 1000,
+    });
+  },  
+  
   ifregister: function () {
     var that = this;
       that.setData({
