@@ -21,7 +21,8 @@
     "pages/mine/more/userdata/userdata",
     "pages/mine/pandaShopping/discounts/discount",
     "pages/mine/level/viprule/viprule",
-    "pages/buy/buyson/buyed/buyed"
+    "pages/buy/buyson/buyed/buyed",
+    "pages/mine/card/card"
   ],
   "window": {
     "navigationBarTextStyle": "black",

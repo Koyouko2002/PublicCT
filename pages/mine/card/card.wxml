@@ -17,7 +17,13 @@
           <view class="half_top_card_top_right_image"><image src="/assets/mine/LOGO.png" mode=""/></view>
         </view>
       </view>
-      <view class="half_top_card_bottom"></view>
+      <view class="half_top_card_bottom">
+        <view>
+          <image src="/assets/" mode=""/>
+          <input type="text"/>
+          <text></text>
+        </view>
+      </view>
     </view>
   </view>
   <view class="half_bottom">
