@@ -168,6 +168,13 @@ Page({
   t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.", price:"3",
   img:"O7ZT.png"
 },
+{ 
+  name:"崩破",
+  t1:"性感武士提供I ",
+  t1prime:"满100减50",
+  t2:"妹妹没盾了吧！", price:"99",
+  img:"O7BP.png"
+},
 ],
    Order8:[{
   name:"单杯保温袋",
@@ -193,8 +200,6 @@ Page({
   },
   buying(){
     console.log("111")
-
-    
   },
 scrolling(){
 if(is==0){
@@ -364,6 +369,12 @@ button8(){
     page4:"none",page5:"none",page6:"none",
     page7:"none",page8:"block",
   })
+},
+sumbit(){
+  wx.redirectTo({
+    url: '/pages/buy/buyson/buyed/buyed.wxml',
+  })
+  console.log(111)
 },
   /**
    * 生命周期函数--监听页面加载

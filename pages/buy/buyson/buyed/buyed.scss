@@ -1,0 +1,114 @@
+/* pages/buy/buyson/buyed/buyed.wxss */
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+.scrollarea{
+  flex: 1;
+  overflow-y: hidden;
+}
+.Top{
+  margin-top: -180rpx;
+  width: 95%;
+  height: 350rpx;
+  background: rgb(255, 255, 255);
+  border-radius: 40rpx;;
+}
+.Top-wordview{
+
+  width: 80%;
+  height: 300rpx;
+  margin-top: 70rpx;
+  margin-left: 20rpx;
+}
+.Top-t1{
+  display: block;
+  font-size: 29rpx;
+  font-weight: bold;
+}
+.Top-t2{
+  display: block;
+  width: 480rpx;
+  font-size: 27rpx;
+  color: #a6a8ac;
+}
+.Top-t3{
+  margin-top: 90rpx;
+  display: block;
+  font-size: 29rpx;
+  color:#7a7a7a;
+  font-weight: 600;
+}
+.Top-Other{
+margin-top: -330rpx;
+margin-left: 490rpx;
+width: 30%;
+height: 300rpx;
+
+}
+.Top-Other-t1{
+  margin-top: 5rpx;
+  margin-left: 70rpx;
+  width: 130rpx;
+  height: 40rpx;
+  border: 1px solid #868686;
+  font-size: 24rpx;
+  text-align: center;
+  color: #868686;;
+}
+.Top-Other image{
+  overflow: hidden;
+  width: 80rpx;
+  height: 80rpx;
+  color: #7a7a7a;
+  margin-left: 5rpx;
+  border: 2prx #0b4cda solid;
+
+  
+}
+  .imgfather{
+    margin-top: 10rpx;
+    width: 90rpx;
+    height: 90rpx;
+    color: #7a7a7a;
+    margin-left: 80rpx;
+    border: 4px #0b4cda solid;
+    border-radius: 90rpx;;
+  }
+  .main{
+    border-radius: 40rpx;;
+    position: relative;
+    top: -90rpx;
+    width: 95%;
+    height: 500rpx;
+    background: rgb(255, 255, 255);
+  }
+  .main-top{
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    width: 90%;
+    height: 200rpx;
+    background: rgb(255, 255, 255);
+  }
+  .main-top-t1{
+    font-size: 27rpx;
+    font-weight: bold;
+  }
+  .main-top-t2{
+    margin-top: -35rpx;
+    margin-left: 440rpx;
+    display: block;
+    font-size: 23rpx;
+    text-align: center;
+    width:200rpx;
+    height: 40rpx;
+     background: #e5effb;
+     color: #5c89f3;
+  }
+.main-top-index image{
+  margin-top: 5rpx;
+  width: 150rpx;
+  height: 150rpx;
+}

@@ -1,0 +1,38 @@
+<!--pages/buy/buyson/buyed/buyed.wxml-->
+<scroll-view class="scrollarea">
+<view class="container" style="background-color: #f5f7f6;">
+
+<!-- 顶部区域 -->
+<view class="Top">
+<!-- 顶部区域  文字-->
+<view class="Top-wordview">
+<text class="Top-t1">千道茶坊绵阳城市学院安州店 </text>
+<text class="Top-t2">四川省绵阳市安州区启明星大道北段绵阳城市学院内a3-18</text>
+<text class="Top-t3">联系电话 18683047885</text>
+</view>
+<!-- 顶部区域  识图-->
+<view class="Top-Other"> 
+<view class="Top-Other-t1"> 距您500m</view>
+<view class="imgfather">   
+<image src="/assets/mine/LOGO.png" />
+</view>
+</view>
+
+</view>
+
+<view class="main">
+<view class="main-top">
+<text class="main-top-t1">订单情况</text>
+<view class="main-top-t2"> 请注意饮品规范哦  </view>
+
+  <view class="main-top-index">
+  <image src="/assets/Order/O6.png" />
+
+
+  </view>
+</view>
+
+</view>
+
+</view>  
+</scroll-view>

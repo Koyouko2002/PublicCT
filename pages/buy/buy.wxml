@@ -337,13 +337,21 @@
         </scroll-view>
 
         <view class="b-subit" style="display:{{open}};">
+            <navigator 
+            class="nato1"
+            url="/pages/buy/buyson/buying/buying" open-type="redirect">
+            <view class="buycar">  </view>
+        <image src="/assets/Order/口袋.png" mode=""/>    
+         <view class="prime"> 1</view>
+</navigator>
     <text class="price" >¥{{total}}</text>
-
-
-     
-     
-     <button class="sumbit" bind:tap="sumbit">去结算</button>
-
+    <view class="nato2">  
+      <navigator url="/pages/buy/buyson/buyed/buyed" open-type="redirect" > 
+     <button class="sumbit" bind:tap="sumbit">
+     去结算
+     </button>
+    </navigator>
+      </view>
      </view>
 
       </view>

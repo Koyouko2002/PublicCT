@@ -1,9 +1,9 @@
 /* pages/mine/level/level.wxss */
 
 // 背景渐变色组合
-.level2{
-  background: linear-gradient(to bottom, #c8f2ff, #fdfeff);
-}
+// .level2{
+//   background: linear-gradient(to bottom, #c8f2ff, #fdfeff);
+// }
 
 page{
   height: 100%;
@@ -13,6 +13,14 @@ page{
 .container1 {
   // height: 10000rpx;
   height: 100%;
+
+  // 顶部背景图
+  .bac{
+    z-index: -99;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+  }
 
   // 顶部文字
   .top {
@@ -40,5 +48,10 @@ page{
       font-weight: 700;
     }
 
+    // 侧边俩按钮
+    .rightBtn{
+      // text-align: right;
+      justify-self: flex-end;
+    }
   }
 }

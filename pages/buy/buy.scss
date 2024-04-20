@@ -200,7 +200,7 @@ left: 257rpx;
   .M-L{
     display: flex;
     width: 180rpx;
-    height: 900rpx;
+    height: 1000rpx;
     background-color: #f0f0f0;
 
     // position: absolute;
@@ -243,7 +243,7 @@ left: 257rpx;
     width: 755rpx;
     height: 880rpx;
     position: relative;
-    top: -450px;
+    top: -500px;
     left: 90px;
     
 
@@ -332,8 +332,8 @@ font-weight: bold;
 }
 .price{
   position: relative;
-   left: 32rpx; 
-   top: 20rpx;
+   left: 80rpx; 
+   top: -50rpx;
   font-size: 40rpx;
   font-weight: bold;
 }
@@ -375,8 +375,39 @@ color: #c1c1c1;
   color: white;
   width: 200rpx;
   height: 70rpx;
-  margin-top: -30rpx;
+  margin-top: -110rpx;
   margin-right: 30rpx;
   border-radius: 50rpx;
   font-size: 30rpx;
 }
+.b-subit image{
+  position: relative;
+  top: 27rpx;
+  left: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.prime{
+  position: relative;
+  top: -30rpx;
+  left: 45rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 20rpx;
+  background-color: #73da02;
+  font-size: 18rpx;
+  text-align: center;
+  line-height: 18rpx;
+  color: white;
+}
+.nato2{
+  width: 300rpx;
+  margin-left: 450rpx;
+
+}
+// .nato1{
+//   display: blocks;
+//   width: 200rpx;
+//   height: 200rpx;
+// background: red
+// }

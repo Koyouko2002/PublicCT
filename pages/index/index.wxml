@@ -29,8 +29,8 @@
       <view class="welboxlog" wx:if="{{userInfo==[]}}" bind:tap="login">注册/登录</view>
       <!-- 若已登陆 -->
       <view class="" wx:else>熊猫币：{{userInfo.pandacoin}}</view>
-
     </view>
+
     <!-- 到店自取&外卖配送 -->
     <view class="orderbox">
       <view class="orderboxson" wx:for="{{imgUrls3}}" wx:key="index" bindtap="moreTop" data-index="{{index}}"><image src="{{item}}"/></view>
@@ -44,13 +44,13 @@
           <text class="bobuboxsontxt">{{item.text}}</text>
         </view>
       </view>
-
+      <!-- 消息框 -->
       <view class="tab1" wx:for="{{imgUrls4}}"  wx:key="index">
         <image src="{{item}}" />
       </view>
     </view>
   </view>
-
+  <!-- 三宫格 -->
   <view class="flexfather">
     <view class="leftimg">
       <image src="/assets/首页Bot1.jpg" mode="widthFix" bindtap="tabjoin" />
@@ -60,5 +60,5 @@
       <image src="/assets/首页Bot3.jpg" mode="widthFix" bindtap="tabfree" />
     </view>
   </view>
-
-<view style="height: 20rpx;"></view>
+<!-- 这个盒子是为了增加底部的厚度 -->
+<view style="height: 25rpx;"></view>
