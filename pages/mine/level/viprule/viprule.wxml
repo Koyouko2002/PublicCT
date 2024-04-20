@@ -1,4 +1,21 @@
 <!--pages/mine/level/viprule/viprule.wxml-->
+<scroll-view scroll-x=""> 
+  
+
+<view class="top">
+<view>会员日特权</view>
+<view>徽章特权</view>
+<view>升级礼遇</view>
+<view>生日特权</view>
+<view>专属兑换</view>
+<view>拼单特权</view>
+<view>IP特权</view>
+<view>等级特权</view>
+<view>升杯自由</view>
+</view>
+
+</scroll-view>
+
 
 <view class="imagebox">
 <!-- v1 -->
