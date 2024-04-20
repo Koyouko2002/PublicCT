@@ -19,8 +19,8 @@
       </view>
       <view class="half_top_card_bottom">
         <view>
-          <image src="/assets/" mode=""/>
-          <input type="text"/>
+          <image src="/assets/mine/card/相机.png" mode=""/>
+          <input type="text" />
           <text></text>
         </view>
       </view>

@@ -1,75 +1,140 @@
 <!--pages/mine/level/viprule/viprule.wxml-->
+<scroll-view scroll-x=""> 
+  
+
+<view class="top">
+<view>会员日特权</view>
+<view>徽章特权</view>
+<view>升级礼遇</view>
+<view>生日特权</view>
+<view>专属兑换</view>
+<view>拼单特权</view>
+<view>IP特权</view>
+<view>等级特权</view>
+<view>升杯自由</view>
+</view>
+
+</scroll-view>
+
+
+<view class="imagebox">
 <!-- v1 -->
 <view>
 <image src="/assets/mine/level/v1.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
 <view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<!-- 文字部分结束 -->
 </view>
 </view>
 <!-- v2 -->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v2.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
-<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<view>注册Lv.0|可领取迷路徽章升至
+      Lv.1|可领取新生徽章升至
+      Lv.2|可领取好奇徽章升至
+      Lv.3|可领取饮茶徽章升至
+      Lv.4|可领取茶艺徽章升至
+      Lv.5|可领取茶道徽章升至
+      Lv.6|可领取黑金徽章
+</view>
+<!-- 文字部分 -->
 </view>
 </view>
 <!-- v3 -->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v3.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
-<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<view>升至LV.2|满15-3元券*2
+升至LV.3|满15-3元券+第二杯半价券
+升至LV.4|免费升杯券+第二杯半价券
+升至LV.5│免费升杯券+买二赠一券
+升至LV.6 |小料自由券*4
+</view>
+<!-- 文字部分 -->
 </view>
 </view>
 <!-- v4 -->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v4.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
-<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<view>升至LV.3|3元无门槛+满30元减5元券
+升至LV.4|3元无门槛+满30元减5元券
+升至LV.5 |3元无门槛+满30-5券+满45-10券
+升至LV.6|免单券+满30-5券+满45-10券
+</view>
+<!-- 文字部分 -->
 </view>
 </view>
 <!-- v5 -->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v5.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
-<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<view>升至LV.3|可解锁熊猫币商城专属兑换
+</view>
+<!-- 文字部分 -->
 </view>
 </view>
 <!-- v6 -->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v6.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
-<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<view>升至LV.3|拼单减免3元*1
+升至LV.4|拼单减免3元*1
+升至LV.5|拼单减免5元*1
+升至LV.6|拼单减免5元*1
+</view>
+<!-- 文字部分 -->
 </view>
 </view>
 <!-- v7 -->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v7.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
 <view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<!-- 文字部分 -->
 </view>
 </view>
 <!-- v8-->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v8.jpg" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
-<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<view>会员均享有社群20元券包权益
+升至LV.3|即可解锁异业特权
+升至LV.5|拥有线下活动优先参与权
+升至LV.6|有机会赢取限量周边
+</view>
+<!-- 文字部分 -->
 </view>
 </view>
 <!-- v9-->
 <view>
-<image src="/assets/mine/level/v1.jpg" mode=""/>
+<image src="/assets/mine/level/v9.png" mode=""/>
 <view class="textbox">
+<!-- 文字部分 -->
 <view>尊享权益</view>
-<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+<view>升至LV.5|升杯券*2升至LV.6|升杯券*4
 </view>
+<!-- 文字部分 -->
+</view>
+</view>
+
 </view>
 
 
