@@ -29,7 +29,7 @@
     </view>
     <!--券-->
     <view  class="ticket">
-      <view wx:for="{{list}}"  class="tic_main">
+      <navigator wx:for="{{list}}"  class="tic_main" url="{{item.url}}">
         <image src="{{item.pic}}"></image>
         <view class="tic_bottom">
           <view class="tip">{{item.tip}}</view>
@@ -37,7 +37,7 @@
           <text class="txt2">{{item.text2}}</text>
         </view>
 
-      </view>
+      </navigator>>
       <view class="bottom">看看其他分类呢~</view>
      
     </view>
