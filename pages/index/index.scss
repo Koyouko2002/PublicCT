@@ -1,18 +1,16 @@
 /**index.wxss**/
-// page {
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-// }
+page {
+  background-color: rgb(240,241,245);
+}
 // .scrollarea {
 //   flex: 1;
 //   overflow-y: hidden;
 // }
 
 .uncolor{
-  width: 100%;
-  height: 100%;
-  background-color: rgb(240,241,245);
+  // width: 100%;
+  // height: 100%;
+
 }
 
 .Carouselmap{
@@ -158,13 +156,12 @@
 }
 
 .leftimg{
-  width: 45%;
+  width: 47%;
   height: 100%;
 }
 
 .leftimg image{
   width: 100%;
-  height: 350rpx;
   border-radius: 15rpx;
 }
 .rigthimg{
@@ -176,6 +173,5 @@
 }
 .rigthimg image{
   width: 100%;
-  height: 45%;
   border-radius: 15rpx;
 }
