@@ -100,9 +100,9 @@
      
      </view>
      
-     <navigator url="">   
-     <button class="sumbit">提交订单</button>
-     </navigator>
+     
+     <button class="sumbit" bind:tap="sumbit">提交订单</button>
+
      </view>
 
 

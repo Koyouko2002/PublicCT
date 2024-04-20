@@ -54,7 +54,7 @@
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
 
-      <view class="{{move}}" style=" height: 900rpx; ">    
+      <view class="{{move}}" style="height: 1000rpx; ">    
      <!-- 左侧导航栏 编号 M-L  -->
           <view class="M-L">
 
@@ -107,8 +107,8 @@
                 <text class="M-R-index-t2"> 椰子乳I  <text style="color: #3c71e4;">椰子雪糕</text>I 黑糖珍珠</text>
                 <text class="M-R-index-t3">甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。</text>    
                 <text class="M-R-index-t4">¥ 14 起</text>
-
-                <navigator url="/pages/buy/buyson/buying/buying">
+                
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
 
@@ -129,8 +129,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -157,7 +156,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -184,7 +183,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -211,7 +210,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -238,7 +237,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -265,7 +264,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -292,7 +291,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -319,7 +318,7 @@
                 <text class="M-R-index-t2"> {{Cup.t1}}  <text style="color: #3c71e4;">{{Cup.t1prime}}</text></text>
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
-                <navigator url="/pages/buy/buyson/buying/buying">
+                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
              </view>
@@ -337,6 +336,15 @@
 
         </scroll-view>
 
+        <view class="b-subit" style="display:{{open}};">
+    <text class="price" >¥{{total}}</text>
+
+
+     
+     
+     <button class="sumbit" bind:tap="sumbit">去结算</button>
+
+     </view>
 
       </view>
   </view>
