@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/buy/buyson/buying/buying",
+  "entryPagePath":"pages/mine/level/level",
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
@@ -14,7 +14,8 @@
     "pages/indexson/joingroup/joingroup",
     "pages/indexson/disfree/disfree",
     "pages/mine/pandaShopping/pandaShopping",
-    "pages/mine/pandaShopping/rule/rule"
+    "pages/mine/pandaShopping/rule/rule",
+    "pages/mine/level/level"
   ],
   "window": {
     "navigationBarTextStyle": "black",

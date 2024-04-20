@@ -21,12 +21,13 @@ Page({
       pandacoin: 50,
       coupon: 20,
       level: 2,
-      expValue: 80,
+      expValue: 20,
       createDate: "2024-03-30",
       phone: "18166882589",
       sex: "男",
       birthday: "2024-2-28",
     },
+
     day: 0,//创建天数
     // 成就名称
     levelName: [
@@ -165,7 +166,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+  
   },
 
   /**
