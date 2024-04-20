@@ -16,6 +16,21 @@
     </view>
   </view>
   <!--熊猫币记录-->
+  <view class="record">
+    <view>熊猫币记录</view>
+    <view>
+      <view>
+        <view class="source"></view>
+        <view class="time"></view>
+        <view class="add"></view>
+      </view>
+      
+  </view>
+
+
+
+
+  </view>
 
 
 

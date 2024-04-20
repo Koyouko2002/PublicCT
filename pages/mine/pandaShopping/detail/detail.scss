@@ -34,15 +34,19 @@
   justify-content: center;
 }
 .notice{
-  background-color: red;
-  height: 100rpx;
+  
   width: 90%;
+  display: flex;
+  
 }
 .notice  image{
-  height: 50rpx;
-  width: 50rpx;
+  height: 60rpx;
+  width: 60rpx;
+  
 }
 .notice text{
-  line-height: 50rpx;
+  line-height: 60rpx;
   font-size: 25rpx;
+  margin-left:20rpx ;
+  color: #efba64;
 }
