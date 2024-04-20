@@ -76,7 +76,7 @@
     </view>
     <view class="qwe">
       <image src="/assets/朋友圈.png" mode="widthFix"/>
-      <view >
+      <view bindtap="play">
       保存图片
       </view>
     </view>

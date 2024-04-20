@@ -29,5 +29,12 @@ Page({
       actionSheetHidden: !this.data.actionSheetHidden
     })
   },
+  play: function () {
+    wx.showToast({
+      // actionSheetHidden: true,
+      title: '领取成功', icon: 'none', duration: 1000 
+    });
+  },  
+
   
 })
