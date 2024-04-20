@@ -1,9 +1,7 @@
 // index.js
 Page({
   data: {
-    //小童，我加一点数据进去
     userInfo: [],
-
 
     imgUrls: [
       '/assets/首页Top2.png',
@@ -31,7 +29,6 @@ Page({
     ],
   },
 
-  // 小童我加个函数
   /* 页面加载监听 */
   onLoad(option) {
     // 得到缓存的用户登陆数据
@@ -42,6 +39,32 @@ Page({
       userInfo: thisUserInfo
     })
   },
+
+  login(){
+    let userInfo=wx.getStorageSync('userInfo')
+    wx.showModal({
+      title: '是否一键的登陆',
+      content: "手机号登陆："+userInfo.phone,
+      complete: (res) => {
+        if (res.cancel) {
+          wx.showToast({
+            title: '用户取消登陆',
+          })
+        }
+    
+        if (res.confirm) {
+          this.setData({
+            userInfo:userInfo
+          })
+        }
+      }
+    })
+  },
+
+
+  /**
+   * 生命周期函数---页面显示监听
+   */
 
 
   tabbuy: function () {

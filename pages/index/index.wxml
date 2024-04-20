@@ -27,7 +27,7 @@
       <!-- 登陆状态 -->
       <view class="welboxtxt" wx:else>Hi~欢迎您，{{userInfo.nike}}</view>
       <!-- 若未登录 -->
-      <view class="welboxlog" wx:if="{{userInfo==[]}}">注册/登录</view>
+      <view class="welboxlog" wx:if="{{userInfo==[]}}" bind:tap="login">注册/登录</view>
       <!-- 若已登陆 -->
       <view class="" wx:else>熊猫币：{{userInfo.pandacoin}}</view>
 
