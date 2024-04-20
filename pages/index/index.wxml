@@ -57,14 +57,14 @@
 
   <view class="flexfather">
     <view class="leftimg">
-      <image src="/assets/首页Bot1.jpg" bindtap="tabjoin" />
+      <image src="/assets/首页Bot1.jpg" mode="widthFix" bindtap="tabjoin" />
     </view>
     <view class="rigthimg">
-      <image src="/assets/首页Bot2.jpg" bindtap="tabbuy" />
-      <image src="/assets/首页Bot3.jpg" bindtap="tabfree" />
+      <image src="/assets/首页Bot2.jpg" mode="widthFix" bindtap="tabbuy" />
+      <image src="/assets/首页Bot3.jpg" mode="widthFix" bindtap="tabfree" />
     </view>
   </view>
 
-
+<view style="height: 20rpx;"></view>
 
 </view>
