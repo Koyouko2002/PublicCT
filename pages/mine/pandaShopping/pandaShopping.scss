@@ -79,7 +79,7 @@
  
 }
 .coupon_active{
-  color:#426dac;
+  color:#fc5b7a;
   margin: 20rpx;
   font-size: large;
   line-height: 20rpx;
@@ -116,30 +116,32 @@ font-size: 20rpx;
   background-color: white;
   border-end-end-radius:25rpx ;
   border-end-start-radius:25rpx ;
-  height: 90rpx;
+  height:100rpx;
+
+  
   
 }
 .tip{
-  line-height: 40rpx;
-  border-bottom: 1px solid ;
+  // padding: 30rpx 0 30rpx 0;
+  
   text-align: left;
-  margin-left: 10rpx;
+  margin: -5rpx 0 10rpx 10rpx;
   font-size: 30rpx;
-  color: #98c981;
+  color: #fc5b7a;
 }
 
 .txt1{
   font-size: 25rpx;
   float: left;
   line-height: 60rpx;
-  color: #234c91;
+  color: #fad42f;
   margin-left: 10rpx;
 }
 .txt2{
   font-size: 20rpx;
   float: right;
   line-height: 60rpx;
-  color: #8d8d8d;
+  color: #c08a56;
   margin-right: 10rpx;
 }
 
