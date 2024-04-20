@@ -28,7 +28,7 @@ Page({
     fjvalue:0,total:0,
   },
   sumbit(){
-
+   
     price=this.data.price;
     total=price*amount+fjvalue;
     this.data.total=total;

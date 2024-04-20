@@ -1,5 +1,7 @@
 // pages/buy/buy.js
 var is=0;
+var total=0;
+var open=0;
 Page({
   /**
    * 页面的初始数据
@@ -330,7 +332,10 @@ button8(){
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    total = wx.getStorageSync('totelvalue');
+    open = wx.getStorageSync('open');
+console.log("__________")
+    console.log(open)
   },
 
   /**
