@@ -56,7 +56,7 @@ wx:for-item="HG">
 <text class="M-TB4-Text"  >有108人换购</text> 
 <text class="M-TB4-Text1"  >{{HG.name}}</text> 
 <text class="M-TB4-Text2"  >¥{{HG.value}}</text> 
-<view class="add"> + </view>
+<view class="add" bind:tap="buysome1"> + </view>
 </view>
 </view>
 
@@ -87,7 +87,7 @@ wx:for-item="HG">
 <text class="M-TB4-Text"  >有108人换购</text> 
 <text class="M-TB4-Text1"  >{{HG.name}}</text> 
 <text class="M-TB4-Text2"  >¥{{HG.value}}</text> 
-<view class="add"> + </view>
+<view class="add" bind:tap="buysome2"> + </view>
 </view>
 </view>
 
@@ -123,12 +123,8 @@ wx:for-item="HG">
 
 <view class="b-subit">
     <text class="price" > 待支付：¥{{Cup.total}}</text>
-
-
-     
-     
      <button class="sumbit" bind:tap="sumbit">支付</button>
-
+        <view class="hide"></view>
      </view>
 
 

@@ -1,4 +1,5 @@
 // pages/buy/buyson/buyed/buyed.js
+var some=0;
 Page({
 
   /**
@@ -45,6 +46,35 @@ Page({
     value:1.99,
   }
 ],
+
+  }
+  ,buysome1(){
+    this.data.Cup.total.toFixed(2);
+    some=this.data.Cup.total;
+    some+=0.99;
+    this.setData({
+    Cup:{
+         total:some
+    }
+
+    })
+    console.log(this.data.total)
+  },
+  buysome2(){
+
+    some=this.data.Cup.total;
+    some+=1.99;
+    this.setData({
+    Cup:{
+         total:some
+    }
+
+    })
+    console.log(this.data.total)
+  },
+  sumbit(){
+    
+    wx.setStorageSync('overvalue', this.data.Cup.total);
 
 
   },
