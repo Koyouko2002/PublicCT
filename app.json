@@ -1,5 +1,5 @@
 {
-  "entryPagePath":"pages/buy/buyson/buyed/buyed",
+  "entryPagePath": "pages/mine/level/viprule/viprule",
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
