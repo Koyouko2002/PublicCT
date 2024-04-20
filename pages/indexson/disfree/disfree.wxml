@@ -69,10 +69,14 @@
 
 <!-- 上拉菜单 -->
 <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
-  <view wx:for="{{actionSheetItems}}" style="background-color: rgba(0,0,0,0.6);">
-    {{item}}
-  </view>
-  <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+  <!-- <view wx:for="{{actionSheetItems}}" style="background-color: rgba(0,0,0,0.6);"> -->
+    <!-- {{item}} -->
+    <view class="asd">
+    <image src="/assets/呼朋唤友.jpg" mode="widthFix"/>
+    </view>
+    <view class="qwe"></view>
+  <!-- </view> -->
+  <!-- <action-sheet-cancel class="cancel">保存图片</action-sheet-cancel> -->
 </action-sheet>
 
 
