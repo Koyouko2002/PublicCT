@@ -39,11 +39,9 @@ Page({
     ],
   },
 
-  syncSwiper: function (e) {
-    // 获取第一个轮播图当前的滑动位置
-    var current = e.detail.current;
-    // 更新第二个轮播图的滑动位置
-    this.setData({
+  syncSwiper: function (e) {/*----------------轮播图动作的联动-----------------*/ 
+    var current = e.detail.current;// 获取第一个轮播图当前的滑动位置
+    this.setData({// 更新第二个轮播图的滑动位置
       current: current,
       interval2:0,
     });
