@@ -1,4 +1,75 @@
 <!--pages/mine/level/viprule/viprule.wxml-->
-<image src="" mode=""/>
-<text></text>
+<!-- v1 -->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v2 -->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v3 -->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v4 -->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v5 -->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v6 -->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v7 -->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v8-->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+<!-- v9-->
+<view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</view>
+
 
