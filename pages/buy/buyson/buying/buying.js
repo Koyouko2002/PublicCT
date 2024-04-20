@@ -3,7 +3,7 @@ var is6key=0,is7key=0,is8key=0;var price=0;
 var amount = 1;
 var fjvalue=0;
 var total=0;
-
+var whatup=0;
 Page({
 
   /**
@@ -172,6 +172,56 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+      switch(wx.getStorageSync('cupcupfull')){
+          case 1:
+        this.setData({
+        BackgroundUrl:"/assets/Order/BG1.png",
+        title:"红茶冰椰雪糕",
+        t1:"椰子乳I",t1prime:"椰子雪糕",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
+      })
+      break;
+      case 2:
+        this.setData({
+        BackgroundUrl:"/assets/Order/BG2.png",
+        title:"紫气葡萄",
+        t1:"椰子乳I",t1prime:"葡萄",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
+      })
+      break;
+      case 3:
+        this.setData({
+        BackgroundUrl:"/assets/Order/BG3.png",
+        title:"芒果昔昔乐",
+        t1:"椰子乳I",t1prime:"芒果",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
+      })
+      break;
+      case 4:
+        this.setData({
+        BackgroundUrl:"/assets/Order/BG4.png",
+        title:"乌漆嘛黑",
+        t1:"椰子乳I",t1prime:"桑葚",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
+      })
+      break;
+      case 6:
+        this.setData({
+        BackgroundUrl:"/assets/Order/BG6.png",
+        title:"紫米嘻嘻",
+        t1:"椰子乳I",t1prime:"紫米",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
+      })
+      break;
+      case 5:
+        this.setData({
+        BackgroundUrl:"/assets/Order/BG5.png",
+        title:"鲜果茶",
+        t1:"椰子乳I",t1prime:"鸡屎果",t11:"I 鲜牛奶",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
+      })
+      break;
+
+
+
+
+
+
+      }
 
   },
 
