@@ -119,3 +119,15 @@
   background-color: rgb(230, 230, 230);
   margin-bottom: 10rpx;
 }
+/*上半部的卡片的下半部分*/
+.half_top_card_bottom{
+  display: flex;
+  justify-content: center;
+}
+.half_top_card_bottom view{
+  height: 100rpx;
+  width: 600rpx;
+  background-color: rgb(230, 230, 230);
+  border-radius: 25rpx;
+  margin-top: 10rpx;
+}
