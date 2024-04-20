@@ -26,50 +26,50 @@ Page({
 },
   ]
 ,
-tickets:[ {
-  pic:"/assets/coinMall/ticket (1).jpg"  ,
-  tip:"现蒸芋头系列饮品…",
-  text1:"300熊猫币",
-  text2:"剩余35452",
-  url:"/pages/mine/pandaShopping/discounts/discount",
-},
-{
-  pic:"/assets/coinMall/ticket (2).jpg"  ,
-  tip:"抹茶布丁8.8折",
-  text1:"300熊猫币",
-  text2:"剩余63252",
-  url:"/pages/mine/pandaShopping/discounts/discount",
-},
-{
-  pic:"/assets/coinMall/ticket (3).jpg"  ,
-  tip:"草莓奶的8.8折",
-  text1:"300熊猫币",
-  text2:"剩余98520",
-  url:"/pages/mine/pandaShopping/discounts/discount",
-},
-{
-  pic:"/assets/coinMall/ticket (4).jpg"  ,
-  tip:"真鲜奶茶/轻乳茶…",
-  text1:"300熊猫币",
-  text2:"剩余35452",
-  url:"/pages/mine/pandaShopping/discounts/discount",
-},
+tickets:[ 
   {
-    pic:"/assets/coinMall/ticket (5).jpg"  ,
-    tip:"新品8.5折",
-    text1:"150熊猫币",
-    text2:"剩余78985",
-    url:"/pages/mine/pandaShopping/discounts/discount",
-  },
-  {
-    pic:"/assets/coinMall/ticket (9).jpg"  ,
-    tip:"指定饮品3元优惠券",
-    text1:"100熊猫币",
-    text2:"剩余78452",
-    url:"/pages/mine/pandaShopping/discounts/discount",
-  }
+  pic:"/assets/coinMall/pic (3).jpg",
+  tip:"2元无门槛优惠券",
+  text1:"100熊猫币",
+  text2:"剩余70456",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/pic (5).jpg",
+  tip:"3元无门槛优惠券",
+  text1:"150熊猫币",
+  text2:"剩余11360",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/pic (4).jpg",
+  tip:"满30减3元优惠券",
+  text1:"150熊猫币",
+  text2:"剩余96692",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/pic (1).jpg",
+  tip:"满50减5元优惠券",
+  text1:"250熊猫币",
+  text2:"剩余70456",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/pic (3).jpg",
+  tip:"单杯8.8折",
+  text1:"150熊猫币",
+  text2:"剩余92556",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/pic (3).jpg",
+  tip:"全场第二杯半价券",
+  text1:"500熊猫币",
+  text2:"剩余4775",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
 ],/*
-
  */
   recommend:[
     {
