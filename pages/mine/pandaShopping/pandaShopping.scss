@@ -13,7 +13,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  background: linear-gradient(#f2dfd2,white);
+  background: linear-gradient(#efece7,#f3dcc9);
 }
 .coin{
   font-size: 28rpx;
@@ -27,10 +27,9 @@
   margin-top: 10rpx;
 }
 .top image{
-  height: 150rpx;
-  width: 150rpx;
+  width: 300rpx;
   position: relative;
-  left: 60%;
+  left: 45%;
   top: 15%;
 }
 /*明细、规则、订单 */
