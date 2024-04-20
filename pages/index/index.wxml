@@ -1,6 +1,5 @@
 <!--index.wxml-->
-<!-- <navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar> -->
-<view class="uncolor">
+
   <view style="height: 650rpx;">
     <scroll-view scroll-y type="list" style="position: absolute; z-index: 2;">
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="Carouselmap">
@@ -66,5 +65,3 @@
   </view>
 
 <view style="height: 20rpx;"></view>
-
-</view>
