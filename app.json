@@ -16,7 +16,8 @@
     "pages/mine/pandaShopping/pandaShopping",
     "pages/mine/pandaShopping/rule/rule",
     "pages/mine/level/level",
-    "pages/mine/pandaShopping/detail/detail"
+    "pages/mine/pandaShopping/detail/detail",
+    "pages/mine/more/more"
   ],
   "window": {
     "navigationBarTextStyle": "black",
