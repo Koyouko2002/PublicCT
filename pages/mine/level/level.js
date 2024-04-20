@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: wx.getStorageSync('userInfo')
+    userInfo: wx.getStorageSync('userInfo'),
+
+    //此处为进度条相关配置
+    progress: 49,
+    color: '#07C160',
+    activeColor: '#fff',
+    borderRadius: '100',//圆角
+    strokeWidth: '9rpx',//进度条粗细
   },
 
   /**
@@ -26,7 +33,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      userInfo:wx.getStorageSync('userInfo')
+    })
   },
 
   /**
