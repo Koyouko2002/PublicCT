@@ -1,7 +1,7 @@
 <!--pages/buy/buyson/buyed/buyed.wxml-->
 <scroll-view class="scrollarea" scroll-y type="list">
 <view class="container" 
-style="background-color: #ececec;height: 2800rpx;">
+style="background-color: #ececec;height: 2600rpx;">
 
 <!-- 顶部区域 -->
 <view class="Top">
@@ -102,13 +102,34 @@ wx:for-item="HG">
 
 <view class="xian"> </view>
 <view class="main-last">
-  <text>优惠卷</text>
-
+  <text class="main-last-text">优惠卷</text>
+  <text class="main-last-text">订单备注</text>
+  <view class="Bt-yhj">0张可用</view>
+  
+  <text class="last-t1">共计{{Cup.amout}}商品,合计</text>
+  <text class="last-t1" style="left: 420rpx;font-size: 35rpx;" 
+  >¥{{Cup.total}}</text>
 </view>
 
 </view>
-<view class="Bt"> </view>
+<!-- 底部 -->
+<view class="Bt"> 
+  <text class="main-last-text">支付方式</text>
+  <image src="/assets/Order/3.png" class="Bt-image"/>
+  <text class="bt-wx">微信支付</text>
+  <view class="last-g">
+  <image src="/assets/Order/勾勾.png" style="top:-10rpx;left: 8rpx;"/>  </view>
+</view>
 
+<view class="b-subit">
+    <text class="price" > 待支付：¥{{Cup.total}}</text>
+
+
+     
+     
+     <button class="sumbit" bind:tap="sumbit">支付</button>
+
+     </view>
 
 
 </view>  

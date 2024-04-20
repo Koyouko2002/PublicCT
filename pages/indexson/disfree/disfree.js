@@ -7,6 +7,12 @@ Page({
     modalHidden: true,
     actionSheetHidden: true,
   },
+  fritit: function () {
+    wx.showToast({
+      title: '活动过于火爆请稍后重试', icon: 'none', duration: 1000,
+    });
+  },  
+  
   ifregister: function () {
     var that = this;
       that.setData({
@@ -29,5 +35,12 @@ Page({
       actionSheetHidden: !this.data.actionSheetHidden
     })
   },
+  play: function () {
+    wx.showToast({
+      actionSheetHidden: true,
+      title: '领取成功', icon: 'none', duration: 1000 
+    });
+  },  
+
   
 })
