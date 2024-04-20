@@ -64,7 +64,7 @@ tickets:[
   url:"/pages/mine/pandaShopping/discounts/discount",
 },
 {
-  pic:"/assets/coinMall/pic (3).jpg",
+  pic:"/assets/coinMall/pic(9).jpg",
   tip:"全场第二杯半价券",
   text1:"500熊猫币",
   text2:"剩余4775",
@@ -103,27 +103,28 @@ tickets:[
   },
   ],
   only:[
-    { 
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"8元无门槛优惠券",
-      text1:"400熊猫币",
-      text2:"剩余78452",
+    {
+      pic:"/assets/mine/coupon/tic (1).jpg",
+      tip:"【Lv.3及以上专属…",
+      text1:"30熊猫币",
+      text2:"剩余96775",
+      url:"/pages/mine/pandaShopping/discounts/discount",
+    },
+    {
+      pic:"/assets/mine/coupon/tic (2).jpg",
+      tip:"【Lv.3及以上专属…",
+      text1:"50熊猫币",
+      text2:"剩余96775",
+      url:"/pages/mine/pandaShopping/discounts/discount",
+    },
+    {
+      pic:"/assets/mine/coupon/tic (3).jpg",
+      tip:"【Lv.4及以上专属…",
+      text1:"80熊猫币",
+      text2:"剩余96775",
+      url:"/pages/mine/pandaShopping/discounts/discount",
+    },
 
-  },
-  { 
-    pic:"/assets/coinMall/youhuiquan.png"  ,
-    tip:"4元无门槛优惠券",
-    text1:"400熊猫币",
-    text2:"剩余78452",
-
-},
-{ 
-  pic:"/assets/coinMall/youhuiquan.png"  ,
-  tip:"2元无门槛优惠券",
-  text1:"400熊猫币",
-  text2:"剩余78452",
-
-},
 ]
 
   },
