@@ -37,9 +37,11 @@ Page({
   },
   play: function () {
     wx.showToast({
-      actionSheetHidden: true,
-      title: '领取成功', icon: 'none', duration: 1000 
+      title: '保存成功', icon: 'none', duration: 1000 
     });
+    this.setData({
+    actionSheetHidden: !this.data.actionSheetHidden,
+    })    
   },  
 
   

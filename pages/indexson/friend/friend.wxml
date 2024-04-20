@@ -2,7 +2,7 @@
 <!-- <text>pages/indexson/friend/friend.wxml</text> -->
 <view class="fribgi"><image src="/assets/悦己计划bgi.jpg" mode="widthFix" style="width: 100%;"/>
 <view class="son" catchtap="ifregister">活动规则</view>
-<view class="son2">立即领卷</view>
+<view class="son2" bindtap="playl">立即领卷</view>
 </view>
 
   <!-- 弹窗 -->
