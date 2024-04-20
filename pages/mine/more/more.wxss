@@ -14,12 +14,13 @@ image{
 .box image{
   position: relative;
   top: -30rpx;
+  left: 15rpx;
 }
 
 .box text{
   position: relative;
   top: -26rpx;
-  left: 10rpx;
+  left: 28rpx;
 }
 
 
