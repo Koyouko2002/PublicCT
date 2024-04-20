@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  buy(){
+    wx.switchTab({
+      url: '/pages/buy/buy',
+    })
   }
 })

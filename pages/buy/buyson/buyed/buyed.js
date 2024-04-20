@@ -13,6 +13,39 @@ Page({
       amout:"1",
     },
     img2:"O3.png",
+    Change1:[{
+      img:"O7.png",
+      name:"椰果+份",
+      value:"0.99",
+    },
+    {
+      img:"O7.png",
+      name:"西米+份",
+      value:0.99,
+    },
+    {
+      img:"O8.png",
+      name:"口袋+份",
+      value:"0.99",
+    },
+    {
+      img:"O7.png",
+      name:"红豆+份",
+      value:"0.99",
+    }
+  ],    
+    Change2:[{
+    img:"O7.png",
+    name:"雪糕+份",
+    value:"1.99",
+  },
+  {
+    img:"O7.png",
+    name:"椰蓉+份",
+    value:1.99,
+  }
+],
+
 
   },
 
