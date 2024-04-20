@@ -17,15 +17,18 @@
   </view>
   <!--熊猫币记录-->
   <view class="record">
-    <view>熊猫币记录</view>
-    <view>
-      <view>
+  <view class="record_main">
+    <view class="record_coin">熊猫币记录</view>
+    <scroll-view  scroll-y>
+      <view class="record_left">
         <view class="source"></view>
         <view class="time"></view>
-        <view class="add"></view>
       </view>
+      <view class="record_right"></view>
       
+  </scroll-view>
   </view>
+   
 
 
 
