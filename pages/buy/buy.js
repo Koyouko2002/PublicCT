@@ -1,7 +1,6 @@
 // pages/buy/buy.js
 var is=0;
 var total=0;
-var open=0;
 Page({
   /**
    * 页面的初始数据
@@ -162,6 +161,7 @@ Page({
   isw4:"none",isw5:"none",isw6:"none",isw7:"none",isw8:"none",swiperIs:"", Rtop:"",move:"Mid",is:0,page1:"block",page2:"none",page3:"none",
   page4:"none",page5:"none",page6:"none",
   page7:"none",page8:"none",
+  open:"none",total:0,
   },
   buying(){
     console.log("111")
@@ -332,17 +332,30 @@ button8(){
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    total = wx.getStorageSync('totelvalue');
-    open = wx.getStorageSync('open');
-console.log("__________")
-    console.log(open)
+
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
+    var open=0;
+    open = wx.getStorageSync('open');
+    console.log(open)
+    if(open==1){ 
+          this.setData({
+      total:wx.getStorageSync('totelvalue'),
+      open:"block"
 
+    }),
+    console.log("__________")
+    console.log(open)
+    }else{
+      this.setData({
+        open:"none"
+      })
+    }
   },
 
   /**

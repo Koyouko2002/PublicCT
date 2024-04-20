@@ -3,7 +3,7 @@ var is6key=0,is7key=0,is8key=0;var price=0;
 var amount = 1;
 var fjvalue=0;
 var total=0;
-var open=0;
+
 Page({
 
   /**
@@ -28,13 +28,13 @@ Page({
     fjvalue:0,total:0,
   },
   sumbit(){
-   
     price=this.data.price;
     total=price*amount+fjvalue;
     this.data.total=total;
     wx.setStorageSync('totelvalue', this.data.total)
-    wx.setStorageSync('open', open)
+    wx.setStorageSync('open', 1)
     console.log(this.data.total)
+    console.log("--------------------")
     wx.switchTab({
       url: '/pages/buy/buy',
     })
