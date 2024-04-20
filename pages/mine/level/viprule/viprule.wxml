@@ -1,5 +1,5 @@
 <!--pages/mine/level/viprule/viprule.wxml-->
-<scroll-view scroll-x=""> 
+<scroll-view scroll-x type="list"> 
   
 
 <view class="top">
@@ -15,7 +15,8 @@
 </view>
 
 </scroll-view>
-
+<!-- 滚动图片 -->
+<scroll-view scroll-x type="list">
 
 <view class="imagebox">
 <!-- v1 -->
@@ -135,6 +136,8 @@
 </view>
 </view>
 
-</view>
 
+<!-- 结束 -->
+</view>
+</scroll-view>
 
