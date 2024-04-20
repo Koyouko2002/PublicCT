@@ -6,7 +6,7 @@
         <view>当前熊猫币</view>
         <view class="number">{{total}}</view>
       </view>
-      <image src="/assets/coinMall/coins.png"></image>
+      <image src="/assets/coinMall/coinss.png"></image>
   </view>
   <!--公告-->
   <view class="notice_main">
