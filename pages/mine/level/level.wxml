@@ -4,9 +4,9 @@
 <!-- 整个页面滚动条 -->
 <scroll-view class="container1 level2" scroll-y>
   <view class="content">
-  <!-- 背景图 -->
-  <!-- 备注：  记得根据用户等级修改背景图 -->
-    <image src="/assets/mine/level/level_bac2.png" class="bac" mode=""/>
+    <!-- 背景图 -->
+    <!-- 备注：  记得根据用户等级修改背景图 -->
+    <image src="/assets/mine/level/level_bac2.png" class="bac" mode="" />
     <!-- 顶部 -->
     <view class="top">
       <!-- 文字 -->
@@ -22,10 +22,17 @@
 
       <!-- 侧边俩小按钮 -->
       <view class="rightBtn">
-        <navigator class="levelDetails" url="/#">等级说明</navigator>
-        <navigator class="pandaDetails" url="/#">熊猫值说明</navigator>
+        <navigator url="/#">
+          <view class="details">等级说明</view>
+        </navigator>
+        <navigator url="/#">
+        <view class="details">熊猫值说明</view> 
+        </navigator>
       </view>
     </view>
+
+    <!-- 进度条 -->
+    <progress class="progress" percent="{{progress}}" active color="{{color}}" activeColor="{{activeColor}}" border-radius="{{borderRadius}}" stroke-width="{{strokeWidth}}"></progress>
 
   </view>
 
