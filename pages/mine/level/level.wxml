@@ -32,6 +32,9 @@
     </view>
 
     <!-- 进度条 -->
+    <view class="progressfa">
+    
+    </view>
     <progress class="progress" percent="{{progress}}" active color="{{color}}" activeColor="{{activeColor}}" border-radius="{{borderRadius}}" stroke-width="{{strokeWidth}}"></progress>
 
   </view>
