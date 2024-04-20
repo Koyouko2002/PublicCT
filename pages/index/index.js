@@ -19,6 +19,7 @@ Page({
       '/assets/首页Top44.jpg',
       '/assets/首页Top55.jpg',
     ],
+    interval2: 3000,
     duration2: 1200,         //动画时长
 
 
@@ -37,6 +38,19 @@ Page({
       '/assets/女生专属.png',
     ],
   },
+
+  syncSwiper: function (e) {
+    // 获取第一个轮播图当前的滑动位置
+    var current = e.detail.current;
+    // 更新第二个轮播图的滑动位置
+    this.setData({
+      current: current,
+      interval2:0,
+    });
+    // interval:3000
+  },
+
+
 
   /* 页面加载监听 */
   onLoad(option) {
