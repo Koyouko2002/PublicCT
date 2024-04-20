@@ -99,7 +99,7 @@
           <view class="M-R" style="display:{{page1}}"> 
             <text class="M-R-taitle"> 冰椰雪糕系列 </text>
 
-            <view class="M-R-index">
+            <!-- <view class="M-R-index">
             <image src="/assets/Order/O1.png" class="M-R-index-image"/>
              <view class="M-R-index-view">
                  <text class="M-R-index-t1"> 红茶冰椰雪糕 </text>
@@ -115,7 +115,7 @@
              </view>
 
            
-            </view>  
+            </view>   -->
 
 
             <view class="M-R-index" 
@@ -171,7 +171,7 @@
           </view>
 
           <view class="M-R" style="display:{{page3}}"> 
-            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <text class="M-R-taitle"> 牧场大乐透 </text>
             <view class="M-R-index" 
             wx:for="{{Order3}}"
             wx:for-item="Cup"
@@ -198,7 +198,7 @@
           </view>
 
           <view class="M-R" style="display:{{page4}}"> 
-            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <text class="M-R-taitle"> 找鲜果茶 </text>
             <view class="M-R-index" 
             wx:for="{{Order4}}"
             wx:for-item="Cup"
@@ -225,7 +225,7 @@
           </view>
 
           <view class="M-R" style="display:{{page5}}"> 
-            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <text class="M-R-taitle"> 招牌奶茶 </text>
             <view class="M-R-index" 
             wx:for="{{Order5}}"
             wx:for-item="Cup"
@@ -252,7 +252,7 @@
           </view>
 
           <view class="M-R" style="display:{{page6}}"> 
-            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <text class="M-R-taitle"> 真鲜奶茶 </text>
             <view class="M-R-index" 
             wx:for="{{Order6}}"
             wx:for-item="Cup"
@@ -284,7 +284,7 @@
             wx:for="{{Order7}}"
             wx:for-item="Cup"
             >
-            <image src="/assets/Order/O7.Png" class="M-R-index-image"/>
+            <image src="/assets/Order/{{Cup.img}}" class="M-R-index-image"/>
              <view class="M-R-index-view">
                  <text class="M-R-index-t1"> {{Cup.name}} </text>
                <image src="/assets/Order/icon.png" class="mricon" />  
@@ -306,7 +306,7 @@
           </view>
 
           <view class="M-R" style="display:{{page8}}"> 
-            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <text class="M-R-taitle"> 包装袋 </text>
             <view class="M-R-index" 
             wx:for="{{Order8}}"
             wx:for-item="Cup"
