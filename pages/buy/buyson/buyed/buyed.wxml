@@ -19,19 +19,29 @@
 </view>
 
 </view>
-
+<!-- 中部内容 -->
 <view class="main">
 <view class="main-top">
 <text class="main-top-t1">订单情况</text>
 <view class="main-top-t2"> 请注意饮品规范哦  </view>
 
   <view class="main-top-index">
-  <image src="/assets/Order/O6.png" />
+  <image src="/assets/Order/{{Cup.img}}" />
+  <view class="index-view">  
+  <text class="index-t1"> {{Cup.name}}</text>
+  <text class="index-t2">{{Cup.t1}}</text>
 
+  <text class="index-t3"> ¥ {{Cup.total}}</text>
+  <text class="index-t4"> x {{Cup.amout}}</text>
+ </view>
 
   </view>
 </view>
 
+<view class="main-f1">
+<view class="main-f1-t1">值</view>
+<text class="main-f1-t2">超值换购</text>
+</view>
 </view>
 
 </view>  
