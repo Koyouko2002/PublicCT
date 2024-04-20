@@ -1,0 +1,85 @@
+/*整个页面*/
+.pageAll{
+  height: 1300rpx;
+  width: 100%;
+}
+/*上半部*/
+.half_top{
+  height: 50%;
+  width: 100%;
+  background-color: rgb(9, 75, 221);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*下半部*/
+.half_bottom{
+  position: absolute;
+  top: 600rpx;
+  height: 50%;
+  width: 100%;
+  background-color: red;
+  border-radius: 50rpx;
+}
+/*上半部英文文字框*/
+.half_top_text{
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-bottom: 1px dashed white; /* 设置顶部边框为虚线 */
+}
+/*上半部英文文字*/
+.text_english{
+  font-size: 20rpx;
+}
+/*上半部的整个卡片*/
+.half_top_card{
+  height: 380rpx;
+  width: 650rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+/*上半部的卡片的上半部*/
+.half_top_card_top{
+  height: 250rpx;
+  width: 100%;
+  background-color: yellow;
+}
+/*上半部的卡片的上半部的左半部*/
+.half_top_card_top_left{
+  height: 100%;
+  width: 50%;
+  background-color: green;
+}
+/*上半部的卡片的上半部的左半部的文字内容*/
+.half_top_card_top_left view:first-child{
+  height: 50rpx;
+  width: 100%;
+  padding-top: 13rpx;
+  margin-left: 40rpx;
+  font-size: 26rpx;
+  color:rgb(9, 75, 221);
+}
+.half_top_card_top_left view:nth-child(2){
+  font-size: 60rpx;
+  font-weight: 900;
+  margin-top: -5rpx;
+  margin-left: 40rpx;
+  color: rgb(9, 75, 221);
+}
+.half_top_card_top_left view:last-child{
+  width: 130rpx;
+  height: 50rpx;
+  background-color: rgb(9, 75, 221);
+  border-radius: 50rpx;
+  color: white;
+  font-size: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
