@@ -3,10 +3,13 @@
 // 背景渐变色组合
 .level2{
   background: linear-gradient(to bottom, #c8f2ff, #fdfeff);
- 
 }
 
-// 整个页面
+page{
+  height: 100%;
+}
+
+// 滚动条
 .container1 {
   // height: 10000rpx;
   height: 100%;
@@ -19,5 +22,23 @@
     .topText {
       font-size: 32rpx;
     }
+  }
+
+  // 用户名称 头像
+  .userInfo{
+    padding-left: 40rpx;
+    margin-top: 100rpx;
+    display: flex;
+    align-items: center;
+    .avatar{
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 100%;
+      margin-right: 30rpx;
+    }
+    .nike{
+      font-weight: 700;
+    }
+
   }
 }

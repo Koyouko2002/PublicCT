@@ -1,11 +1,29 @@
 <!--pages/mine/level/level.wxml-->
 <!-- <text>pages/mine/level/level.wxml</text> -->
 
-<!-- 整个页面 -->
+<!-- 整个页面滚动条 -->
 <scroll-view class="container1 level2" scroll-y>
-  <!-- 顶部 -->
-  <view class="top">
-    <!-- 文字 -->
-    <text class="topText">我的会员</text>
+  <view class="content">
+    <!-- 顶部 -->
+    <view class="top">
+      <!-- 文字 -->
+      <text class="topText">我的会员</text>
+    </view>
+
+    <!-- 用户头像 名称 -->
+    <view class="userInfo">
+      <!-- 头像 -->
+      <image class="avatar" src="{{userInfo.avatar}}" />
+      <!-- 名称 -->
+      <view class="nike">{{userInfo.nike}}</view>
+
+      <!-- 侧边俩小按钮 -->
+      <view class="rightBtn">
+        <navigator class="levelDetails" url="/#">等级说明</navigator>
+        <navigator class="pandaDetails" url="/#">熊猫值说明</navigator>
+      </view>
+    </view>
+
   </view>
+
 </scroll-view>

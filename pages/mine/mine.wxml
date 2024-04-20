@@ -27,7 +27,7 @@
       <!-- 注册时间 -->
       <view class="timeTips">
         <view class="tips">您与千道茶坊已经相伴{{day}}天</view>
-        <navigator url="/#">已解锁3项 ></navigator>
+        <navigator url="/pages/mine/level/level">已解锁3项 ></navigator>
       </view>
       <!-- 成就称号 -->
       <view class="achievement">
