@@ -26,17 +26,24 @@
           <view class="details">等级说明</view>
         </navigator>
         <navigator url="/#">
-        <view class="details">熊猫值说明</view> 
+          <view class="details">熊猫值说明</view>
         </navigator>
       </view>
     </view>
 
     <!-- 进度条 -->
     <view class="progressfa">
-    
+      <progress class="progress" percent="{{progress}}" active color="{{color}}" activeColor="{{activeColor}}" border-radius="{{borderRadius}}" stroke-width="{{strokeWidth}}"></progress>
+
+      <view class="iconsF">
+        <view class="icons">
+          <view class="icon" wx:for="{{icons}}" wx:key="index">
+            <view class="dot {{index>=userInfo.level?'dotActive':''}}"></view>
+            <view class="text">{{item}}</view>
+          </view>
+        </view>
+      </view>
+
     </view>
-    <progress class="progress" percent="{{progress}}" active color="{{color}}" activeColor="{{activeColor}}" border-radius="{{borderRadius}}" stroke-width="{{strokeWidth}}"></progress>
-
   </view>
-
 </scroll-view>
