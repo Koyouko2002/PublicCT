@@ -1,13 +1,17 @@
 <!--pages/mine/more/more.wxml-->
 
 <!-- 个人资料 -->
+<navigator url="/pages/mine/more/userdata/userdata">
 <view class="box">
 <image src="/assets/mine/more/用户.png" mode=""/>
 <text>个人资料</text>
-<image class="pointer"  src="/assets/mine/more/右箭头.png" mode=""/>
-</view>
 
+<image class="pointer"  src="/assets/mine/more/右箭头.png" mode=""/>
+
+</view>
+</navigator>
 <!-- 用户须知 -->
+
 <view class="box">
 <image src="/assets/mine/more/用户须知.png" mode=""/>
 <text>用户须知</text>

@@ -279,7 +279,7 @@
           </view>
 
           <view class="M-R" style="display:{{page7}}"> 
-            <text class="M-R-taitle"> 紫气葡萄 </text>
+            <text class="M-R-taitle"> 新鲜加料 </text>
             <view class="M-R-index" 
             wx:for="{{Order7}}"
             wx:for-item="Cup"

@@ -77,7 +77,8 @@ Page({
       },
       {
         img: "/assets/mine/个人资料.png",
-        appDes: "个人资料"
+        appDes: "个人资料",
+        url:"/pages/mine/more/userdata/userdata"
       },
       {
         img: "/assets/mine/加盟申请.png",
@@ -93,7 +94,8 @@ Page({
       },
       {
         img: "/assets/mine/更多.png",
-        appDes: "更多"
+        appDes: "更多",
+        url:"/pages/mine/more/more"
       },
     ]
 

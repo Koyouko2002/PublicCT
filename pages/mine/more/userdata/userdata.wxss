@@ -116,6 +116,6 @@ radio .wx-radio-input.wx-radio-input-checked::before {
   width: 25rpx;
   height: 25rpx;
   position: relative;
-  left: 550rpx;
-  top: 26rpx;
+  left: 650rpx;
+  top: -10rpx;
 }
