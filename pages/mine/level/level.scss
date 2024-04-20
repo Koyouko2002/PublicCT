@@ -48,5 +48,10 @@ page{
       font-weight: 700;
     }
 
+    // 侧边俩按钮
+    .rightBtn{
+      // text-align: right;
+      justify-self: flex-end;
+    }
   }
 }
