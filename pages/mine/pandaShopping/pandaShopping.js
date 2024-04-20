@@ -26,51 +26,51 @@ Page({
 },
   ]
 ,
-  tickets:[
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"2元无门槛优惠券",
-      text1:"100熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"4元无门槛优惠券",
-      text1:"150熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"6元无门槛优惠券",
-      text1:"200熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"8元无门槛优惠券",
-      text1:"400熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"2元无门槛优惠券",
-      text1:"100熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"2元无门槛优惠券",
-      text1:"100熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"2元无门槛优惠券",
-      text1:"100熊猫币",
-      text2:"剩余78452",
-    },
-  ],
-  
+tickets:[ {
+  pic:"/assets/coinMall/ticket (1).jpg"  ,
+  tip:"现蒸芋头系列饮品…",
+  text1:"300熊猫币",
+  text2:"剩余35452",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/ticket (2).jpg"  ,
+  tip:"抹茶布丁8.8折",
+  text1:"300熊猫币",
+  text2:"剩余63252",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/ticket (3).jpg"  ,
+  tip:"草莓奶的8.8折",
+  text1:"300熊猫币",
+  text2:"剩余98520",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+{
+  pic:"/assets/coinMall/ticket (4).jpg"  ,
+  tip:"真鲜奶茶/轻乳茶…",
+  text1:"300熊猫币",
+  text2:"剩余35452",
+  url:"/pages/mine/pandaShopping/discounts/discount",
+},
+  {
+    pic:"/assets/coinMall/ticket (5).jpg"  ,
+    tip:"新品8.5折",
+    text1:"150熊猫币",
+    text2:"剩余78985",
+    url:"/pages/mine/pandaShopping/discounts/discount",
+  },
+  {
+    pic:"/assets/coinMall/ticket (9).jpg"  ,
+    tip:"指定饮品3元优惠券",
+    text1:"100熊猫币",
+    text2:"剩余78452",
+    url:"/pages/mine/pandaShopping/discounts/discount",
+  }
+],/*
+
+ */
   recommend:[
     {
       pic:"/assets/coinMall/youhuiquan.png"  ,
