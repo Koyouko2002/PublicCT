@@ -25,12 +25,15 @@ Page({
     Key1:"none",Key2:"",
     Key3:"",Key4:"none",Key5:"none",
     Key6:"",Key7:"none",Key8:"none",
-    fjvalue:0,total:0,
+    fjvalue:0,total:0,img:""
   },
   sumbit(){
     price=this.data.price;
     total=price*amount+fjvalue;
     this.data.total=total;
+    wx.setStorageSync('totelimg', this.data.img)
+    wx.setStorageSync('totelname', this.data.title)
+    wx.setStorageSync('totelamount', this.data.amount)
     wx.setStorageSync('totelvalue', this.data.total)
     wx.setStorageSync('open', 1)
     console.log(this.data.total)
@@ -176,6 +179,7 @@ Page({
           case 1:
         this.setData({
         BackgroundUrl:"/assets/Order/BG1.png",
+        img:"/assets/Order/O1.png",
         title:"红茶冰椰雪糕",
         t1:"椰子乳I",t1prime:"椰子雪糕",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:14,
       })
@@ -183,6 +187,7 @@ Page({
       case 2:
         this.setData({
         BackgroundUrl:"/assets/Order/BG2.png",
+        img:"/assets/Order/O2.jpg",
         title:"紫气葡萄",
         t1:"椰子乳I",t1prime:"葡萄",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
       })
@@ -190,6 +195,7 @@ Page({
       case 3:
         this.setData({
         BackgroundUrl:"/assets/Order/BG3.png",
+        img:"/assets/Order/O3.png",
         title:"芒果昔昔乐",
         t1:"椰子乳I",t1prime:"芒果",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:21,
       })
@@ -198,12 +204,14 @@ Page({
         this.setData({
         BackgroundUrl:"/assets/Order/BG4.png",
         title:"乌漆嘛黑",
+        img:"/assets/Order/O4.png",
         t1:"椰子乳I",t1prime:"桑葚",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:19,
       })
       break;
       case 6:
         this.setData({
         BackgroundUrl:"/assets/Order/BG6.png",
+        img:"/assets/Order/O6.png",
         title:"紫米嘻嘻",
         t1:"椰子乳I",t1prime:"紫米",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:27,
       })
@@ -211,6 +219,7 @@ Page({
       case 5:
         this.setData({
         BackgroundUrl:"/assets/Order/BG5.png",
+        img:"/assets/Order/O5.png",
         title:"鲜果茶",
         t1:"椰子乳I",t1prime:"鸡屎果",t11:"I 鲜牛奶",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:11,
       })

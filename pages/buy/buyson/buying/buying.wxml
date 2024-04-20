@@ -101,7 +101,8 @@
      </view>
      
      
-     <button class="sumbit" bind:tap="sumbit">提交订单</button>
+     <button class="sumbit" 
+     bind:tap="sumbit">提交订单</button>
 
      </view>
 
