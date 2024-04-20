@@ -4,6 +4,9 @@
 <!-- 整个页面滚动条 -->
 <scroll-view class="container1 level2" scroll-y>
   <view class="content">
+  <!-- 背景图 -->
+  <!-- 备注：  记得根据用户等级修改背景图 -->
+    <image src="/assets/mine/level/level_bac2.png" class="bac" mode=""/>
     <!-- 顶部 -->
     <view class="top">
       <!-- 文字 -->
