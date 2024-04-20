@@ -31,7 +31,7 @@ Page({
   },
   play: function () {
     wx.showToast({
-      // actionSheetHidden: true,
+      actionSheetHidden: true,
       title: '领取成功', icon: 'none', duration: 1000 
     });
   },  

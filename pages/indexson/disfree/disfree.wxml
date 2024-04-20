@@ -71,10 +71,10 @@
 <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
   <!-- <view wx:for="{{actionSheetItems}}" style="background-color: rgba(0,0,0,0.6);"> -->
     <!-- {{item}} -->
-    <view class="asd">
+    <view class="friendimg">
     <image src="/assets/呼朋唤友.jpg" mode="widthFix"/>
     </view>
-    <view class="qwe">
+    <view class="friendtxt">
       <image src="/assets/朋友圈.png" mode="widthFix"/>
       <view bindtap="play">
       保存图片
