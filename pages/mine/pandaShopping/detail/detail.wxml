@@ -4,7 +4,7 @@
   <view class="top">
       <view class="coin">
         <view>当前熊猫币</view>
-        <view class="number">65</view>
+        <view class="number">{{total}}</view>
       </view>
       <image src="/assets/coinMall/coins.png"></image>
   </view>
@@ -25,7 +25,7 @@
           <view class="source">{{item.source}}</view>
           <view class="time">{{item.time}}</view>
         </view>
-        <view class="record_right">{{item.score}}</view>
+        <view class="record_right">+{{item.score}}</view>
     </view>
   </scroll-view>
   </view>
