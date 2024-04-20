@@ -1,2 +1,5 @@
 <!--pages/indexson/sturule/sturule.wxml-->
-<text>pages/indexson/sturule/sturule.wxml</text>
+<!-- <text>pages/indexson/sturule/sturule.wxml</text> -->
+<view>
+  <image src="/assets/学子卡权益规则.jpg" mode="widthFix"/>
+</view>
