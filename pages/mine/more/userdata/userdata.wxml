@@ -39,5 +39,7 @@
 
 <view class="box2">
 <text>切换账号</text>
+<navigator url="">
 <image src="/assets/mine/more/右箭头.png" mode=""/>
+</navigator>
 </view>
