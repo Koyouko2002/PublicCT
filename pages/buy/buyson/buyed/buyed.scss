@@ -172,3 +172,73 @@ height: 300rpx;
   font-size: 29rpx;
   font-weight: bold;
 }
+
+.scrollview{
+
+  width: 100%;
+  height: 155px;
+}
+    .M-TB4{  
+      
+      height: 155px;
+      justify-content: left;
+      margin-top: 0px;
+      display: flex;
+      width: 500px;
+    }
+    .M-TB4-BG{
+      left: 22px;
+      top: 643px;
+width: 111px;
+height: 155px;
+line-height: 20px;
+background-color: rgba(255,255,255,1);
+color: rgba(16,16,16,1);
+font-size: 14px;
+text-align: center;
+border: 1px solid rgb(219, 219, 219);
+font-family: Roboto;
+margin-left: 10px;
+    }
+    .M-TB4 image{
+      position: relative;
+      width: 40rpx;
+      height: 40rpx;
+      top:8px;
+     
+    
+    }
+    
+    .M-TB4-1{
+      margin-top: 25PX;
+      margin-left: 35px;
+      width: 36px; 
+      height: 36px;
+      border-radius: 30px; 
+      background: linear-gradient(142.96deg, rgba(252,195,49,1) 7.26%,rgba(255,138,14,1) 87.5%);
+  
+    }
+    
+    .M-TB4-Text{
+      display: block;
+      width: 44px;
+      position: relative;
+      top: 16px; 
+      left: -5px;
+      font-size: 10px;
+    }
+    .M-TB4-Text2{
+      display: block;
+      width: 55px;
+      position: relative;
+      top: 16px; 
+      left: -9px;
+      color: rgb(121,121,121);
+      font-size: 8px;
+    }
+    .M-TB4-Textimage{
+      width: 9px;
+      height: 9px;
+      margin-left: -38px ;
+      margin-top: 5px;
+    }

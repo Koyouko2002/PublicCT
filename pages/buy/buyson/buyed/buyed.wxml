@@ -42,7 +42,38 @@
 <view class="main-f1-t1">值</view>
 <text class="main-f1-t2">超值换购</text>
 </view>
+
+<scroll-view class="scrollview" scroll-x >
+    <view class="M-TB4"> 
+    
+<view class="M-TB4-BG">  
+
+<view class="M-TB4-1" >   
+
+  <image src="/imgs/学校.png" mode=""/>
+<text class="M-TB4-Text"  >学习概况</text> 
+<text class="M-TB4-Text2" >查询当前历史</text> 
+  <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
+  <view class="eyeboder">200+
+  </view>
+  <image src="/imgs/add.svg" mode=""/>
 </view>
+
+
+</view>
+
+</view>
+</scroll-view>
+
+
+
+
+
+
+</view>
+
+
+
 
 </view>  
 </scroll-view>
