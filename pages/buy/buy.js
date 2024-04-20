@@ -370,6 +370,12 @@ button8(){
     page7:"none",page8:"block",
   })
 },
+sumbit(){
+  wx.redirectTo({
+    url: '/pages/buy/buyson/buyed/buyed.wxml',
+  })
+  console.log(111)
+},
   /**
    * 生命周期函数--监听页面加载
    */
