@@ -2,7 +2,7 @@
 Page({
   data: {
     userInfo: [],
-
+/*------------------轮播图数据-----------------*/ 
     imgUrls: [
       '/assets/首页Top2.png',
       '/assets/首页Top3.png',
@@ -12,8 +12,7 @@ Page({
     indicatorDots: true,    //是否显示指示点
     autoplay: true,         //是否自动播放
     interval: 3000,         //切换间隔
-    duration: 700,         //动画时长
-
+    duration: 700,          //动画时长
     imgUrls2: [
       '/assets/首页Top22.jpg',
       '/assets/首页Top33.jpg',
@@ -21,17 +20,19 @@ Page({
       '/assets/首页Top55.jpg',
     ],
     duration2: 1200,         //动画时长
-    imgUrls3: [
+
+
+    imgUrls3: [/*------------到店自取外面配送的数据-----------------*/ 
       '/assets/到店自取.png',
       '/assets/外卖配送.png',
     ],
-    items: [
+    items: [/*------------------功能选项的数据-----------------*/ 
       { text: '熊猫币商城', mode: '/assets/熊猫币商城.png' },
       { text: '学子卡', mode: '/assets/学子卡.png' },
       { text: '会员任务', mode: '/assets/首页会员任务.png' },
       { text: '悦己计划', mode: '/assets/悦己计划.png' }
     ],
-    imgUrls4: [
+    imgUrls4: [/*----------------信息框的数据-----------------*/ 
       '/assets/开卡减五元.png',
       '/assets/女生专属.png',
     ],
@@ -70,39 +71,16 @@ Page({
   },
 
 
-  /**
-   * 生命周期函数---页面显示监听
-   */
 
+/*------------------到店自取外卖配送的交互-----------------*/ 
   moreTop: function (e) {
     const index = e.currentTarget.dataset.index;
     if(index===0)
       wx.switchTab({ url: '/pages/buy/buy' });
     else
       wx.showToast({ title: '敬请期待', icon: 'none', duration: 1000 });
-  },  
-  tabbuy: function () {
-    wx.switchTab({
-      url: '/pages/buy/buy',
-    });
   },
-  tabjoin: function () {
-    wx.navigateTo({
-      url: '/pages/indexson/joingroup/joingroup',
-    });
-  },
-  tabfree: function () {
-    wx.navigateTo({
-      url: '/pages/indexson/disfree/disfree',
-    });
-  },
-  onImage1Tap: function () {
-    wx.showToast({
-      title: '敬请期待',
-      icon: 'none',
-      duration: 1000
-    });
-  },
+  /*------------------功能选择的交互-----------------*/ 
   friTap: function (e) {
     const index = e.currentTarget.dataset.index;
     switch (index) {
@@ -121,6 +99,23 @@ Page({
       default:
         break;
     }
-  }
+  },
+  tabjoin: function () {
+    wx.navigateTo({
+      url: '/pages/indexson/joingroup/joingroup',
+    });
+  },  
+  tabbuy: function () {
+    wx.switchTab({
+      url: '/pages/buy/buy',
+    });
+  },
+  tabfree: function () {
+    wx.navigateTo({
+      url: '/pages/indexson/disfree/disfree',
+    });
+  },
+
+
 
 })
