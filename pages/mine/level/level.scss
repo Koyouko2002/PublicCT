@@ -5,7 +5,7 @@
 //   background: linear-gradient(to bottom, #c8f2ff, #fdfeff);
 // }
 
-page{
+page {
   height: 100%;
 }
 
@@ -15,7 +15,7 @@ page{
   height: 100%;
 
   // 顶部背景图
-  .bac{
+  .bac {
     z-index: -99;
     width: 100%;
     height: 60%;
@@ -33,25 +33,48 @@ page{
   }
 
   // 用户名称 头像
-  .userInfo{
+  .userInfo {
+    position: relative;
     padding-left: 40rpx;
     margin-top: 100rpx;
     display: flex;
     align-items: center;
-    .avatar{
+
+    .avatar {
       width: 80rpx;
       height: 80rpx;
       border-radius: 100%;
       margin-right: 30rpx;
     }
-    .nike{
+
+    .nike {
       font-weight: 700;
+      width: 390rpx;
     }
 
     // 侧边俩按钮
-    .rightBtn{
-      // text-align: right;
-      justify-self: flex-end;
+    .rightBtn {
+      position: absolute;
+      text-align: right;
+      right: 0;
+
+      .details {
+        color: #333333;
+        margin-top: 10rpx;
+        font-size: 20rpx;
+        padding: 10rpx 20rpx 10rpx 20rpx;
+        background-color: rgba(235, 242, 249, 0.5);
+        border-top-left-radius: 30rpx;
+        border-bottom-left-radius: 30rpx;
+      }
     }
+  }
+
+  // 进度条
+  .progress{
+    width: 90%;
+    margin: 0 auto;    
+    margin-top: 60rpx;
+
   }
 }
