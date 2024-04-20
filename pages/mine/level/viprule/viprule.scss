@@ -1,12 +1,22 @@
 /* pages/mine/level/viprule/viprule.wxss */
+page{
+  background-color: rgb(241, 241, 241);
+}
+
 .top{
   display: flex;
-  
+  height: 40px;
+  width: 900px;
+  margin-left: 35px;
+  justify-content: space-between;
+  margin-top: 10px;
+
 }
 
 
 .imagebox{
   display: flex;
+  margin-top: 20px;
 }
 
 image{
