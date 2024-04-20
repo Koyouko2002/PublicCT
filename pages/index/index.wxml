@@ -45,11 +45,8 @@
         </view>
       </view>
 
-      <view class="tab1">
-        <image src="/assets/开卡减五元.png" mode="" />
-      </view>
-      <view class="tab2">
-        <image src="/assets/女生专属.png" mode="" />
+      <view class="tab1" wx:for="{{imgUrls4}}"  wx:key="index">
+        <image src="{{item}}" />
       </view>
     </view>
   </view>

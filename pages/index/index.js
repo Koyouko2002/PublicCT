@@ -31,6 +31,10 @@ Page({
       { text: '会员任务', mode: '/assets/首页会员任务.png' },
       { text: '悦己计划', mode: '/assets/悦己计划.png' }
     ],
+    imgUrls4: [
+      '/assets/开卡减五元.png',
+      '/assets/女生专属.png',
+    ],
   },
 
   /* 页面加载监听 */
