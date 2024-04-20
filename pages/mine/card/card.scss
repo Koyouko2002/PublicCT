@@ -18,7 +18,7 @@
   top: 600rpx;
   height: 50%;
   width: 100%;
-  background-color: red;
+  background-color: white;
   border-radius: 50rpx;
 }
 /*上半部英文文字框*/
@@ -42,19 +42,18 @@
   width: 650rpx;
   background-color: white;
   border-radius: 30rpx;
+  margin-top: 25rpx;
 }
 /*上半部的卡片的上半部*/
 .half_top_card_top{
   height: 250rpx;
   width: 100%;
-  background-color: yellow;
   display: flex;
 }
 /*上半部的卡片的上半部的左半部*/
 .half_top_card_top_left{
   height: 100%;
   width: 50%;
-  background-color: green;
 }
 /*上半部的卡片的上半部的左半部的文字内容*/
 .half_top_card_top_left view:first-child{
@@ -109,15 +108,16 @@
 }
 /*消费明细*/
 .half_top_card_top_right view:first-child{
-  height: 50rpx;
+  height: 40rpx;
   width: 150rpx;
   font-size: 20rpx;
   text-align: center;
-  line-height: 50rpx;
+  line-height: 40rpx;
   border-top-left-radius: 50rpx;
   border-bottom-left-radius: 50rpx;
   background-color: rgb(230, 230, 230);
   margin-bottom: 10rpx;
+  margin-top: 15rpx;
 }
 /*上半部的卡片的下半部分*/
 .half_top_card_bottom{
@@ -130,4 +130,35 @@
   background-color: rgb(230, 230, 230);
   border-radius: 25rpx;
   margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.half_top_card_bottom view image{
+  height: 65rpx;
+  width: 65rpx;
+  margin-left: 30rpx;
+}
+.half_top_card_bottom view input{
+  height: 80rpx;
+  width: 400rpx;
+  color: grey;
+}
+.half_top_card_bottom view text{
+  font-size:27rpx;
+  color: rgb(119, 207, 24);
+  margin-left: 20rpx;
+}
+/*下半部分*/
+.half_bottom_text{
+  display: flex;
+  margin-left: 35rpx;
+  margin-top: 30rpx;
+  font-size: 25rpx;
+}
+.half_bottom_text_b{
+  font-size: 25rpx;
+  color: gray;
+  position: absolute;
+  top: 300rpx;
+  left: 44%;
 }
