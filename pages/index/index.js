@@ -21,6 +21,10 @@ Page({
       '/assets/首页Top55.jpg',
     ],
     duration2: 1200,         //动画时长
+    imgUrls3: [
+      '/assets/到店自取.png',
+      '/assets/外卖配送.png',
+    ],
     items: [
       { text: '熊猫币商城', mode: '/assets/熊猫币商城.png' },
       { text: '学子卡', mode: '/assets/学子卡.png' },
@@ -66,7 +70,13 @@ Page({
    * 生命周期函数---页面显示监听
    */
 
-
+  moreTop: function (e) {
+    const index = e.currentTarget.dataset.index;
+    if(index===0)
+      wx.switchTab({ url: '/pages/buy/buy' });
+    else
+      wx.showToast({ title: '敬请期待', icon: 'none', duration: 1000 });
+  },  
   tabbuy: function () {
     wx.switchTab({
       url: '/pages/buy/buy',
