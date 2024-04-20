@@ -98,7 +98,7 @@ height: 300rpx;
   }
   .main-top-t2{
     margin-top: -35rpx;
-    margin-left: 440rpx;
+    margin-left: 453rpx;
     display: block;
     font-size: 23rpx;
     text-align: center;
@@ -112,3 +112,133 @@ height: 300rpx;
   width: 150rpx;
   height: 150rpx;
 }
+.index-view{
+  width: 500rpx;
+  height: 200rpx;
+
+  margin-top: -125rpx;
+  margin-left: 165rpx;
+}
+.index-t1{
+  font-weight: 500;
+  display: block;
+}
+.index-t2{
+  display: block;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #a5a8ac;
+}
+.index-t3{
+  font-weight: 500;
+  font-size: 30rpx;
+  display: block;
+  margin-top: -85rpx;
+  margin-left: 420rpx;
+  
+}
+.index-t4{
+  color: #adaeb0;
+  font-weight: 600;
+  font-size: 24rpx;
+  display: block;
+  margin-top: 0rpx;
+  margin-left: 450rpx;
+}
+.main-f1{
+  margin-top: 40rpx;
+  width: 100%;
+  height: 70rpx;
+  background: linear-gradient(to right,#e4f0fe, rgb(255, 255, 255));
+}
+.main-f1-t1{
+ position: relative;
+ top: 20rpx;
+ left: 30rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #1d60f3;
+  text-align: center;
+  line-height: 29rpx;
+  color: white;
+  font-size: 18rpx;
+  font-weight: bold;
+}
+.main-f1-t2{
+  position: relative;
+  top:-15rpx;
+  left: 65rpx;
+  display: block;
+  font-size: 29rpx;
+  font-weight: bold;
+}
+
+.scrollview{
+
+  width: 100%;
+  height: 155px;
+}
+    .M-TB4{  
+      
+      height: 155px;
+      justify-content: left;
+      margin-top: 0px;
+      display: flex;
+      width: 500px;
+    }
+    .M-TB4-BG{
+      left: 22px;
+      top: 643px;
+width: 111px;
+height: 155px;
+line-height: 20px;
+background-color: rgba(255,255,255,1);
+color: rgba(16,16,16,1);
+font-size: 14px;
+text-align: center;
+border: 1px solid rgb(219, 219, 219);
+font-family: Roboto;
+margin-left: 10px;
+    }
+    .M-TB4 image{
+      position: relative;
+      width: 40rpx;
+      height: 40rpx;
+      top:8px;
+     
+    
+    }
+    
+    .M-TB4-1{
+      margin-top: 25PX;
+      margin-left: 35px;
+      width: 36px; 
+      height: 36px;
+      border-radius: 30px; 
+      background: linear-gradient(142.96deg, rgba(252,195,49,1) 7.26%,rgba(255,138,14,1) 87.5%);
+  
+    }
+    
+    .M-TB4-Text{
+      display: block;
+      width: 44px;
+      position: relative;
+      top: 16px; 
+      left: -5px;
+      font-size: 10px;
+    }
+    .M-TB4-Text2{
+      display: block;
+      width: 55px;
+      position: relative;
+      top: 16px; 
+      left: -9px;
+      color: rgb(121,121,121);
+      font-size: 8px;
+    }
+    .M-TB4-Textimage{
+      width: 9px;
+      height: 9px;
+      margin-left: -38px ;
+      margin-top: 5px;
+    }
