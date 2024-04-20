@@ -19,7 +19,8 @@
     "pages/mine/pandaShopping/detail/detail",
     "pages/mine/more/more",
     "pages/mine/more/userdata/userdata",
-    "pages/mine/pandaShopping/discounts/discount"
+    "pages/mine/pandaShopping/discounts/discount",
+    "pages/buy/buyson/buyed/buyed"
   ],
   "window": {
     "navigationBarTextStyle": "black",
