@@ -1,6 +1,7 @@
 <!--pages/buy/buyson/buyed/buyed.wxml-->
-<scroll-view class="scrollarea">
-<view class="container" style="background-color: #f5f7f6;">
+<scroll-view class="scrollarea" scroll-y type="list">
+<view class="container" 
+style="background-color: #ececec;height: 2800rpx;">
 
 <!-- 顶部区域 -->
 <view class="Top">
@@ -45,33 +46,68 @@
 
 <scroll-view class="scrollview" scroll-x >
     <view class="M-TB4"> 
-    
-<view class="M-TB4-BG">  
 
-<view class="M-TB4-1" >   
+<view class="M-TB4-BG"  
+wx:for="{{Change1}}" 
+wx:for-item="HG">  
 
-  <image src="/imgs/学校.png" mode=""/>
-<text class="M-TB4-Text"  >学习概况</text> 
-<text class="M-TB4-Text2" >查询当前历史</text> 
-  <image src="/imgs/eyes.svg" class="M-TB4-Textimage"/>
-  <view class="eyeboder">200+
-  </view>
-  <image src="/imgs/add.svg" mode=""/>
+<view class="M-TB4-1">   
+  <image src="/assets/Order/{{HG.img}}" />
+<text class="M-TB4-Text"  >有108人换购</text> 
+<text class="M-TB4-Text1"  >{{HG.name}}</text> 
+<text class="M-TB4-Text2"  >¥{{HG.value}}</text> 
+<view class="add"> + </view>
+</view>
 </view>
 
 
-</view>
+
+
 
 </view>
+
+
 </scroll-view>
 
 
+<view class="main-f1">
+<view class="main-f1-t1">值</view>
+<text class="main-f1-t2">超值换购</text>
+</view>
+
+<scroll-view class="scrollview" scroll-x >
+    <view class="M-TB4"> 
+
+<view class="M-TB4-BG"  
+wx:for="{{Change2}}" 
+wx:for-item="HG">  
+
+<view class="M-TB4-1">   
+  <image src="/assets/Order/{{HG.img}}" />
+<text class="M-TB4-Text"  >有108人换购</text> 
+<text class="M-TB4-Text1"  >{{HG.name}}</text> 
+<text class="M-TB4-Text2"  >¥{{HG.value}}</text> 
+<view class="add"> + </view>
+</view>
+</view>
+
 
 
 
 
 </view>
 
+
+</scroll-view>
+
+<view class="xian"> </view>
+<view class="main-last">
+  <text>优惠卷</text>
+
+</view>
+
+</view>
+<view class="Bt"> </view>
 
 
 
