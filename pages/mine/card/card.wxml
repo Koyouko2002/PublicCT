@@ -20,12 +20,17 @@
       <view class="half_top_card_bottom">
         <view>
           <image src="/assets/mine/card/相机.png" mode=""/>
-          <input type="text" />
-          <text></text>
+          <input type="text" value="请输入礼卡兑换码"/>
+          <text> 兑换</text>
         </view>
       </view>
     </view>
   </view>
   <view class="half_bottom">
+    <view class="half_bottom_text">
+      <view>可使用</view>
+      <view>(0)</view>
+    </view>
+    <view class="half_bottom_text_b">暂无礼品卡</view>
   </view>
 </view>
