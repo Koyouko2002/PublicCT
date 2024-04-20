@@ -1,1 +1,23 @@
 /* pages/mine/level/level.wxss */
+
+// 背景渐变色组合
+.level2{
+  background: linear-gradient(to bottom, #c8f2ff, #fdfeff);
+ 
+}
+
+// 整个页面
+.container1 {
+  // height: 10000rpx;
+  height: 100%;
+
+  // 顶部文字
+  .top {
+    text-align: center;
+    padding-top: 40rpx;
+
+    .topText {
+      font-size: 32rpx;
+    }
+  }
+}

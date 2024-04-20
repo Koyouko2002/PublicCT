@@ -1,2 +1,11 @@
 <!--pages/mine/level/level.wxml-->
-<text>pages/mine/level/level.wxml</text>
+<!-- <text>pages/mine/level/level.wxml</text> -->
+
+<!-- 整个页面 -->
+<scroll-view class="container1 level2" scroll-y>
+  <!-- 顶部 -->
+  <view class="top">
+    <!-- 文字 -->
+    <text class="topText">我的会员</text>
+  </view>
+</scroll-view>
