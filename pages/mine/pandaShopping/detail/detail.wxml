@@ -1,0 +1,27 @@
+<!--pages/mine/pandaShopping/detail/detail.wxml-->
+<view>
+   <!--熊猫币商城-->
+  <view class="top">
+      <view class="coin">
+        <view>当前熊猫币</view>
+        <view class="number">65</view>
+      </view>
+      <image src="/assets/coinMall/coins.png"></image>
+  </view>
+  <!--公告-->
+  <view class="notice_main">
+    <view class="notice">
+    <image src="/assets/coinMall/gonggao.svg"></image>
+    <text>本月暂无即将到期的熊猫币</text>
+    </view>
+  </view>
+  <!--熊猫币记录-->
+
+
+
+
+
+
+
+
+</view>

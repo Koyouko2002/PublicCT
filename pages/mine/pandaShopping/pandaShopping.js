@@ -12,7 +12,7 @@ Page({
       {
         pic:"/assets/coinMall/mingxi.png",
         txt:"熊猫币明细",
-        url:"/#"
+        url:"/pages/mine/pandaShopping/detail/detail"
     },
     {
       pic:"/assets/coinMall/dingdan.png",

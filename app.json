@@ -15,7 +15,8 @@
     "pages/indexson/disfree/disfree",
     "pages/mine/pandaShopping/pandaShopping",
     "pages/mine/pandaShopping/rule/rule",
-    "pages/mine/level/level"
+    "pages/mine/level/level",
+    "pages/mine/pandaShopping/detail/detail"
   ],
   "window": {
     "navigationBarTextStyle": "black",
