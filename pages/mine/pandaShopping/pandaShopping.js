@@ -7,6 +7,7 @@ Page({
   data: {
     indexActive:0,
     list:[],
+    CoinActive: 0,
     /*规则、订单、明细 */
     rule:[
       {
@@ -71,31 +72,35 @@ tickets:[
 },
 ],/*
  */
-  recommend:[
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"2元无门槛优惠券",
-      text1:"100熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"4元无门槛优惠券",
-      text1:"150熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"6元无门槛优惠券",
-      text1:"200熊猫币",
-      text2:"剩余78452",
-    },
-    {
-      pic:"/assets/coinMall/youhuiquan.png"  ,
-      tip:"8元无门槛优惠券",
-      text1:"400熊猫币",
-      text2:"剩余78452",
-    }
+  recommend:[ 
+  {
+    pic:"/assets/coinMall/pic(8).jpg",
+    tip:"【春日好茶】抹茶…",
+    text1:"30熊猫币",
+    text2:"剩余96775",
+    url:"/pages/mine/pandaShopping/discounts/discount",
+  },
+  {
+    pic:"/assets/coinMall/pic (6).jpg",
+    tip:"【春日好茶】桂花…",
+    text1:"30熊猫币",
+    text2:"剩余96775",
+    url:"/pages/mine/pandaShopping/discounts/discount",
+  },
+  {
+    pic:"/assets/coinMall/pic(8).jpg",
+    tip:"【新品尝鲜】柚子…",
+    text1:"30熊猫币",
+    text2:"剩余96775",
+    url:"/pages/mine/pandaShopping/discounts/discount",
+  },
+  {
+    pic:"/assets/coinMall/pic (6).jpg",
+    tip:"【新品尝鲜】真鲜…",
+    text1:"30熊猫币",
+    text2:"剩余96775",
+    url:"/pages/mine/pandaShopping/discounts/discount",
+  },
   ],
   only:[
     { 
