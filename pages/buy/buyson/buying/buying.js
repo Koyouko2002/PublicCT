@@ -1,7 +1,9 @@
 // pages/buy/buyson/buying/buying.js\
-var is6key=0,is7key=0,is8key=0;
-var amount = 0;
+var is6key=0,is7key=0,is8key=0;var price=0;
+var amount = 1;
 var fjvalue=0;
+var total=0;
+var open=0;
 Page({
 
   /**
@@ -23,7 +25,19 @@ Page({
     Key1:"none",Key2:"",
     Key3:"",Key4:"none",Key5:"none",
     Key6:"",Key7:"none",Key8:"none",
-    fjvalue:0,
+    fjvalue:0,total:0,
+  },
+  sumbit(){
+
+    price=this.data.price;
+    total=price*amount+fjvalue;
+    this.data.total=total;
+    wx.setStorageSync('totelvalue', this.data.total)
+    wx.setStorageSync('open', open)
+    console.log(this.data.total)
+    wx.switchTab({
+      url: '/pages/buy/buy',
+    })
   },
   add(){
        amount +=1;
