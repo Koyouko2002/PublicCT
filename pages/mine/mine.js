@@ -52,7 +52,8 @@ Page({
       },
       {
         img: "/assets/mine/礼品卡.png",
-        appDes: "礼品卡"
+        appDes: "礼品卡",
+        url: "/pages/mine/card/card"
       },
       {
         img: "/assets/mine/券码兑换.png",
