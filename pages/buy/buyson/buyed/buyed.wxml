@@ -27,7 +27,7 @@ style="background-color: #ececec;height: 2600rpx;">
 <view class="main-top-t2"> 请注意饮品规范哦  </view>
 
   <view class="main-top-index">
-  <image src="/assets/Order/{{Cup.img}}" />
+  <image src="{{Cup.img}}" />
   <view class="index-view">  
   <text class="index-t1"> {{Cup.name}}</text>
   <text class="index-t2">{{Cup.t1}}</text>

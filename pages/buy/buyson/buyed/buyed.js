@@ -53,6 +53,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    var name=wx.getStorageSync('totelname');//获取名字
+    var value=wx.getStorageSync('totelvalue')//获取总价
+    var imgurl=wx.getStorageSync('totelimg')//获取图片
+    var amount=wx.getStorageSync('totelamount')//获取数量
+    this.setData({
+      Cup:{
+        name:name,
+        total:value,
+        img:imgurl,
+        amout:amount,
+        t1:"一些相关的文本描述",
+      }
+    })
 
   },
 
