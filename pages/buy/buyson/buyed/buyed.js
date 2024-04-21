@@ -73,7 +73,11 @@ Page({
     console.log(this.data.total)
   },
   sumbit(){
-    
+    wx.showToast({
+      title: '成功',
+      icon:'success',
+      duration:2000
+    })
     wx.setStorageSync('overvalue', this.data.Cup.total);
 
 
