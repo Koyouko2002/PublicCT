@@ -1,1 +1,35 @@
 /* pages/mine/medals/medal.wxss */
+page{
+  background-color:#f9fafb;
+}
+.kind{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  height:fit-content ;
+  background-color: #ffffff;
+  margin: 20rpx;
+  border-radius: 25rpx;
+}
+.kind_txt{
+line-height: 50rpx;
+width: 100%;
+font-size: 45rpx;
+margin: 20rpx;
+
+}
+.medal{
+  flex: 0 0 33.33%; /* 33.33% width for each item */
+margin-top: 50rpx;
+}
+.medal_main{
+  margin-bottom: 50rpx;
+}
+.medal_pic{
+height: 200rpx;
+width: 200rpx;
+}
+.medal_txt1{
+
+}
