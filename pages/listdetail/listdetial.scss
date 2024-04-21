@@ -1,0 +1,41 @@
+/* pages/listdetail/listdetial.wxss */
+page{
+  background-color: rgb(245, 245, 245);
+}
+
+// 订单已完成
+.topbox{
+  width: 350px;
+  height: 260px;
+  background-color: white;
+  border-radius: 5%;
+  margin-left: 12px;
+  margin-top: 20px;
+
+}
+
+.topbox image{
+  width: 160px;
+  height: 137px;
+  margin-left: 90px;
+}
+
+.toptext{
+  font-size: small;
+  color: grey;
+  margin-left: 32px;
+}
+
+
+// 再来一单
+.topmore{
+  width: 100px;
+  height: 35px;
+  border-radius: 20px ;
+  border: solid 1px rgb(10,76,224);
+  color: rgb(10,76,224);
+  margin-top: 20px;
+  margin-left: 120px;
+ 
+
+}
