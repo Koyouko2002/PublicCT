@@ -94,9 +94,8 @@ Page({
 
       }
       this.data.orderList.push(order)
-
     }
-
+    console.log(this.data.orderList);
 
     this.setData({
       changeList: this.data.orderList
