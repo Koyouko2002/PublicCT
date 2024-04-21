@@ -80,7 +80,7 @@ Page({
     clearInterval(this.timer);
   },
   bindbt: function() {
-    doommList.push(new Doomm("你是我的小苹果", Math.floor(Math.random() * (80 - 10 + 1)) + 10, Math.ceil(Math.random() * 10), getRandomColor(), this));
+    doommList.push(new Doomm("邀请好友得免单", Math.floor(Math.random() * (80 - 10 + 1)) + 10, Math.ceil(Math.random() * 10), getRandomColor(), this));
     this.setData({
       doommData: doommList
     });
