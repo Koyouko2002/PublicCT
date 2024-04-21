@@ -1,0 +1,18 @@
+<!--pages/mine/medals/medal.wxml-->
+<view>
+  <!--顶部-->
+  <view wx:for="{{kind}}">
+    <!--文字-->
+    <view>{{item.name}}</view>
+    <!--徽章区域-->
+    <view wx:for="{{item.kind1}}">
+      <view>
+        <image src="{{item.pic}}" mode="aspectFit"></image>
+        <text>{{item.text1}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--补发-->
+  <view>部分等级徽章无法领取?<text>点击此处补发</text></view>
+</view>

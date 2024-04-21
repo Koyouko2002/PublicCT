@@ -91,7 +91,9 @@ Page({
       },
       {
         img: "/assets/mine/我的勋章.png",
-        appDes: "我的勋章"
+        appDes: "我的勋章",
+        url:"/pages/mine/medals/medal",
+
       },
       {
         img: "/assets/mine/更多.png",
