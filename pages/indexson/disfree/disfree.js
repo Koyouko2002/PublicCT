@@ -13,7 +13,7 @@ Page({
       title: '活动过于火爆请稍后重试', icon: 'none', duration: 1000,
     });
   },  
-  
+  /*-------------------规则弹窗的显示及取消--------------------*/ 
   ifregister: function () {
     var that = this;
       that.setData({
@@ -26,6 +26,7 @@ Page({
     })
   },
 
+  /*-----------------上拉菜单的触发及动作------------------*/ 
   actionSheetTap: function() {
     this.setData({
       actionSheetHidden: !this.data.actionSheetHidden
@@ -47,7 +48,7 @@ Page({
 
   
 
-/*---------------------弹幕-------------------------------*/ 
+/*---------------------弹幕的触发-------------------------------*/ 
   onLoad: function() {
     // 开始定时执行代码
     this.startTimer();
@@ -60,7 +61,7 @@ Page({
     this.timer = setInterval(function() {
       // 直接调用 bindbt 函数，并指定 this 的上下文为当前页面
       that.bindbt();
-    }, 800); // 时间间隔为2秒，以毫秒为单位
+    }, 800); // 时间间隔(毫秒)
   },
   // 在页面销毁时清除定时器，防止内存泄漏
   onUnload: function() {
@@ -75,6 +76,7 @@ Page({
 
 })
 
+/*-------------------------------弹幕数据的处理----------------------------*/ 
 var doommList = [];
 var i = 0;
 class Doomm {
