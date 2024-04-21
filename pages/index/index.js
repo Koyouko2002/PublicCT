@@ -37,6 +37,10 @@ Page({
       '/assets/开卡减五元.png',
       '/assets/女生专属.png',
     ],
+    imgUrls5: [/*----------------三宫格的数据-----------------*/ 
+      '/assets/首页Bot2.jpg',
+      '/assets/首页Bot3.jpg',
+    ],
   },
 
   syncSwiper: function (e) {/*----------------轮播图动作的联动-----------------*/ 
@@ -117,9 +121,15 @@ Page({
       url: '/pages/indexson/joingroup/joingroup',
     });
   },  
-  tabbuy: function () {
+  tabbuy: function (e) {
+    const index = e.currentTarget.dataset.index;
+    if(index===0)
     wx.switchTab({
       url: '/pages/buy/buy',
+    });
+    else
+    wx.navigateTo({
+      url: '/pages/indexson/disfree/disfree',
     });
   },
   tabfree: function () {
