@@ -15,6 +15,16 @@ Page({
     strokeWidth: '9rpx',//进度条粗细
 
     current:0,
+
+    dotActives:[
+      "dotActive0",
+      "dotActive1",
+      "dotActive2",
+      "dotActive3",
+      "dotActive4",
+      "dotActive5",
+      "dotActive6",
+    ],
     bacImg:[
       "/assets/mine/level/level_bac0.png",
       "/assets/mine/level/level_bac1.png",
@@ -24,6 +34,7 @@ Page({
       "/assets/mine/level/level_bac5.png",
       "/assets/mine/level/level_bac6.png",
     ],
+
     background:"",
     icons: ["LV.0", "LV.1", "LV.2", "LV.3", "LV.4", "LV.5", "LV.6"],
     // 成就名称

@@ -68,23 +68,23 @@ Page({
   /*---------这里被小朱修改了部分，浅浅给你个注释----------*/
   login() {
     // let userInfo=wx.getStorageSync('userInfo')
-
+    /* ------------------在这里定义了用户信息-------------用于缓存到全局-------- */
     var userInfo = {
       username: "00000",
       password: "23333",
       nike: "夜倾",
       avatar: "/assets/mine/touxiang.png",
-      pandacoin: 50,
+      pandacoin: 521,
       coupon: 20,
-      level: 2,
-      expValue: 85,
+      level: 3,
+      expValue: 180,
       createDate: "2024-03-30",
       phone: "18166882589",
       sex: "男",
       birthday: "2024-2-28",
     };
     wx.setStorageSync('userInfo', userInfo)
-    
+
     wx.showModal({
       title: '是否一键的登陆',
       content: "手机号登陆：" + userInfo.phone,
