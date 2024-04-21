@@ -25,8 +25,8 @@ Page({
         position: "千道茶坊绵阳城市学院安州店",
         status: "已完成",
         buyTime: "2024-04-09 18:22:54",
-        img: "/assets/Order/O1.png",
-        amount: 14,
+        img: "/assets/Order/O3.png",
+        amount: 22,
         count: 1
       },
     ],
@@ -92,12 +92,18 @@ Page({
       count: amount
     }
 
-    console.log("订单"+order);
+    this.data.orderList.push(order)    
+    this.setData({
+      changeList: this.data.orderList
+    })
 
-    this.data.orderList.push(order)
-
-    console.log(this.data.orderList);
-
+    // 加进去之后删除传入的缓存
+    wx.removeStorageSync('Store');
+    wx.removeStorageSync('totelname');
+    wx.removeStorageSync('totelvalue')
+    wx.removeStorageSync('totelimg')
+    wx.removeStorageSync('totelamount')
+    wx.removeStorageSync('Time')
   },
 
   /**
@@ -111,7 +117,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
   },
 
   /**
