@@ -23,23 +23,35 @@ Page({
       },
       {
         img:"/assets/mine/level/icon2.png",
-        text:"会员日特权"
+        text:"徽章特权"
       },
       {
         img:"/assets/mine/level/icon3.png",
-        text:"会员日特权"
+        text:"升级礼遇"
       },
       {
         img:"/assets/mine/level/icon4.png",
-        text:"会员日特权"
+        text:"生日特权"
       },
       {
         img:"/assets/mine/level/icon5.png",
-        text:"会员日特权"
+        text:"专属兑换"
       },
       {
         img:"/assets/mine/level/icon9.png",
-        text:"会员日特权"
+        text:"拼单特权"
+      },
+      {
+        img:"/assets/mine/level/icon7.png",
+        text:"IP特权"
+      },
+      {
+        img:"/assets/mine/level/icon8.png",
+        text:"等级特权"
+      },
+      {
+        img:"/assets/mine/level/icon9.png",
+        text:"升杯自由"
       },
     ]
 

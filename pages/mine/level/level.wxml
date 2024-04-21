@@ -82,7 +82,9 @@
 
       <!-- 盒子容器 -->
       <view class="boxs">
-        <navigator class="box" wx:for="{{boxs}}" wx:key="index">
+        <navigator class="box" 
+        url="/pages/mine/level/viprule/viprule"
+          wx:for="{{boxs}}" wx:key="index">
           <image class="img" src="{{item.img}}" mode="" />
           <view class="text">{{item.text}}</view>
         </navigator>
