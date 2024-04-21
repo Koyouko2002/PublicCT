@@ -23,13 +23,59 @@
 <map
   id="map"
   subkey="{{mapId}}"
-  longitude="104.7547"
-  latitude="31.4567"
-  scale="12"
+  longitude="{{Ed}}"
+  latitude="{{Nd}}"
+  scale="16"
   layer-style="1"
   class="map"
   hidden="{{maphide}}"
 ></map>
 <view class="mapcontrl" bind:tap="mapcontrl">
 {{maptext}}  <image src="{{mapurl}}"/>
+</view>
+
+<view class="mid">
+
+<view class="adoor" style="border: {{D1}} solid #0a4bde;" bind:tap="D1but"
+
+>
+<image src="/assets/Order/star.png" class="addorimg1"/>
+<text class="addoor-t1">千道茶坊绵阳城市学院安州店</text>
+<view class="addoor-t2"> 营业中 </view>
+<view class="addoor-t3"> 500m </view>
+
+<view class="addoor-t4"> 四川省绵阳市安州区绵阳城市学院</view>
+<view class="addoor-t4"> 营业时间 10:00-21:40</view>
+<view class="addoor-icon"> 
+<image src="/assets/Order/电话.png" mode=""/>
+</view>
+
+<view class="addoor-icon2"> 
+<text class="icont1">导航 </text>
+<image src="/assets/Order/导航.png" mode=""/>
+</view>
+</view>
+
+<view class="adoor" style="border: {{D2}} solid #0a4bde;" bind:tap="D2but"
+>
+<image src="/assets/Order/star.png" class="addorimg1"/>
+<text class="addoor-t1">千道茶坊绵阳涪城区店</text>
+<view class="addoor-t2"> 营业中 </view>
+<view class="addoor-t3"> 2.4km </view>
+
+<view class="addoor-t4"> 四川省绵阳市安州区绵阳城市学院</view>
+<view class="addoor-t4"> 营业时间 10:00-21:40</view>
+<view class="addoor-icon"> 
+<image src="/assets/Order/电话.png" mode=""/>
+</view>
+
+<view class="addoor-icon2"> 
+<text class="icont1">导航 </text>
+<image src="/assets/Order/导航.png" mode=""/>
+</view>
+</view>
+<navigator url="/pages/buy/buy" open-type="switchTab">
+<image src="/assets/左.png" class="back"/>
+</navigator>
+
 </view>

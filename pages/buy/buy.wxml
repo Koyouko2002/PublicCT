@@ -19,9 +19,9 @@
 <!-- 位置导航框+广告 编号 top-2   [页面跳转预留]-->
 <view class="top-2 ">
 <!-- [导航框]文字1  右图片   文字2-->
-<navigator url="/pages/buy/buyson/explan/explan" >
+<navigator url="/pages/buy/buyson/explan/explan" open-type="redirect">
 
-<text class="top-2-t">绵阳城市学院安州店  </text>
+<text class="top-2-t">{{store}}  </text>
    <image src="/assets/右右.png" class="top-2-image1"/> 
   </navigator>
 <text class="top-2-t2">  距您500m   </text>

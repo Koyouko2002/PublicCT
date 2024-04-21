@@ -1,5 +1,7 @@
 /* pages/buy/buyson/explan/explan.wxss */
-
+page{
+  background: #f8f8f8;
+}
 
 
 .top{
@@ -74,7 +76,7 @@ border-right:2px  rgb(224, 224, 224) solid;
 }
 .map {
   width: 100%;
-  height: 240px;
+  height: 210px;
 }
 .mapcontrl{
   width: 100%;
@@ -92,4 +94,103 @@ left: 9rpx;
 width: 35rpx;
 height: 35rpx;
 
+}
+.mid{
+  display: flex;
+  justify-content: space-around;
+  flex-direction:column;
+  width: 95%;
+  height: 510rpx;
+  margin-left: 20rpx;
+}
+.adoor{
+  width: 90%;
+  height: 230rpx;
+background-color: white;
+margin: auto;
+
+}
+.addorimg1{
+  width: 35rpx;
+  height: 35rpx;
+  position: relative;
+  top: 20rpx;
+  left: 20rpx;
+}
+.addoor-t1{
+  font-size: 27rpx;
+  font-weight: bold;
+  position: relative;
+  top: 15rpx;
+  left: 30rpx;
+}
+.addoor-t2{
+  width: 80rpx;
+  height: 35rpx;
+  border: 1px solid #074ae4;
+  font-size: 24rpx;
+  text-align:center;
+  color: #074ae4;
+  position: relative;
+  top: 35rpx;
+  left: 30rpx;
+}
+.addoor-t3{
+  font-size: 27rpx;
+  position: relative;
+  top: -60rpx;
+  left: 550rpx;
+}
+.addoor-t4{
+  position: relative;
+  top: 10rpx;
+  left: 30rpx;
+  font-size: 24rpx;
+  color: #c3c3c5;
+}
+.addoor-icon {
+  width: 35rpx;
+  height: 35rpx;
+  border: 1px solid #c4c4c6;
+  border-radius: 25rpx;
+  position: relative;
+  top: -20rpx;
+  left: 460rpx;
+}
+.addoor-icon image{
+  width: 25rpx;
+  height: 25rpx;
+position: relative;
+top: -5rpx;
+left: 5rpx;
+}
+.addoor-icon2 {
+  width: 95rpx;
+  height: 35rpx;
+  border: 1px solid #c4c4c6;
+  border-radius: 25rpx;
+  position: relative;
+  top: -59rpx;
+  left: 515rpx;
+  font-size: 24rpx;
+  line-height: 20rpx;
+}
+.addoor-icon2 image{
+  width: 32rpx;
+  height: 32rpx;
+position: relative;
+top: 1rpx;
+left: 5rpx;
+}
+.icont1{
+position: relative;
+top: -7rpx;
+left: 10rpx;
+}
+.back{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 35rpx;
 }

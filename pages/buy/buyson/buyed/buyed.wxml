@@ -7,7 +7,7 @@ style="background-color: #ececec;height: 2600rpx;">
 <view class="Top">
 <!-- 顶部区域  文字-->
 <view class="Top-wordview">
-<text class="Top-t1">千道茶坊绵阳城市学院安州店 </text>
+<text class="Top-t1">{{store}} </text>
 <text class="Top-t2">四川省绵阳市安州区启明星大道北段绵阳城市学院内a3-18</text>
 <text class="Top-t3">联系电话 18683047885</text>
 </view>

@@ -10,7 +10,23 @@ Page({
     mapId:"RQVBZ-EOXCZ-AJYXQ-7G444-YNNQO-Q4F5M",maphide:"",mapopenkey:0,
     maptext:"收起地图",
     mapurl:"/assets/上.png",
+    Nd:"31.548634",Ed:"104.565",
+    D1:"0px",D2:"2px",
   },
+  D1but(){
+this.setData({
+  D1:"2px",
+  D2:"0px"
+})
+wx.setStorageSync('Store', "千道茶坊绵阳城市学院安州店")
+  },
+  D2but(){
+    this.setData({
+      D1:"0px",
+      D2:"2px"
+    })
+    wx.setStorageSync('Store', "千道茶坊绵阳涪城区店")
+      },
   bton1(){
     this.setData({
       bt1sty:"top-1-b1",bt2sty:"top-1-b2",

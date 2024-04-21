@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    store:"绵阳城市学院安州区店",
     actionSheetHidden:"none",
     move1:"none",
     move2:"block",
@@ -401,8 +402,13 @@ sumbit(){
    */
   onReady() {
     var open=0;
+    var store="绵阳城市学院安州区店";
+    store=wx.getStorageSync('Store')
     open = wx.getStorageSync('open');
     console.log(open)
+    this.setData({
+      store:store
+    })
     if(open==1){ 
           this.setData({
       total:wx.getStorageSync('totelvalue'),
