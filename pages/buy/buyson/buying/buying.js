@@ -145,7 +145,6 @@ Page({
       })
       is7key=0;
     }
-
   },
   twocup(){
     if(is8key==0){

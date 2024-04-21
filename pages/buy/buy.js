@@ -32,13 +32,15 @@ Page({
       name:"抹茶冰椰雪糕",
       t1:"椰子雪糕I ",
       t1prime:"抹茶",
-      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",            price:14
+      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑."
+      , price:14
     },
     {
       name:"西瓜冰椰雪糕",
       t1:"椰子雪糕I ",
       t1prime:"西瓜",
-      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑.",            price:14
+      t2:"经传统蒸青工艺处理制成的细腻抹茶搭配丝滑."
+      ,price:14
     },
     { 
       name:"抹茶冰椰雪糕",
@@ -401,6 +403,8 @@ sumbit(){
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
+    wx.setStorageSync('Store', "绵阳城市学院安州区店")
+    wx.setStorageSync('cupcupfull', 1)
     var open=0;
     var store="绵阳城市学院安州区店";
     store=wx.getStorageSync('Store')
