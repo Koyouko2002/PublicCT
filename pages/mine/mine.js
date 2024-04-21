@@ -13,20 +13,7 @@ Page({
     strokeWidth: '9rpx',//进度条粗细
 
     // 用户信息
-    userInfo: {
-      username: "00000",
-      password: "23333",
-      nike: "夜倾",
-      avatar: "/assets/mine/touxiang.png",
-      pandacoin: 50,
-      coupon: 20,
-      level: 2,
-      expValue: 85,
-      createDate: "2024-03-30",
-      phone: "18166882589",
-      sex: "男",
-      birthday: "2024-2-28",
-    },
+    userInfo: "",
 
     day: 0,//创建天数
     // 成就名称
@@ -64,9 +51,9 @@ Page({
         appDes: "信息"
       },
       {
-        img:"/assets/mine/zz.png",
-        appDes:"悦己计划",
-        url:"/pages/indexson/friend/friend"
+        img: "/assets/mine/zz.png",
+        appDes: "悦己计划",
+        url: "/pages/indexson/friend/friend"
       },
       {
         img: "/assets/mine/会员任务.png",
@@ -79,7 +66,7 @@ Page({
       {
         img: "/assets/mine/个人资料.png",
         appDes: "个人资料",
-        url:"/pages/mine/more/userdata/userdata"
+        url: "/pages/mine/more/userdata/userdata"
       },
       {
         img: "/assets/mine/加盟申请.png",
@@ -92,22 +79,23 @@ Page({
       {
         img: "/assets/mine/我的勋章.png",
         appDes: "我的勋章",
-        url:"/pages/mine/medals/medal",
+        url: "/pages/mine/medals/medal",
 
       },
       {
         img: "/assets/mine/更多.png",
         appDes: "更多",
-        url:"/pages/mine/more/more"
+        url: "/pages/mine/more/more"
       },
     ]
 
   },
 
-  //获取注册天数
+  /*------------获取注册时间距离今天过去了多久---------------*/
   getCreateDay() {
+    let userInfo = wx.getStorageSync('userInfo');
     // 注册时间
-    const targetDate = new Date(this.data.userInfo.createDate);
+    const targetDate = new Date(userInfo.createDate);
     // 当前时间
     const currentDate = new Date();
 
@@ -122,12 +110,15 @@ Page({
    */
   onLoad(options) {
     // 缓存登陆信息
-    wx.setStorageSync('userInfo', this.data.userInfo)
+    // wx.setStorageSync('userInfo', this.data.userInfo)
+
+    // 获取登录信息
+    var userInfo = wx.getStorageSync('userInfo');
 
     // 缓存等级数组
     wx.setStorageSync('levelName', this.data.levelName)
 
-    let userInfo = wx.getStorageSync('userInfo');
+
     // 注册日期距今
     let theDay = this.getCreateDay()
 
@@ -137,8 +128,8 @@ Page({
     ];
     wx.setStorageSync('ExpArr', ExpArr);
 
-    //经验值
-    let expValue = this.data.userInfo.expValue
+    //经验值    修改+1
+    let expValue = userInfo.expValue
     // console.log((expValue / ExpArr[userInfo.level]) + "进度条");
 
     // 进度条
@@ -147,7 +138,8 @@ Page({
     this.setData({
       day: theDay,        //距离今天的天数
       levelExp: ExpArr,   //经验值数组
-      progress: pro       //进度条百分比
+      progress: pro,      //进度条百分比
+
     })
   },
 
@@ -163,6 +155,25 @@ Page({
    */
   onShow() {
 
+    var userInfo = '';
+    userInfo = wx.getStorageSync('userInfo');
+    // 判断用户是否登录，未登录则进入首页
+    if (userInfo != '') {
+      this.setData({
+        userInfo: userInfo
+      })
+      console.log(userInfo);
+    } else {
+     
+      // 跳转到tarbar
+      wx.switchTab({
+        url: '/pages/index/index',
+      })
+      wx.showToast({
+        title: '请先登录！',
+        icon: 'error',
+      })
+    }
   },
 
   /**
@@ -176,7 +187,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-  
+
   },
 
   /**
