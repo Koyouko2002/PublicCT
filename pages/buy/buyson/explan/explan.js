@@ -5,9 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bt1sty:"top-1-b1",
+    bt2sty:"top-1-b2",
+    mapId:"RQVBZ-EOXCZ-AJYXQ-7G444-YNNQO-Q4F5M",
   },
-
+  bton1(){
+    this.setData({
+      bt1sty:"top-1-b1",bt2sty:"top-1-b2",
+    })
+  },
+  bton2(){
+    this.setData({
+      bt1sty:"top-1-b2",bt2sty:"top-1-b1",
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
