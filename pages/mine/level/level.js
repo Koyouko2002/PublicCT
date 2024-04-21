@@ -14,6 +14,17 @@ Page({
     borderRadius: '100',//圆角
     strokeWidth: '9rpx',//进度条粗细
 
+    current:0,
+    bacImg:[
+      "/assets/mine/level/level_bac0.png",
+      "/assets/mine/level/level_bac1.png",
+      "/assets/mine/level/level_bac2.png",
+      "/assets/mine/level/level_bac3.png",
+      "/assets/mine/level/level_bac4.png",
+      "/assets/mine/level/level_bac5.png",
+      "/assets/mine/level/level_bac6.png",
+    ],
+    background:"",
     icons: ["LV.0", "LV.1", "LV.2", "LV.3", "LV.4", "LV.5", "LV.6"],
     // 成就名称
     levelName: [],
@@ -90,6 +101,25 @@ Page({
     ]
 
   },
+  // 切换背景图片
+  bacChange(event){
+    console.log(event);
+    const current = event.detail.current;
+    console.log(current);
+    const source = event.detail.source;
+
+    if (source === 'touch') {
+      // 用户触摸引发的滑动事件
+      const direction = current > this.data.current ? 'next' : 'previous';
+      this.setData({
+        current: current
+      });
+
+      this.setData({
+        background:this.data.bacImg[current]
+      })
+    }
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -112,7 +142,8 @@ Page({
       // 经验数组
       ExpArr:incomeExpArr,
       // 得到缓存的用户登录信息
-      userInfo: wx.getStorageSync('userInfo')
+      userInfo: wx.getStorageSync('userInfo'),
+      background:this.data.bacImg[userInfo.level]
     })
   },
 

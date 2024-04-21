@@ -54,9 +54,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      changeList: this.data.orderList
-    })
+
   },
 
   /**
@@ -70,7 +68,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      changeList: this.data.orderList
+    })
+    // console.log(new Date());
+ 
   },
 
   /**

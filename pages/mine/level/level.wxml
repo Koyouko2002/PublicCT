@@ -6,7 +6,7 @@
   <view class="content">
     <!-- 背景图 -->
     <!-- 备注：  记得根据用户等级修改背景图 -->
-    <image src="/assets/mine/level/level_bac2.png" class="bac" mode="" />
+    <image src="{{background}}" class="bac" mode="" />
     <!-- 顶部 -->
     <view class="top">
       <!-- 文字 -->
@@ -49,7 +49,7 @@
     <!-- 轮播图   -->
     <!-- 备注：   -->
     <!--      本页重难点，请勿乱动。动出问题了我真的会气哭-->
-    <swiper class="banner" current="{{userInfo.level}}">
+    <swiper class="banner" current="{{userInfo.level}}" bindchange="bacChange">
 
       <swiper-item class="bannerItem" 	 wx:for="{{banner}}" wx:key="index">
         <image src="{{item.bacImg}}" mode="" />
