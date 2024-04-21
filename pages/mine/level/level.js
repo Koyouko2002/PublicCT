@@ -14,7 +14,34 @@ Page({
     borderRadius: '100',//圆角
     strokeWidth: '9rpx',//进度条粗细
 
-    icons: ["LV.0", "LV.1", "LV.2", "LV.3", "LV.4"]
+    icons: ["LV.0", "LV.1", "LV.2", "LV.3", "LV.4"],
+
+    boxs:[
+      {
+        img:"/assets/mine/level/icon1.png",
+        text:"会员日特权"
+      },
+      {
+        img:"/assets/mine/level/icon2.png",
+        text:"会员日特权"
+      },
+      {
+        img:"/assets/mine/level/icon3.png",
+        text:"会员日特权"
+      },
+      {
+        img:"/assets/mine/level/icon4.png",
+        text:"会员日特权"
+      },
+      {
+        img:"/assets/mine/level/icon5.png",
+        text:"会员日特权"
+      },
+      {
+        img:"/assets/mine/level/icon9.png",
+        text:"会员日特权"
+      },
+    ]
 
   },
 
