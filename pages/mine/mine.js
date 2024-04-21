@@ -21,7 +21,7 @@ Page({
       pandacoin: 50,
       coupon: 20,
       level: 2,
-      expValue: 20,
+      expValue: 85,
       createDate: "2024-03-30",
       phone: "18166882589",
       sex: "男",
