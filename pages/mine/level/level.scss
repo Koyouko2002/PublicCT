@@ -70,8 +70,6 @@ page {
     }
   }
 
-
-
   // 进度条父级
   .progressfa {
     position: relative;
@@ -84,6 +82,7 @@ page {
       margin-top: 60rpx;
     }
 
+    // 进度条描述文字
     .iconsF {
       width: 100%;
       display: flex;
@@ -120,5 +119,47 @@ page {
     }
 
 
+  }
+
+  // 轮播图
+  .banner {
+    width: 100%;
+
+    .bannerItem {
+      display: flex;
+      justify-content: center;
+
+      image {
+        height: 300rpx;
+        // width: 80%;
+      }
+    }
+
+    .text {
+      position: relative;
+      width: 80%;
+      left: 15%;
+      top: 10%;
+
+      // 显示当前等级
+      .topLeft {
+        position: absolute;
+        left: -10%;
+        top: -8%;
+        width: fit-content;
+        font-size: 26rpx;
+        padding: 14rpx;
+        color: #aeb4ac;
+        border-top-left-radius: 36rpx;
+        border-bottom-right-radius: 36rpx;
+        background-color: #f8f8f8;
+      }
+
+      // 轮播图文字
+      .textDec {
+        position: relative;
+        top: 20%;
+      }
+    }
   }
 }

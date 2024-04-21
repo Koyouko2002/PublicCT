@@ -45,5 +45,23 @@
       </view>
 
     </view>
+
+    <!-- 轮播图 -->
+    <swiper class="banner">
+      <swiper-item class="bannerItem">
+        <image src="/assets/mine/level/level0.png" mode="" />
+      </swiper-item>
+      <!-- 文字部分 -->
+      <view class="text">
+        <!-- 左上角提示 -->
+        <view class="topLeft">当前等级</view>
+        <!-- 等级 日期 升级提示 -->
+        <view class="textDec">
+          <view class="row1">lV.2好奇Panda</view>
+          <view class="row">时间</view>
+          <view class="row">321321321321</view>
+        </view>
+      </view>
+    </swiper>
   </view>
 </scroll-view>
