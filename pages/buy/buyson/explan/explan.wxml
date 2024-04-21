@@ -74,6 +74,8 @@
 <image src="/assets/Order/导航.png" mode=""/>
 </view>
 </view>
-
+<navigator url="/pages/buy/buy" open-type="switchTab">
+<image src="/assets/左.png" class="back"/>
+</navigator>
 
 </view>

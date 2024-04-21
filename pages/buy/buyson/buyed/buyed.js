@@ -13,6 +13,7 @@ Page({
       t1:"一些相关的文本描述",
       amout:"1",
     },
+    store:"绵阳城市学院安州区店",
     img2:"O3.png",
     Change1:[{
       img:"O7.png",
@@ -87,11 +88,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    var store=wx.getStorageSync('Store');//获取店名
     var name=wx.getStorageSync('totelname');//获取名字
     var value=wx.getStorageSync('totelvalue')//获取总价
     var imgurl=wx.getStorageSync('totelimg')//获取图片
     var amount=wx.getStorageSync('totelamount')//获取数量
     this.setData({
+      store:store,
       Cup:{
         name:name,
         total:value,
