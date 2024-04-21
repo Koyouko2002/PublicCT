@@ -117,25 +117,14 @@ Page({
     }
   },
   tabjoin: function () {
-    wx.navigateTo({
-      url: '/pages/indexson/joingroup/joingroup',
-    });
+    wx.navigateTo({url: '/pages/indexson/joingroup/joingroup',});
   },  
   tabbuy: function (e) {
     const index = e.currentTarget.dataset.index;
     if(index===0)
-    wx.switchTab({
-      url: '/pages/buy/buy',
-    });
+      wx.switchTab({url: '/pages/buy/buy',});
     else
-    wx.navigateTo({
-      url: '/pages/indexson/disfree/disfree',
-    });
-  },
-  tabfree: function () {
-    wx.navigateTo({
-      url: '/pages/indexson/disfree/disfree',
-    });
+      wx.navigateTo({url: '/pages/indexson/disfree/disfree',});
   },
 
 
