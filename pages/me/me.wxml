@@ -1,0 +1,169 @@
+<!--index.wxml-->
+
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+
+<view class="me_bg">
+
+  <view class="me_top">
+
+
+<navigator url="/pages/st/st?title=navigate" hover-class="navigator-hover" >   
+<image src="/imgs/myimgs/set.png" class="me_top_image1"/>
+ </navigator>
+
+ <navigator url="/pages/cate/cate" open-type="switchTab" hover-class="other-navigator-hover">
+  <image src="/imgs/myimgs/info.png" class="me_top_image2"/>
+
+ </navigator>
+
+
+
+
+<text class="me_bg_t1">我的</text>
+</view>  
+
+</view>
+
+<view class="me_top_word">
+<text class="me_bg_t2"> 深仁厚泽 </text>
+<text class="me_bg_t3"> 蓝职宿舍 </text>
+</view> 
+</navigation-bar>
+<!-- <scroll-view class="scrollarea" scroll-y type="list"> -->
+  <view class="container">
+
+    <image src="/imgs/tx.png" class="TX"/>
+
+    <view class="M-TB2">
+<view class="M-TB2-L">
+<image src="/imgs/appgirl.png" class="M-TB2_image1"/>
+<view class="M-TB2_Text1">   
+<text style="font-size: 12px;font-weight: bold;;">待办事项  </text>  
+<text style="font-size: 9px;"> 我的代办事项</text> 
+</view>
+</view>
+<view class="M-TB2-R">
+  <image src="/imgs/appboy.png" class="M-TB2_image2"/></view>
+  <view class="M-TB2_Text2">   
+<text style="font-size: 12px;font-weight: bold;">待办事项  </text>  
+<text style="font-size: 9px;"> 我的代办事项</text> 
+</view>
+</view>
+
+
+
+<view class="TBALL">   
+  <text class="midtext">最新消息</text>
+<scroll-view scroll-x class="sc"  
+style="display: {{is1}};"          >
+<view class="TB5-Table" >    
+<text class="TBT-T-T"> 教职工请假申请</text>
+<text class="TBT-T-T2">工作部门：申请人 www</text>
+<text class="TBT-T-T3">今天</text>
+<view class="TBTBG">  
+<image src="/imgs/messageimgs/8.png" mode=""/>
+<view class="del " bind:tap="del1"> 删除</view>
+ </view>
+</view>
+</scroll-view>
+
+<scroll-view scroll-x class="sc" 
+style="display: {{is2}};"          >
+  
+  <view class="TB5-Table">    
+  <text class="TBT-T-T"> 教职工请假申请</text>
+  <text class="TBT-T-T2">工作部门：申请人 www</text>
+  <text class="TBT-T-T3">今天</text>
+  <view class="TBTBG">  
+  <image src="/imgs/messageimgs/7.png" mode=""/>
+  <view class="del " bind:tap="del2"> 删除</view>
+   </view>
+  </view>
+  </scroll-view>
+
+  <scroll-view scroll-x class="sc"    
+  style="display: {{is3}};"       >
+  
+  <view class="TB5-Table">    
+  <text class="TBT-T-T"> 党员信息申报</text>
+  <text class="TBT-T-T2">工作部门：申请人 XXX</text>
+  <text class="TBT-T-T3">今天</text>
+  <view class="TBTBG">  
+  <image src="/imgs/messageimgs/9.png" mode=""/>
+  <view class="del " bind:tap="del3"> 删除</view>
+   </view>
+  </view>
+  </scroll-view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+<view class="M-TB-LM">   
+<text class="midtext2">推荐应用</text>
+<view class="M-TB">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/email.png" mode=""/>
+<text class="M-TB-Text"  >代办</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/jiangbei.png" mode=""/>
+<text class="M-TB-Text" >待阅</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/map.png" mode=""/>
+<text class="M-TB-Text" >已办</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/school.png" mode=""/>
+<text class="M-TB-Text" >已越</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/shenpi.png" mode=""/>
+<text class="M-TB-Text" >系统</text> </view>
+
+
+
+</view>
+<view class="M-TB" style="top: 650px;">
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/money.png" mode=""/>
+<text class="M-TB-Text"  >代办</text> </view>
+
+<view class="M-TB-1" style="">   
+  <image src="/imgs/appimgs/red.png" mode=""/>
+<text class="M-TB-Text" >待阅</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/school.png" mode=""/>
+<text class="M-TB-Text" >已办</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/shenpi.png" mode=""/>
+<text class="M-TB-Text" >已越</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/appimgs/libray.png" mode=""/>
+<text class="M-TB-Text" >系统</text> </view>
+
+
+
+</view>
+
+
+ </view>
+
+
+
+
+  </view>
+<!-- </scroll-view> -->
