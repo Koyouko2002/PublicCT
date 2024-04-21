@@ -201,3 +201,33 @@ scroll-view view{
   text-align: center;
   line-height: 80rpx;
 }
+
+
+
+.button{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.aon{
+background-color: rgba(0,0,0,0.3);
+border-radius: 20rpx;
+padding-left: 20rpx;
+padding-right: 20rpx;
+position: absolute;
+white-space:nowrap;/* 防止向下换行*/
+animation-timing-function: linear;
+animation-fill-mode: none;
+}
+.doommview{
+  z-index: 3;
+  height: 310rpx;
+  width: 100%;
+  position: absolute;
+  top: 350rpx;
+  // background-color: aqua;
+}
+@keyframes first{
+  from{left: 100%; }
+  to{left: -100%;}
+}
