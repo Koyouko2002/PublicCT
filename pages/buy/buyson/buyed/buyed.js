@@ -1,11 +1,13 @@
 // pages/buy/buyson/buyed/buyed.js
 var some=0;
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    value:"0",
     Cup:{
       name:"茉莉奶绿",
       img:"O3.png",
@@ -47,7 +49,6 @@ Page({
     value:1.99,
   }
 ],
-
   }
   ,buysome1(){
     this.data.Cup.total.toFixed(2);
@@ -59,10 +60,9 @@ Page({
     }
 
     })
-    console.log(this.data.total)
+    // console.log(this.data.total)
   },
   buysome2(){
-
     some=this.data.Cup.total;
     some+=1.99;
     this.setData({
@@ -71,7 +71,7 @@ Page({
     }
 
     })
-    console.log(this.data.total)
+    // console.log(this.data.total)
   },
   sumbit(){
     wx.showToast({
@@ -99,6 +99,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    
     var store=wx.getStorageSync('Store');//获取店名
     var name=wx.getStorageSync('totelname');//获取名字
     var value=wx.getStorageSync('totelvalue')//获取总价
@@ -106,13 +107,15 @@ Page({
     var amount=wx.getStorageSync('totelamount')//获取数量
     this.setData({
       store:store,
+      value:value,
       Cup:{
         name:name,
         total:value,
         img:imgurl,
         amout:amount,
         t1:"一些相关的文本描述",
-      }
+      },
+ 
     })
 
   },

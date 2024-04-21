@@ -213,8 +213,29 @@ Page({
     })
 
   },
-  buying(){
+  buying1(){
+    wx.setStorageSync('cupcupfull', 1)
     console.log("111")
+  },
+  buying2(){
+    wx.setStorageSync('cupcupfull', 2)
+    console.log("222")
+  },
+  buying3(){
+    wx.setStorageSync('cupcupfull', 3)
+    console.log("333")
+  },
+  buying4(){
+    wx.setStorageSync('cupcupfull', 4)
+    console.log("444")
+  },
+  buying5(){
+    wx.setStorageSync('cupcupfull', 5)
+    console.log("555")
+  },
+  buying6(){
+    wx.setStorageSync('cupcupfull', 6)
+    console.log("666")
   },
 scrolling(){
 if(is==0){
@@ -263,7 +284,7 @@ if(is==0){
      })
   },
   button1(){
-    wx.setStorageSync('cupcupfull', 1)
+
       this.setData({
         isw1:"#ffffff",isw2:"none",
         isw3:"none",isw4:"none",isw5:"none",isw6:"none",isw7:"none",isw8:"none",
@@ -396,15 +417,13 @@ sumbit(){
    */
   onLoad(options) {
 
-
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    wx.setStorageSync('Store', "绵阳城市学院安州区店")
-    wx.setStorageSync('cupcupfull', 1)
+
     var open=0;
     var store="绵阳城市学院安州区店";
     store=wx.getStorageSync('Store')

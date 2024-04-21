@@ -130,7 +130,7 @@
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
                 <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
-                <view class="abotton"  bind:tap="buying">选规格</view>
+                <view class="abotton"  bind:tap="buying1">选规格</view>
                 </navigator>
              </view>
 
@@ -157,7 +157,7 @@
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
                 <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
-                <view class="abotton"  bind:tap="buying">选规格</view>
+                <view class="abotton"  bind:tap="buying2">选规格</view>
                 </navigator>
              </view>
 
@@ -184,7 +184,7 @@
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
                 <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
-                <view class="abotton"  bind:tap="buying">选规格</view>
+                <view class="abotton"  bind:tap="buying3">选规格</view>
                 </navigator>
              </view>
 
@@ -211,7 +211,7 @@
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
                 <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
-                <view class="abotton"  bind:tap="buying">选规格</view>
+                <view class="abotton"  bind:tap="buying4">选规格</view>
                 </navigator>
              </view>
 
@@ -238,7 +238,7 @@
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
                 <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
-                <view class="abotton"  bind:tap="buying">选规格</view>
+                <view class="abotton"  bind:tap="buying5">选规格</view>
                 </navigator>
              </view>
 
@@ -265,7 +265,7 @@
                 <text class="M-R-index-t3">{{Cup.t2}}。</text>    
                 <text class="M-R-index-t4">¥ {{Cup.price}} 起</text>
                 <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
-                <view class="abotton"  bind:tap="buying">选规格</view>
+                <view class="abotton"  bind:tap="buying6">选规格</view>
                 </navigator>
              </view>      
             </view>  

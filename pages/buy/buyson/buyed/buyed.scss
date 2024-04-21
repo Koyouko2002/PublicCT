@@ -3,7 +3,6 @@ page {
   height: 100%;
   display: flex;
   flex-direction: column;
-
 }
 .scrollarea{
   flex: 1;
@@ -17,7 +16,6 @@ page {
   border-radius: 40rpx;;
 }
 .Top-wordview{
-
   width: 80%;
   height: 300rpx;
   margin-top: 70rpx;
@@ -200,7 +198,10 @@ height: 300rpx;
   height: 50rpx;
   background-color: rgb(255, 255, 255);
   }
-  
+.main-top-index{
+  position: absolute;
+  top: 90rpx;
+}
 .main-top-index image{
   margin-top: 5rpx;
   width: 150rpx;
@@ -224,11 +225,11 @@ height: 300rpx;
   color: #a5a8ac;
 }
 .index-t3{
+  width: 170rpx;
+  height: 100rpx;
   font-weight: 500;
   font-size: 30rpx;
-  display: block;
-  margin-top: -85rpx;
-  margin-left: 420rpx;
+  margin-top:240rpx;
   
 }
 .index-t4{
@@ -236,8 +237,8 @@ height: 300rpx;
   font-weight: 600;
   font-size: 24rpx;
   display: block;
-  margin-top: 0rpx;
-  margin-left: 450rpx;
+  margin-top: -40rpx;
+  margin-left: 350rpx;
 }
 .main-f1{
   margin-top: 40rpx;
