@@ -363,8 +363,24 @@
           <text> Lv.0至Lv.6会员在小程序自提下单享第二杯半价
 </text>
              </view>
+             <view class="xl-t2">   
+          <image src="/assets/Order/消息 (1).png" />
+          <text> 会员在小程序点单活动饮品，可享受双杯8.8折
+</text>
+             </view>
+             <view class="xl-t2">   
+          <image src="/assets/Order/消息 (1).png" />
+          <text> 任意消费后享3元加购1份“椰子雪糕”小料
 
+</text>
+             </view>
+             <text class="xl_t1">门店信息</text>
 
+             <view class="xl-t2">   
+          <text> 地址:四川省 绵阳市安州区城市学院D1-611</text>
+          <text style="display: block;"> 电话：18683047885</text>
+          <text> 营业时间: 09:30-21:30</text>
+             </view>
         </view>
         <!-- <block wx:for="{{actionSheetItems}}">
           <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>

@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    actionSheetHidden:"",
+    actionSheetHidden:"none",
     move1:"none",
     move2:"block",
     T1C:"white",
