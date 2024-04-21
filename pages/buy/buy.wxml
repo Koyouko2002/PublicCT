@@ -1,8 +1,5 @@
 <!--index.wxml-->
 
-<navigation-bar title="" back="{{false}}" color="black" background="red" >
-
-</navigation-bar>
 <!-- 顶部区域 -->
 <view class="top">
 <!-- 自取外卖 选择框  编号 top-1 -->
@@ -22,7 +19,7 @@
 <!-- 位置导航框+广告 编号 top-2   [页面跳转预留]-->
 <view class="top-2 ">
 <!-- [导航框]文字1  右图片   文字2-->
-<navigator url="/pages/buy/buyson/explan/explan" open-type="redirect">
+<navigator url="/pages/buy/buyson/explan/explan" >
 
 <text class="top-2-t">绵阳城市学院安州店  </text>
    <image src="/assets/右右.png" class="top-2-image1"/> 

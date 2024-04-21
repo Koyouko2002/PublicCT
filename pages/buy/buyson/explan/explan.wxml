@@ -28,4 +28,8 @@
   scale="12"
   layer-style="1"
   class="map"
+  hidden="{{maphide}}"
 ></map>
+<view class="mapcontrl" bind:tap="mapcontrl">
+{{maptext}}  <image src="{{mapurl}}"/>
+</view>

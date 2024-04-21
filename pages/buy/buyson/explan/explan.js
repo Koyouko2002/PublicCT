@@ -7,7 +7,9 @@ Page({
   data: {
     bt1sty:"top-1-b1",
     bt2sty:"top-1-b2",
-    mapId:"RQVBZ-EOXCZ-AJYXQ-7G444-YNNQO-Q4F5M",
+    mapId:"RQVBZ-EOXCZ-AJYXQ-7G444-YNNQO-Q4F5M",maphide:"",mapopenkey:0,
+    maptext:"收起地图",
+    mapurl:"/assets/上.png",
   },
   bton1(){
     this.setData({
@@ -18,6 +20,24 @@ Page({
     this.setData({
       bt1sty:"top-1-b2",bt2sty:"top-1-b1",
     })
+  },
+  mapcontrl(){
+    if(this.data.mapopenkey==0){
+       this.setData({
+      maphide:"none",
+      maptext:"放下地图",
+      mapurl:"/assets/下 (1).png",
+    })
+      this.data.mapopenkey=1;
+    }else{
+      this.setData({
+        maphide:"",
+        maptext:"收起地图",
+        mapurl:"/assets/上.png",
+      })
+      this.data.mapopenkey=0;
+    }
+   
   },
   /**
    * 生命周期函数--监听页面加载
