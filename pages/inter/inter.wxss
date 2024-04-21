@@ -3,8 +3,6 @@ page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-
-
 }
 .TB5 text:hover{
   color: rgb(0, 185, 108);
