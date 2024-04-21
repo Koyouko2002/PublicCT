@@ -349,9 +349,22 @@
 
       </view>
 
-      <view class="section section_gap">
-      <action-sheet hidden="{{actionSheetHidden}}" >
-        <view class="info"> 
+      <view class="section section_gap ">
+      <action-sheet hidden="{{actionSheetHidden}}"   >
+        <view class="info" > 
+        
+          <text class="xl_t1">好茶为底,制造新鲜</text>
+          <view class="xl-t2">   
+          <image src="/assets/Order/消息 (1).png" />
+          <text> 小程序购指定饮品享9.9元(中杯)</text>
+             </view>
+             <view class="xl-t2">   
+          <image src="/assets/Order/消息 (1).png" />
+          <text> Lv.0至Lv.6会员在小程序自提下单享第二杯半价
+</text>
+             </view>
+
+
         </view>
         <!-- <block wx:for="{{actionSheetItems}}">
           <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
