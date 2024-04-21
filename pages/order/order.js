@@ -74,25 +74,30 @@ Page({
     // console.log(new Date());
 
     // 下单之后传回来的值
-    var sotre=wx.getStorageSync('Store');//获取名字
-    var name=wx.getStorageSync('totelname');//获取名字
-    var value=wx.getStorageSync('totelvalue')//获取总价
-    var imgurl=wx.getStorageSync('totelimg')//获取图片
-    var amount=wx.getStorageSync('totelamount')//获取数量
-    var time=wx.getStorageSync('Time')//获取数量
+    var sotre = wx.getStorageSync('Store');//获取名字
+    var name = wx.getStorageSync('totelname');//获取名字
+    var value = wx.getStorageSync('totelvalue')//获取总价
+    var imgurl = wx.getStorageSync('totelimg')//获取图片
+    var amount = wx.getStorageSync('totelamount')//获取数量
+    var time = wx.getStorageSync('Time')//获取数量
 
     console.log(sotre);
     // 封装成订单
-    let order={
-      position: sotre,
-      status: "已完成",
-      buyTime: time,
-      img: imgurl,
-      amount: value,
-      count: amount
+    if (sotre != '') {
+      var order = {
+        position: sotre,
+        status: "已完成",
+        buyTime: time,
+        img: imgurl,
+        amount: value,
+        count: amount
+
+      }
+      this.data.orderList.push(order)
+
     }
 
-    this.data.orderList.push(order)    
+
     this.setData({
       changeList: this.data.orderList
     })
