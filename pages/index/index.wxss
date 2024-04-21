@@ -4,12 +4,22 @@ page {
   display: flex;
   flex-direction: column;
 }
-.scrollarea {
+.catf{
+width: 750rpx; height: 130rpx; 
+display: block; box-sizing: border-box;
+}
+.scrollarea{
   flex: 1;
   overflow-y: hidden;
 }
 .a1{
   width: 200px;
+}
+.M-tr{
+  position: relative;
+  top: 100rpx;
+  font-size: 24px;
+  display: block;
 }
 
 .M-TB{

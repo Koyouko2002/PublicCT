@@ -1,6 +1,6 @@
 <!--index.wxml-->
 
-<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" >
 </navigation-bar>
 
 
