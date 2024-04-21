@@ -44,23 +44,22 @@
 
 <view class="rol" catchtap="ifregister">规则</view>
 <modal confirm-text="已阅" cancel-text="以后再说" no-cancel="true"  hidden="{{modalHidden}}"  bindconfirm="confirmChange" style="position: relative;">
-   <scroll-view class="scroll-y" scroll-y class="scrollybox">
-      <view>1、此活动仅限在“ 茶百道点餐+”小程序参与，仅限“茶百道点餐+”女性会员参与，活动期间内每个符合条件的ID最多领取1次;</view>
-      <view>2、所有个人资料性别的填写修改和新会员注册完善个人信息后，均将在填写后第二天开始正式生效，生效后方可领券;</view>
-      <view>3、此活动仅限2024年4月10日00:00- 4月30日23:59可参与，会员仅可在上述期限内领取折扣券;</view>
-      <view>4、点击页面下方[立即领券] ，即可参与活动，领取1张暖心陪伴礼-指定饮品中杯8.8元券(黑糖珍珠奶茶中杯) ;</view>
-      <view>5、凭此券在购买黑糖珍珠奶茶中杯时，可享8.8元购买(不包括保温袋、0卡糖);</view>
-      <view>6、指定饮品中杯8.8元券，最高抵扣约1.2元.(实际优惠价格以门店菜单价为基准计算),活动期间不限量，具体使用规则以券详情页面为准;</view>
-      <view>7、此活动优惠券自实际领取到账之日起至2024年4月30日23:59有效，过期自动作废,不退不补，会员未在活动期间领取的，视为放弃;</view>
-      <view>8、此活动优惠券仅限“茶百道点餐+”小程序自提下单时使用，全国门店均可使用，部分门店因特殊原因可能临时无法使用，具体请咨询门店;</view>
-      <view>9、此活动优惠券限一次性使用，单笔订单限使用1张，不兑换现金、不开票、不找零、不与其他优惠券/优惠活动同享;</view>
-      <view>10、若发生优惠券抵扣订单退款时，该优惠券将退回至[' 茶百道点餐+”小程序-我的-优惠券]，抵扣金额不予退回;</view>
-      <view>11、 此次活动优惠券在领取后将自动发送至，会员账户，可在[“ 茶百道点餐+”小程序-我的-优惠券]查看;</view>
-      <view>12、 任何参与活动的用户不得修改页面参数，或者以任何机器人软件、爬虫软件、刷屏软件、任何非人工方式参与活动，- -经发现立即取消参与和领奖资格，且该用户于活动中获得的奖励全部回收;</view>
+  <scroll-view class="scroll-y" scroll-y class="scrollybox">
+    <view wx:for="{{items3}}" wx:key="index">{{item}}</view>
   </scroll-view>
   <image src="/assets/悦己计划规则Top.png" mode="widthFix" class="topimg"/>
   <view class="toptlt" >活动规则</view>
 </modal>
+
+
+<!-- -----------------------弹幕----------------------- -->
+<view class="doommview" bindtap="bindbt">
+    <block wx:for="{{doommData}}" wx:key="id">
+        <view wx:if="{{item.display}}" class="aon" style="animation: first {{item.time}}s linear forwards;top:{{item.top}}%;color:{{item.color}};">
+            {{item.text}}
+        </view>
+    </block>
+</view>
 
 
 
