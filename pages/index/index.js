@@ -41,13 +41,14 @@ Page({
       '/assets/首页Bot2.jpg',
       '/assets/首页Bot3.jpg',
     ],
+    imgUrls6:"/assets/首页Bot1.jpg",
   },
 
   syncSwiper: function (e) {/*----------------轮播图动作的联动-----------------*/ 
     var current = e.detail.current;// 获取第一个轮播图当前的滑动位置
     this.setData({// 更新第二个轮播图的滑动位置
       current: current,
-      interval2:0,
+      interval2:0,//重置切换间隔时长
     });
     // interval:3000
   },

@@ -55,8 +55,8 @@
   </view>
   <!-- 三宫格 -->
   <view class="flexfather">
-    <view class="leftimg">
-      <image src="/assets/首页Bot1.jpg" mode="widthFix" bindtap="tabjoin" />
+    <view class="leftimg" wx:if="true">
+      <image src="{{imgUrls6}}" mode="widthFix" bindtap="tabjoin" />
     </view>
     <view class="rigthimg">
       <image  wx:for="{{imgUrls5}}" wx:key="index" data-index="{{index}}" src="{{item}}" mode="widthFix" bindtap="tabbuy" />
