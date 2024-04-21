@@ -121,7 +121,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    // 缓存登陆信息
     wx.setStorageSync('userInfo', this.data.userInfo)
+
+    // 缓存等级数组
+    wx.setStorageSync('levelName', this.data.levelName)
 
     let userInfo = wx.getStorageSync('userInfo');
     // 注册日期距今
@@ -131,6 +135,7 @@ Page({
     let ExpArr = [
       20, 40, 100, 200, 310, 430, 560
     ];
+    wx.setStorageSync('ExpArr', ExpArr);
 
     //经验值
     let expValue = this.data.userInfo.expValue

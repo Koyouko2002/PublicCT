@@ -46,23 +46,42 @@
 
     </view>
 
-    <!-- 轮播图 -->
-    <swiper class="banner">
+    <!-- 轮播图   -->
+    <!-- 备注：   -->
+    <!--      本页重难点，请勿乱动。动出问题了我真的会气哭-->
+    <swiper class="banner" current="{{userInfo.level}}">
 
-      <swiper-item class="bannerItem">
-        <image src="/assets/mine/level/level0.png" mode="" />
+      <swiper-item class="bannerItem" 	 wx:for="{{banner}}" wx:key="index">
+        <image src="{{item.bacImg}}" mode="" />
         <!-- 文字部分 -->
         <view class="text">
           <!-- 左上角提示 -->
           <!-- 备注:   后续 修改为 非当前等级 则不显示 -->
-          <view class="topLeft" style="{{false?'visibility: hidden;':''}}">当前等级</view>
+          <view class="topLeft" style="{{userInfo.level==item.level?'':'visibility: hidden;'}}">当前等级</view>
 
           <!-- 等级 日期 升级提示 -->
-          <view class="textDec">
-            <view class="row1">lV.2好奇Panda</view>
+          <!-- 等级等于当前显示等级时的文字 -->
+          <view class="textDec" wx:if="{{userInfo.level==item.level}}">
+            <view class="row1">{{icons[index]}} {{levelName[index]}}</view>
             <view class="row">2024-12-1 到期</view>
-            <view class="row">50/100 还需要50点熊猫值升级</view>
+            <view class="row">{{userInfo.expValue}}/{{ExpArr[index]}} 还需要{{ExpArr[index]-userInfo.expValue}}点熊猫值升级</view>
           </view>
+          <!-- 等级大于当前显示等级时的文字 -->
+          <view class="textDec" wx:if="{{userInfo.level>item.level}}">
+            <view class="row1">{{icons[index]}} {{levelName[index]}}</view>
+            <view class="row">您以超过该等级</view>
+          </view>
+
+          <!-- 等级小于当前显示等级时的文字 -->
+          <view class="textDec" wx:if="{{userInfo.level<item.level}}">
+            <view class="row1">{{icons[index]}} {{levelName[index]}}</view>
+            <view class="row">
+              <text>解锁等级 {{icons[index]}} {{levelName[index]}}之前
+                    需要先解锁 {{icons[index-1]}} {{levelName[index-1]}}
+              </text>
+            </view>
+          </view>
+
         </view>
       </swiper-item>
 
@@ -82,9 +101,7 @@
 
       <!-- 盒子容器 -->
       <view class="boxs">
-        <navigator class="box" 
-        url="/pages/mine/level/viprule/viprule"
-          wx:for="{{boxs}}" wx:key="index">
+        <navigator class="box" url="/pages/mine/level/viprule/viprule" wx:for="{{boxs}}" wx:key="index">
           <image class="img" src="{{item.img}}" mode="" />
           <view class="text">{{item.text}}</view>
         </navigator>
