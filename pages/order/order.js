@@ -83,7 +83,7 @@ Page({
 
     console.log(sotre);
     // 封装成订单
-    if (sotre != '') {
+    if (time != '') {
       var order = {
         position: sotre,
         status: "已完成",
