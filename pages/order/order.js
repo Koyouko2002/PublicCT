@@ -79,8 +79,9 @@ Page({
     var value=wx.getStorageSync('totelvalue')//获取总价
     var imgurl=wx.getStorageSync('totelimg')//获取图片
     var amount=wx.getStorageSync('totelamount')//获取数量
-    var time=wx.getStorageSync('time')//获取数量
+    var time=wx.getStorageSync('Time')//获取数量
 
+    console.log(sotre);
     // 封装成订单
     let order={
       position: sotre,
