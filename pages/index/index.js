@@ -37,13 +37,18 @@ Page({
       '/assets/开卡减五元.png',
       '/assets/女生专属.png',
     ],
+    imgUrls5: [/*----------------三宫格的数据-----------------*/ 
+      '/assets/首页Bot2.jpg',
+      '/assets/首页Bot3.jpg',
+    ],
+    imgUrls6:"/assets/首页Bot1.jpg",
   },
 
   syncSwiper: function (e) {/*----------------轮播图动作的联动-----------------*/ 
     var current = e.detail.current;// 获取第一个轮播图当前的滑动位置
     this.setData({// 更新第二个轮播图的滑动位置
       current: current,
-      interval2:0,
+      interval2:0,//重置切换间隔时长
     });
     // interval:3000
   },
@@ -113,19 +118,14 @@ Page({
     }
   },
   tabjoin: function () {
-    wx.navigateTo({
-      url: '/pages/indexson/joingroup/joingroup',
-    });
+    wx.navigateTo({url: '/pages/indexson/joingroup/joingroup',});
   },  
-  tabbuy: function () {
-    wx.switchTab({
-      url: '/pages/buy/buy',
-    });
-  },
-  tabfree: function () {
-    wx.navigateTo({
-      url: '/pages/indexson/disfree/disfree',
-    });
+  tabbuy: function (e) {
+    const index = e.currentTarget.dataset.index;
+    if(index===0)
+      wx.switchTab({url: '/pages/buy/buy',});
+    else
+      wx.navigateTo({url: '/pages/indexson/disfree/disfree',});
   },
 
 
