@@ -9,19 +9,19 @@ page{
   text-align: center;
   height:fit-content ;
   background-color: #ffffff;
-  margin: 20rpx;
+  margin: 40rpx 0 0 0 ;
   border-radius: 25rpx;
 }
 .kind_txt{
 line-height: 50rpx;
 width: 100%;
 font-size: 45rpx;
-margin: 20rpx;
+margin-top: 35rpx;
 
 }
 .medal{
-  flex: 0 0 33.33%; /* 33.33% width for each item */
-margin-top: 50rpx;
+flex: 0 0 33.33%; /* 33.33% width for each item */
+margin: 50rpx 0 20rpx 0rpx;
 }
 .medal_main{
   margin-bottom: 50rpx;
@@ -29,7 +29,14 @@ margin-top: 50rpx;
 .medal_pic{
 height: 200rpx;
 width: 200rpx;
+margin-bottom: 20rpx;
 }
-.medal_txt1{
-
+.bottom{
+  font-size: 25rpx;
+  text-align: center;
+  margin-top: 50rpx;
+  height: 90rpx;
+}
+.bottom_txt1{
+  color: #004de6;
 }

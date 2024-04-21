@@ -8,11 +8,11 @@
     <view wx:for="{{item.kind1}}" class="medal">
       <view class="medal_main">
         <image src="{{item.pic}}" mode="aspectFit" class="medal_pic"></image>
-        <view class="kind_txt1">{{item.text1}}</view>
+        <view>{{item.text1}}</view>
       </view>
     </view>
   </view>
-
+  <navigator  class="bottom">部分等级徽章无法领取?<text class="bottom_txt1">点击此处补发</text></navigator>
   <!--补发-->
-  <view>部分等级徽章无法领取?<text>点击此处补发</text></view>
+  
 </view>
