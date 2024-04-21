@@ -1,14 +1,18 @@
 /* pages/mine/level/viprule/viprule.wxss */
 page{
   background-color: rgb(241, 241, 241);
+  
+}
+
+.swiper{
+  height: 660px;
 }
 
 .top{
   display: flex;
   height: 40px;
-  width: 900px;
-  margin-left: 35px;
-  justify-content: space-between;
+  width: 600px;
+  margin-left: 145px;
   margin-top: 10px;
 
 }
@@ -17,13 +21,15 @@ page{
 .imagebox{
   display: flex;
   margin-top: 20px;
+  width: 340px;
+  height: 320px;
 }
 
 image{
-  margin-left: 18px;
+  margin-left: 25px;
   margin-right: 7px;
   width: 320px;
-  height: 300px;
+  height: 330px;
   border-radius: 6%;
 }
 
@@ -32,6 +38,15 @@ image{
   margin-left: 7%;
   width: 85%;
   height: 300px;
+  line-height: 30px;
+
+}
+
+.textbox1{
+  margin-top: 30px;
+  margin-left: 7%;
+  width: 85%;
+  height: 500px;
   line-height: 30px;
 
 }

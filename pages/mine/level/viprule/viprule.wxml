@@ -1,161 +1,116 @@
-<!--pages/mine/level/viprule/viprule.wxml-->
+<swiper class="swiper" circular="ture">
 
-
-  
-
-<scroll-view  enable-flex="true" scroll-x > 
-  
-    <view class="top">
-    <view>会员日特权</view>
-    <view>徽章特权</view>
-    <view>升级礼遇</view>
-    <view>生日特权</view>
-    <view>专属兑换</view>
-    <view>拼单特权</view>
-    <view>IP特权</view>
-    <view>等级特权</view>
-    <view style="margin-right:20px ;">升杯自由</view>
-    </view>
-
-</scroll-view>
-<!-- 滚动图片 -->
-<scroll-view enable-flex="true"  scroll-x  >
-
-<view class="imagebox">
-
-      <!-- v1 -->
-      <view>
-      <image src="/assets/mine/level/v1.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>LV.0 起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
-      </view>
-      </view>
-
-
-      <!-- v2 -->
-      <view>
-      <image src="/assets/mine/level/v2.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>注册Lv.0|可领取迷路徽章升至</view>
-      <view> Lv.1| 可领取新生徽章升至</view>
-      <view>Lv.2| 可领取好奇徽章升至</view>
-      <view>Lv.3| 可领取饮茶徽章升至</view>
-      <view>Lv.4| 可领取茶艺徽章升至</view>
-      <view>Lv.5| 可领取茶道徽章升至</view>
-      <view>Lv.6| 可领取黑金徽章</view>
-
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
-      <!-- v3 -->
-      <view>
-      <image src="/assets/mine/level/v3.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>升至LV.2| 满15-3元券*2
-      <view>升至LV.3| 满15-3元券+第二杯半价券</view>
-      <view>升至LV.4| 免费升杯券+第二杯半价券</view>
-      <view>升至LV.5│ 免费升杯券+买二赠一券</view>
-      <view>升至LV.6| 小料自由券*4</view>
-      </view>
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
-      <!-- v4 -->
-      <view>
-      <image src="/assets/mine/level/v4.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>升至LV.3| 3元无门槛+满30元减5元券 </view>
-      <view>升至LV.4| 3元无门槛+满30元减5元券 </view>
-      <view>升至LV.5| 3元无门槛+满30-5券+满45</view>
-      <view>升至LV.6| 免单券+满30-5券+满45-10券 </view>
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
-      <!-- v5 -->
-      <view>
-      <image src="/assets/mine/level/v5.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>升至LV.3|可解锁熊猫币商城专属兑换</view>   
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
-      <!-- v6 -->
-      <view>
-      <image src="/assets/mine/level/v6.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>升至LV.3| 拼单减免3元*1</view>
-      <view>升至LV.4| 拼单减免3元*1</view>
-      <view>升至LV.5| 拼单减免5元*1</view>
-      <view>升至LV.6| 拼单减免5元*1</view>
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
-      <!-- v7 -->
-      <view>
-      <image src="/assets/mine/level/v7.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>LV.0 起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
-      <!-- v8-->
-      <view>
-      <image src="/assets/mine/level/v8.jpg" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>会员均享有社群20元券包权益</view>
-      <view> 升至LV.3| 即可解锁异业特权</view>
-      <view>升至LV.5| 拥有线下活动优先参与权</view>
-      <view>升至LV.6| 有机会赢取限量周边</view>
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
-      <!-- v9-->
-      <view>
-      <image src="/assets/mine/level/v9.png" mode=""/>
-      <view class="textbox">
-      <!-- 文字部分 -->
-      <view>尊享权益</view>
-      <view>升至LV.5| 升杯券*2</view>
-     <view>升至LV.6| 升杯券*4</view> 
-      <!-- 文字部分 -->
-      </view>
-      </view>
-
-
+<!-- v1--- -->
+<swiper-item>
+<view class="top">会员日特权</view>
+<image src="/assets/mine/level/v1.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0 起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
 </view>
+</swiper-item>
 
-</scroll-view>
-<!-- 结束 -->
+<!-- v2--- -->
+<swiper-item>
+<view class="top">徽章特权</view>
+<image src="/assets/mine/level/v2.jpg" mode=""/>
+<view class="textbox1">
+<view>尊享权益</view>
+<view>注册Lv.0|可领取迷路徽章升至</view>
+<view> Lv.1| 可领取新生徽章升至</view>
+<view>Lv.2| 可领取好奇徽章升至</view>
+<view>Lv.3| 可领取饮茶徽章升至</view>
+<view>Lv.4| 可领取茶艺徽章升至</view>
+<view>Lv.5| 可领取茶道徽章升至</view>
+<view>Lv.6| 可领取黑金徽章</view>
+</view>
+</swiper-item>
+
+<!-- v3--- -->
+<swiper-item>
+<view class="top">升级礼遇</view>
+<image src="/assets/mine/level/v3.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>升至LV.2| 满15-3元券*2
+<view>升至LV.3| 满15-3元券+第二杯半价券</view>
+<view>升至LV.4| 免费升杯券+第二杯半价券</view>
+<view>升至LV.5│ 免费升杯券+买二赠一券</view>
+<view>升至LV.6| 小料自由券*4</view>
+</view>
+</view>
+</swiper-item>
+
+<!-- v4--- -->
+<swiper-item>
+<view class="top">生日特权</view>
+<image src="/assets/mine/level/v4.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>升至LV.3| 3元无门槛+满30元减5元券 </view>
+<view>升至LV.4| 3元无门槛+满30元减5元券 </view>
+<view>升至LV.5| 3元无门槛+满30-5券+满45</view>
+<view>升至LV.6| 免单券+满30-5券+满45-10券 </view>
+</view>
+</swiper-item>
+
+<!-- v5--- -->
+<swiper-item>
+<view class="top">专属特权</view>
+<image src="/assets/mine/level/v5.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>升至LV.3|可解锁熊猫币商城专属兑换</view>   
+</view>
+</swiper-item>
+
+<!-- v6--- -->
+<swiper-item>
+<view class="top">拼单特权</view>
+<image src="/assets/mine/level/v6.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>升至LV.3| 拼单减免3元*1</view>
+<view>升至LV.4| 拼单减免3元*1</view>
+<view>升至LV.5| 拼单减免5元*1</view>
+<view>升至LV.6| 拼单减免5元*1</view>
+</view>
+</swiper-item>
+
+<!-- v7--- -->
+<swiper-item>
+<view class="top">IP特权</view>
+<image src="/assets/mine/level/v7.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>LV.0 起 | 会员日当天首单双倍熊猫币，以每周实际活动为准</view>
+</view>
+</swiper-item>
+
+<!-- v8--- -->
+<swiper-item>
+<view class="top">等级特权</view>
+<image src="/assets/mine/level/v8.jpg" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>会员均享有社群20元券包权益</view>
+<view> 升至LV.3| 即可解锁异业特权</view>
+<view>升至LV.5| 拥有线下活动优先参与权</view>
+<view>升至LV.6| 有机会赢取限量周边</view>
+</view>
+</swiper-item>
+
+<!-- v9--- -->
+<swiper-item>
+<view class="top">升杯自由</view>
+<image src="/assets/mine/level/v9.png" mode=""/>
+<view class="textbox">
+<view>尊享权益</view>
+<view>升至LV.5| 升杯券*2</view>
+<view>升至LV.6| 升杯券*4</view> 
+</view>
+</swiper-item>
 
 
+</swiper>
 
