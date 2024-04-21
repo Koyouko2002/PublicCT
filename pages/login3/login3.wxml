@@ -1,0 +1,53 @@
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+
+
+</navigation-bar>
+<!-- <scroll-view class="scrollarea" scroll-y type="list"> -->
+  <view class="container">
+<view class="title">  
+ <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">
+<image src="/imgs/left.png"  />
+<text >186****7885</text>
+
+
+ </navigator>
+
+
+ </view>
+ <view class="main">
+ <image src="/imgs/TX.png" mode=""/>
+<text class="Text1">Power by 中国电信 </text>
+
+<navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">
+<button>
+  登录
+
+</button>
+
+ </navigator>
+
+ </view>
+
+ <view class="M-TB">
+
+<view class="M-TB-1" >   
+  <navigator url="/pages/login2/login2?title=navigate" hover-class="navigator-hover" >   
+  <image src="/imgs/LG/1.png" mode=""/>
+ </navigator>
+<text class="M-TB-Text"  >扫脸登录</text> </view>
+
+<view class="M-TB-1" >   
+
+  <image src="/imgs/LG/2.png" mode="" bind:tap="yj"/>
+
+<text class="M-TB-Text" >一键登录</text> </view>
+
+<view class="M-TB-1" >   
+  <image src="/imgs/LG/3.png" mode=""/>
+<text class="M-TB-Text" >微信登录</text> </view>
+
+
+</view>
+
+  </view>
+<!-- </scroll-view>
