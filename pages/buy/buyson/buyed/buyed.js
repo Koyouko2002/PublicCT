@@ -79,6 +79,7 @@ Page({
       icon:'success',
       duration:2000
     })
+    wx.setStorageSync('open', 0)
     const date = new Date();
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, "0");
