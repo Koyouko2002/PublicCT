@@ -5,6 +5,7 @@
 <view class="pagebox">
 <view> <image src="/assets/首页Bot3bgi.jpg" class="bgi" mode="widthFix"/></view>
 
+<!-- -----------------------头部邀请好友----------------------- -->
 <view class="box1" >
     <view class="box1txt">只需3步 轻松获取奖励</view>
     <view class="numberbox" >
@@ -13,6 +14,8 @@
     <view class="txtbox"><view bindtap="actionSheetTap">分享生成海报</view><view style="background-color: #48a045; color: white;" bindtap="fritit">立即邀请好友</view></view>
 </view>
 
+
+<!-- -----------------------中部邀请有利----------------------- -->
 <view class="box1" style="top: 1150rpx; height: 350rpx;">
   <view class="box1txt">邀请有礼 多邀多得</view>
   <view class="scroll" >
@@ -24,24 +27,20 @@
   </view>
 </view>
 
+
+<!-- -----------------------底部活动进度----------------------- -->
 <view class="box1" style="top: 1550rpx; height: 450rpx;">
   <view class="txt2">活动进度</view>
   <view class="people">
-    <view class="peopleson">
-      <view>0</view>
-      <view>邀请好友(人)</view>
-    </view>
-    <view class="peopleson">
-      <view>0</view>
-      <view>以获得奖励</view>
-    </view>
+    <view class="peopleson"><view>0</view><view>邀请好友(人)</view></view>
+    <view class="peopleson"><view>0</view><view>以获得奖励</view></view>
   </view>
   <view class="txt2">邀请记录</view>
   <view style="margin-top: 70rpx;">暂无记录哦~</view>
 </view>
 
 
-
+<!-- -----------------------弹窗----------------------- -->
 <view class="rol" catchtap="ifregister">规则</view>
 <modal confirm-text="已阅" cancel-text="以后再说" no-cancel="true"  hidden="{{modalHidden}}"  bindconfirm="confirmChange" style="position: relative;">
   <scroll-view class="scroll-y" scroll-y class="scrollybox">
