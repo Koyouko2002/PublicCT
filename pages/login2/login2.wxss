@@ -1,0 +1,84 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  margin-top: -30px;
+}
+.title text{
+  margin-left:-145px;
+  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.title image{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -110px;
+  right:150px;
+}
+.main{
+  position: absolute;
+  top: 200px;
+  padding: 10px;
+  width: 400px;
+  height: 100px;
+left: 10px;
+}
+.M-TB{
+
+  margin-top: -110px;
+  margin-left: -80px;
+  display: flex;
+  justify-content: center;
+}
+.M-TB image{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top:8px;
+    left: 8px;
+
+}
+.t2{
+  width: 208px;
+height: 17px;
+line-height: 17px;
+color: rgb(121,121,121);
+font-size: 12px;
+text-align: left;
+position: relative;
+top: 20px;
+left: -10px;
+}
+
+.M-TB-1{
+
+  width: 32px;
+  height: 32px;
+  border-radius: 30px; 
+
+  margin-left: 60px;
+}
+
+.M-TB-Text{
+  display: block;
+  width: 44px;
+  position: relative;
+  top: 16px; 
+  font-size: 22rpx;
+}
+.t3{
+  margin-left: 100px;
+  width: 97px;
+  height: 17px;
+  line-height: 17px;
+  color: rgb(121,121,121);
+  font-size: 12px;
+  text-align: left;
+  font-family: PingFangSC-regular;
+
+}
