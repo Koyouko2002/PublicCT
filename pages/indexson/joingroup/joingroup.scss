@@ -19,7 +19,6 @@
 
 }
 
-
 .joingrouptxt{
   width: 80%;
   height: 90rpx;
@@ -41,3 +40,18 @@
   margin-left: 20rpx;
   margin-right: 20rpx;
 }
+
+.store{
+  max-width: 20ch; /* 设置最大宽度为10个字符 */
+  overflow: hidden; /* 超出部分隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  white-space: nowrap;
+}
+.x{
+  position: absolute;
+  right: 5%;
+  font-size: 46rpx; 
+  color: lightslategray;
+}
+
+
