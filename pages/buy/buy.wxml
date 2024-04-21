@@ -32,16 +32,16 @@
 </view>
  </view>
  <!-- 顶部下边广告栏   编号 top-3[页面跳转预留]  -->
- <view class="top-3">
+ <view class="top-3" bind:tap="aindtapctionSheetTap">
  <image src="/assets/消息.png" class="top-3img1"/>
-<text> 任意消费3元就送1份"椰子雪糕"小料!   ❥(^_-)</text>
+<text  > 任意消费3元就送1份"椰子雪糕"小料!   ❥(^_-)</text>
 <image src="/assets/下.png" class="top-3img2"/>
  </view>
 
 </view>
 
   <!-- 轮播图 -->
-  <swiper class="{{swiperIs}}" bind:tap="scrolling">
+  <swiper class="{{swiperIs}}" bind:tap="scrolling" >
         <swiper-item>
           <image src="/assets/订单页轮播图.jpg" />
         </swiper-item>
@@ -267,15 +267,8 @@
                 <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
                 <view class="abotton"  bind:tap="buying">选规格</view>
                 </navigator>
-             </view>
-
-           
+             </view>      
             </view>  
-
-
-
-
-
           </view>
 
           <view class="M-R" style="display:{{page7}}"> 
@@ -355,5 +348,19 @@
      </view>
 
       </view>
+
+      <view class="section section_gap">
+      <action-sheet hidden="{{actionSheetHidden}}" >
+        <view class="info"> 
+        </view>
+        <!-- <block wx:for="{{actionSheetItems}}">
+          <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
+        </block> -->
+        <view>
+        </view>
+        <action-sheet-cancel class="cancel" bind:tap="aindtapctionSheetTapddis">取消</action-sheet-cancel>
+      </action-sheet>
+    </view>
+
   </view>
 </scroll-view>

@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    actionSheetHidden:"none",
     move1:"none",
     move2:"block",
     T1C:"white",
@@ -197,6 +198,17 @@ Page({
   page4:"none",page5:"none",page6:"none",
   page7:"none",page8:"none",
   open:"none",total:0,
+  },
+  aindtapctionSheetTap(){
+    this.setData({
+      actionSheetHidden:""
+    })
+  },
+  aindtapctionSheetTapddis(){
+    this.setData({
+      actionSheetHidden:"none"
+    })
+
   },
   buying(){
     console.log("111")
