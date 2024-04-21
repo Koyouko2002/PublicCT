@@ -7,6 +7,7 @@
 
 page {
   height: 100%;
+  background-color: #ecf0f3;
 }
 
 // 滚动条
@@ -18,7 +19,7 @@ page {
   .bac {
     z-index: -99;
     width: 100%;
-    height: 60%;
+    height: 66%;
     position: absolute;
   }
 
@@ -121,7 +122,7 @@ page {
 
   }
 
-  // 轮播图
+  // 轮播图  
   .banner {
     width: 100%;
 
@@ -130,35 +131,115 @@ page {
       justify-content: center;
 
       image {
+        z-index: -10;
+        position: absolute;
         height: 300rpx;
         // width: 80%;
       }
+
+      .text {
+        position: relative;
+        width: 80%;
+        left: 5%;
+        top: 7%;
+
+        // 显示当前等级
+        .topLeft {
+          // display: none;
+          // visibility: hidden;
+          position: relative;
+          left: -10%;
+          // top: -80%;
+          // width: fit-content;
+          height: 36rpx;
+          width: 104rpx;
+          font-size: 26rpx;
+          padding: 14rpx;
+          color: #aeb4ac;
+          border-top-left-radius: 36rpx;
+          border-bottom-right-radius: 36rpx;
+          background-color: #f8f8f8;
+        }
+
+        // 轮播图文字
+        .textDec {
+          margin-top: 10rpx;
+          color: white;
+
+          .row1 {
+            font-weight: 700;
+            font-size: 34rpx;
+            height: 50rpx;
+            // line-height: 50rpx;
+            margin-bottom: 6rpx;
+          }
+
+          .row {
+            font-size: 24rpx;
+            font-weight: 100;
+            // height: 50rpx;
+            line-height: 45rpx;
+          }
+        }
+      }
     }
 
-    .text {
-      position: relative;
-      width: 80%;
-      left: 15%;
-      top: 10%;
 
-      // 显示当前等级
-      .topLeft {
-        position: absolute;
-        left: -10%;
-        top: -8%;
-        width: fit-content;
-        font-size: 26rpx;
-        padding: 14rpx;
-        color: #aeb4ac;
-        border-top-left-radius: 36rpx;
-        border-bottom-right-radius: 36rpx;
-        background-color: #f8f8f8;
+  }
+
+  // 我的权益部分
+  //内容父级
+  .boxsFa {
+    padding: 30rpx;
+    background-color: white;
+    margin: auto;
+    margin-top: 60rpx;
+    width: 84%;
+    border-radius: 20rpx;
+
+    // 标题文字
+    .topText {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 700;
       }
 
-      // 轮播图文字
-      .textDec {
-        position: relative;
-        top: 20%;
+      .more {
+        display: flex;
+        font-size: 28rpx;
+        align-items: center;
+        color: #a7b1c5;
+
+        image {
+          margin-left: 14rpx;
+          filter: grayscale(1000%);
+          width: 30rpx;
+          height: 30rpx;
+        }
+      }
+    }
+
+    // 盒子容器
+    .boxs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20rpx;
+      padding: 30rpx;
+
+      .box {
+        height: 170rpx;
+        width: 33%;
+        text-align: center;
+        font-size: 26rpx;
+        color: #666666;
+
+        .img {
+          width: 60rpx;
+          height: 60rpx;
+        }
       }
     }
   }
