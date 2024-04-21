@@ -4,6 +4,7 @@ var amount = 1;
 var fjvalue=0;
 var total=0;
 var whatup=0;
+var value=0;
 Page({
 
   /**
@@ -25,7 +26,7 @@ Page({
     Key1:"none",Key2:"",
     Key3:"",Key4:"none",Key5:"none",
     Key6:"",Key7:"none",Key8:"none",
-    fjvalue:0,total:0,img:""
+    fjvalue:0,total:0,img:"",value:0,
   },
   sumbit(){
     price=this.data.price;
@@ -182,6 +183,8 @@ Page({
         title:"红茶冰椰雪糕",
         t1:"椰子乳I",t1prime:"椰子雪糕",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:14,
       })
+    
+  
       break;
       case 2:
         this.setData({
@@ -230,8 +233,8 @@ Page({
 
 
       }
-
-  },
+  
+    },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
