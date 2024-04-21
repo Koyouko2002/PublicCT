@@ -1,4 +1,4 @@
-// pages/mine/card/card.js
+// pages/mine/card/shopping/shopping.js
 Page({
 
   /**
@@ -62,10 +62,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-  buy(){
-    wx.switchTab({
-      url: '/pages/buy/buy',
-    })
   }
 })

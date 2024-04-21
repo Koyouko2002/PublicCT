@@ -22,18 +22,18 @@ style="background-color: #ececec;height: 2600rpx;">
 </view>
 <!-- 中部内容 -->
 <view class="main">
-<view class="main-top">
+  <view class="main-top">
 <text class="main-top-t1">订单情况</text>
 <view class="main-top-t2"> 请注意饮品规范哦  </view>
 
-  <view class="main-top-index">
-  <image src="{{Cup.img}}" />
-  <view class="index-view">  
-  <text class="index-t1"> {{Cup.name}}</text>
-  <text class="index-t2">{{Cup.t1}}</text>
+<view class="main-top-index">
+  <image style="position: absolute; left: 0rpx; top: -4rpx" src="{{Cup.img}}" />
+  <view class="index-view" style="position: relative; left: -15rpx; top: 162rpx">  
+  <text class="index-t1" style="position: absolute; left: 18rpx; top: -2rpx"> {{Cup.name}}</text>
+  <text class="index-t2" style="position: absolute; left: 18rpx; top: 52rpx">{{Cup.t1}}</text>
 
-  <text class="index-t3"> ¥ {{Cup.total}}</text>
-  <text class="index-t4"> x {{Cup.amout}}</text>
+  <text class="index-t3" style="position: absolute; left: 430rpx; top: -242rpx; width: 88rpx; height: 42rpx; display: block; box-sizing: border-box"> ¥ {{value}}</text>
+  <text class="index-t4" style="width: 64rpx; height: 42rpx; display: block; box-sizing: border-box; position: absolute; left: 92rpx; top: 103rpx"> x {{1}}</text>
  </view>
 
   </view>

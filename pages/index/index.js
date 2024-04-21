@@ -57,6 +57,7 @@ Page({
 
   /* 页面加载监听 */
   onLoad(option) {
+    wx.setStorageSync('Store', "绵阳城市学院安州区店")
     // 得到缓存的用户登陆数据
     let thisUserInfo = wx.getStorageSync('userInfo');
     // console.log(thisUserInfo);

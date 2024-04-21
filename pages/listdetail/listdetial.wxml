@@ -1,0 +1,18 @@
+<!--pages/listdetail/listdetial.wxml-->
+<scroll-view  scroll-y type="list">
+
+<!-- 订单已完成部分 -->
+<view class="topbox">
+<image src="/assets/订单已完成.png" mode=""/>
+<view class="toptext">感谢您对千道茶的支持，期待您的的再次光临qwq</view>
+<view class="topmore"> <text style="position: relative; left: 19px; top: 5px;"> 再来一单</text></view>
+</view>
+<!-- 加入粉丝群二维码 -->
+<image class="jionfans" src="/assets/加入粉丝群.png" mode=""/>
+<!-- 订单详情 -->
+
+
+
+
+<!-- 结束 -->
+</scroll-view>
