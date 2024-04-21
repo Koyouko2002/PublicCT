@@ -1,0 +1,63 @@
+<navigation-bar title="智慧校园" back="{{false}}" color="black" background="red" style="width: 750rpx; height: 130rpx; display: block; box-sizing: border-box;">
+
+
+</navigation-bar>
+<!-- <scroll-view class="scrollarea" scroll-y type="list"> -->
+  <view class="container">
+<view class="title">  
+
+<text >设置</text>
+ <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">
+<image src="/imgs/left.png"  />
+
+ </navigator>
+
+
+ </view>
+
+ <view class="menu">
+ 
+ <view class="g1">
+<image src="/imgs/seting/1.png" mode=""/>
+ <text class="g1_t">新消息通知</text>
+ </view>
+ <view class="g1">
+<image src="/imgs/seting/2.png" mode=""/>
+ <text class="g1_t">版本更新</text>
+ </view>
+ <view class="g1">
+<image src="/imgs/seting/3.png" mode=""/>
+ <text class="g1_t">清除缓存</text>
+ </view>
+ <view class="g1">
+<image src="/imgs/seting/4.png" mode=""/>
+ <text class="g1_t">修改密码</text>
+ </view>
+ <view class="g1">
+<image src="/imgs/seting/5.png" mode=""/>
+ <text class="g1_t">关于我们</text>
+ </view>
+
+
+
+ <view class="g1" style="border: 0PX;">
+<image src="/imgs/seting/门.png" mode=""/>
+
+ <navigator url="/pages/login1/login1?title=navigate" hover-class="navigator-hover" >   
+ <text class="g1_t" style="color: #1296db;">退出登录
+ </text>
+
+ </navigator>
+
+ </view>
+
+
+
+
+
+ </view>
+
+
+
+  </view>
+<!-- </scroll-view>
