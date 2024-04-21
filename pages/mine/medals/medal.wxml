@@ -1,18 +1,17 @@
-<!--pages/mine/medals/medal.wxml-->
 <view>
   <!--顶部-->
-  <view wx:for="{{kind}}" class="kind">
+  <view wx:for="{{kind}}" class="kind" wx:key="index">
     <!--文字-->
     <view class="kind_txt">{{item.name}}</view>
     <!--徽章区域-->
-    <view wx:for="{{item.kind1}}" class="medal">
+    <view wx:for="{{item.kind1}}" class="medal"wx:key="index" >
       <view class="medal_main">
-        <image src="{{item.pic}}" mode="aspectFit" class="medal_pic"></image>
+        <image src="{{item.pic}}" mode="aspectFit" class="medal_pic {{item.gray ? 'gray' : ''}}" 
+        ></image>
         <view>{{item.text1}}</view>
       </view>
     </view>
   </view>
-  <navigator  class="bottom">部分等级徽章无法领取?<text class="bottom_txt1">点击此处补发</text></navigator>
+  <navigator class="bottom">部分等级徽章无法领取?<text class="bottom_txt1">点击此处补发</text></navigator>
   <!--补发-->
-  
 </view>

@@ -30,6 +30,11 @@ margin: 50rpx 0 20rpx 0rpx;
 height: 200rpx;
 width: 200rpx;
 margin-bottom: 20rpx;
+filter: grayscale(70%);
+
+}
+.medal_pic.gray {
+  filter: grayscale(0%);
 }
 .bottom{
   font-size: 25rpx;
