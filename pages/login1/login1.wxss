@@ -1,0 +1,99 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  margin-top: -30px;
+}
+.title text{
+  margin-left:-145px;
+  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.title image{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -110px;
+  right:150px;
+}
+.main{
+  position: absolute;
+  top: 200px;
+  padding: 10px;
+  width: 400px;
+  height: 100px;
+
+}
+input{
+  margin: auto;
+width: 316px;
+height: 30px;
+line-height: 20px;
+background-color: rgb(255, 255, 255);
+color: rgba(191,191,191,1);
+font-size: 16px;
+text-align: left;
+font-family: Microsoft Yahei;
+}
+.input_mother{
+  width: 320px;
+  height: 40px;
+  border-bottom: 1px solid #eaeaea;
+  margin: auto;
+}
+.Text1{
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  color:#707070;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+button{
+  margin-top: 30px;
+  width: 335px;
+height: 48px;
+line-height: 50px;
+border-radius: 10px;
+background: linear-gradient(-85.57deg, rgba(40,233,151,1) -0.82%,rgba(15,185,146,1) 122.14%);
+color: rgba(255, 255, 255, 1);
+font-size: 18px;
+text-align: center;
+font-family: Roboto;
+}
+.M-TB{
+
+  margin-top: -110px;
+  margin-left: -80px;
+  display: flex;
+  justify-content: center;
+}
+.M-TB image{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  top:8px;
+    left: 8px;
+
+}
+
+.M-TB-1{
+
+  width: 32px;
+  height: 32px;
+  border-radius: 30px; 
+
+  margin-left: 60px;
+}
+
+.M-TB-Text{
+  display: block;
+  width: 44px;
+  position: relative;
+  top: 16px; 
+  font-size: 22rpx;
+}
