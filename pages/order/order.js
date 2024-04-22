@@ -52,6 +52,7 @@ Page({
     console.log(e.currentTarget.dataset.activeid);
   },
 
+
   // 订单点击事件
   intoDeitels(e) {
     console.log(e.currentTarget.dataset.orderi);
@@ -82,9 +83,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    this.setData({
-      changeList: this.data.orderList
-    })
+    // this.setData({
+    //   changeList: this.data.orderList
+    // })
     // console.log(new Date());
 
     // 下单之后传回来的值
@@ -96,7 +97,7 @@ Page({
     var time = wx.getStorageSync('Time')//获取数量
 
     var userInfo = wx.getStorageSync('userInfo')
-    userInfo.pandacoin+=value;
+    userInfo.pandacoin += value;
     // userInfo.expValue+=value;
     wx.setStorageSync('userInfo', userInfo)
     console.log(sotre);
@@ -113,12 +114,14 @@ Page({
         ncName: name
       }
       this.data.orderList.push(order)
+      wx.setStorageSync('orderList', this.data.orderList)
     }
     console.log(this.data.orderList);
 
     this.setData({
-      changeList: this.data.orderList,
-      userInfo:userInfo
+      changeList: wx.getStorageSync('orderList'),
+      userInfo: userInfo,
+      orderList: wx.getStorageSync('orderList')
     })
 
     // 加进去之后删除传入的缓存
