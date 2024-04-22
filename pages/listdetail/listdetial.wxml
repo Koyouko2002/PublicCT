@@ -19,7 +19,9 @@
   <image src="/assets/累计兑换熊猫币1.png" mode=""/>
   <!-- 导航 -->
   <view class="mapbox">
-      <view class="gpstext">在您附近的门店:{{store}}</view>
+      <view class="gpstext">在您附近的门店:{{store}}
+      {{order.position}}
+      </view>
 
       <image class="pohone-p" src="/assets/Order/电话.png" mode=""/>
       <view class="fly">
@@ -30,17 +32,19 @@
   <!-- 订单页1 -->
   <view class="listbox-1">
     
-        <image src="{{totelimg}}" mode=""/>
+        <image src="{{totelimg}}{{order.img}}" mode=""/>
   
-    <view class="listbox-1-t3">{{totelname}}</view>
-    <view class="listbox-1-t1">￥{{totelvalue}}.00</view>
-    <view class="listbox-1-t2">x{{totelamount}}</view>
+    <view class="listbox-1-t3">{{totelname}}
+    {{order.ncName}}
+    </view>
+    <view class="listbox-1-t1">￥{{totelvalue}}{{order.amount}}.00</view>
+    <view class="listbox-1-t2">x{{totelamount}}{{order.count}}</view>
   </view>
 
   <!-- 商品总价2 -->
   <view class="listbox-2">
   <view class="left-text">商品总价</view>
-  <view>￥{{totelvalue}}.00</view>
+  <view>￥{{totelvalue}}{{order.amount}}.00</view>
   
   </view>
   <!-- 优惠券 -->
@@ -50,7 +54,7 @@
   </view>
   <!--  总结统计 -->
   <view class="listbox-4">
-      <view class="lisbox-4-1">共计一件商品，合计{{totelvalue}}</view>
+      <view class="lisbox-4-1">共一件商品，合计￥{{totelvalue}}{{order.amount}}</view>
       <view class="lisbox-4-2">可获得<text>12熊猫值</text></view>
   </view>
 </view>
@@ -73,7 +77,7 @@
     <!-- 下单时间 -->
       <view class="bottom-4">
       <text class="left-text">下单时间</text>
-      <text>{{Time}}</text>
+      <text>{{Time}}{{order.buyTime}}</text>
       </view>
     <!-- 订单号 -->
       <view class="bottom-5">

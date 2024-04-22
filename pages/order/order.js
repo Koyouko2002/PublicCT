@@ -102,8 +102,8 @@ Page({
         buyTime: time,
         img: imgurl,
         amount: value,
-        count: amount
-
+        count: amount,
+        ncName:name
       }
       this.data.orderList.push(order)
     }

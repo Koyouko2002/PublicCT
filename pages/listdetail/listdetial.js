@@ -10,9 +10,9 @@ Page({
     totelvalue:"",
     totelimg:"",
     totelamout:"",
-    Time:""
+    Time:"",
     
-
+    order:""
   },
 
   /**
@@ -27,13 +27,15 @@ Page({
     var amount=wx.getStorageSync('totelamount')//获取数量、
     var Time=wx.getStorageSync('Time');//获取名字
 
+    var order = wx.getStorageSync('thisOrder');
     this.setData({
       store:sotre,
       totelname:name,
       totelvalue:value,
       totelimg:imgurl,
       totelamount:amount,
-      Time:Time
+      Time:Time,
+      order:order
     })
 
 
