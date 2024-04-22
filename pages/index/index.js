@@ -70,6 +70,7 @@ Page({
   login() {
     // let userInfo=wx.getStorageSync('userInfo')
     /* ------------------在这里定义了用户信息-------------用于缓存到全局-------- */
+    
     var userInfo = {
       username: "00000",
       password: "23333",
@@ -77,7 +78,7 @@ Page({
       avatar: "/assets/mine/touxiang.png",
       pandacoin: 521,
       coupon: 20,
-      level: 3,
+      level: 2,
       expValue: 180,
       createDate: "2024-03-30",
       phone: "18166882589",

@@ -53,7 +53,7 @@ Page({
   },
 
   // 订单点击事件
-  intoDeitels(e){
+  intoDeitels(e) {
     console.log(e.currentTarget.dataset.orderi);
     var orderi = e.currentTarget.dataset.orderi
     wx.setStorageSync('thisOrder', orderi)
@@ -61,6 +61,8 @@ Page({
       url: '/pages/listdetail/listdetial',
     })
   },
+
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -93,7 +95,12 @@ Page({
     var amount = wx.getStorageSync('totelamount')//获取数量
     var time = wx.getStorageSync('Time')//获取数量
 
+    var userInfo = wx.getStorageSync('userInfo')
+    userInfo.pandacoin+=value;
+    // userInfo.expValue+=value;
+    wx.setStorageSync('userInfo', userInfo)
     console.log(sotre);
+
     // 封装成订单
     if (time != '') {
       var order = {
@@ -103,20 +110,21 @@ Page({
         img: imgurl,
         amount: value,
         count: amount,
-        ncName:name
+        ncName: name
       }
       this.data.orderList.push(order)
     }
     console.log(this.data.orderList);
 
     this.setData({
-      changeList: this.data.orderList
+      changeList: this.data.orderList,
+      userInfo:userInfo
     })
 
     // 加进去之后删除传入的缓存
     // wx.removeStorageSync('Store');
     // wx.removeStorageSync('totelname');
-    // wx.removeStorageSync('totelvalue')
+    wx.removeStorageSync('overvalue')
     // wx.removeStorageSync('totelimg')
     // wx.removeStorageSync('totelamount')
     wx.removeStorageSync('Time')
