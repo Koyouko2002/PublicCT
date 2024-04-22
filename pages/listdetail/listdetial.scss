@@ -1,6 +1,7 @@
 /* pages/listdetail/listdetial.wxss */
 page{
   background-color: rgb(245, 245, 245);
+  height: 1200px;
 }
 
 // 订单已完成
@@ -37,7 +38,7 @@ page{
   margin-top: 20px;
   margin-left: 120px;
 }
-
+// 粉丝团图片
 .jionfans{
   margin-left: 12px;
   margin-top: 20px;
@@ -45,3 +46,238 @@ page{
   height: 120px;
   border-radius: 5%;
 }
+// 订单详情大盒子
+.Orderdetail{
+  width:  350px;
+  height: 390px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-left:12px ;
+  border-radius: 5%;
+  font-size: small;
+}
+
+.Orderdetail image{
+  width:  350px;
+  height: 40px;
+  
+}
+// 导航板块
+.mapbox{
+  display: flex;
+  width: 350px;
+  height: 75px;
+  // background-color: rgb(74, 136, 136);
+  border-bottom:solid 1px rgb(240, 240, 240) ;
+}
+// 定位文字
+.gpstext{
+  width:250px; 
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  left: 10px;
+
+}
+
+.mapbox image{
+  width: 16px;
+  height: 16px;
+
+}
+// 电话图
+.pohone-p{
+  border: solid 1px rgb(58, 58, 58);
+  border-radius: 15px;
+  position: relative;
+  left: 12px;
+  top: 4px;
+  
+}
+// 飞机图框架
+.fly{
+  font-size: small;
+  text-align: center;
+  width: 60px;
+  height: 20px;
+  border: solid 1px rgb(58, 58, 58);
+  border-radius: 15px;
+  position: relative;
+  left: 15px;
+  top: 2px;
+  
+}
+// 飞机图
+.fly image{
+  position: relative;
+  top: 4px;
+}
+// 订单详情页-第一行
+.listbox-1{
+  display: flex;
+  width: 330px;
+  height: 100px;
+  // background-color: yellow;
+  padding: 10px;
+  border-bottom: solid 1px rgb(240, 240, 240);
+
+}
+// 订单图片
+.listbox-1 image{
+  width: 85px;
+  height: 80px;
+  border-radius: 10%;
+  
+}
+
+// 订单单价
+.listbox-1-t1{
+  width: 85px;
+  height: 25px;
+  // background-color: gray;
+  position: relative;
+  left: 95px;
+  top: 6px;
+  // background-color: bisque;
+
+
+}
+// 订单数量
+.listbox-1-t2{
+  width: 50px;
+  height: 30px;
+  position: relative;
+  left: 40px;
+  // top: 30px;
+  margin-top: 30px;
+  // background-color: aqua;
+}
+//订单名字
+.listbox-1-t3{
+  font-size: 15px;
+  width: 105px;
+  height: 45px;
+  position: relative;
+  left: 10px;
+  top: 5px;
+  // background-color: aliceblue;
+  
+}
+
+// 商品总价
+.listbox-2{
+  width: 340px;
+  height: 30px;
+  display: flex;
+  padding: 5px;
+  // background-color: pink;
+  justify-content: space-between;
+
+  
+}
+// 优惠券
+.listbox-3{
+  width: 340px;
+  height: 30px;
+  display: flex;
+  padding: 5px;
+  // background-color: rgb(177, 40, 63);
+  justify-content: space-between;
+
+  
+}
+// 合计
+.listbox-4{
+  width: 340px;
+  height: 60px;
+  padding: 5px;
+  // background-color: rgb(40, 177, 81);
+  justify-content: space-between;
+}
+// 合计-第一行
+.lisbox-4-1{
+  margin-left:199px ;
+}
+
+.lisbox-4-2{
+  font-size: small;
+  margin-left:240px ;
+  margin-top: 10px;
+}
+
+.lisbox-4-2 text{
+  color: rgb(59, 112, 229);
+}
+
+// 底部大盒子
+.bottom{
+  width:  350px;
+  height: 290px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  margin-left:12px ;
+  border-radius: 5%;
+  font-size: small;
+  color: rgb(102, 101, 101);
+}
+
+
+
+// 订单详情
+.bottom-1{
+  width: 340px;
+  height: 60px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.bottom-2{
+  width: 340px;
+  height: 40px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  // margin-top: 10px;
+  border-bottom: solid 1px rgb(240, 240, 240);
+}
+.bottom-3{
+  width: 340px;
+  height: 40px;
+  display: flex;
+  padding: 5px;
+  // background-color: pink;rgb(240, 240, 240);
+  justify-content: space-between;
+  // margin-top: 10px;
+  border-bottom: solid 1px rgb(240, 240, 240);
+}
+
+.bottom-4{
+  width: 340px;
+  height: 40px;
+  display: flex;
+  padding: 5px;
+
+  justify-content: space-between;
+  // margin-top: 10px;
+  border-bottom: solid 1px rgb(240, 240, 240);
+}
+
+.bottom-5{
+  width: 340px;
+  height: 40px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  // margin-top: 10px;
+}
+
+.left-text{
+  font-weight:600;
+  color: black;
+}
+
+
+
+
+

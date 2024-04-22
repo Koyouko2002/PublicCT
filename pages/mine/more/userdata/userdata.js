@@ -4,17 +4,30 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    date:'2024-04-23'},
+// 日期选择框
+data: {
+  date:'2024-04-23'
+},
+  bindDateChange: function(e) { //接收一个参数e 
+  console.log(e.detail.value)  //console.log打印选择的日期值 e.detail.value获取新选择的日期
+  this.setData({ //this.setData更新date属性
+    date: e.detail.value
+  })
+},
 
-  bindDateChange: function(e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      date: e.detail.value
-    })
-  
 
+  // 弹窗
+  showToast1(){
+    wx.showToast({
+      title: '头像更改功能未上线qaq', 
+      duration: 1500, 
+      icon: 'none', 
+   })
+    
   },
+
+
+
 
   /**
    * 生命周期函数--监听页面加载

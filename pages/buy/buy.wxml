@@ -12,16 +12,16 @@
 <text  class="top-1-t" bind:tap="Top1move2" style="color: {{T1C}};"> 自取 </text>
 <text class="top-1-t2" bind:tap="Top1move" style="color: {{T2C}};"> 外卖</text>
 </view>
-<!-- 搜索选择框  编号 top-search    [页面跳转预留]-->
+<!-- 搜索选择框  编号 top-search    [页面跳转预留  [[不做了]]]-->
 <view class="top-search" bind:tap="buying">
   <image src="/assets/search.png" mode=""/>
 </view>
-<!-- 位置导航框+广告 编号 top-2   [页面跳转预留]-->
+<!-- 位置导航框+广告 编号 top-2   [页面跳转预留 [已完成]]-->
 <view class="top-2 ">
 <!-- [导航框]文字1  右图片   文字2-->
 <navigator url="/pages/buy/buyson/explan/explan" open-type="redirect">
 
-<text class="top-2-t">{{store}}  </text>
+<text class="top-2-t">{{store}}</text>
    <image src="/assets/右右.png" class="top-2-image1"/> 
   </navigator>
 <text class="top-2-t2">  距您500m   </text>
@@ -31,7 +31,7 @@
   <text>一起喝！</text>
 </view>
  </view>
- <!-- 顶部下边广告栏   编号 top-3[页面跳转预留]  -->
+ <!-- 顶部下边广告栏   编号 top-3[页面跳转预留  [已完成]]  -->
  <view class="top-3" bind:tap="aindtapctionSheetTap">
  <image src="/assets/消息.png" class="top-3img1"/>
 <text  > 任意消费3元就送1份"椰子雪糕"小料!   ❥(^_-)</text>
@@ -40,18 +40,21 @@
 
 </view>
 
-  <!-- 轮播图 -->
+  <!-- 顶部 轮播图整体 -->
   <swiper class="{{swiperIs}}" bind:tap="scrolling" >
+            <!-- 顶部 轮播图1 -->
         <swiper-item>
           <image src="/assets/订单页轮播图.jpg" />
+            <!-- 顶部 轮播图2 -->
         </swiper-item>
         <swiper-item>
           <image src="/assets/订单页轮播图1.jpg" />
         </swiper-item>
       </swiper>
     
-<!-- 主体内容 编号 M-XXX -->
+<!-- 主体内容 编号 M-XXX   子级为  M-L 左侧导航栏/ M-R右侧物品栏  两部分 -->
 <scroll-view class="scrollarea" scroll-y type="list">
+<!-- 内容栏 供给scroll以提供滚动的 -->
   <view class="container">
 
       <view class="{{move}}" style="height: 1000rpx; ">    
@@ -90,34 +93,18 @@
           </view>
           
         <!-- 右侧物品栏  编号 M-R -->
+        <!-- bindscroll开始滚   bindscrolltoupper滚到顶部 触发方法 -->
         <scroll-view class="scrollarea2" scroll-y type="list"
         upper-threshold="10"
-        bindscroll="scrolling"  
+        bindscroll="scrolling"     
         bindscrolltoupper="scrolled"
         clip
         >
+        <!-- 八个页面 分别wxfor 生成 -->
           <view class="M-R" style="display:{{page1}}"> 
+          <!-- 标题 -->
             <text class="M-R-taitle"> 冰椰雪糕系列 </text>
-
-            <!-- <view class="M-R-index">
-            <image src="/assets/Order/O1.png" class="M-R-index-image"/>
-             <view class="M-R-index-view">
-                 <text class="M-R-index-t1"> 红茶冰椰雪糕 </text>
-               <image src="/assets/Order/icon.png" class="mricon" />  
-                <text class="M-R-index-t2"> 椰子乳I  <text style="color: #3c71e4;">椰子雪糕</text>I 黑糖珍珠</text>
-                <text class="M-R-index-t3">甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。</text>    
-                <text class="M-R-index-t4">¥ 14 起</text>
-                
-                <navigator url="/pages/buy/buyson/buying/buying" open-type="redirect">
-                <view class="abotton"  bind:tap="buying">选规格</view>
-                </navigator>
-
-             </view>
-
-           
-            </view>   -->
-
-
+                <!-- WX-for生成的内容 -->
             <view class="M-R-index" 
             wx:for="{{Order}}"
             wx:for-item="Cup"
@@ -348,7 +335,7 @@
      </view>
 
       </view>
-
+        <!-- 下拉栏 -->
       <view class="section section_gap ">
       <action-sheet hidden="{{actionSheetHidden}}"   >
         <view class="info" > 

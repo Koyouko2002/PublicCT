@@ -5,22 +5,22 @@
   <view class="top">
     <view class="coin">
       <view>熊猫币</view>
-      <view class="number">65</view>
+      <view class="number">{{userInfo.pandacoin}}</view>
     </view>
     <image src="/assets/coinMall/coinss.png" mode="widthFix"></image>
   </view>
 
-  <!--明细、规则、订单-->  
-  <view class="rule"  >
-    <navigator  wx:for="{{rule}}" url="{{item.url}}" >
+  <!--明细、规则、订单-->
+  <view class="rule">
+    <navigator wx:for="{{rule}}" url="{{item.url}}">
       <image src="{{item.pic}}"></image>
       <view class="text">{{item.txt}}</view>
-   </navigator>
+    </navigator>
   </view>
 
 
-   <!--满减券导航条-->
-   <view class="main">
+  <!--满减券导航条-->
+  <view class="main">
 
     <view class="discount">
       <view class="{{CoinActive == 0?'.coupon_active':'.coupon'}}" bind:tap="changeTab" data-id="0">人气卡券</view>
@@ -28,21 +28,22 @@
       <view class="{{CoinActive == 2 ?'.coupon_active':'.coupon'}}" bind:tap="changeTab" data-id="2">专属兑换</view>
     </view>
     <!--券-->
-    <view  class="ticket">
-      <navigator wx:for="{{list}}"  class="tic_main" url="{{item.url}}">
+    <view class="ticket">
+      <navigator wx:for="{{list}}" data-listDitels="{{item}}" bind:tap="into" class="tic_main" url="{{item.url}}">
+
         <image src="{{item.pic}}"></image>
         <view class="tic_bottom">
           <view class="tip">{{item.tip}}</view>
-          <text class="txt1">{{item.text1}}</text> 
+          <text class="txt1">{{item.text1}}</text>
           <text class="txt2">{{item.text2}}</text>
         </view>
 
       </navigator>
       <view class="bottom">看看其他分类呢~</view>
-     
+
     </view>
-    
-   </view>
+
+  </view>
 
 
 

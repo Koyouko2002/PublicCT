@@ -20,40 +20,40 @@ Page({
     Change1:[{
       img:"O7.png",
       name:"椰果+份",
-      value:"0.99",
+      value:"1.00",
     },
     {
       img:"O7.png",
       name:"西米+份",
-      value:0.99,
+      value:"1.00",
     },
     {
       img:"O8.png",
       name:"口袋+份",
-      value:"0.99",
+      value:"1.00",
     },
     {
       img:"O7.png",
       name:"红豆+份",
-      value:"0.99",
+      value:"1.00",
     }
   ],    
     Change2:[{
     img:"O7.png",
     name:"雪糕+份",
-    value:"1.99",
+    value:"2.00",
   },
   {
     img:"O7.png",
     name:"椰蓉+份",
-    value:1.99,
+    value:"2.00",
   }
 ],
   }
   ,buysome1(){
     this.data.Cup.total.toFixed(2);
     some=this.data.Cup.total;
-    some+=0.99;
+    some+=1;
     this.setData({
     Cup:{
          total:some
@@ -64,7 +64,7 @@ Page({
   },
   buysome2(){
     some=this.data.Cup.total;
-    some+=1.99;
+    some+=2;
     this.setData({
     Cup:{
          total:some
@@ -73,6 +73,7 @@ Page({
     })
     // console.log(this.data.total)
   },
+  //提交
   sumbit(){
     wx.showToast({
       title: '成功',

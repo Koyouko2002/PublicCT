@@ -1,13 +1,13 @@
 <!--pages/mine/more/userdata.wxml-->
 
 <view class="box1">
-
-      <image src="/assets/mine/more/logo.png" mode=""/>
+  <!-- logo -->
+      <image bind:tap="showToast1" src="/assets/mine/more/logo.png" mode=""/>
       <!-- 昵称 -->
 
      <view>
         <text> 昵称</text>
-        <text class="text-M">香甜生椰西瓜</text>
+        <text class="text-M">咩咩爱吃香蕉</text>
     </view>
       <!-- 手机 -->
     <view class="box1-S">

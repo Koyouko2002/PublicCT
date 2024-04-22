@@ -28,6 +28,8 @@ Page({
       //   img: "/assets/Order/O3.png",
       //   amount: 22,
       //   count: 1
+
+
       // },
     ],
 
@@ -48,6 +50,16 @@ Page({
       changeList: changeList[id]
     })
     console.log(e.currentTarget.dataset.activeid);
+  },
+
+  // 订单点击事件
+  intoDeitels(e){
+    console.log(e.currentTarget.dataset.orderi);
+    var orderi = e.currentTarget.dataset.orderi
+    wx.setStorageSync('thisOrder', orderi)
+    wx.navigateTo({
+      url: '/pages/listdetail/listdetial',
+    })
   },
 
   /**
@@ -76,7 +88,7 @@ Page({
     // 下单之后传回来的值
     var sotre = wx.getStorageSync('Store');//获取名字
     var name = wx.getStorageSync('totelname');//获取名字
-    var value = wx.getStorageSync('totelvalue')//获取总价
+    var value = wx.getStorageSync('overvalue')//获取总价
     var imgurl = wx.getStorageSync('totelimg')//获取图片
     var amount = wx.getStorageSync('totelamount')//获取数量
     var time = wx.getStorageSync('Time')//获取数量
@@ -90,8 +102,8 @@ Page({
         buyTime: time,
         img: imgurl,
         amount: value,
-        count: amount
-
+        count: amount,
+        ncName:name
       }
       this.data.orderList.push(order)
     }
@@ -102,11 +114,11 @@ Page({
     })
 
     // 加进去之后删除传入的缓存
-    wx.removeStorageSync('Store');
-    wx.removeStorageSync('totelname');
-    wx.removeStorageSync('totelvalue')
-    wx.removeStorageSync('totelimg')
-    wx.removeStorageSync('totelamount')
+    // wx.removeStorageSync('Store');
+    // wx.removeStorageSync('totelname');
+    // wx.removeStorageSync('totelvalue')
+    // wx.removeStorageSync('totelimg')
+    // wx.removeStorageSync('totelamount')
     wx.removeStorageSync('Time')
   },
 
