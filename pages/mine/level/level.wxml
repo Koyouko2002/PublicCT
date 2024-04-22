@@ -93,7 +93,7 @@
       <!-- 顶部文字 -->
       <view class="topText">
         <view class="title">我的权益</view>
-        <navigator class="more" url="/#">
+        <navigator class="more" url="/pages/mine/level/viprule/viprule">
           <view class="text">权益规则</view>
           <image src="/assets/右右.png" mode="" />
         </navigator>
