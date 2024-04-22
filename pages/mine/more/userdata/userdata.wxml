@@ -1,7 +1,7 @@
 <!--pages/mine/more/userdata.wxml-->
 
 <view class="box1">
-
+  
       <image src="/assets/mine/more/logo.png" mode=""/>
       <!-- 昵称 -->
 

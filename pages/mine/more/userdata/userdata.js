@@ -4,15 +4,22 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    date:'2024-04-23'},
+  data: {date:'2024-04-23'},
 
-  bindDateChange: function(e) {
+    bindDateChange: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       date: e.detail.value
     })
-  
+
+    wx.showToast({
+      title: '内容', //提示的内容
+      duration: 2000, //持续的时间
+      icon: 'loading', //图标有success、error、loading、none四种
+      mask: true //显示透明蒙层 防止触摸穿透
+   })
+    
+
 
   },
 

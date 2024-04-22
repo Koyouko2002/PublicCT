@@ -1,15 +1,89 @@
-<!--pages/listdetail/listdetial.wxml-->
+<!-- pages/listdetail/listdetial.wxml -->
 <scroll-view  scroll-y type="list">
 
 <!-- 订单已完成部分 -->
 <view class="topbox">
 <image src="/assets/订单已完成.png" mode=""/>
 <view class="toptext">感谢您对千道茶的支持，期待您的的再次光临qwq</view>
+<navigator url="/pages/buy/buy" open-type="switchTab" >
 <view class="topmore"> <text style="position: relative; left: 19px; top: 5px;"> 再来一单</text></view>
+</navigator>
+
 </view>
+
 <!-- 加入粉丝群二维码 -->
 <image class="jionfans" src="/assets/加入粉丝群.png" mode=""/>
+
 <!-- 订单详情 -->
+<view class="Orderdetail">
+  <image src="/assets/累计兑换熊猫币1.png" mode=""/>
+  <!-- 导航 -->
+  <view class="mapbox">
+      <view class="gpstext">在您附近的门店:{{store}}</view>
+
+      <image class="pohone-p" src="/assets/Order/电话.png" mode=""/>
+      <view class="fly">
+      <text>导航</text>
+      <image src="/assets/Order/导航.png" mode=""/>
+      </view>
+  </view> 
+  <!-- 订单页1 -->
+  <view class="listbox-1">
+    
+        <image src="{{totelimg}}" mode=""/>
+  
+    <view class="listbox-1-t3">{{totelname}}</view>
+    <view class="listbox-1-t1">￥{{totelvalue}}.00</view>
+    <view class="listbox-1-t2">x{{totelamount}}</view>
+  </view>
+
+  <!-- 商品总价2 -->
+  <view class="listbox-2">
+  <view class="left-text">商品总价</view>
+  <view>￥{{totelvalue}}.00</view>
+  
+  </view>
+  <!-- 优惠券 -->
+  <view class="listbox-3">
+  <view class="left-text">优惠券</view>
+  <view>￥-0</view>
+  </view>
+  <!--  总结统计 -->
+  <view class="listbox-4">
+      <view class="lisbox-4-1">共计一件商品，合计{{totelvalue}}</view>
+      <view class="lisbox-4-2">可获得<text>12熊猫值</text></view>
+  </view>
+</view>
+<!-- 底部盒子 -->
+<view class="bottom">
+      <!--订单信息-细节  -->
+      <view class="bottom-1">
+      <text class="left-text" style="position: relative; top: 20px;">订单详情</text>
+      </view>
+    <!-- 取餐码 -->
+      <view class="bottom-2">
+        <text class="left-text">取餐码</text>
+        <text>611</text>
+      </view>
+    <!-- 备注 -->
+      <view class="bottom-3">
+      <text class="left-text">备注</text>
+      <text>要十根吸管谢谢</text>
+      </view>
+    <!-- 下单时间 -->
+      <view class="bottom-4">
+      <text class="left-text">下单时间</text>
+      <text>{{Time}}</text>
+      </view>
+    <!-- 订单号 -->
+      <view class="bottom-5">
+      <text class="left-text">订单号</text>
+      <text>31415926468687</text>
+      </view>
+
+</view>
+
+  
 
 
 
