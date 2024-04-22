@@ -5,13 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
+    store:"",
+    totelname:"",
+    totelvalue:"",
+    totelimg:"",
+    totelamout:"",
+    Time:""
+    
 
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
+  onLoad(options) {    
+
+    var sotre=wx.getStorageSync('Store');//获取名字
+    var name=wx.getStorageSync('totelname');//获取名字
+    var value=wx.getStorageSync('totelvalue')//获取总价
+    var imgurl=wx.getStorageSync('totelimg')//获取图片
+    var amount=wx.getStorageSync('totelamount')//获取数量、
+    var Time=wx.getStorageSync('Time');//获取名字
+
+    this.setData({
+      store:sotre,
+      totelname:name,
+      totelvalue:value,
+      totelimg:imgurl,
+      totelamount:amount,
+      Time:Time
+    })
+
 
   },
 
