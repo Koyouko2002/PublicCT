@@ -13,7 +13,7 @@
           <view bind:tap="buy"><text>去下单</text></view>
         </view>
         <view class="half_top_card_top_right">
-          <view>消费明细</view>
+          <navigator url="/pages/mine/card/shopping/shopping" open-type="navigate" style="z-index: 2;"><view>消费明细</view></navigator>
           <view class="half_top_card_top_right_image"><image src="/assets/mine/LOGO.png" mode=""/></view>
         </view>
       </view>
