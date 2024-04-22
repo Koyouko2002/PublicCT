@@ -114,11 +114,11 @@ Page({
     })
 
     // 加进去之后删除传入的缓存
-    wx.removeStorageSync('Store');
-    wx.removeStorageSync('totelname');
-    wx.removeStorageSync('totelvalue')
-    wx.removeStorageSync('totelimg')
-    wx.removeStorageSync('totelamount')
+    // wx.removeStorageSync('Store');
+    // wx.removeStorageSync('totelname');
+    // wx.removeStorageSync('totelvalue')
+    // wx.removeStorageSync('totelimg')
+    // wx.removeStorageSync('totelamount')
     wx.removeStorageSync('Time')
   },
 

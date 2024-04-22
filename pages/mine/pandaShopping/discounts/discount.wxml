@@ -2,24 +2,29 @@
 <view>
   <!--图片位置-->
   <view class="Pic_position">
-   <image src="/assets/coinMall/pic (3).jpg"></image>
- </view>
- <!--优惠券详情-->
- <view class="coupon">
-    <view class="tip">2元无门槛优惠券</view>
+    <image src="{{listditels.pic}}"></image>
+  </view>
+  <!--优惠券详情-->
+  <view class="coupon">
+    <view class="tip">{{listditels.tip}}</view>
     <view class="set">
-        <text class="num">100</text>
-        <text class="txt1">熊猫币</text> 
-        <text class="txt2">剩余70459张</text>
-     </view>
+      <text class="num">{{listditels.text1}}熊猫币</text>
+      <text class="txt1">熊猫币</text>
+      <text class="txt2">{{listditels.text2}}</text>
+    </view>
   </view>
   <!--兑换须知-->
   <view class="exchange">
-  <view class="must">兑换须知</view>
+    <view class="must">兑换须知</view>
     <view>
-      1、2元无门槛券在购买任意饮品(不含保温袋)时可享2元优惠，此券自领取之日起7天内有效(含当日)，过期自动作废不退不补，且不退回兑换时所消耗的能猫币;2、该优惠券自到账之日起7天(含当日)有效，过期自动作废，不退不补，且不退回兑换时所消耗的熊猫币;3、该券仅限“茶百道点餐+“小程序线下自提下单时使用，全国门店均可使用，部分门店因特殊原因可能临时无法使用，具体请咨询门店;4、该优惠券限一次性使用，单笔订单限使用1张，不兑换现金、不开票、不找零不与其他优惠券/优惠活动同享;5、若发生优惠券抵扣订单退款时，该优惠券将退回至【“茶百道点餐+“小程序-我的-优惠券】，抵扣金额不予退回;6、该券在兑换后将自动发送至会员账户，可在【“茶百道点餐+“小程序-我的-优惠券】查看，一经兑换，不退不换，请确认后再进行兑换。
+      1、{{listditels.tip}}在购买任意饮品(不含保温袋)时可享2元优惠，此券自领取之日起7天内有效(含当日)，过期自动作废不退不补，且不退回兑换时所消耗的能猫币;2、该优惠券自到账之日起7天(含当日)有效，过期自动作废，不退不补，且不退回兑换时所消耗的熊猫币;3、该券仅限“茶百道点餐+“小程序线下自提下单时使用，全国门店均可使用，部分门店因特殊原因可能临时无法使用，具体请咨询门店;4、该优惠券限一次性使用，单笔订单限使用1张，不兑换现金、不开票、不找零不与其他优惠券/优惠活动同享;5、若发生优惠券抵扣订单退款时，该优惠券将退回至【“茶百道点餐+“小程序-我的-优惠券】，抵扣金额不予退回;6、该券在兑换后将自动发送至会员账户，可在【“茶百道点餐+“小程序-我的-优惠券】查看，一经兑换，不退不换，请确认后再进行兑换。
     </view>
   </view>
-<view class="button">熊猫币不足</view>
+  <view class="button" wx:if="{{userInfo.pandacoin<listditels.text1}}">
+    熊猫币不足
+  </view>
+  <view class="button" style="background-color: #2949de;" wx:else>
+    立即兑换
+  </view>
 
 </view>
