@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    x:null
+    x:null,
+    juan:"none"
   },
   huoqv(e){
     console.log(e)
@@ -19,6 +20,10 @@ Page({
       wx.showToast({
         title: '兑换成功',
       })
+      this.setData({
+        juan:"flex"
+      })
+
     }else{
       wx.showToast({
         icon:'error',

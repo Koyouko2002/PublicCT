@@ -8,7 +8,7 @@
   <view class="coupon">
     <view class="tip">{{listditels.tip}}</view>
     <view class="set">
-      <text class="num">{{listditels.text1}}熊猫币</text>
+      <text class="num">{{listditels.text1}}</text>
       <text class="txt1">熊猫币</text>
       <text class="txt2">{{listditels.text2}}</text>
     </view>
