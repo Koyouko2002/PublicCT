@@ -5,14 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    x:null
   },
-
+  huoqv(e){
+    console.log(e)
+    this.setData({
+      x:e.detail.value
+    })
+  },
+  duihuan(){
+    console.log(this.data.x)
+    if(this.data.x=="vip666"){
+      wx.showToast({
+        title: '兑换成功',
+      })
+    }else{
+      wx.showToast({
+        icon:'error',
+        title: '兑换失败',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.ctx=wx.createCameraContext()
   },
 
   /**

@@ -19,9 +19,9 @@
       </view>
       <view class="half_top_card_bottom">
         <view>
-          <image src="/assets/mine/card/相机.png" mode=""/>
-          <input type="text" value="请输入礼卡兑换码"/>
-          <text> 兑换</text>
+          <image bind:tap="QR" src="/assets/mine/card/相机.png" mode=""/>
+          <input bindinput="huoqv" type="text" placeholder="请输入礼卡兑换码" value="{{x}}"/>
+          <text bind:tap="duihuan"> 兑换</text>
         </view>
       </view>
     </view>
@@ -30,6 +30,9 @@
     <view class="half_bottom_text">
       <view>可使用</view>
       <view>(0)</view>
+    </view>
+    <view class="half_bottom_vip666">
+      
     </view>
     <view class="half_bottom_text_b">暂无礼品卡</view>
   </view>

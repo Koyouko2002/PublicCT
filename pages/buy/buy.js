@@ -6,9 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    store:"绵阳城市学院安州区店",
-    actionSheetHidden:"none",
-    move1:"none",
+    store:"绵阳城市学院安州区店", //点名初始化值
+    actionSheetHidden:"none",   //下拉框显示与否
+    move1:"none",            //写外面/自取选中状态
     move2:"block",
     T1C:"white",
     T2C:"black",
@@ -16,11 +16,8 @@ Page({
     //   id:1,
     //   name:"紫气葡萄"
     // },
-    array: [{
-      message: 'foo',
-    }, {
-      message: 'bar'
-    }],
+
+    //数组对象 各个页面的奶擦
     Order:[{
       name:"抹茶冰椰雪糕",
       t1:"椰子雪糕I ",
@@ -196,12 +193,15 @@ Page({
   img:"O2.jpg"
 },
 ],
+//is1-is8分别对应 8个按钮的选择状态
+//page1-page8 分别对应8个页面的显示状态
   isw1:"#ffffff",isw2:"none",isw3:"none",
   isw4:"none",isw5:"none",isw6:"none",isw7:"none",isw8:"none",swiperIs:"", Rtop:"",move:"Mid",is:0,page1:"block",page2:"none",page3:"none",
   page4:"none",page5:"none",page6:"none",
   page7:"none",page8:"none",
   open:"none",total:0,
   },
+  //下拉框显示方法
   aindtapctionSheetTap(){
     this.setData({
       actionSheetHidden:""
@@ -213,6 +213,7 @@ Page({
     })
 
   },
+    // 1-8都是 点击[选规格]执行的方法
   buying1(){
     wx.setStorageSync('cupcupfull', 1)
     console.log("111")
@@ -237,6 +238,7 @@ Page({
     wx.setStorageSync('cupcupfull', 6)
     console.log("666")
   },
+    //上滚出现和下滚消失的方法
 scrolling(){
 if(is==0){
     console.log("在滚了");
@@ -267,6 +269,7 @@ if(is==0){
     setTimeout(() =>  is=0, 1000)
    
   },
+  //自取/外面选择 改变颜色和位置的方法
   Top1move(){
    this.setData({
     move1:"block",

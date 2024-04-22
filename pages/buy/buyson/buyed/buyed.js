@@ -73,6 +73,7 @@ Page({
     })
     // console.log(this.data.total)
   },
+  //提交
   sumbit(){
     wx.showToast({
       title: '成功',
