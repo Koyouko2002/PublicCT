@@ -1,12 +1,13 @@
 // pages/buy/buy.js
 var is=0;
 var total=0;
+var store="";
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    store:"绵阳城市学院安州区店", //点名初始化值
+    store:"", //点名初始化值
     actionSheetHidden:"none",   //下拉框显示与否
     move1:"none",            //写外面/自取选中状态
     move2:"block",
@@ -427,18 +428,26 @@ sumbit(){
    */
   onReady() {
 
+   
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
     var open=0;
-    var store="绵阳城市学院安州区店";
-    store=wx.getStorageSync('Store')
+
+
     open = wx.getStorageSync('open');
     console.log(open)
-    this.setData({
-      store:store
-    })
+this.setData({
+  store:wx.getStorageSync('Store')
+})
     if(open==1){ 
           this.setData({
       total:wx.getStorageSync('totelvalue'),
-      open:"block"
+      open:"block",
+
 
     }),
     console.log("__________")
@@ -448,20 +457,39 @@ sumbit(){
         open:"none"
       })
     }
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+    // console.log(this.data.store)
+    // if(this.data.store!="千道茶坊绵阳城市学院安州店"||this.data.store!="千道茶坊绵阳涪城区店"){
+    //   this.setData({
+    //     store:"千道茶坊绵阳城市学院安州店"
+    //   })
+    // }
+    
+    var userInfo = '';
+    userInfo = wx.getStorageSync('userInfo');
+    // 判断用户是否登录，未登录则进入首页
+    if (userInfo != '') {
+      this.setData({
+        userInfo: userInfo
+      })
+      console.log(userInfo);
+    } else {
+     
+      // 跳转到tarbar
+      wx.switchTab({
+        url: '/pages/index/index',
+      })
+      wx.showToast({
+        title: '请先登录！',
+        icon: 'error',
+      })
+    }
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
-
+      
   },
 
   /**
