@@ -3,5 +3,6 @@
 <view class="joingroupimg" wx:if="true">
 <view><image src="{{url1}}" mode="widthFix" style="width: 100%;"/></view>
 <view class="joingroupimg2"><image src="{{url2}}" mode="widthFix"/></view>
-<view class="joingrouptxt"><text>{{text}}</text><view  bindtap="explanTop"><image src="{{url3}}" mode="widthFix"/></view><view class="store">{{store}}</view><view class="x">×</view></view>
+<view class="joingrouptxt"><text>{{text}}</text><view  bindtap="explanTop"><image src="{{url3}}" mode="widthFix"/></view><view class="store">{{dynamicData}}</view><view class="x">×</view></view>
 </view>
+
