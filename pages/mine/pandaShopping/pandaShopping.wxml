@@ -34,7 +34,7 @@
         <image src="{{item.pic}}"></image>
         <view class="tic_bottom">
           <view class="tip">{{item.tip}}</view>
-          <text class="txt1">{{item.text1}}</text>
+          <text class="txt1">{{item.text1}}熊猫币</text>
           <text class="txt2">{{item.text2}}</text>
         </view>
 
