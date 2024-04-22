@@ -12,7 +12,7 @@
 
   <!--明细、规则、订单-->
   <view class="rule">
-    <navigator wx:for="{{rule}}" url="{{item.url}}">
+    <navigator wx:for="{{rule}}" url="{{item.url}}"  open-type="switchTab">
       <image src="{{item.pic}}"></image>
       <view class="text">{{item.txt}}</view>
     </navigator>

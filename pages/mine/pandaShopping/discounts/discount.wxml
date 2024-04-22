@@ -23,7 +23,7 @@
   <view class="button" wx:if="{{userInfo.pandacoin<listditels.text1}}">
     熊猫币不足
   </view>
-  <view class="button" style="background-color: #2949de;" wx:else>
+  <view class="button" style="background-color: #2949de;" wx:else bind:tap="onExchangeSuccess">
     立即兑换
   </view>
 
