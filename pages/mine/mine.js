@@ -124,7 +124,7 @@ Page({
 
     // 经验数组
     let ExpArr = [
-      20, 40, 100, 200, 310, 430, 560
+      80, 100, 250, 300, 350, 430, 560
     ];
     wx.setStorageSync('ExpArr', ExpArr);
 
