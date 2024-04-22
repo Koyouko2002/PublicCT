@@ -31,7 +31,7 @@
       <view>可使用</view>
       <view>(0)</view>
     </view>
-    <view class="half_bottom_vip666">
+    <view class="half_bottom_vip666" style="display: {{juan}};">
       <view>免单券</view>
       <view bind:tap="buy">去使用</view>
     </view>
