@@ -37,7 +37,7 @@
           <text class="txt2">{{item.text2}}</text>
         </view>
 
-      </navigator>>
+      </navigator>
       <view class="bottom">看看其他分类呢~</view>
      
     </view>
