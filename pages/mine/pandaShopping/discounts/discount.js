@@ -24,13 +24,19 @@ Page({
 
   /**
    * 生命周期函数--监听页面显示
-   */
-  onShow() {
-   var listditels  = wx.getStorageSync('listditels')
-   this.setData({
-    listditels:listditels
-   })
+   */ onShow() {
+    var listditels = wx.getStorageSync('listditels')
+    this.setData({
+      listditels: listditels
+    })
+document.querySelector
+    // 添加点击事件处理逻辑
+    document.querySelector('.button').addEventListener('click', function() {
+      // 在这里添加兑换操作的逻辑
+      alert('点击了立即兑换按钮！');
+    });
   },
+
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -65,5 +71,16 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  /**
+   * 点击按钮弹出兑换成功页面
+   */
+  onExchangeSuccess() {
+    // 弹出兑换成功页面的代码
+    wx.showToast({
+      title: '恭喜，兑换成功！',
+      icon: 'success',
+      duration: 2000
+    });
   }
 })

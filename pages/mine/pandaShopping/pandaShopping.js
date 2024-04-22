@@ -19,7 +19,7 @@ Page({
       {
         pic: "/assets/coinMall/dingdan.png",
         txt: "熊猫币订单",
-        url: "/#"
+        url: "/pages/order/order"
       },
       {
         pic: "/assets/coinMall/guize.png",
