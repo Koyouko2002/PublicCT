@@ -29,7 +29,7 @@ Page({
       //   amount: 22,
       //   count: 1
 
-      
+
       // },
     ],
 
@@ -50,6 +50,16 @@ Page({
       changeList: changeList[id]
     })
     console.log(e.currentTarget.dataset.activeid);
+  },
+
+  // 订单点击事件
+  intoDeitels(e){
+    console.log(e.currentTarget.dataset.orderi);
+    var orderi = e.currentTarget.dataset.orderi
+    wx.setStorageSync('thisOrder', orderi)
+    wx.navigateTo({
+      url: '/pages/listdetail/listdetial',
+    })
   },
 
   /**

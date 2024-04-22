@@ -24,7 +24,7 @@
   <!-- 订单列表 -->
   <view class="orderList">
     <!-- 单个列表 -->
-    <view class="list" wx:for="{{changeList}}" wx:key="index">
+    <view class="list" wx:for="{{changeList}}" data-orderI="{{item}}" bind:tap="intoDeitels" wx:key="index">
       <!-- 第一行（地理位置，订单完成状态） -->
       <view class="row1">
         <!-- 地理位置 -->
