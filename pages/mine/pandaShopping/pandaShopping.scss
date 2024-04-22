@@ -2,6 +2,7 @@
 .all{
   height: 100%;
   width: 100%;
+  background: linear-gradient(#efece7,#f3dcc9);
 }
 /*头部*/
 
@@ -13,7 +14,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  background: linear-gradient(#efece7,#f3dcc9);
+ 
 }
 .coin{
   font-size: 28rpx;
@@ -39,6 +40,7 @@
   border-radius: 35rpx;
   column-count:3;
   z-index: -1;
+  
 }
 
 .rule image{
