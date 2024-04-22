@@ -33,7 +33,7 @@ style="background-color: #ececec;height: 2600rpx;">
   <text class="index-t2" style="position: absolute; left: 18rpx; top: 52rpx">{{Cup.t1}}</text>
 
   <text class="index-t3" style="position: absolute; left: 430rpx; top: -242rpx; width: 88rpx; height: 42rpx; display: block; box-sizing: border-box"> ¥ {{value}}</text>
-  <text class="index-t4" style="width: 64rpx; height: 42rpx; display: block; box-sizing: border-box; position: absolute; left: 92rpx; top: 103rpx"> x {{1}}</text>
+  <text class="index-t4" style="width: 64rpx; height: 42rpx; display: block; box-sizing: border-box; position: absolute; left: 92rpx; top: 103rpx"> x {{Cup.amout}}</text>
  </view>
 
   </view>
