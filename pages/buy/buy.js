@@ -443,12 +443,16 @@ sumbit(){
 this.setData({
   store:wx.getStorageSync('Store')
 })
+  if(this.data.store==""){
+    wx.setStorageSync('Store', "千道茶坊绵阳城市学院安州店")
+    this.setData({
+      store:"千道茶坊绵阳城市学院安州店"
+    })
+  }
     if(open==1){ 
           this.setData({
       total:wx.getStorageSync('totelvalue'),
       open:"block",
-
-
     }),
     console.log("__________")
     console.log(open)

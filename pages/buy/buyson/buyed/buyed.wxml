@@ -123,7 +123,7 @@ wx:for-item="HG">
 
 <view class="b-subit">
     <text class="price" > 待支付：¥{{Cup.total}}</text>
-    <navigator url="/pages/listdetail/listdetial" open-type="redirect" bind:tap="sumbit"> 
+    <navigator url="/pages/order/order" open-type="switchTab" bind:tap="sumbit"> 
      <button class="sumbit" bind:tap="sumbit">支付</button> </navigator>
         <view class="hide"></view>
      </view>
