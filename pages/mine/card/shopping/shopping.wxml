@@ -11,6 +11,11 @@
     </view>
   </view>
   <view class="bottom">
-    <view class="bottom_bottom"></view>
+    <view class="bottom_bottom">
+      <picker mode="date" value="{{date}}" bindchange="tiem">
+        <text>{{date}}</text>
+      </picker>
+    </view>
+    <view class="bottom_text">暂无相关记录</view>
   </view>
 </view>

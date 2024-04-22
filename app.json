@@ -24,7 +24,8 @@
     "pages/buy/buyson/buyed/buyed",
     "pages/mine/card/card",
     "pages/mine/medals/medal",
-    "pages/listdetail/listdetial"
+    "pages/listdetail/listdetial",
+    "pages/mine/card/shopping/shopping"
   ],
   "window": {
     "navigationBarTextStyle": "black",
