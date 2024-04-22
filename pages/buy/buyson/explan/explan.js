@@ -11,11 +11,12 @@ Page({
     maptext:"收起地图",
     mapurl:"/assets/上.png",
     Nd:"31.548634",Ed:"104.565",
-    D1:"0px",D2:"2px",
+    D1:"0px",D2:"2px",scale1:"14"
   },
   D1but(e){
     getApp().globalData.dynamicData = '千道茶坊绵阳城市学院安州店';
 this.setData({
+  Nd:"31.548634",Ed:"104.565",scale1:"14",
   D1:"2px",
   D2:"0px"
 })
@@ -24,6 +25,7 @@ wx.setStorageSync('Store', "千道茶坊绵阳城市学院安州店")
   D2but(e){
     getApp().globalData.dynamicData = '千道茶坊绵阳涪城区店';
     this.setData({
+      Nd:"31.45900698",Ed:"104.7493",scale1:"14",
       D1:"0px",
       D2:"2px"
     })

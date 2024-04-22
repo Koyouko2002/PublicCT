@@ -25,7 +25,7 @@
   subkey="{{mapId}}"
   longitude="{{Ed}}"
   latitude="{{Nd}}"
-  scale="16"
+  scale="{{scale1}}"
   layer-style="1"
   class="map"
   hidden="{{maphide}}"

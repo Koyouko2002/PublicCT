@@ -63,3 +63,22 @@
   border-top-left-radius: 30rpx;
   border-top-right-radius: 30rpx;
 }
+.bottom_text{
+  font-size: 20rpx;
+  color: gray;
+  text-align: center;
+  margin-top: 200rpx;
+}
+.bottom_bottom picker{
+  height: 100%;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.bottom_bottom picker text{
+  margin-top: 20rpx;
+  height:20%;
+  width: 100%;
+  position: relative;
+  left: 47rpx;
+  top: 25rpx
+}

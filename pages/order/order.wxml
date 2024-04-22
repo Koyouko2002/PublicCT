@@ -31,8 +31,11 @@
         <view class="position">{{item.position}}</view>
         <!-- 完成状态 -->
         <view class="status">
+        
           <text class="status_msg">{{item.status}}</text>
+        
           <image src="/assets/右右.png" />
+       
         </view>
       </view>
       <!-- 第二行（下单时间） -->

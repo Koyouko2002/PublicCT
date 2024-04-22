@@ -78,7 +78,7 @@ Page({
     // 下单之后传回来的值
     var sotre = wx.getStorageSync('Store');//获取名字
     var name = wx.getStorageSync('totelname');//获取名字
-    var value = wx.getStorageSync('totelvalue')//获取总价
+    var value = wx.getStorageSync('overvalue')//获取总价
     var imgurl = wx.getStorageSync('totelimg')//获取图片
     var amount = wx.getStorageSync('totelamount')//获取数量
     var time = wx.getStorageSync('Time')//获取数量
