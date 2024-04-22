@@ -7,25 +7,26 @@ Page({
   data: {
     userInfo: wx.getStorageSync('userInfo'),
 
-    //此处为进度条相关配置
+    //此处----------为进度条相关配置
     progress: 25 * 3,
     color: '#07C160',
     activeColor: '#7395cd',
     borderRadius: '100',//圆角
     strokeWidth: '9rpx',//进度条粗细
 
-    current:0,
-
-    dotActives:[
-      "dotActive0",
-      "dotActive1",
-      "dotActive2",
-      "dotActive3",
-      "dotActive4",
-      "dotActive5",
-      "dotActive6",
+    current: 0,
+    // 控制经验小点显示
+    dotActive: '',
+    // 进度条小点样式
+    dotActives: ["dotActive0", "dotActive1", "dotActive2", "dotActive3", "dotActive4", "dotActive5", "dotActive6",
     ],
-    bacImg:[
+    icons: ["LV.0", "LV.1", "LV.2", "LV.3", "LV.4", "LV.5", "LV.6"],
+    colors: ["#8c9aa8", "#baca6f", "#7395cd", "#73c2c7", "#6fab9f", "#5f6a5b", "#2d2f2d"],
+
+
+    // 此处---------控制背景图片的相关数据
+    background: "",
+    bacImg: [
       "/assets/mine/level/level_bac0.png",
       "/assets/mine/level/level_bac1.png",
       "/assets/mine/level/level_bac2.png",
@@ -35,8 +36,7 @@ Page({
       "/assets/mine/level/level_bac6.png",
     ],
 
-    background:"",
-    icons: ["LV.0", "LV.1", "LV.2", "LV.3", "LV.4", "LV.5", "LV.6"],
+    //  此处-------等级卡片相关样式
     // 成就名称
     levelName: [],
     // 经验数组
@@ -112,50 +112,53 @@ Page({
     ]
 
   },
-  // 切换背景图片
-  bacChange(event){
-    console.log(event);
+  // 轮播图切换事件
+  bacChange(event) {
+    // 拿到此时第几个轮播图的索引
     const current = event.detail.current;
-    console.log(current);
+    // 拿到记录的相关事件
     const source = event.detail.source;
-
+    // 用户触摸引发的滑动事件 
     if (source === 'touch') {
-      // 用户触摸引发的滑动事件
-      const direction = current > this.data.current ? 'next' : 'previous';
+      // 更新相关样式
       this.setData({
-        current: current
+        current: current,
+        background: this.data.bacImg[current],
+        dotActive: this.data.dotActives[current],
+        activeColor: this.data.colors[current]
       });
-
-      this.setData({
-        background:this.data.bacImg[current]
-      })
+      console.log(this.data.color);
     }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-    // 得到登录用户信息
+  // 加载等级进度条
+  getUserInfo() {
     let userInfo = wx.getStorageSync('userInfo')
-
     // 得到等级名称
     let incomelevelName = wx.getStorageSync('levelName')
-
     // 获取经验数组
     let incomeExpArr = wx.getStorageSync('ExpArr')
-
     this.setData({
       // 渲染进度条
       progress: userInfo.level * 17,
       // 等级名称
       levelName: incomelevelName,
       // 经验数组
-      ExpArr:incomeExpArr,
+      ExpArr: incomeExpArr,
       // 得到缓存的用户登录信息
       userInfo: wx.getStorageSync('userInfo'),
-      background:this.data.bacImg[userInfo.level]
+      background: this.data.bacImg[userInfo.level],
+      dotActive: this.data.dotActives[userInfo.level],
+      activeColor: this.data.colors[userInfo.level]
     })
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+    this.getUserInfo();
+   
   },
 
   /**
@@ -169,7 +172,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-  
+
   },
 
   /**
