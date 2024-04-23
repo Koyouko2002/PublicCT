@@ -72,62 +72,81 @@ Page({
 
     /* ------------------在这里定义了用户信息-------------用于缓存到全局-------- */
 
-    // var userInfo = {
-    //   username: "00000",
-    //   password: "23333",
-    //   nike: "夜倾",
-    //   avatar: "/assets/mine/touxiang.png",
-    //   pandacoin: 521,
-    //   coupon: 20,
-    //   level: 2,
-    //   expValue: 180,
-    //   createDate: "2024-03-30",
-    //   phone: "18166882589",
-    //   sex: "男",
-    //   birthday: "2024-2-28",
-    // };
+    var userInfo = {
+      username: "00000",
+      password: "23333",
+      nike: "夜倾",
+      avatar: "/assets/mine/touxiang.png",
+      pandacoin: 521,
+      coupon: 20,
+      level: 2,
+      expValue: 180,
+      createDate: "2024-03-30",
+      phone: "18166882589",
+      sex: "男",
+      birthday: "2024-2-28",
+    };
 
     //提前获取this对象，防止后续this指向出错
     var that=this;
     // 请求后端数据
-    wx.request({
-      url: 'http://localhost/user/login',
-      method: "POST",
-      data: {
-        "phone": "18166882589",
-        "password": "23333"
-      },
-      // 调用成功
-      success(res) {
-        console.log(res.data);
-        var userInfo = res.data
-        wx.setStorageSync('userInfo', userInfo)
-        wx.showModal({
-          title: '是否一键的登陆',
-          content: "手机号登陆：" + userInfo.phone,
-          complete: (res) => {
-            if (res.cancel) {
-              wx.showToast({
-                title: '用户取消登陆',
-              })
-              wx.removeStorageSync('userInfo')
-            }
+    // wx.request({
+    //   url: 'http://localhost/user/login',
+    //   method: "POST",
+    //   data: {
+    //     "phone": "18166882589",
+    //     "password": "23333"
+    //   },
+    //   // 调用成功
+    //   success(res) {
+    //     console.log(res.data);
+    //     var userInfo = res.data
+    //     wx.setStorageSync('userInfo', userInfo)
+    //     wx.showModal({
+    //       title: '是否一键的登陆',
+    //       content: "手机号登陆：" + userInfo.phone,
+    //       complete: (res) => {
+    //         if (res.cancel) {
+    //           wx.showToast({
+    //             title: '用户取消登陆',
+    //           })
+    //           wx.removeStorageSync('userInfo')
+    //         }
 
-            if (res.confirm) {
-              that.setData({
-                userInfo: userInfo
-              })
-            }
-          }
-        })
-      },
-      fail(err) {
-        console.log(err);
+    //         if (res.confirm) {
+    //           that.setData({
+    //             userInfo: userInfo
+    //           })
+    //         }
+    //       }
+    //     })
+    //   },
+    //   fail(err) {
+    //     console.log(err);
+    //   }
+    // })
+
+
+    wx.setStorageSync('userInfo', userInfo)
+    var userInfo =wx.getStorageSync('userInfo')
+    wx.showModal({
+      title: '是否一键的登陆',
+      content: "手机号登陆：" + userInfo.phone,
+      complete: (res) => {
+        if (res.cancel) {
+          wx.showToast({
+            title: '用户取消登陆',
+          })
+          wx.removeStorageSync('userInfo')
+        }
+
+        if (res.confirm) {
+          that.setData({
+            userInfo: userInfo
+          })
+        }
       }
     })
-
-
-
 
 
 
