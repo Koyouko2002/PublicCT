@@ -64,7 +64,8 @@ Page({
       },
       {
         img: "/assets/mine/福利.png",
-        appDes: "社区福利"
+        appDes: "社区福利",
+        url:"pages/indexson/joingroup/joingroup"
       },
       {
         img: "/assets/mine/个人资料.png",
