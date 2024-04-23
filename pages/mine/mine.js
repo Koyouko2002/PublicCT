@@ -44,7 +44,8 @@ Page({
       },
       {
         img: "/assets/mine/券码兑换.png",
-        appDes: "券码兑换"
+        appDes: "券码兑换",
+        url:"/pages/mine/conpons/conpons"
       },
       {
         img: "/assets/mine/z.png",
