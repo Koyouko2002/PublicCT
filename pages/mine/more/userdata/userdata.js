@@ -8,9 +8,8 @@ Page({
 data: {
   date:'2024-04-23'
 },
-  bindDateChange: function(e) { //接收一个参数e 
-  console.log(e.detail.value)  //console.log打印选择的日期值 e.detail.value获取新选择的日期
-  this.setData({ //this.setData更新date属性
+  bindDateChange(e) { 
+  this.setData({ 
     date: e.detail.value
   })
 },

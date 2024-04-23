@@ -7,15 +7,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    value:"0",
     Cup:{
-      name:"茉莉奶绿",
-      img:"O3.png",
-      total:14,
-      t1:"一些相关的文本描述",
-      amout:"1",
+      name:"",
+      img:"",
+      total:0,
+      t1:"",
+      amout:1,
     },
-    store:"绵阳城市学院安州区店",
+    store:"",
     img2:"O3.png",
     Change1:[{
       img:"O7.png",

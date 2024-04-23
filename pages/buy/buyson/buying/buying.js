@@ -14,15 +14,21 @@ Page({
     BackgroundUrl:"/assets/Order/BG1.png",
     title:"红茶冰椰雪糕",
     t1:"椰子乳I",t1prime:"椰子雪糕",t11:"I 黑糖珍珠",t2:"甄选闽北地区特色梅占茗茶搭配冰椰雪糕，清新甘甜兼具浓郁椰香。",price:17,
+    //规格
     is1:"in",is2:"",
     color:"#094bdd",color2:"",
+    //甜度
     is3:"in",is4:"",is5:"",
     color3:"#094bdd",color4:"",color5:"",
+    //可换
     is6:"",
     color6:"",
+    //包装
     is:"",is8:"",
     color7:"",color7:"",
+
     amount:1,subbg:"",subcolor:"",
+    //选中与否
     Key1:"none",Key2:"",
     Key3:"",Key4:"none",Key5:"none",
     Key6:"",Key7:"none",Key8:"none",
@@ -232,7 +238,7 @@ Page({
 
 
 
-      }
+      }1
   
     },
 

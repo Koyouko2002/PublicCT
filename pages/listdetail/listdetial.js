@@ -11,7 +11,6 @@ Page({
     totelimg:"",
     totelamout:"",
     Time:"",
-    
     order:""
   },
 

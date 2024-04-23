@@ -471,22 +471,22 @@ this.setData({
     var userInfo = '';
     userInfo = wx.getStorageSync('userInfo');
     // 判断用户是否登录，未登录则进入首页
-    if (userInfo != '') {
-      this.setData({
-        userInfo: userInfo
-      })
-      console.log(userInfo);
-    } else {
+    // if (userInfo != '') {
+    //   this.setData({
+    //     userInfo: userInfo
+    //   })
+    //   console.log(userInfo);
+    // } else {
      
-      // 跳转到tarbar
-      wx.switchTab({
-        url: '/pages/index/index',
-      })
-      wx.showToast({
-        title: '请先登录！',
-        icon: 'error',
-      })
-    }
+
+    //   wx.switchTab({
+    //     url: '/pages/index/index',
+    //   })
+    //   wx.showToast({
+    //     title: '请先登录！',
+    //     icon: 'error',
+    //   })
+    // }
   },
 
   /**

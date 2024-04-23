@@ -32,19 +32,19 @@
   <!-- 订单页1 -->
   <view class="listbox-1">
     
-        <image src="{{totelimg}}{{order.img}}" mode=""/>
+        <image src="{{order.img}}" mode=""/>
   
-    <view class="listbox-1-t3">{{totelname}}
+    <view class="listbox-1-t3">
     {{order.ncName}}
     </view>
-    <view class="listbox-1-t1">￥{{totelvalue}}{{order.amount}}.00</view>
-    <view class="listbox-1-t2">x{{totelamount}}{{order.count}}</view>
+    <view class="listbox-1-t1">￥{{order.amount}}.00</view>
+    <view class="listbox-1-t2">x{{order.count}}</view>
   </view>
 
   <!-- 商品总价2 -->
   <view class="listbox-2">
   <view class="left-text">商品总价</view>
-  <view>￥{{totelvalue}}{{order.amount}}.00</view>
+  <view>￥{{order.amount}}.00</view>
   
   </view>
   <!-- 优惠券 -->
@@ -54,7 +54,7 @@
   </view>
   <!--  总结统计 -->
   <view class="listbox-4">
-      <view class="lisbox-4-1">共一件商品，合计￥{{totelvalue}}{{order.amount}}</view>
+      <view class="lisbox-4-1">共一件商品，合计￥{{order.amount}}</view>
       <view class="lisbox-4-2">可获得<text>12熊猫值</text></view>
   </view>
 </view>
