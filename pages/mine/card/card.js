@@ -1,4 +1,9 @@
 // pages/mine/card/card.js
+// const app =getApp();
+// {{app.globalData.juan}}
+// var juan=app.globalData.juan;
+// console.log(juan)
+// console.log(app.juan)
 Page({
 
   /**
@@ -36,6 +41,7 @@ Page({
    */
   onLoad(options) {
     this.ctx=wx.createCameraContext()
+  
   },
 
   /**
@@ -49,7 +55,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    
+    var flex=  wx.getStorageSync('flex')
+    console.log(flex)
+    if(flex=='flex'){
+      console.log("ok")
+      this.setData({
+        juan:flex
+      })
+    }
   },
 
   /**

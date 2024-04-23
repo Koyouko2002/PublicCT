@@ -5,7 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< Updated upstream
 
+=======
+    x:'',
+  },
+  huoqv(e){
+    console.log(e)
+    this.setData({
+      x:e.detail.value
+    })
+  },
+  duihuan(){
+    console.log(this.data.x)
+    if(this.data.x=="vip666"){
+      wx.setStorageSync('flex', "flex")
+      wx.showToast({
+        title: '兑换成功',
+      })
+      this.setData({
+        juan:"flex"
+      })
+
+    }else{
+      wx.showToast({
+        icon:'error',
+        title: '兑换失败',
+      })
+    }
+>>>>>>> Stashed changes
   },
 
   /**
