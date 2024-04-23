@@ -1,5 +1,5 @@
 {
-  "entryPagePath":  "pages/index/index",
+  "entryPagePath": "pages/index/index",
   "pages": [
     "pages/index/index",
     "pages/buy/buy",
@@ -25,7 +25,8 @@
     "pages/mine/card/card",
     "pages/mine/medals/medal",
     "pages/listdetail/listdetial",
-    "pages/mine/card/shopping/shopping"
+    "pages/mine/card/shopping/shopping",
+    "pages/mine/conpons/conpons"
   ],
   "window": {
     "navigationBarTextStyle": "black",
