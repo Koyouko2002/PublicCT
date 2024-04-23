@@ -3,10 +3,10 @@
     <image src="/assets/mine/card/券.png" mode=""/>
   </view>
   <view class="middle_input">
-    <input type="text" placeholder="请输入礼券兑换码"/>
+    <input type="text" placeholder="请输入礼券兑换码"  bindinput="huoqv"  value="{{x}}"/>
     <image src="/assets/mine/card/相机.png" mode=""/>
   </view>
   <view class="bottom_button">
-    <button>兑换</button>
+    <button  bind:tap="duihuan">兑换</button>
   </view>
 </view>
