@@ -127,7 +127,8 @@ Page({
         wx.navigateTo({ url: '/pages/indexson/stucard/stucard' });
         break;
       case 2:
-        wx.showToast({ title: '敬请期待', icon: 'none', duration: 1000 });
+        wx.navigateTo({ url:'/pages/mine/task/task' });
+        url:"/pages/mine/task/task"
         break;
       case 3:
         wx.navigateTo({ url: '/pages/indexson/friend/friend' });

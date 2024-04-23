@@ -4,7 +4,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
+  data: { 
     bt1sty:"top-1-b1",
     bt2sty:"top-1-b2",
     mapId:"RQVBZ-EOXCZ-AJYXQ-7G444-YNNQO-Q4F5M",maphide:"",mapopenkey:0,

@@ -25,7 +25,6 @@ Page({
     var imgurl=wx.getStorageSync('totelimg')//获取图片
     var amount=wx.getStorageSync('totelamount')//获取数量、
     var Time=wx.getStorageSync('Time');//获取名字
-
     var order = wx.getStorageSync('thisOrder');
     this.setData({
       store:sotre,

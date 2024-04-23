@@ -27,7 +27,7 @@
     <view style="margin-top:28rpx;">
       <text>生日</text>
 
-      <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <picker mode="date" bindchange="bindDateChange">
       
         <view class="birthdate">{{date}}</view>
         <view class="birth">修改生日</view>

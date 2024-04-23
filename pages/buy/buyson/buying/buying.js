@@ -3,7 +3,6 @@ var is6key=0,is7key=0,is8key=0;var price=0;
 var amount = 1;
 var fjvalue=0;
 var total=0;
-var whatup=0;
 var value=0;
 Page({
 
