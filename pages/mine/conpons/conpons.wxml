@@ -6,4 +6,7 @@
     <input type="text" placeholder="请输入礼券兑换码"/>
     <image src="/assets/mine/card/相机.png" mode=""/>
   </view>
+  <view class="bottom_button">
+    <button>兑换</button>
+  </view>
 </view>
