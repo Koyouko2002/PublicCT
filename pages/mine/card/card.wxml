@@ -36,6 +36,12 @@
       <view bind:tap="buy">去使用</view>
     </view>
     <view class="half_bottom_text_b">暂无礼品卡</view>
-    <view class="result">{{result}}</view>
+    <view class="result" style="display: {{dis}};">
+      <view class="neirong">
+        <view class="neirong_text">扫码的内容</view>
+        <button class="guanbi" bind:tap="guanbi">X</button>
+      </view>
+      <view>{{result}}</view>
+    </view>
   </view>
 </view>

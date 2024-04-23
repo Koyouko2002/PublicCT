@@ -192,3 +192,29 @@
   text-align: center;
   line-height: 30rpx;
 }
+.result{
+  z-index: 3;
+  width: 600rpx;
+  height: 400rpx;
+  background-color: red;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  background-color: rgb(244, 245, 246);
+}
+.neirong{
+  width: 100%;
+  border-bottom: 3px solid white;
+  display: flex;
+  justify-content: space-between;
+
+}
+.neirong_text{
+  width: 500rpx;
+}
+.guanbi{
+  font-size: 20rpx;
+  width: 30rpx;
+  height: 40rpx;
+  background-color: red;
+}

@@ -11,7 +11,8 @@ Page({
    */
   data: {
     x:null,
-    juan:"none"
+    juan:"none",
+    dis:'none'
   },
   huoqv(e){
     console.log(e)
@@ -42,9 +43,15 @@ Page({
       success: (res) => {
         console.log(res)
         this.setData({
-          result: res.result
+          result: res.result,
+          dis:""
         })
       }
+    })
+  },
+  guanbi(){
+    this.setData({
+      dis:"none"
     })
   },
   /**
