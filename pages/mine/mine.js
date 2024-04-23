@@ -49,7 +49,8 @@ Page({
       },
       {
         img: "/assets/mine/z.png",
-        appDes: "信息"
+        appDes: "信息",
+        url:"/pages/mine/information/information"
       },
       {
         img: "/assets/mine/zz.png",
