@@ -36,6 +36,17 @@ Page({
       })
     }
   },
+  // 扫描二维码
+  scanQRCode: function() {
+    wx.scanCode({
+      success: (res) => {
+        console.log(res)
+        this.setData({
+          result: res.result
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
