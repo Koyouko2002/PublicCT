@@ -1,2 +1,5 @@
-<!--pages/mine/conpons/conpons.wxml-->
-<text>pages/mine/conpons/conpons.wxml</text>
+<view>
+  <view class="top_image">
+    <image src="/assets/mine/card/" mode=""/>
+  </view>
+</view>
