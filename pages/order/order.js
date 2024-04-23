@@ -98,7 +98,7 @@ Page({
 
 
     console.log(sotre);
-
+    var that=this
     // 封装成订单
     if (time != '') {
       var userInfo = wx.getStorageSync('userInfo')
@@ -114,7 +114,7 @@ Page({
         count: amount,
         ncName: name
       }
-      this.data.orderList.push(order)
+      that.data.orderList.push(order)
       wx.setStorageSync('orderList', this.data.orderList)
     }
     console.log(this.data.orderList);
