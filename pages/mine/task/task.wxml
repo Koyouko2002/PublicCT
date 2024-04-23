@@ -1,0 +1,41 @@
+<view class="ALL">
+  <view class="biaoti">
+    <view>会员任务</view>
+  </view>
+  <view class="bottom">
+    <view class="bottom_top">
+      <view class="yue"><text>月度消费任务</text></view>
+      <view class="a">
+        <view>
+          <view style="font-size: 27rpx;">当月累计消费一次</view>
+          <view style="font-size: 22rpx;color: rgb(9, 75, 221);">3元无门槛券</view>
+        </view>
+        <view style="width: 150rpx;height: 50rpx;background-color: rgb(9, 75, 221); border-radius: 25rpx; font-size: 25rpx; color: white;text-align: center;line-height: 50rpx;" bind:tap="buy">去完成</view>
+      </view>
+      <view class="a">
+        <view>
+          <view style="font-size: 27rpx;">当月累计消费两次</view>
+          <view style="font-size: 22rpx;color: rgb(9, 75, 221);">第二杯半价</view>
+        </view>
+        <view style="width: 150rpx;height: 50rpx;background-color: rgb(9, 75, 221); border-radius: 25rpx; font-size: 25rpx; color: white;text-align: center;line-height: 50rpx;" bind:tap="buy">去完成</view>
+      </view>
+      <view class="a">
+        <view>
+          <view style="font-size: 27rpx;">当月累计消费三次</view>
+          <view style="font-size: 22rpx;color: rgb(9, 75, 221);">单杯8折券</view>
+        </view>
+        <view style="width: 150rpx;height: 50rpx;background-color: rgb(9, 75, 221); border-radius: 25rpx; font-size: 25rpx; color: white;text-align: center;line-height: 50rpx;" bind:tap="buy">去完成</view>
+      </view>
+    </view>
+    <view class="bottom_bottom">
+      <view class="yue"><text>常规任务</text></view>
+      <view class="a">
+        <view>
+          <view style="font-size: 27rpx;">完善个人资料</view>
+          <view style="font-size: 22rpx;color: rgb(9, 75, 221);"></view>
+        </view>
+        <navigator url="/pages/mine/more/userdata/userdata" open-type="navigate"><view style="width: 150rpx;height: 50rpx;background-color: rgb(9, 75, 221); border-radius: 25rpx; font-size: 25rpx; color: white;text-align: center;line-height: 50rpx;">去完成</view></navigator>
+      </view>
+    </view>
+  </view>
+</view>

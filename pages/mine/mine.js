@@ -58,7 +58,8 @@ Page({
       },
       {
         img: "/assets/mine/会员任务.png",
-        appDes: "会员任务"
+        appDes: "会员任务",
+        url:"/pages/mine/task/task"
       },
       {
         img: "/assets/mine/福利.png",

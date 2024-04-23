@@ -26,7 +26,8 @@
     "pages/mine/medals/medal",
     "pages/listdetail/listdetial",
     "pages/mine/card/shopping/shopping",
-    "pages/mine/conpons/conpons"
+    "pages/mine/conpons/conpons",
+    "pages/mine/task/task"
   ],
   "window": {
     "navigationBarTextStyle": "black",
