@@ -11,13 +11,13 @@
 </view>
 </navigator>
 <!-- 用户须知 -->
-
+<navigator url="/pages/mine/information/information">
 <view class="box">
 <image src="/assets/mine/more/用户须知.png" mode=""/>
 <text>用户须知</text>
 <image  class="pointer" src="/assets/mine/more/右箭头.png" mode=""/>
 </view>
-
+</navigator>
 <!-- 隐私政策 -->
 <view class="box">
 <image  src="/assets/mine/more/隐私.png" mode=""/>
