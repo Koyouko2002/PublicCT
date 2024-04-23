@@ -69,9 +69,8 @@ Page({
   /*---------这里被小朱修改了部分，浅浅给你个注释----------*/
   login() {
     // let userInfo=wx.getStorageSync('userInfo')
-
     /* ------------------在这里定义了用户信息-------------用于缓存到全局-------- */
-
+    
     var userInfo = {
       username: "00000",
       password: "23333",
@@ -86,49 +85,8 @@ Page({
       sex: "男",
       birthday: "2024-2-28",
     };
-
-    //提前获取this对象，防止后续this指向出错
-    var that=this;
-    // 请求后端数据
-    // wx.request({
-    //   url: 'http://localhost/user/login',
-    //   method: "POST",
-    //   data: {
-    //     "phone": "18166882589",
-    //     "password": "23333"
-    //   },
-    //   // 调用成功
-    //   success(res) {
-    //     console.log(res.data);
-    //     var userInfo = res.data
-    //     wx.setStorageSync('userInfo', userInfo)
-    //     wx.showModal({
-    //       title: '是否一键的登陆',
-    //       content: "手机号登陆：" + userInfo.phone,
-    //       complete: (res) => {
-    //         if (res.cancel) {
-    //           wx.showToast({
-    //             title: '用户取消登陆',
-    //           })
-    //           wx.removeStorageSync('userInfo')
-    //         }
-
-    //         if (res.confirm) {
-    //           that.setData({
-    //             userInfo: userInfo
-    //           })
-    //         }
-    //       }
-    //     })
-    //   },
-    //   fail(err) {
-    //     console.log(err);
-    //   }
-    // })
-
-
     wx.setStorageSync('userInfo', userInfo)
-    var userInfo =wx.getStorageSync('userInfo')
+
     wx.showModal({
       title: '是否一键的登陆',
       content: "手机号登陆：" + userInfo.phone,
@@ -137,21 +95,15 @@ Page({
           wx.showToast({
             title: '用户取消登陆',
           })
-          wx.removeStorageSync('userInfo')
         }
 
         if (res.confirm) {
-          that.setData({
+          this.setData({
             userInfo: userInfo
           })
         }
       }
     })
-
-
-
-
-
   },
 
 
