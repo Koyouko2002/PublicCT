@@ -5,9 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-<<<<<<< Updated upstream
-
-=======
     x:'',
   },
   huoqv(e){
@@ -33,7 +30,6 @@ Page({
         title: '兑换失败',
       })
     }
->>>>>>> Stashed changes
   },
 
   /**

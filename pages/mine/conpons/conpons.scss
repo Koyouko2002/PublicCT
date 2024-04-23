@@ -1,5 +1,61 @@
+.ALL{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1200rpx;
+  background-color: rgb(244, 245, 246);
+}
 .top_image{
   height: 550rpx;
   width: 100%;
-  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_image image{
+  height: 320rpx;
+  width: 500rpx;
+}
+.middle_input{
+  height: 120rpx;
+  width: 700rpx;
+  background-color: red;
+  background-color: white;
+  border-radius: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.middle_input input{
+  width: 520rpx;
+  margin-left: 40rpx;
+}
+.middle_input image{
+  height: 70rpx;
+  width: 70rpx;
+  margin-left: 30rpx;
+}
+button{
+  height: 100rpx;
+  width: 700rpx;
+  background-color: rgb(10, 76, 222);
+  border-radius: 50rpx;
+  color: white;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  height: 100rpx;
+  width: 700rpx;
+  background-color: rgb(10, 76, 222);
+  border-radius: 50rpx;
+  color: white;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_button{
+  margin-top: 400rpx;
 }
